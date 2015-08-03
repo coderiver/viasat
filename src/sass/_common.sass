@@ -19,7 +19,27 @@ body
 	max-width: 1150px
 	margin: 0 auto
 	+clr
+=justify
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	text-justify: newspaper
+	zoom: 1
+	text-align-last: justify
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+=justify-child
+	display: inline-block
+	line-height: normal
+	vertical-align: top
+	font-size: 1.4rem	
 .center
+	position: relative
 	+center
 .clr
 	+clr	
@@ -52,13 +72,23 @@ body
 	float: left
 	&__list
 		+clr
-		li
+		& > li
 			float: left
-			a
+			& > a
+				position: relative
 				display: block
 				height: 70px
 				padding: 0 22px
 				+vertical
+				z-index: 100
+				&:hover
+					span
+						text-decoration: underline
+						&.icon-hamburger
+							text-decoration: none
+				&.is-open
+					background: #fff 
+					box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29)
 				span
 					display: inline-block
 					vertical-align: middle
@@ -67,10 +97,67 @@ body
 					font-weight: bold
 					&.icon-hamburger
 						font-size: 12px
-						margin-right: 9px 
+						margin-right: 9px
+.dropdown
+	position: absolute
+	top: 100%
+	left: 50%
+	transform: translateX(-50%)
+	background: #fff
+	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.29)
+	z-index: 99
+	.dropdown__list
+		padding: 26px 40px
+	.dropdown__premiere
+		padding: 26px 40px 
+		background: #f8f8f8
+		border-top: 1px solid #f0f0f0
+	.dropdown__title
+		margin-bottom: 15px
+		font-size: 1.6rem
+		text-transform: uppercase
+		font-weight: bold
+		color: $black
+	.dropdown__list
+		display: table
+		width: 100% 
+	.dropdown__cat
+		display: table-cell
+		vertical-align: top
+		width: 33.3%
+		padding-left: 38px
+		border-left: 1px solid #f0f0f0
+		&:first-child
+			border-left: none
+			padding-left: 0
+	.dropdown__channels
+		font-size: 0
+		line-height: 1
+		margin-top: -30px
+		li
+			display: inline-block
+			vertical-align: top
+			width: 50%
+			margin-top: 30px
+	.dropdown__links
+		+justify
+		li
+			width: 133px 
+			+justify-child
+			a
+				display: block
+				text-decoration: none
+				img
+					display: block
+					width: 100%
+					margin-bottom: 5px
+				p
+					font-size: 1.3rem
+					color: $dark 
 .time
 	position: relative
 	float: right
+	padding-right: 30px
 	padding-top: 19px
 	padding-left: 38px 
 	font-size: 1.2rem
@@ -119,6 +206,7 @@ body
 					color: $dark
 					text-decoration: none
 					&:hover
+						color: $black
 						text-decoration: underline
 	.footer__title
 		display: inline-block
