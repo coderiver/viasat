@@ -12,10 +12,138 @@ body
 	font-size: 1.4rem
 	line-height: 1.4
 	color: #000
+	background: #e9e9e9 
 	
 // blocks
-.center
+=center
 	max-width: 1150px
 	margin: 0 auto
+	+clr
+.center
+	+center
 .clr
 	+clr	
+
+// header
+.header
+	height: 70px
+	background: #fff 
+	&__in
+		+center
+.logo
+	float: left
+	width: 180px
+	padding-top: 18px
+	&.logo_footer
+		padding-top: 0
+		float: none
+		a
+			width: 120px
+			height: 27px 
+	a
+		display: inline-block
+		width: 152px
+		height: 33px
+		background: url(../img/logo.png) 0 0 no-repeat
+		-webkit-background-size: 100% 
+		-o-background-size: 100% 
+		background-size: 100%   
+.menu
+	float: left
+	&__list
+		+clr
+		li
+			float: left
+			a
+				display: block
+				height: 70px
+				padding: 0 22px
+				+vertical
+				span
+					display: inline-block
+					vertical-align: middle
+					font-size: 1.6rem
+					color: $black
+					font-weight: bold
+					&.icon-hamburger
+						font-size: 12px
+						margin-right: 9px 
+.time
+	position: relative
+	float: right
+	padding-top: 19px
+	padding-left: 38px 
+	font-size: 1.2rem
+	line-height: 1
+	.icon-clock
+		position: absolute
+		top: 19px
+		left: 0
+		color: #c0c0c0
+		font-size: 29px 
+	.time__local
+		color: #7d7d7d
+		span
+			color: $dark
+			font-weight: bold
+			font-size: 1.6rem
+	.time__date
+		color: $dark	
+		font-weight: bold
+		
+// footer
+.footer
+	background: #fff
+	&__in
+		+center
+		padding: 40px 0 80px
+	.footer__left
+		float: left
+		width: 20%
+		margin-right: 5%
+	.footer__right
+		float: left
+		width: 75%
+		+clr
+	.footer__list
+		+clr
+	.footer__col
+		float: left
+		width: 22%
+		margin-left: 3% 
+		& > ul
+			li
+				margin-bottom: 5px
+				a
+					font-size: 1.4rem
+					color: $dark
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+	.footer__title
+		display: inline-block
+		margin-bottom: 15px
+		text-decoration: none
+		color: $black
+		font-size: 1.4rem
+		font-weight: bold
+		text-transform: uppercase
+		&:hover
+			text-decoration: underline
+	.footer__post
+		text-decoration: none
+		color: $dark
+		font-size: 1.4rem				 	 
+.copyrights
+	font-size: 1.2rem
+	color: #888 					 	
+.date
+	font-size: 1.2rem
+	color: #868686
+	font-style: italic
+
+
+
+
+
+
