@@ -1,8 +1,36 @@
 // vars
 $black: #000
 $dark: #353535
-$blue: #2575cb
-$blue-h: #509cee
+// TV1000
+$tv: #08477b
+$tv-h: #1f7aad
+// TV1000 PREMIUM HD
+$premium: #352361
+$premium-h: #6d57a5
+// TV1000 MEGAHIT HD
+$megahit: #005196
+$megahit-h: #0971ca
+// TV1000 COMEDY HD
+$comedy: #d46b28
+$comedy-h: #fc8b2f
+// TV1000 ACTION
+$action: #8a0912
+$action-h: #d00847
+// TV1000 РУССКОЕ КИНО
+$rus: #005475
+$rus-h: #00b7e4
+// VIASAT EXPLORE, VIASAT EXPLORE HD
+$explore: #a8070e
+$explore-h: #d80e17
+// VIASAT HISTORY, VIASAT HISTORY HD
+$history: #1a539e
+$history-h: #53a1d8
+// VIASAT NATURE, VIASAT NATURE HD
+$nature: #637824
+$nature-h: #bccc32
+// VIASAT SPORT
+$sport: #005475
+$sport-h: #00b7e4
 
 html
 	font-size: 10px
@@ -43,11 +71,33 @@ body
 	+center
 .clr
 	+clr	
+.tag
+	display: inline-block
+	vertical-align: middle
+	padding: 3px 10px
+	background: #9b1d4f
+	color: #fff
+	font-size: 1.3rem 
+	
+// grid
+.row
+	+clr
+	& > div
+		margin-left: 2%
+		&:first-child
+			margin-left: 0
+.col2
+	float: left
+	width: 48%
+	 
+.col4
+	float: left
+	width: 23%		 	 
 
 // header
 .header
 	height: 70px
-	background: #fff 
+	background: #fff
 	&__in
 		+center
 .logo

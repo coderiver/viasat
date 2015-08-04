@@ -17,4 +17,17 @@
 		}
 	);
 
+	// slick 
+
+	$('.js-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3
+	});
+
+	$('.js-channels').slick({
+		dots: true,
+		slidesToShow: 6,
+		slidesToScroll: 6
+	});
+
 })();
