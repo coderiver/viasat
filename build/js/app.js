@@ -9,11 +9,11 @@
 	$('.js-drop').hover(
 		function() {
 			$(this).find('.js-drop-link').addClass('is-open');
-			$(this).find('.js-dropdown').slideDown('fast');
+			$(this).find('.js-dropdown').slideDown();
 		},
 		function() {
 			$(this).find('.js-drop-link').removeClass('is-open');
-			$(this).find('.js-dropdown').slideUp('fast');
+			$(this).find('.js-dropdown').slideUp();
 		}
 	);
 
@@ -28,6 +28,15 @@
 		dots: true,
 		slidesToShow: 6,
 		slidesToScroll: 6
+	});
+	$('.js-slick').slick({
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+	$('.js-recommends').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1
 	});
 
 })();

@@ -39,11 +39,11 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 	$('.js-drop').hover(
 		function() {
 			$(this).find('.js-drop-link').addClass('is-open');
-			$(this).find('.js-dropdown').slideDown('fast');
+			$(this).find('.js-dropdown').slideDown();
 		},
 		function() {
 			$(this).find('.js-drop-link').removeClass('is-open');
-			$(this).find('.js-dropdown').slideUp('fast');
+			$(this).find('.js-dropdown').slideUp();
 		}
 	);
 
@@ -58,6 +58,15 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 		dots: true,
 		slidesToShow: 6,
 		slidesToScroll: 6
+	});
+	$('.js-slick').slick({
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+	$('.js-recommends').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1
 	});
 
 })();

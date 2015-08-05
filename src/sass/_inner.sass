@@ -1,0 +1,168 @@
+// styles for all inner pages
+.main
+	float: left
+	width: 65.7%
+	padding-top: 17px
+	padding-bottom: 70px
+.sidebar
+	float: right
+	width: 31.7%  
+	padding-top: 120px 
+.channels
+	.channels__item
+		position: relative
+		margin-top: 30px
+		background: #FFF
+		padding: 340px 30px 50px 
+		&:first-child
+			margin-top: 0
+		.channels__films, .channels__discovery, .channels__sport
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			left: 0
+			font-size: 0
+			background: #605f6c 
+			img
+				position: relative
+				width: 100% 
+				z-index: 1
+			.channels__bg
+				position: absolute
+				top: 340px
+				height: 100px 
+				right: 0
+				left: 0
+				+g(rgba(#605f6c, 0), rgba(#605f6c, 1))		
+				z-index: 2  
+		.channels__discovery
+			background: #a19d3f
+			.channels__bg
+				+g(rgba(#a19d3f, 0), rgba(#a19d3f, 1))
+		.channels__sport
+			background: #000
+			.channels__bg
+				+g(rgba(#000, 0), rgba(#000, 1))		 					
+	.channels__list
+		position: relative
+		margin-left: -4%
+		margin-bottom: -4%
+		+clr
+		z-index: 2
+	.channels__block
+		float: left
+		width: 46%
+		height: 0
+		margin-left: 4% 
+		margin-bottom: 4%
+		padding-bottom: 39%
+		background: #fff
+	.channels__in
+		padding: 30px
+		& > img
+			display: inline-block
+			margin-bottom: 15px
+		p
+			margin-bottom: 15px
+			font-size: 1.4rem
+			color: $dark
+	.channels__more
+		text-align: right
+		a
+			color: $black
+			font-size: 1.4rem
+			font-weight: 500 
+			text-decoration: none
+			&:hover
+				text-decoration: underline	
+				
+// widget
+.widget
+	padding: 24px 33px 37px 
+	background: #efefef
+.subscr, .feedback
+	display: block
+	height: 55px
+	margin-bottom: 20px 
+	padding: 13px 33px 
+	border-radius: 3px
+	background: #fff url(../img/subscr.png) 90% 100% no-repeat
+	font-size: 1.8rem
+	color: $dark
+	text-decoration: none
+	font-weight: bold    	
+.feedback
+	background: #fff url(../img/feedback.png) 90% 100% no-repeat
+
+.fb-widget
+	margin-bottom: 20px
+	& > img
+		display: block
+		max-width: 100%
+		
+// 404 error
+.error
+	padding: 125px 10px 185px
+	text-align: center
+	&__img
+		margin-bottom: 60px
+		font-size: 0
+	&__content
+		max-width: 520px
+		margin: 0 auto 
+		p
+			margin-bottom: 25px
+			font: 1.6rem Arial, sans-serif
+	&__title
+		margin-bottom: 10px 
+		font: bold 2.4rem Arial, sans-serif
+	.error__links
+		a, span
+			display: inline-block
+			vertical-align: middle
+		span
+			margin: 0 20px
+			font-size: 1.4rem
+			font-weight: 500
+.recommends
+	background: #504f58
+	padding: 28px 0 48px
+	.recommends__title
+		margin-bottom: 20px
+		padding-left: 10px
+		font-size: 2.4rem
+		color: #fff
+		text-transform: uppercase
+		font-weight: 300 
+	.poster
+		width: 266px
+		margin: 0 auto
+		& > img
+			min-height: 145px			   					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

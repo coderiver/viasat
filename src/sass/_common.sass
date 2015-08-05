@@ -77,7 +77,89 @@ body
 	padding: 3px 10px
 	background: #9b1d4f
 	color: #fff
-	font-size: 1.3rem 
+	font-size: 1.3rem
+	
+// titles
+.h1
+	margin-bottom: 20px
+	font-size: 3.6rem
+	font-weight: 900
+	color: $dark
+.h6
+	margin-bottom: 15px
+	font-size: 1.8rem
+	font-weight: bold 
+	color: $black
+	text-transform: uppercase	
+.divide	
+	height: 1px
+	background: #d1d1d1
+	margin: 22px 0
+.title
+	position: absolute
+	top: 42px
+	left: -32px
+	height: 62px
+	background: #fff
+	z-index: 3
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 100%
+		+arr(62, 62, #fff, bl)
+	&:before
+		content: ""
+		position: absolute
+		top: 100%
+		left: 0
+		+arr(32, 32, #acb4bf, tr)
+	.title__shadow
+		position: absolute
+		top: 55px
+		height: 13px
+		left: 26px
+		right: -50px
+		z-index: -1
+		background: rgba(#000, 0.4)
+		transform: rotate(-3deg)
+	span
+		display: block
+		background: #fff 
+		padding: 6px 42px 6px 59px
+		font-size: 3.6rem
+		text-transform: uppercase
+		color: $black 
+// breadcrumbs
+.breadcrumbs
+	margin-bottom: 15px
+	ul
+		font-size: 0
+		li
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			margin-left: 13px
+			&:before
+				content: "/"
+				position: absolute
+				top: 0px
+				left: -8px
+				color: #979797
+				font-size: 1.3rem
+			&:first-child
+				margin-left: 0
+				&:before
+					display: none
+			&:last-child
+				a
+					text-decoration: none	
+			a
+				color: #979797
+				font-size: 1.3rem
+				text-decoration: underline
+				&:hover
+					text-decoration: none	
 	
 // grid
 .row
@@ -207,7 +289,6 @@ body
 .time
 	position: relative
 	float: right
-	padding-right: 30px
 	padding-top: 19px
 	padding-left: 38px 
 	font-size: 1.2rem
