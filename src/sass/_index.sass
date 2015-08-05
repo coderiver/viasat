@@ -44,8 +44,8 @@
 		line-height: 1.2
 .btn
 	display: inline-block
-	height: 55px
-	padding: 15px 30px
+	height: 42px
+	padding: 11px 30px
 	border: 2px solid #fff
 	border-radius: 3px
 	text-align: center
@@ -58,18 +58,41 @@
 	&:hover
 		color: $dark
 		background: #fff
+	&.btn_more
+		border-color: #adafb1
+		color: $dark
+		&:hover
+			background: #adafb1
+			color: #fff				 
 	&.btn_blue
 		border-color: #247bd7
 		color: #247bd7
 		&:hover
 			background: #247bd7
 			color: #fff 	
+	&.btn_purple
+		border-color: #9b1d4f
+		color: #9b1d4f
+		&:hover
+			background: #9b1d4f
+			color: #fff 
 	&.btn_full
+		height: 55px
+		padding: 15px 30px
 		background: #fff
 		color: $dark 
 		&:hover
 			background: transparent
 			color: #fff	
+		&.btn_purple
+			background: #9b1d4f
+			color: #fff
+			&:hover
+				background: #cf2669
+				border-color: #cf2669 
+		&.btn_small
+			height: 42px
+			padding: 11px 30px		
 .tv-guide
 	height: 210px
 	padding: 38px 40px
