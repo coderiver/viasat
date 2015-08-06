@@ -164,6 +164,7 @@
 				a
 					color: #fff				   					
 .blog
+	padding-top: 20px
 	.blog__more
 		text-align: center
 .blog-category
@@ -386,10 +387,100 @@
 			font-weight: bold
 			&:hover, &.is-active
 				background: #fff
-				color: #317bd3				 
-
-
-
+				color: #317bd3
+// program
+.program
+	.breadcrumbs
+		ul
+			li
+				&:before
+					color: #fff
+				a
+					color: #fff
+	&.program_action
+		.program__topper
+			background: #ab0621
+	.program__topper
+		padding-top: 20px											 
+.preview
+	position: relative	
+	height: 424px
+	.preview__poster
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0	
+		+cover
+		z-index: 1
+	.preview__channel
+		position: absolute
+		top: 32px
+		right: 32px
+		bottom: 32px
+		width: 333px
+		padding: 18px 32px 146px
+		background: #fff
+		z-index: 3
+		img
+			margin-bottom: 7px 
+		p
+			line-height: 1.3
+			margin-bottom: 15px	
+	.preview__more
+		text-align: center
+		a
+			text-transform: uppercase
+			color: #d00829
+			font-weight: 500 
+			text-decoration: none		
+	.preview__bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		+clr
+		right: 365px
+		height: 105px 
+		padding: 15px 30px 
+		background: rgba(#000, 0.5)  
+		z-index: 2 
+	.preview__add, .preview__view
+		position: absolute 
+		bottom: 73px
+		left: 0
+		right: 0
+		height: 73px
+		line-height: 73px
+		text-align: center
+		color: #fff
+		text-transform: uppercase
+		text-decoration: none
+		background: #d00829
+		+transition(background 300ms)
+		&:hover
+			background: #a8070e
+	.preview__view
+		bottom: 0
+		background: #000
+		+transition(all 300ms)
+		&:hover
+			background: #fff
+			color: $dark
+	.preview__right
+		float: right
+		width: 100px
+		text-align: center
+		p
+			font-weight: 900
+			font-size: 3.2rem
+			color: #fff  
+		span
+			font-size: 1.8rem
+			font-weight: 300 
+			color: #fff
+	.preview__left
+		overflow: hidden
+		color: #fff					
 
 
 
