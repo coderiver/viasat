@@ -113,4 +113,27 @@ $(document).ready(function() {
         
     });
 
+    // popup init
+    $('.js-popup-btn').on('click', function() {
+    	var link = $(this).data('link');
+
+    	$('[data-popup='+link+']').fadeIn();
+    	$('body').addClass('no-scroll');
+    });
+
+    $('.overlay span').on('click', function() {
+    	$(this).parent().fadeOut();
+    });
+    $('.js-popup-close').on('click', function() {
+    	$(this).parents('.overlay').fadeOut();
+    });
+
+
+
+
+
+
+
+
+
 });
