@@ -55,6 +55,11 @@
 	color: #fff
 	font-size: 1.4rem
 	transition: color 300ms, background 300ms
+	span
+		display: inline-block
+		vertical-align: middle
+	i
+		margin-right: 13px 	
 	&:hover
 		color: $dark
 		background: #fff
@@ -76,6 +81,12 @@
 		&:hover
 			background: #9b1d4f
 			color: #fff 
+	&.btn_action
+		border-color: #ab0621
+		color: #ab0621
+		&:hover
+			background: #ab0621
+			color: #fff 		
 	&.btn_full
 		height: 55px
 		padding: 15px 30px
@@ -262,6 +273,7 @@
 	color: #fff
 	text-align: right
 	font-size: 1.2rem
+	+gpu
 	&.channel_premium
 		background: rgba($premium, 0.6) 
 	&.channel_megahit

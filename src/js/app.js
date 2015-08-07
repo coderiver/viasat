@@ -38,6 +38,10 @@ $(document).ready(function() {
 		slidesToShow: 4,
 		slidesToScroll: 1
 	});
+	$('.js-carousel').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 
 	// select
 	 $(document).click(function() {

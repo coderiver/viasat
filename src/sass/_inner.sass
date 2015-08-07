@@ -130,6 +130,8 @@
 .recommends
 	background: #504f58
 	padding: 28px 0 48px
+	&.recommends_action
+		background: #ab0621	
 	.recommends__title
 		margin-bottom: 20px
 		padding-left: 10px
@@ -137,6 +139,10 @@
 		color: #fff
 		text-transform: uppercase
 		font-weight: 300 
+		span
+			font-weight: 500 
+	.slick-list 
+		margin: 0 -11px 		
 	.poster
 		width: 266px
 		margin: 0 auto
@@ -400,7 +406,26 @@
 	&.program_action
 		.program__topper
 			background: #ab0621
+			&:before
+				content: ""
+				position: absolute
+				top: -80px
+				right: 10%
+				width: 532px
+				height: 350px
+				background: url(../img/stripes1.png)
+				+cover  
+			&:after
+				content: ""
+				position: absolute
+				top: 80%
+				left: 13%
+				width: 556px
+				height: 319px
+				background: url(../img/stripes2.png)
+				+cover  	
 	.program__topper
+		position: relative
 		padding-top: 20px											 
 .preview
 	position: relative	
@@ -422,6 +447,7 @@
 		padding: 18px 32px 146px
 		background: #fff
 		z-index: 3
+		+gpu
 		img
 			margin-bottom: 7px 
 		p
@@ -443,7 +469,7 @@
 		height: 105px 
 		padding: 15px 30px 
 		background: rgba(#000, 0.5)  
-		z-index: 2 
+		z-index: 999
 	.preview__add, .preview__view
 		position: absolute 
 		bottom: 73px
@@ -482,9 +508,162 @@
 		overflow: hidden
 		color: #fff					
 
+.schedule
+	.schedule__title
+		margin-bottom: 15px
+		font-weight: 300
+		text-transform: uppercase
+		font-size: 2.4rem  
+	.schedule__list
+		position: relative
+		top: -10px	
+	.schedule__item
+		+clr
+		margin-bottom: 10px
+		height: 150px
+		&:first-child
+			height: 290px
+			.schedule__link
+				margin-top: -20px
+				height: 310px 
+			.schedule__content	
+				padding-top: 20px
+				height: 290px 
+				&:before
+					content: ""
+					position: absolute
+					top: -20px
+					right: 0
+					+arr(20, 20, #a9a9a9, br) 
+	.schedule__link
+		position: relative
+		float: right
+		width: 41%
+		height: 150px 
+		min-height: 100% 
+		overflow: hidden
+		&:hover
+			.schedule__overlay
+				opacity: 1 
+		img
+			display: block
+			width: 100%
+			min-height: 100% 
+	.schedule__overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0		
+		background: rgba(#000, 0.6)
+		+vertical
+		opacity: 0
+		+tr(opacity 300ms) 
+		span
+			display: inline-block
+			vertical-align: middle
+	.schedule__content
+		position: relative
+		float: left
+		width: 59%
+		height: 150px
+		padding: 25px 30px
+		background: #FFF 
+	.schedule__descr
+		line-height: 1.3	
+	.schedule__topper
+		+clr
+		margin-bottom: 10px 
+	.schedule__left
+		float: left
+		width: 75% 
+		.h3
+			font-weight: 500
+	.schedule__right
+		float: right
+		width: 25%
+		text-align: center
+	.schedule__timing
+		position: relative
+		padding-top: 10px
+		padding-left: 32px
+		font-size: 1.2rem
+		.icon-time
+			position: absolute
+			top: 12px
+			left: 0
+			font-size: 26px
+			color: #b2b2b2
+	.schedule__time
+		font-size: 2.4rem
+		font-weight: 900	 		    			 
+.live
+	height: 38px
+	padding: 11px 0 
+	border-radius: 3px
+	background: #b2b2b2
+	color: #fff
+	text-transform: uppercase
+	font-size: 1.2rem
+.socials
+	+clr
+	.socials__links
+		float: left
+		ul
+			border-radius: 3px
+			overflow: hidden
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					display: block
+					width: 58px
+					height: 43px
+					+vertical
+					color: #fff
+					font-size: 1.6rem
+					+tr(background 300ms)
+				.socials__fb
+					background: #3a5ba0
+					&:hover
+						background: darken(#3a5ba0, 5%)
+				.socials__tw
+					background: #2ca7e0
+					&:hover
+						background: darken(#2ca7e0, 5%)
+				.socials__gp
+					background: #e13719 
+					&:hover
+						background: darken(#e13719, 5%)
+	.socials__likes
+		float: right
+		ul
+			border-radius: 3px
+			overflow: hidden
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					display: block
+					width: 80px
+					height: 43px
+					background: #d9d9d9
+					color: #717171
+					+vertical
+					+tr(background 300ms)
+					&:hover
+						background: darken(#d9d9d9, 5%) 
+					i
+						font-size: 1.6rem
+					span
+						display: inline-block
+						vertical-align: middle
+						font-size: 1.2rem
+						margin-left: 5px					 
 
-
-
+	  
 
 
 

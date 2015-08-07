@@ -88,12 +88,21 @@
 	&:before
 		height: 14px
 		line-height: 14px
-	.slider &
+	.slider &, .carousel &
 		height: 30px 
 		margin-top: -15px
 		&:before
 			height: 30px
-			line-height: 30px	
+			line-height: 30px
+	.recommends &
+		top: 0
+		bottom: 0
+		height: auto
+		margin-top: 0
+		width: 28px
+		+tr(background 300ms)
+		&:hover
+			background: rgba(#fff, 0.2)		
 .slick-prev
 	left: -20px
 	&:before
@@ -103,13 +112,21 @@
 		font-size: 14px
 		font-family: 'icomoon'
 		color: #fff 
-	.slider &
+	.slider &, .carousel &
 		left: 14px
 		&:before
 			content: "\e60e"
 			font-size: 30px
 			color: #b4b4b4
-				
+	.carousel &
+		&:before
+			color: #fff		
+	.recommends &
+		left: -26px	
+		&:before
+			content: "\e60e"
+			font-size: 18px
+			color: #fff		
 .slick-next
 	right: -20px
 	&:before
@@ -119,12 +136,21 @@
 		font-size: 14px
 		font-family: 'icomoon'
 		color: #fff 
-	.slider &
+	.slider &, .carousel &
 		right: 14px
 		&:before
 			content: "\e60b"
 			font-size: 30px
-			color: #b4b4b4	
+			color: #b4b4b4
+	.carousel &
+		&:before
+			color: #fff
+	.recommends &
+		right: -26px
+		&:before
+			content: "\e60b"
+			font-size: 18px
+			color: #fff						
 .slick-dots
 	text-align: center
 	position: absolute
