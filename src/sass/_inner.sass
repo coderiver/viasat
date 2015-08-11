@@ -1059,10 +1059,79 @@
 				bottom: 0
 				border: 2px solid #fff
 				z-index: 2
-
-			 		  
-
-
+// get
+.get
+	padding-top: 20px
+	.get__topper
+		background: #e9e9e9
+	.get__content
+		position: relative
+	.get__btns
+		position: absolute
+		top: 30px
+		left: 0
+		right: 0
+		text-align: right 	
+		z-index: 2	 		 		  
+.map
+	position: relative
+	height: 770px
+	z-index: 1
+#map-canvas
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	
+.prov
+	text-align: left
+	.prov__row
+		position: relative
+		+clr
+		padding: 5px 0 
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 80%
+			height: 1px
+			background: #efefef
+		&:first-child
+			&:before
+				display: none	  
+	.prov__col
+		float: left
+		width: 20%
+		min-height: 30px
+	.prov__col2
+		float: left
+		width: 40%
+		min-height: 30px
+	.prov__title
+		padding: 5px 25px
+		background: #efefef
+		font-size: 1.6rem
+		font-weight: bold
+		color: $dark
+		text-transform: uppercase
+	.prov__details
+		background: #fff
+		padding: 5px 25px 30px
+		font-size: 1.3rem
+		a
+			color: #247bd7
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+		ul
+			li
+				padding: 5px 8px
+				border-top: 1px solid #efefef 
+				&:first-child
+					border-top: none 		   		
+				
 
 
 
