@@ -225,10 +225,19 @@ $(document).ready(function() {
         };
     }
     
-    google.maps.event.addDomListener(window, 'load', initialize);
+    if ($('#map-canvas').length) {
+        google.maps.event.addDomListener(window, 'load', initialize);
+    };
+    
 
 
+    // lists
 
+    var letters = "abcdefghijklmnopqrstuvwxyz";
+    
+    $.each($(".content ul > li"), function(i) {
+        $(this).attr("mark", letters[i] + ")");
+    });
 
 
 
