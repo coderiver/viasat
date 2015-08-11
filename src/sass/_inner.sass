@@ -439,6 +439,18 @@
 						opacity: 0.5 
 					a
 						color: rgba(#fff, 0.5)
+	.program__top
+		position: relative			
+	.program__prev, .program__next
+		position: absolute
+		left: 15px
+		top: 50%
+		margin-top: -21px
+		font-size: 30px
+		color: #fff 	
+	.program__next
+		left: auto
+		right: 15px			
 	&.program_action
 		.program__topper
 			background: #ab0621
@@ -470,12 +482,12 @@
 				height: 181px
 				background: url(../img/stripes7.png) 
 			&:after 
-				background-image: url(../img/stripes6.png)
+				background-image: url(../img/stripes8.png)
 	&.program_nature
 		.program__topper
 			background: #618005
 			&:before
-				background: url(../img/stripes9.png)
+				background-image: url(../img/stripes9.png)
 			&:after
 				background: url(../img/stripes10.png)																 
 .preview
@@ -840,6 +852,18 @@
 	&.movie_premium
 		.movie__topper
 			background: #352361
+	&.movie_action
+		.movie__topper
+			background: #ab0621 
+	&.movie_comedy
+		.movie__topper
+			background: #e66d20	
+	&.movie_megahit
+		.movie__topper
+			background: #004681
+	&.movie_nature
+		.movie__topper
+			background: #618005 							
 	.movie__topper
 		padding-top: 15px		
 .item
