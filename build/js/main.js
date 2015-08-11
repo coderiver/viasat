@@ -233,10 +233,12 @@ $(document).ready(function() {
 
     // lists
 
-    var letters = "abcdefghijklmnopqrstuvwxyz";
-    
-    $.each($(".content ul > li"), function(i) {
-        $(this).attr("mark", letters[i] + ")");
+    var letters = "абвгдежзиклмнопрстуфхцчшщэюя";
+    $.each($('ol'), function() {
+        var item = $(this).find('li');
+        item.each(function(i){
+            $(this).attr("mark", letters[i] + ")");
+        });
     });
 
 
