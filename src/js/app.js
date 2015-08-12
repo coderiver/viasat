@@ -203,13 +203,22 @@ $(document).ready(function() {
 
     // lists
 
-    var letters = "абвгдежзиклмнопрстуфхцчшщэюя";
+    var letters = "abcdefghijklmnoprstuvwxyz";
     $.each($('ol'), function() {
         var item = $(this).find('li');
         item.each(function(i){
             $(this).attr("mark", letters[i] + ")");
         });
     });
+
+    // horizontal mousewheel scroll event
+   //  $('.js-tvguide').mousewheel(function(event, delta) {
+
+   //    this.scrollLeft -= (delta * 25);
+    
+   //    event.preventDefault();
+
+   // });
 
 
 
