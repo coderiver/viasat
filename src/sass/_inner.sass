@@ -788,7 +788,7 @@
 	z-index: 999
 	overflow-y: auto
 	+vertical
-	span
+	& > span
 		position: absolute
 		top: 0
 		bottom: 0
@@ -802,6 +802,8 @@
 	width: 700px
 	max-width: 100%
 	z-index: 2
+	&.popup_tv
+		width: 520px
 	.popup__topper
 		padding: 15px 25px 
 		text-align: left
@@ -1483,11 +1485,92 @@
 			box-shadow: inset 0 0 0 3px #bcc85c
 			&:before
 				background: #bcc85c			
-
-
-
-
-
+.tv-program
+	position: relative
+	min-height: 240px
+	font-size: 1.4rem
+	background: #efefef
+	.tv-program__poster
+		position: absolute
+		top: 20px
+		left: 20px
+		height: 200px
+		width: 144px
+		background: #d9d9d9 url(../img/holder.png) 50% 50% no-repeat
+		font-size: 0
+		z-index: 2
+		img
+			width: 100%
+			height: 100%  
+	.tv-program__topper
+		padding: 20px 20px 20px 184px
+		background: #fff  
+		text-align: left
+	.tv-program__header
+		+clr
+	.tv-program__left
+		width: 70%
+		float: left
+	.tv-program__right
+		float: right
+		width: 30%	 
+		text-align: right	
+	.tv-program__title
+		margin-bottom: 10px
+		font-weight: bold
+		font-size: 1.6rem
+		color: $dark 
+	.tv-program__source
+		margin-bottom: 15px
+		font-size: 1.3rem
+		color: #7f7f7f
+	.tv-program__time
+		font-size: 2rem
+		font-weight: bold
+		line-height: 1
+		color: $dark 
+		span
+			font-size: 1.3rem
+			font-weight: normal
+	.tv-program__info
+		font-size: 1.3rem
+		color: #7f7f7f
+	.tv-program__content
+		padding: 20px 20px 20px 184px
+		background: #efefef  	
+		text-align: left
+	.tv-program__table
+		width: 100% 
+		font-size: 1.3rem
+		line-height: 1.2
+		color: $dark 
+		margin-bottom: 10px
+		tr
+			td
+				padding-bottom: 5px
+				&:first-child
+					width: 100px
+	.tv-program__order
+		text-align: right				
+.order
+	position: relative
+	display: inline-block
+	height: 40px
+	border-radius: 3px
+	background: #d70000
+	padding: 5px 68px 5px 20px
+	color: #fff
+	text-transform: uppercase
+	font-size: 1.4rem
+	font-weight: bold   
+	transition: background 300ms					 
+	.icon-bell
+		position: absolute
+		top: 10px
+		right: 10px
+		font-size: 18px
+	&:hover
+		background: darken(#d70000, 5%) 	
 
 
 
