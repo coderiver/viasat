@@ -80,6 +80,10 @@ $(document).ready(function() {
     
 	// mobile menu
 
+    $('.js-mob-menu-close').on('click', function() {
+        $('.js-mob-menu').removeClass('is-open'); 
+    });
+
     $('.js-hamburger').on('click', function(event) {
         $('.js-mob-menu').addClass('is-open');
         event.stopPropagation();

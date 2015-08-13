@@ -269,7 +269,6 @@ h4, .h4
 			display: block	
 	&__list
 		+clr
-		+gpu
 		&.is-open
 			transform: translateX(0)
 		& > div
@@ -347,7 +346,6 @@ h4, .h4
 	background: #fff
 	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.29)
 	transition: transform 300ms
-	+gpu
 	z-index: 99
 	+r(767)
 		position: fixed
@@ -355,6 +353,7 @@ h4, .h4
 		bottom: 0
 		right: 0
 		left: 0
+		overflow-y: auto
 		transform: translateX(100%)
 		z-index: 999
 		&.is-open
@@ -420,6 +419,8 @@ h4, .h4
 			vertical-align: top
 			width: 50%
 			margin-top: 30px
+			+r(600)
+				width: 100%
 	.dropdown__links
 		+justify
 		li
@@ -465,21 +466,40 @@ h4, .h4
 	background: #fff
 	&__in
 		+center
-		padding: 40px 0 80px
+		padding: 40px 0 80px 
+		+r(1150)
+			padding: 40px 10px 80px
+		+r(600)
+			padding: 30px 10px 
 	.footer__left
 		float: left
 		width: 20%
 		margin-right: 5%
+		+r(600)
+			width: 100%
+			text-align: center 
+			.logo
+				display: inline-block
 	.footer__right
 		float: left
 		width: 75%
 		+clr
+		+r(600)
+			width: 100% 
+			margin-bottom: 20px
 	.footer__list
 		+clr
 	.footer__col
 		float: left
 		width: 22%
 		margin-left: 3% 
+		+r(600)
+			width: 25%
+			margin-left: 0
+		+r(480)
+			width: 100%
+			text-align: center
+			margin-bottom: 20px 	
 		& > ul
 			li
 				margin-bottom: 5px
@@ -500,6 +520,8 @@ h4, .h4
 		text-transform: uppercase
 		&:hover
 			text-decoration: underline
+		+r(480)
+			margin-bottom: 5px 	
 	.footer__post
 		text-decoration: none
 		color: $dark
