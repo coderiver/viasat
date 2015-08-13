@@ -38,22 +38,60 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 
 $(document).ready(function() {
 	    
-	var width = $('.center').outerWidth();
+    $(document).click(function() {
+        $(".js-select").removeClass("is-active");
+        $(".js-select-list").slideUp(100);
+        $('.js-mob-menu').removeClass('is-open');
+        $('.js-dropdown').removeClass('is-open');
+    });
 
 	// dropdown
+    function dropdownResize() {
+        var width = $('.center').outerWidth();
+        $('.js-dropdown').css('width', width);
+        if ($(window).width() < 768) {
+            $('.js-dropdown').css('width', '100%');
+        };
+    }
+	dropdownResize();
+    $(window).resize(function() {
+        dropdownResize();
+    });
 
-	$('.js-dropdown').css('width', width);
+    if ($(window).width() >= 768) {
+        $('.js-drop').hover(
+            function() {
+                $(this).find('.js-drop-link').addClass('is-open');
+                $(this).find('.js-dropdown').slideDown();
+            },
+            function() {
+                $(this).find('.js-drop-link').removeClass('is-open');
+                $(this).find('.js-dropdown').slideUp();
+            }
+        );
+    }
+    else {
+        $('.js-dropdown').show();    
+        
+        $('.js-drop').on('click', function() {
+            $(this).find('.js-dropdown').addClass('is-open');
+        })
+    }
+    
+	// mobile menu
 
-	$('.js-drop').hover(
-		function() {
-			$(this).find('.js-drop-link').addClass('is-open');
-			$(this).find('.js-dropdown').slideDown();
-		},
-		function() {
-			$(this).find('.js-drop-link').removeClass('is-open');
-			$(this).find('.js-dropdown').slideUp();
-		}
-	);
+    $('.js-hamburger').on('click', function(event) {
+        $('.js-mob-menu').addClass('is-open');
+        event.stopPropagation();
+    });
+    $('.js-mob-menu').on('click', function(event) {
+        event.stopPropagation();
+    });
+    $('.js-dropdown-back').on('click', function(event) {
+        $(this).parent().removeClass('is-open');
+        event.stopPropagation();
+    })
+
 
 	// slick 
 
@@ -80,12 +118,6 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1
 	});
-
-	// select
-	 $(document).click(function() {
-        $(".js-select").removeClass("is-active");
-	      $(".js-select-list").slideUp(100);
-    });
     
   // select list
     $("body").on("click",".js-select",function(event) {

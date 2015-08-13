@@ -49,6 +49,8 @@ body
 	max-width: 1150px
 	margin: 0 auto
 	+clr
+	+r(1150)
+		padding: 0 10px 
 =justify
 	text-align: justify
 	line-height: 0
@@ -251,9 +253,26 @@ h4, .h4
 		background-size: 100%   
 .menu
 	float: left
+	+r(767)
+		float: right
+		padding-top: 17px
+		padding-right: 10px
+	&__close
+		display: none
+		position: absolute
+		top: 15px
+		right: 15px
+		background: transparent
+		font-size: 20px
+		color: $dark 
+		+r(767)
+			display: block	
 	&__list
 		+clr
-		& > li
+		+gpu
+		&.is-open
+			transform: translateX(0)
+		& > div
 			float: left
 			& > a
 				position: relative
@@ -279,6 +298,47 @@ h4, .h4
 					&.icon-hamburger
 						font-size: 12px
 						margin-right: 9px
+					&.icon-next
+						display: none
+						position: relative
+						top: 1px
+						margin-left: 10px
+						font-size: 12px 
+		+r(767)
+			position: fixed
+			top: 0
+			bottom: 0
+			right: 0
+			width: 50%
+			overflow-y: auto
+			transform: translateX(100%)
+			transition: transform 300ms
+			padding-top: 50px
+			background: #fff
+			box-shadow: 0 0 7px #ccc  
+			z-index: 99
+			& > div
+				float: none
+				& > a
+					text-align: left
+					padding: 0 30px 
+					&.is-open
+						background: #fff 
+						box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29)
+					span
+						font-size: 2rem
+						&.icon-hamburger
+							display: none 
+						&.icon-next
+							display: inline-block			
+		+r(480)
+			width: 75%							
+.hamburger
+	display: none
+	font-size: 20px
+	background: transparent 
+	+r(767)
+		display: block						
 .dropdown
 	position: absolute
 	top: 100%
@@ -286,13 +346,36 @@ h4, .h4
 	transform: translateX(-50%)
 	background: #fff
 	box-shadow: 0 3px 30px rgba(0, 0, 0, 0.29)
+	transition: transform 300ms
+	+gpu
 	z-index: 99
-	.dropdown__list
-		padding: 26px 40px
+	+r(767)
+		position: fixed
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		transform: translateX(100%)
+		z-index: 999
+		&.is-open
+			transform: translateX(0)
+	.dropdown__back
+		display: none
+		position: absolute
+		top: 15px
+		left: 30px
+		background: transparent
+		font-size: 1.6rem
+		.icon-prev
+			margin-right: 10px
+		+r(767)
+			display: block
 	.dropdown__premiere
 		padding: 26px 40px 
 		background: #f8f8f8
 		border-top: 1px solid #f0f0f0
+		+r(900)
+			display: none
 	.dropdown__title
 		margin-bottom: 15px
 		font-size: 1.6rem
@@ -302,6 +385,11 @@ h4, .h4
 	.dropdown__list
 		display: table
 		width: 100% 
+		padding: 26px 40px
+		+r(900)
+			padding: 15px
+		+r(767)
+			padding: 50px 30px 30px 	 
 	.dropdown__cat
 		display: table-cell
 		vertical-align: top
@@ -311,6 +399,18 @@ h4, .h4
 		&:first-child
 			border-left: none
 			padding-left: 0
+		+r(900)	
+			padding-left: 15px
+		+r(767)
+			display: block
+			width: 100%
+			padding-top: 20px
+			padding-left: 0
+			margin-bottom: 20px
+			border-left: none
+			border-top: 1px solid #f0f0f0
+			&:first-child
+				border-top: none   	 
 	.dropdown__channels
 		font-size: 0
 		line-height: 1
@@ -342,6 +442,8 @@ h4, .h4
 	padding-left: 38px 
 	font-size: 1.2rem
 	line-height: 1
+	+r(800)
+		display: none
 	.icon-clock
 		position: absolute
 		top: 19px
