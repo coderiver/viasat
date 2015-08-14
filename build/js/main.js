@@ -179,7 +179,30 @@ $(document).ready(function() {
 	$('.js-slick').slick({
 		dots: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
 	});
 	$('.js-recommends').slick({
 		slidesToShow: 4,

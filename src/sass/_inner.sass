@@ -4,6 +4,9 @@
 	width: 65.7%
 	padding-top: 20px
 	padding-bottom: 70px
+	+r(960)
+		width: 100%
+		padding-bottom: 20px
 .sidebar
 	float: right
 	width: 31.7%  
@@ -11,7 +14,21 @@
 	&.sidebar_low
 		padding-top: 140px
 	.info
-		text-align: center	
+		text-align: center
+	+r(960)
+		width: 100%
+		padding-top: 0
+		margin-bottom: 20px
+		&.sidebar_low
+		 padding-top: 0		
+.banner
+	img
+		width: 100%	
+	+r(960)
+		float: right
+		width: 45%
+	+r(480)
+		width: 100% 		
 .channels
 	.channels__item
 		position: relative
@@ -20,6 +37,18 @@
 		padding: 340px 30px 50px 
 		&:first-child
 			margin-top: 0
+		+r(1150)
+			padding: 340px 15px 50px
+		+r(768)
+			padding: 340px 15px 15px
+		+r(568)
+			padding: 300px 15px 15px
+		+r(479)
+			padding: 300px 15px 0
+		+r(414)
+			padding: 215px 15px 0
+		+r(320)
+			padding: 180px 15px 0 		 	 	
 		.channels__films, .channels__discovery, .channels__sport
 			position: absolute
 			top: 0
@@ -32,9 +61,11 @@
 				position: relative
 				width: 100% 
 				z-index: 1
+			.channels__fon
+				position: relative	
 			.channels__bg
 				position: absolute
-				top: 340px
+				bottom: 0
 				height: 100px 
 				right: 0
 				left: 0
@@ -54,6 +85,14 @@
 		margin-bottom: -4%
 		+clr
 		z-index: 2
+		+r(1150)
+			margin-left: -2%
+			margin-bottom: -2%
+		+r(960)
+			font-size: 0
+		+r(479)
+			margin-left: 0
+			margin-bottom: 0		 
 	.channels__block
 		float: left
 		width: 46%
@@ -62,15 +101,36 @@
 		margin-bottom: 4%
 		padding-bottom: 39%
 		background: #fff
+		+r(1150)
+			width: 48%
+			margin-left: 2%
+			margin-bottom: 2%
+		+r(960)
+			float: none
+			display: inline-block
+			vertical-align: top
+			height: auto
+			padding-bottom: 0
+		+r(479)
+			width: 100%
+			margin-left: 0
+			margin-bottom: 15px  		
 	.channels__in
 		padding: 30px
 		& > img
 			display: inline-block
+			max-width: 100%
 			margin-bottom: 15px
 		p
 			margin-bottom: 15px
 			font-size: 1.4rem
 			color: $dark
+		+r(1150)
+			padding: 15px
+			& > img
+				margin-bottom: 10px
+			p
+				margin-bottom: 10px		 	
 	.channels__more
 		text-align: right
 		a
@@ -85,6 +145,12 @@
 .widget
 	padding: 24px 33px 37px 
 	background: #efefef
+	+r(960)
+		padding: 24px 0 37px
+		.slick-slide
+			padding: 0 16px
+		.poster__content
+			padding: 10px 
 .subscr, .feedback
 	display: block
 	height: 55px
@@ -103,7 +169,12 @@
 	margin-bottom: 20px
 	& > img
 		display: block
-		max-width: 100%	
+		width: 100%	
+	+r(960)
+		width: 45%
+		float: left
+	+r(480)
+		width: 100% 		
 // 404 error
 .error
 	padding: 125px 10px 185px

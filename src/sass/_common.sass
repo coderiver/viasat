@@ -144,6 +144,14 @@ h4, .h4
 		top: 100%
 		left: 0
 		+arr(32, 32, #acb4bf, tr)
+	+r(480)
+		top: 30px
+		left: -10px
+		height: 40px
+		&:after
+			+arr(40, 40, #fff, bl)
+		&:before
+			+arr(10, 10, #acb4bf, tr)	
 	.title__shadow
 		position: absolute
 		top: 55px
@@ -153,13 +161,27 @@ h4, .h4
 		z-index: -1
 		background: rgba(#000, 0.4)
 		transform: rotate(-3deg)
+		+r(480)
+			top: 34px
+			height: 10px
+			right: -28px
 	span
 		display: block
+		height: 62px
 		background: #fff 
 		padding: 6px 42px 6px 59px
 		font-size: 3.6rem
 		text-transform: uppercase
 		color: $black 
+		+r(1150)
+			font-size: 3rem
+			padding: 10px 42px 10px 59px
+		+r(568)
+			font-size: 2rem
+			padding: 16px 42px 16px 59px
+		+r(480)
+			height: 40px
+			padding: 7px 42px 	 	 
 	&.title_small
 		height: 32px
 		top: -32px
