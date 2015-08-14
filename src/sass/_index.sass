@@ -1,6 +1,12 @@
 // styles for index page
 .slider
 	position: relative
+	visibility: hidden
+	opacity: 0
+	transition: opacity 300ms
+	&.is-loaded
+		visibility: visible
+		opacity: 1
 	&__item
 		position: relative
 		width: 33.3%
@@ -16,6 +22,18 @@
 		background: #fff
 		+gpu
 		z-index: 2
+		+r(1280)
+			padding: 20px 
+		+r(1024)
+			left: 20px
+			right: 20px
+			bottom: 20px
+		+r(768)
+			left: 10px
+			right: 10px
+		+r(360)
+			padding: 10px
+			bottom: 10px 			
 	&__topper
 		margin-bottom: 5px
 		.tag
@@ -28,10 +46,16 @@
 	&__title
 		font-size: 2.4rem
 		color: $dark
+		+r(1280)
+			font-size: 2rem
 .main-links
 	padding: 50px 0 
 	background: url(../img/bg1.jpg)
 	+cover
+	+r(1150)
+		padding: 20px 0 
+	+r(360)
+		padding: 10px 0 	
 .filmslib
 	height: 210px
 	padding: 38px 40px
@@ -41,9 +65,16 @@
 		color: #fff
 		font-size: 1.4rem
 		font-weight: 300
-		line-height: 1.2
+		line-height: 1.2	
+	+r(1024)
+		padding: 20px
+		p
+			margin-bottom: 30px
+	+r(800)
+		padding: 10px 			
 .btn
 	display: inline-block
+	max-width: 100%
 	height: 42px
 	padding: 11px 30px
 	border: 2px solid #fff
@@ -63,6 +94,8 @@
 	&:hover
 		color: $dark
 		background: #fff
+	+r(568)
+		padding: 11px 20px 	
 	&.btn_more
 		border-color: #adafb1
 		color: $dark
@@ -154,6 +187,13 @@
 			font-size: 1.4rem
 			font-weight: 300
 			line-height: 1.2
+	+r(1024)
+		padding: 20px
+		&__in
+			p
+				margin-bottom: 30px
+	+r(800)
+		padding: 10px 					
 .viasat
 	display: block
 	margin-bottom: 24px
@@ -164,6 +204,13 @@
 	text-align: center
 	text-decoration: none
 	font-size: 0
+	+r(767)
+		width: 49%
+		float: left
+		margin-bottom: 0
+	+r(360)
+		width: 100%
+		margin-bottom: 10px 	
 	p
 		font-size: 1.4rem
 		color: #dfdfdf
@@ -180,6 +227,14 @@
 	+cover
 	text-align: center
 	text-decoration: none
+	+r(767)
+		width: 49%
+		margin-left: 2%
+		float: left	
+	+r(360)
+		width: 100%
+		margin-left: 0 	
+		margin-bottom: 0
 	p
 		font-size: 1.4rem
 		color: #dfdfdf
@@ -187,6 +242,8 @@
 		
 .m-films, .m-sport
 	padding: 50px 0 
+	+r(1024)
+		padding: 20px 0 
 .m-info
 	font-size: 1.6rem
 	color: $dark
@@ -195,9 +252,21 @@
 	margin-bottom: 30px 
 	font-size: 3.2rem
 	font-weight: 500 
+	+r(1280)
+		font-size: 2.8rem
+	+r(1024)
+		font-size: 2.4rem
+		line-height: 1.2
+		margin-bottom: 20px
+	+r(479)
+		margin-bottom: 10px
+		& + p
+			margin-bottom: 20px		
 .m-discovery
 	background: #f1f1f1
 	padding: 50px 0 
+	+r(1024)
+		padding: 20px 0 
 		
 // poster
 .poster
@@ -205,6 +274,8 @@
 	display: block
 	height: 210px
 	background: #fff
+	+r(1150)
+		height: auto
 	&.poster_premium
 		.poster__content
 			background: $premium
@@ -254,8 +325,11 @@
 		height: 230px
 		.poster__content
 			height: 89px
-		.channel
-			bottom: 89px	
+		+r(1150)
+			height: auto
+			.poster__content
+				position: relative
+				height: auto
 	.filmbase &
 		height: 245px
 		.poster__content
@@ -263,16 +337,14 @@
 		.poster__title
 			width: 100%
 			float: none
-			margin-bottom: 5px
-		.channel
-			bottom: 104px	 		
+			margin-bottom: 5px	 		
 	& > img
 		display: block
 		width: 100%
 		max-height: 100%
 	.poster__content
 		position: absolute
-		bottom: 0
+		bottom: 100%
 		right: 0
 		left: 0
 		height: 65px 
@@ -292,6 +364,8 @@
 	.poster__info
 		float: right
 		width: 25%
+		+r(479)
+			text-align: right
 	.poster__time
 		font-size: 1.8rem
 		font-weight: 500
@@ -301,7 +375,7 @@
 		color: $black 
 .channel
 	position: absolute
-	bottom: 65px
+	bottom: 100%
 	left: 0
 	right: 0
 	height: 30px
@@ -333,6 +407,8 @@
 .m-subscribe
 	padding: 37px 0 44px
 	background: #fff
+	+r(360)
+		padding: 20px 0 
 .subscribe
 	text-align: center
 	font-size: 1.4rem
@@ -343,6 +419,9 @@
 		font-size: 3rem
 		font-weight: bold
 		text-transform: uppercase
+		+r(360)
+			font-size: 2.4rem
+			margin-bottom: 10px 
 	.subscribe__form
 		position: relative
 		max-width: 420px

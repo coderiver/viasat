@@ -34,7 +34,8 @@ $sport-h: #00b7e4
 
 html
 	font-size: 10px
-
+	+r(800)
+		font-size: 9px
 body
 	font-family: 'Roboto', sans-serif 
 	font-size: 1.4rem
@@ -50,7 +51,9 @@ body
 	margin: 0 auto
 	+clr
 	+r(1150)
-		padding: 0 10px 
+		padding: 0 20px
+	+r(768)
+		padding: 0 10px 	 
 =justify
 	text-align: justify
 	line-height: 0
@@ -217,13 +220,35 @@ h4, .h4
 	margin-left: -2%
 	& > div, & > a
 		margin-left: 2%
+	+r(479)
+		margin-left: 0
+		& > div, & > a
+			margin-left: 0	
 .col2
 	float: left
 	width: 48%
+	+r(767)
+		margin-bottom: 2%
+	+r(479)
+		width: 100% 
+	+r(360)
+		margin-bottom: 10px		
 	 
 .col4
 	float: left
-	width: 23%		 	 
+	width: 23%	
+	+r(767)
+		width: 48%
+		margin-bottom: 2%
+		&.wide
+			width: 98%
+			margin-bottom: 0
+	+r(479)
+		width: 100%
+		&.wide
+			width: 100%
+	+r(360)
+		margin-bottom: 10px		 		
 
 // header
 .header
@@ -318,9 +343,22 @@ h4, .h4
 			z-index: 99
 			& > div
 				float: none
+				padding: 0 30px 
+				&:before
+					content: ""
+					position: absolute
+					bottom: 0
+					left: 30px
+					right: 30px
+					height: 1px
+					background: #d5d5d5
+				&:last-child
+					&:before
+						display: none	
 				& > a
 					text-align: left
-					padding: 0 30px 
+					padding: 0 
+					border-bottom: 1px solid #D5D5D5 
 					&.is-open
 						background: #fff 
 						box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29)
@@ -348,7 +386,7 @@ h4, .h4
 	transition: transform 300ms
 	z-index: 99
 	+r(767)
-		position: fixed
+		position: absolute
 		top: 0
 		bottom: 0
 		right: 0
@@ -388,6 +426,7 @@ h4, .h4
 		+r(900)
 			padding: 15px
 		+r(767)
+			display: block
 			padding: 50px 30px 30px 	 
 	.dropdown__cat
 		display: table-cell
@@ -481,7 +520,7 @@ h4, .h4
 			.logo
 				display: inline-block
 	.footer__right
-		float: left
+		float: right
 		width: 75%
 		+clr
 		+r(600)
@@ -496,9 +535,11 @@ h4, .h4
 		+r(600)
 			width: 25%
 			margin-left: 0
+			padding-right: 5px
 		+r(480)
 			width: 100%
 			text-align: center
+			padding-right: 0
 			margin-bottom: 20px 	
 		& > ul
 			li
