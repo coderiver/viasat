@@ -103,15 +103,22 @@
 	margin-bottom: 20px
 	& > img
 		display: block
-		max-width: 100%
-		
+		max-width: 100%	
 // 404 error
 .error
 	padding: 125px 10px 185px
 	text-align: center
+	+r(768)
+		padding: 100px 10px 150px
+	+r(600)
+		padding: 80px 10px 120px
+	+r(480)
+		padding: 50px 10px 	  
 	&__img
 		margin-bottom: 60px
 		font-size: 0
+		img
+			max-width: 100%
 	&__content
 		max-width: 520px
 		margin: 0 auto 
@@ -125,13 +132,23 @@
 		a, span
 			display: inline-block
 			vertical-align: middle
+			+r(480)
+				display: block
+				margin: 0 auto 20px 
 		span
 			margin: 0 20px
 			font-size: 1.4rem
-			font-weight: 500
+			font-weight: 500			
 .recommends
 	background: #504f58
 	padding: 28px 0 48px
+	overflow: hidden
+	& > .center
+		padding: 0 28px
+		+r(768)
+			padding: 0 15px 
+		+r(640)
+			padding: 0 10px 
 	&.recommends_action
 		background: #ab0621
 	&.recommends_comedy
@@ -150,7 +167,11 @@
 		text-transform: uppercase
 		font-weight: 300 
 		span
-			font-weight: 500 
+			font-weight: 500
+		+r(768)
+			padding-left: 0 
+		+r(480)
+			text-align: center	 
 	.slick-list 
 		margin: 0 -11px 		
 	.poster
