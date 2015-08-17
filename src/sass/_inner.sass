@@ -444,6 +444,12 @@
 	cursor: pointer
 	font-size: 14px
 	color: #848484
+	+r(960)
+		display: block
+		width: 100%
+		padding: 0 10px 
+		border: 1px solid #f1f1f1
+		border-radius: 3px 
 	select
 		opacity: 0
 		visibility: hidden
@@ -488,10 +494,17 @@
 			padding: 5px 11px
 			cursor: pointer
 			line-height: 1
+		+r(960)
+			left: 0
+			right: 0
+			width: auto	
+			transform: translateX(0)
 .filmbase
 	padding-bottom: 70px
 	.poster
 		margin-bottom: 20px
+		+r(1150)
+			height: auto
 	.filmbase__more
 		text-align: center 		
 // filters
@@ -500,6 +513,38 @@
 	padding-bottom: 15px
 	border-bottom: 1px solid #d7d7d7
 	margin-bottom: 20px
+	.filters__wrap
+		+r(960)
+			position: fixed
+			top: 0
+			left: 0
+			bottom: 0
+			width: 300px
+			padding: 30px  
+			overflow-y: auto
+			box-shadow: 0 0 7px #989797
+			background: #fff
+			transform: translateX(-100%)
+			transition: transform 300ms
+			z-index: 99
+			&.is-open
+				transform: translateX(0)
+		+r(480)
+			width: 250px 
+			padding: 20px 	
+	.filters__mob
+		display: none
+		height: 35px
+		padding: 8px 10px 
+		border-radius: 3px
+		background: transparent
+		border: 2px solid #adafb1
+		text-transform: uppercase
+		color: $dark
+		font-weight: 500
+		font-size: 1.4rem   
+		+r(960)
+			display: inline-block
 	.filters__item
 		float: left
 		border-left: 1px solid #dadada
@@ -508,19 +553,80 @@
 		&:first-child
 			border-left: none
 			padding-left: 0
+		+r(960)
+			float: none
+			border: none
+			padding-right: 0
+			padding-left: 0 
+			margin-bottom: 30px	
 	.filters__title
 		display: inline-block
 		vertical-align: middle
 		font-size: 1.4rem
 		color: $dark
-		margin-right: 11px 
+		margin-right: 11px
+		+r(960)
+			display: block
+			margin-bottom: 20px 
 	.filters__right
 		float: right
+		.filters__title
+			display: none
+		+r(960)
+			float: none
+			.filters__title
+				display: block
 .search
+	position: relative
 	height: 35px
 	line-height: 35px
-	img
-		vertical-align: middle			 	 
+	z-index: 2
+	& > img
+		position: relative
+		vertical-align: middle
+		margin-right: 5px
+		cursor: pointer
+		z-index: 2
+	.search__form
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		background: #fff
+		border-radius: 3px
+		visibility: hidden
+		opacity: 0
+		transition: opacity 300ms
+		z-index: 1
+		&.is-visible
+			visibility: visible
+			opacity: 1
+			z-index: 2 
+		input
+			height: 25px
+			padding: 0 25px 0 10px 
+			font-family: 'Roboto', sans-serif
+			font-size: 1.6rem 
+		button
+			position: absolute
+			top: 9px
+			right: 5px
+			background: transparent
+	+r(960)
+		border: 1px solid #f1f1f1
+		border-radius: 3px
+		& > img
+			display: none
+		.search__form
+			position: relative
+			top: auto
+			bottom: auto
+			right: auto	
+			height: 33px
+			visibility: visible
+			opacity: 1 
+			button
+				top: 7px
 .sortby
 	display: inline-block
 	vertical-align: middle
@@ -540,6 +646,13 @@
 			&:hover, &.is-active
 				background: #fff
 				color: #317bd3
+	+r(960)
+		li
+			display: block
+			margin: 0 0 5px 
+			a
+				padding: 8px 10px 
+				border: 1px solid #f1f1f1			
 // program
 .program
 	.breadcrumbs

@@ -2,12 +2,35 @@ $(document).ready(function() {
 	    
     $(document).click(function() {
         $(".js-select").removeClass("is-active");
-        $(".js-select-list").slideUp(100);
+        $(".js-select-list").slideUp(300);
         $('.js-mob-menu').removeClass('is-open');
         $('.js-dropdown').removeClass('is-open');
+        $('.js-search-form').removeClass('is-visible');
+        $('.js-filters').removeClass('is-open');
     });
 
-	// dropdown
+    // filters mobile view
+
+    $('.js-filters-btn').on('click', function(event) {
+        $('.js-filters').addClass('is-open');
+        event.stopPropagation();
+    });
+    $('.js-filters').on('click', function(event) {
+        event.stopPropagation();
+    });
+
+	// search
+
+    $('.js-search').on('click', function(event) {
+        $('.js-search-form').addClass('is-visible');
+        $(this).parent().find('input[type=text]').focus();
+        event.stopPropagation();
+    });
+    $('.js-search-form').on('click', function() {
+        event.stopPropagation();
+    });
+
+    // dropdown
     function dropdownResize() {
         var width = $('.center').outerWidth();
         $('.js-dropdown').css('width', width);
@@ -56,6 +79,7 @@ $(document).ready(function() {
 
     $('.js-hamburger').on('click', function(event) {
         $('.js-mob-menu').addClass('is-open');
+        $('.js-filters').removeClass('is-open');
         event.stopPropagation();
     });
     $('.js-mob-menu').on('click', function(event) {
@@ -199,24 +223,23 @@ $(document).ready(function() {
 	});
     
   // select list
-    $("body").on("click",".js-select",function(event) {
+    $('.js-select').on('click',function(event) {
         event.stopPropagation();
     });
-    $("body").on("click",".js-select-text",function(event) {
+    $('.js-select-text').on('click', function(event) {
     	var select = $(this).parents(".js-select");
         if (select.hasClass("is-active")) {
             $(".js-select").removeClass("is-active");
-            $(".js-select-list").slideUp(100);
+            $(".js-select-list").slideUp(300);
         }
         else {
             $(".js-select").removeClass("is-active");
-            $(".js-select-list").slideUp(100);
+            $(".js-select-list").slideUp(300);
             select.toggleClass("is-active").find(".js-select-list").slideToggle(100);
         }
-       
     });
 
-    $("body").on("click",".js-select-list li",function() {
+    $('.js-select-list li').on('click', function() {
         var val = $(this).attr("data-val");
         var text = $(this).text();
         var select = $(this).parents(".js-select");
@@ -227,7 +250,7 @@ $(document).ready(function() {
         selectList.find("li").removeClass("is-active");
         $(this).addClass("is-active");
         select.removeClass("is-active");
-        selectList.slideUp(100);
+        selectList.slideUp(300);
         return false;
         
     });
