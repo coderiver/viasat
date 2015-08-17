@@ -281,7 +281,11 @@
 	border: 1px solid #9e9e9e
 	text-align: center
 	font-size: 3.6rem
-	text-transform: uppercase  			
+	text-transform: uppercase 
+	+r(768)
+		font-size: 3rem
+	+r(480)
+		font-size: 2.4rem	 			
 .post
 	+clr
 	margin-bottom: 30px 
@@ -294,6 +298,21 @@
 		width: 90px
 		text-align: center
 		padding-right: 12px
+		+r(480)
+			float: none
+			width: 100% 
+			+clr
+			padding-right: 0
+			margin-bottom: 8px
+			.socials
+				font-size: 0
+				.fb-counter, .gp-counter, .tw-counter
+					display: inline-block
+					vertical-align: middle
+					width: 30%
+					margin-left: 5%
+				.fb-counter
+					margin-left: 0	
 	.post__date
 		font-size: 1.4rem
 		padding-bottom: 5px
@@ -303,17 +322,27 @@
 		p
 			font-size: 4.8rem
 			font-weight: 900
-			line-height: 1  
+			line-height: 1 
+		+r(480)
+			margin: 0 auto 12px 
+			p
+				font-size: 4rem 	 
 	.post__in
 		padding: 20px 30px 30px		
 		& > p
-			margin-bottom: 25px 
+			margin-bottom: 25px
+		+r(480)
+			padding: 15px
+			& > .h3
+				font-size: 2rem 	 
 	.post__content
 		overflow: hidden
 		background: #FFF 
 		& > img
 			width: 100%
 			display: block
+		+r(480)
+			overflow: visible	
 	.post__details
 		+clr
 		margin-bottom: 18px
@@ -335,7 +364,9 @@
 	border-top: 1px solid #d7d7d7
 	padding-top: 35px 
 	img
-		width: 100% 		
+		width: 100% 
+	+r(768)
+		margin: 0 			
 .category
 	height: 25px
 	border: 1px solid #9e9e9e
@@ -378,6 +409,8 @@
 			font-weight: bold
 		i
 			font-style: italic
+		+r(960)
+			margin-bottom: 20px	
 	blockquote
 		display: block
 		margin-bottom: 30px
@@ -388,9 +421,20 @@
 		line-height: 1.2
 		font-weight: 300
 		font-style: italic
+		+r(1024)
+			margin-left: 40px
+		+r(960)
+			margin-bottom: 20px
+		+r(480)
+			margin-left: 10px
+			padding-left: 10px
+			font-size: 1.8rem		 
 	img
 		display: block
-		margin: 0 -30px 30px    					
+		margin: 0 -30px 30px
+		+r(960)
+			width: 100% 
+			margin: 0 0 20px     					
 					
 // select
 .select
