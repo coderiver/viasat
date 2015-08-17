@@ -681,6 +681,9 @@
 			width: 556px
 			height: 319px
 			+cover 	
+		+r(767)
+			&:before, &:after
+				display: none
 		.breadcrumbs_white
 			ul
 				li
@@ -742,6 +745,10 @@
 .preview
 	position: relative	
 	height: 424px
+	+r(960)
+		height: auto
+		&.center
+			padding: 0 
 	.preview__poster
 		position: absolute
 		top: 0
@@ -749,7 +756,16 @@
 		right: 0
 		left: 0	
 		+cover
-		z-index: 1		
+		z-index: 1	
+		+r(960)
+			position: relative
+			top: auto
+			bottom: auto
+			left: auto
+			right: auto
+			height: 400px 
+		+r(568)
+			height: 300px		
 	.preview__bottom
 		position: absolute
 		bottom: 0
@@ -760,6 +776,13 @@
 		padding: 15px 30px 
 		background: rgba(#000, 0.5)  
 		z-index: 999
+		+r(960)
+			bottom: auto
+			right: 0
+			top: 295px
+		+r(568)
+			top: 195px
+			padding: 10px 		
 	.preview__right
 		float: right
 		width: 100px
@@ -772,21 +795,40 @@
 			font-size: 1.8rem
 			font-weight: 300 
 			color: #fff
+		+r(568)
+			width: 70px
+			p
+				font-size: 2.8rem
+			span
+				font-size: 1.4rem 	
 	.preview__left
 		overflow: hidden
-		color: #fff	
+		color: #fff
+		+r(1150)
+			.h2
+				font-size: 2.4rem
+		+r(568)
+			.h2
+				line-height: 1.1		 
 	.info
 		position: absolute
 		top: 32px
 		right: 32px
 		bottom: 32px
 		width: 333px
+		+r(960)
+			position: relative
+			top: auto
+			right: auto
+			bottom: auto
+			width: 100%
+		+r(568)
+			padding: 15px 15px 146px	
 .info
 	position: relative
 	padding: 18px 32px 146px
 	background: #fff
 	z-index: 3
-	+gpu
 	&.info_premium
 		.info__more
 			a
@@ -830,7 +872,9 @@
 			text-transform: uppercase
 			color: #d00829
 			font-weight: 500 
-			text-decoration: none						
+			text-decoration: none	
+		+r(960)
+			margin-bottom: 20px					
 	.info__add, .info__view
 		position: absolute 
 		bottom: 73px
@@ -858,7 +902,9 @@
 		margin-bottom: 15px
 		font-weight: 300
 		text-transform: uppercase
-		font-size: 2.4rem  
+		font-size: 2.4rem 
+		+r(767)
+			margin-bottom: 30px 
 	.schedule__list
 		position: relative
 		top: -10px	
@@ -880,6 +926,17 @@
 					top: -20px
 					right: 0
 					+arr(20, 20, #a9a9a9, br) 
+		+r(767)
+			height: auto
+			&:first-child
+				height: auto
+				.schedule__link
+					margin-top: 0
+					height: auto
+				.schedule__content
+					height: auto
+					&:before
+						display: none	 			
 	.schedule__link
 		position: relative
 		float: right
@@ -894,6 +951,11 @@
 			display: block
 			width: 100%
 			min-height: 100% 
+		+r(767)
+			float: none
+			width: 100%
+			height: auto
+			overflow: visible 	
 	.schedule__overlay
 		position: absolute
 		top: 0
@@ -914,6 +976,13 @@
 		height: 150px
 		padding: 25px 30px
 		background: #FFF 
+		+r(767)
+			float: none
+			width: 100% 
+		+r(600)
+			padding: 20px
+		+r(480)
+			 padding: 15px 
 	.schedule__descr
 		line-height: 1.3	
 	.schedule__topper
@@ -924,10 +993,14 @@
 		width: 75% 
 		.h3
 			font-weight: 500
+		+r(480)
+			width: 65%	
 	.schedule__right
 		float: right
 		width: 25%
 		text-align: center
+		+r(480)
+			width: 35%
 	.schedule__timing
 		position: relative
 		padding-top: 10px
@@ -941,7 +1014,10 @@
 			color: #b2b2b2
 	.schedule__time
 		font-size: 2.4rem
-		font-weight: 900	 		    			 
+		font-weight: 900
+	.schedule__more
+		+r(960)
+			text-align: center		 		    			 
 .live
 	height: 38px
 	padding: 11px 0 
@@ -972,7 +1048,7 @@
 						width: 100% 
 						border-radius: 3px			 
 	.socials__links
-		float: left
+		float: left 
 		ul
 			border-radius: 3px
 			overflow: hidden
@@ -1000,6 +1076,24 @@
 					background: #e13719 
 					&:hover
 						background: darken(#e13719, 5%)
+		+r(1150)
+			float: none
+			width: 100%
+			margin-bottom: 10px
+			ul
+				display: inline-block
+		+r(960)
+			float: left
+			overflow: hidden
+			width: auto
+			ul
+				display: block
+		+r(479)
+			float: none
+			width: 100%
+			text-align: center
+			ul
+				display: inline-block				
 	.socials__likes
 		float: right
 		ul
@@ -1025,7 +1119,23 @@
 						display: inline-block
 						vertical-align: middle
 						font-size: 1.2rem
-						margin-left: 5px					 
+						margin-left: 5px
+		+r(1150)
+			float: none
+			width: 100%
+			ul
+				display: inline-block
+		+r(960)
+			float: right
+			width: auto	
+			ul
+				display: block
+		+r(479)
+			float: none
+			width: 100%
+			text-align: center
+			ul
+				display: inline-block												 
 // popups
 .overlay
 	position: fixed
