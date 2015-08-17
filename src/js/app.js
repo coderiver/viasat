@@ -289,6 +289,7 @@ $(document).ready(function() {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 fade: true,
+                adaptiveHeight: true,
                 asNavFor: '.js-gallery-thumbnail'
             });
             
