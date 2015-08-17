@@ -1036,6 +1036,8 @@
 					width: 33.33%
 					a
 						width: 100%
+				+r(1150)
+					display: block		
 		.socials__likes
 			width: 100% 
 			ul
@@ -1046,7 +1048,9 @@
 						margin-left: 0 
 					a
 						width: 100% 
-						border-radius: 3px			 
+						border-radius: 3px
+				+r(1150)
+					display: block					 
 	.socials__links
 		float: left 
 		ul
@@ -1193,7 +1197,9 @@
  			display: inline-block
  			vertical-align: middle
  			color: #fff
- 			font-size: 1.6rem   	 
+ 			font-size: 1.6rem 
+ 		+r(767)
+ 			right: 0	  	 
 .benefits
 	img
 		display: block
@@ -1435,11 +1441,18 @@
 		left: 0
 		right: 0
 		text-align: right 	
-		z-index: 2	 		 		  
+		z-index: 2	 	
+		button
+			margin-bottom: 10px
+			+r(568)
+				height: 40px
+				padding: 5px 10px  	 		  
 .map
 	position: relative
 	height: 770px
 	z-index: 1
+	+r(960)
+		height: 600px
 #map-canvas
 	position: absolute
 	top: 0
@@ -1463,15 +1476,25 @@
 			background: #efefef
 		&:first-child
 			&:before
-				display: none	  
+				display: none
+		+r(480)
+			text-align: center
+			&:before
+				width: 100% 			  
 	.prov__col
 		float: left
 		width: 20%
 		min-height: 30px
+		+r(480)
+			float: none
+			width: 100% 
 	.prov__col2
 		float: left
 		width: 40%
 		min-height: 30px
+		+r(480)
+			float: none
+			width: 100% 
 	.prov__title
 		padding: 5px 25px
 		background: #efefef
