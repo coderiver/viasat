@@ -1708,6 +1708,8 @@
 		background: #efefef
 		border-radius: 3px
 		font-size: 0 
+		+r(600)
+			display: none
 		li
 			display: inline-block
 			vertical-align: middle
@@ -1785,6 +1787,12 @@
 			img
 				display: inline-block
 				vertical-align: middle
+				max-width: 100%
+		+r(600)
+			top: 125px
+			width: 120px
+			li
+				padding: 0 10px		
 .tvline
 	position: relative
 	width: 7200px 	   	
