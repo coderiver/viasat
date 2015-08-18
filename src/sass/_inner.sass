@@ -1952,11 +1952,28 @@
 		z-index: 2
 		img
 			width: 100%
-			height: 100%  
+			height: 100% 
+		+r(480)
+			position: relative
+			top: auto
+			left: auto
+			display: table-cell
+			vertical-align: top	 
+			width: 30%
+			height: auto
+			background: #fff
+			padding: 40px 0 20px 20px  
+			img
+				height: auto
 	.tv-program__topper
 		padding: 20px 20px 20px 184px
 		background: #fff  
 		text-align: left
+		+r(480)
+			display: table-cell
+			vertical-align: top
+			width: 70%
+			padding: 40px 20px 20px 
 	.tv-program__header
 		+clr
 	.tv-program__left
@@ -1990,6 +2007,9 @@
 		padding: 20px 20px 20px 184px
 		background: #efefef  	
 		text-align: left
+		clear: both
+		+r(480)
+			padding: 20px 
 	.tv-program__table
 		width: 100% 
 		font-size: 1.3rem
@@ -2001,6 +2021,11 @@
 				padding-bottom: 5px
 				&:first-child
 					width: 100px
+		+r(480)
+			tr
+				td
+					&:first-child
+						width: 30%			
 	.tv-program__order
 		text-align: right				
 .order
