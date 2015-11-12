@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-ruby-sass'),
     spritesmith  = require('gulp.spritesmith'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
@@ -85,24 +85,18 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('sass:build', function () {
-    gulp.src(path.src.sass) 
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            includePaths: ['src/sass/'],
-            outputStyle: 'compressed',
-            sourceMap: true,
-            errLogToConsole: true,
-            indentedSyntax: true
-        }))
-        .pipe(prefixer({
-            browsers: ['> 1%', 'last 3 versions', 'Opera 12.1', 'IE 9', 'IE 10'],
-            cascade: false
-        }))
-        .pipe(cssmin())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.css))
-        .pipe(reload({stream: true}));
+//sass
+gulp.task('sass:build', function() {
+
+    
+
+    return sass('src/sass/*.sass', {
+        style: 'compact'
+    })
+    .on('error', function (err) {
+      console.error('Error', err.message);
+    })
+    .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('sprite:build', function() {
