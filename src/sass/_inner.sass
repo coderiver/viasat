@@ -444,6 +444,8 @@
 	cursor: pointer
 	font-size: 14px
 	color: #848484
+	&.is-active
+		display: inline-block
 	+r(960)
 		display: block
 		width: 100%
@@ -1165,15 +1167,45 @@
 	width: 700px
 	max-width: 100%
 	z-index: 2
+		
+
 	&.popup_tv
 		width: 520px
 	.popup__topper
 		padding: 15px 25px 
 		text-align: left
 		background: url(../img/popup-bg.jpg)
+		position: relative
 		+cover
 		.h3
 			margin-bottom: 0
+		&_subscribe
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 27px 
+				width: 64px
+				height: 49px  
+				background: url(../img/subscr_op.png) no-repeat
+		&_remind
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 18px 
+				width: 65px
+				height: 49px  
+				background: url(../img/remind.png) no-repeat
+		&_feedback
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				right: 18px 
+				width: 81px
+				height: 47px  
+				background: url(../img/talk.png) no-repeat
 	.popup__content
 		padding: 35px 42px 42px
 		background: #fff
@@ -1185,6 +1217,16 @@
 			margin-bottom: 15px
 		b
 			color: #ab0621
+	&_sm
+		width: 465px 
+		.popup__content
+			padding: 35px 42px 30px
+			+r(480)
+				padding-left: 20px 
+				padding-right: 20px 
+		.popup__topper
+			padding: 13px 25px 
+			background: url(../img/popup-bg2.jpg)
 	.popup__close	
 		position: absolute
 		top: 0
@@ -1199,7 +1241,57 @@
 			color: #fff
 			font-size: 1.6rem 
 		+r(767)
-			right: 0	  	 
+			right: 0
+	&__form
+		text-align: center
+		input + input
+			margin-top: 20px 
+		input[type="text"],
+		input[type="tel"]
+			width: 100%
+			height: 40px
+			padding: 0 11px 0
+			border-bottom: 1px solid #d6d7d8
+			font-size: 1.8rem
+			color: #353535 
+			text-align: left
+			font-family: "Roboto" 
+			+placeholder
+				color: #353535
+				font-style: italic
+				font-weight: normal 
+		button[type="submit"]
+			text-align: center
+			margin-top: 20px 
+		
+	&__formtext
+		font-size: 1.4rem
+		font-weight: 300
+		font-style: italic
+		margin: 7px 0 15px
+		text-align: center 
+		color: #7a7a7a
+		& +	button[type="submit"]
+			margin-top: 0
+	&__formselect
+		text-align: left
+		margin-top: 20px 
+		.select
+			border-bottom: 1px solid #d6d7d8
+			padding: 0 5px 
+			margin: 0 2rem 0 1.5rem
+			height: 40px 
+			+r(960)
+				display: inline-block
+				width: auto
+				border-width: 0 0 1px 0
+			&__text
+				font-size: 1.8rem
+				font-style: italic
+				font-weight: normal 
+				color: #353535
+				padding-right: 20px 
+			
 .benefits
 	img
 		display: block

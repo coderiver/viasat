@@ -264,6 +264,7 @@ $(document).ready(function() {
     $('.js-select').on('click',function(event) {
         event.stopPropagation();
     });
+
     $('.js-select-text').on('click', function(event) {
     	var select = $(this).parents(".js-select");
         if (select.hasClass("is-active")) {
@@ -299,9 +300,10 @@ $(document).ready(function() {
 
     	$('[data-popup='+link+']').fadeIn();
     	$('body').addClass('no-scroll');
+        return false;
     });
 
-    $('.overlay span').on('click', function() {
+    $('.overlay > span').on('click', function() {
     	$(this).parent().fadeOut();
     });
     $('.js-popup-close').on('click', function() {

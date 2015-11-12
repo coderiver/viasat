@@ -653,6 +653,7 @@ h4, .h4 { margin-bottom: 15px; font-size: 2rem; font-weight: bold; color: #35353
 @media screen and (max-width: 960px) { .article img { width: 100%; margin: 0 0 20px; } }
 
 .select { position: relative; display: inline-block; vertical-align: middle; cursor: pointer; font-size: 14px; color: #848484; }
+.select.is-active { display: inline-block; }
 @media screen and (max-width: 960px) { .select { display: block; width: 100%; padding: 0 10px; border: 1px solid #f1f1f1; border-radius: 3px; } }
 .select select { opacity: 0; visibility: hidden; position: absolute; top: 0; left: 0; }
 .select .select__text { position: relative; display: block; padding: 0 15px 0 0; height: 35px; line-height: 35px; border-radius: 5px; font-size: 1.4rem; font-weight: bold; color: #353535; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; z-index: 2; }
@@ -863,16 +864,38 @@ h4, .h4 { margin-bottom: 15px; font-size: 2rem; font-weight: bold; color: #35353
 
 .popup { position: relative; display: inline-block; vertical-align: middle; width: 700px; max-width: 100%; z-index: 2; }
 .popup.popup_tv { width: 520px; }
-.popup .popup__topper { padding: 15px 25px; text-align: left; background: url(../img/popup-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.popup .popup__topper { padding: 15px 25px; text-align: left; background: url(../img/popup-bg.jpg); position: relative; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .popup .popup__topper .h3 { margin-bottom: 0; }
+.popup .popup__topper_subscribe:before { content: ""; position: absolute; bottom: 0; right: 27px; width: 64px; height: 49px; background: url(../img/subscr_op.png) no-repeat; }
+.popup .popup__topper_remind:before { content: ""; position: absolute; bottom: 0; right: 18px; width: 65px; height: 49px; background: url(../img/remind.png) no-repeat; }
+.popup .popup__topper_feedback:before { content: ""; position: absolute; bottom: 0; right: 18px; width: 81px; height: 47px; background: url(../img/talk.png) no-repeat; }
 .popup .popup__content { padding: 35px 42px 42px; background: #fff; font-size: 1.4rem; text-align: left; }
 .popup .popup__text { margin-bottom: 20px; }
 .popup .popup__text p { margin-bottom: 15px; }
 .popup .popup__text b { color: #ab0621; }
+.popup_sm { width: 465px; }
+.popup_sm .popup__content { padding: 35px 42px 30px; }
+@media screen and (max-width: 480px) { .popup_sm .popup__content { padding-left: 20px; padding-right: 20px; } }
+.popup_sm .popup__topper { padding: 13px 25px; background: url(../img/popup-bg2.jpg); }
 .popup .popup__close { position: absolute; top: 0; right: -30px; width: 30px; height: 30px; background: #000; text-align: center; font-size: 0; }
 .popup .popup__close:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .popup .popup__close i { display: inline-block; vertical-align: middle; color: #fff; font-size: 1.6rem; }
 @media screen and (max-width: 767px) { .popup .popup__close { right: 0; } }
+.popup__form { text-align: center; }
+.popup__form input + input { margin-top: 20px; }
+.popup__form input[type="text"], .popup__form input[type="tel"] { width: 100%; height: 40px; padding: 0 11px 0; border-bottom: 1px solid #d6d7d8; font-size: 1.8rem; color: #353535; text-align: left; font-family: "Roboto"; }
+.popup__form input[type="text"]:-ms-input-placeholder, .popup__form input[type="tel"]:-ms-input-placeholder { color: #353535; font-style: italic; font-weight: normal; }
+.popup__form input[type="text"]:-moz-placeholder, .popup__form input[type="tel"]:-moz-placeholder { color: #353535; font-style: italic; font-weight: normal; }
+.popup__form input[type="text"]::-moz-placeholder, .popup__form input[type="tel"]::-moz-placeholder { color: #353535; font-style: italic; font-weight: normal; }
+.popup__form input[type="text"]::-webkit-input-placeholder, .popup__form input[type="tel"]::-webkit-input-placeholder { color: #353535; font-style: italic; font-weight: normal; }
+.popup__form input[type="text"]::placeholder, .popup__form input[type="tel"]::placeholder { color: #353535; font-style: italic; font-weight: normal; }
+.popup__form button[type="submit"] { text-align: center; margin-top: 20px; }
+.popup__formtext { font-size: 1.4rem; font-weight: 300; font-style: italic; margin: 7px 0 15px; text-align: center; color: #7a7a7a; }
+.popup__formtext + button[type="submit"] { margin-top: 0; }
+.popup__formselect { text-align: left; margin-top: 20px; }
+.popup__formselect .select { border-bottom: 1px solid #d6d7d8; padding: 0 5px; margin: 0 2rem 0 1.5rem; height: 40px; }
+@media screen and (max-width: 960px) { .popup__formselect .select { display: inline-block; width: auto; border-width: 0 0 1px 0; } }
+.popup__formselect .select__text { font-size: 1.8rem; font-style: italic; font-weight: normal; color: #353535; padding-right: 20px; }
 
 .benefits img { display: block; width: 100%; }
 
