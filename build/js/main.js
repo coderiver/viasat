@@ -87,13 +87,13 @@ $(document).ready(function() {
             function() {
                 if (!$('.js-drop').hasClass('is-open')) {
                     $(this).find('.js-drop-link').addClass('is-open');
-                    $(this).find('.js-dropdown').slideDown();
+                    $(this).find('.js-dropdown').fadeIn('fast');
                     $(this).addClass('is-open');
                 };
             },
             function() {
                 $(this).find('.js-drop-link').removeClass('is-open');
-                $(this).find('.js-dropdown').slideUp();
+                $(this).find('.js-dropdown').fadeOut('fast');
                 setTimeout(function() {
                     $('.js-drop').removeClass('is-open');
                 }, 300);
