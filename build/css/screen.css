@@ -802,7 +802,7 @@ h4, .h4 { margin-bottom: 15px; font-size: 2rem; font-weight: bold; color: #35353
 @media screen and (max-width: 767px) { .schedule .schedule__content { float: none; width: 100%; } }
 @media screen and (max-width: 600px) { .schedule .schedule__content { padding: 20px; } }
 @media screen and (max-width: 480px) { .schedule .schedule__content { padding: 15px; } }
-.schedule .schedule__descr { line-height: 1.3; }
+.schedule .schedule__descr { line-height: 1.3; height: 144px; overflow: hidden; }
 .schedule .schedule__topper { *zoom: 1; margin-bottom: 10px; }
 .schedule .schedule__topper:after { content: " "; display: table; clear: both; }
 .schedule .schedule__left { float: left; width: 75%; }
