@@ -395,6 +395,24 @@ $(document).ready(function() {
 
    // });
 
+    function ellipse(){
+        var p=$('.schedule__descr p');
+        var divh=$('.schedule__descr').height();
+        while (p.outerHeight()>divh) {
+            p.text(function (index, text) {
+                return text.replace(/[^A-Za-zА-Яа-яё0-9_]*\s(\S)*$/, '...');
+            });
+        }
+    }
+    if ($('.schedule').length) {
+        ellipse();
+    };
+    $(window).resize(function(){
+        if ($('.schedule').length) {
+            ellipse();
+        };
+    });
+
 
 
 });

@@ -96,6 +96,10 @@ gulp.task('sass:build', function() {
     .on('error', function (err) {
       console.error('Error', err.message);
     })
+    .pipe(prefixer({
+        browsers: ['> 1%', 'last 3 versions', 'Opera 12.1', 'IE 9', 'IE 10'],
+        cascade: false
+    }))
     .pipe(gulp.dest('build/css/'));
 });
 
