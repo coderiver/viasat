@@ -232,6 +232,7 @@ h4, .h4 { margin-bottom: 15px; font-size: 2rem; font-weight: bold; color: #35353
 .menu__list > div > a:hover span { text-decoration: underline; }
 .menu__list > div > a:hover span.icon-hamburger { text-decoration: none; }
 .menu__list > div > a.is-open { background: #fff; box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29); }
+@media screen and (max-width: 767px) { .menu__list > div > a.is-open { box-shadow: none; } }
 .menu__list > div > a span { display: inline-block; vertical-align: middle; font-size: 1.6rem; color: #000; font-weight: bold; }
 .menu__list > div > a span.icon-hamburger { font-size: 12px; margin-right: 9px; }
 .menu__list > div > a span.icon-next { display: none; position: relative; top: 1px; margin-left: 10px; font-size: 12px; }
