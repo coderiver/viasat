@@ -37,14 +37,14 @@ html
 	+r(800)
 		font-size: 9px
 body
-	font-family: 'Roboto', sans-serif 
+	font-family: 'Roboto', sans-serif
 	font-size: 1.4rem
 	line-height: 1.4
 	color: #000
 	background: #e9e9e9
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-	
+
 // blocks
 =center
 	max-width: 1150px
@@ -53,7 +53,7 @@ body
 	+r(1150)
 		padding: 0 20px
 	+r(768)
-		padding: 0 10px 	 
+		padding: 0 10px
 =justify
 	text-align: justify
 	line-height: 0
@@ -72,15 +72,15 @@ body
 	display: inline-block
 	line-height: normal
 	vertical-align: top
-	font-size: 1.4rem	
+	font-size: 1.4rem
 .center
 	position: relative
 	+center
 .clr
-	+clr	
+	+clr
 .container
 	position: relative
-	z-index: 1	
+	z-index: 1
 .tag
 	display: inline-block
 	vertical-align: middle
@@ -88,7 +88,7 @@ body
 	background: #9b1d4f
 	color: #fff
 	font-size: 1.3rem
-	
+
 // titles
 .h1
 	margin-bottom: 20px
@@ -105,26 +105,26 @@ body
 	font-weight: bold
 	color: $dark
 	&.h2_white
-		color: #fff		
+		color: #fff
 h3, .h3
-	margin-bottom: 10px 
+	margin-bottom: 10px
 	font-size: 2.4rem
 	font-weight: bold
 	color: $dark
 	&.h3_white
-		color: #fff	
+		color: #fff
 h4, .h4
 	margin-bottom: 15px
 	font-size: 2rem
 	font-weight: bold
-	color: $dark			
+	color: $dark
 .h6
 	margin-bottom: 15px
 	font-size: 1.8rem
-	font-weight: bold 
+	font-weight: bold
 	color: $black
-	text-transform: uppercase	
-.divide	
+	text-transform: uppercase
+.divide
 	height: 1px
 	background: #d1d1d1
 	margin: 22px 0
@@ -154,7 +154,7 @@ h4, .h4
 		&:after
 			+arr(40, 40, #fff, bl)
 		&:before
-			+arr(10, 10, #acb4bf, tr)	
+			+arr(10, 10, #acb4bf, tr)
 	.title__shadow
 		position: absolute
 		top: 55px
@@ -171,11 +171,11 @@ h4, .h4
 	span
 		display: block
 		height: 62px
-		background: #fff 
+		background: #fff
 		padding: 6px 42px 6px 59px
 		font-size: 3.6rem
 		text-transform: uppercase
-		color: $black 
+		color: $black
 		+r(1150)
 			font-size: 3rem
 			padding: 10px 42px 10px 59px
@@ -184,7 +184,7 @@ h4, .h4
 			padding: 16px 42px 16px 59px
 		+r(480)
 			height: 40px
-			padding: 7px 42px 	 	 
+			padding: 7px 42px
 	&.title_small
 		height: 32px
 		top: -32px
@@ -200,14 +200,14 @@ h4, .h4
 			position: absolute
 			top: 100%
 			left: 0
-			+arr(20, 20, #898e78, tr)	
+			+arr(20, 20, #898e78, tr)
 		span
 			height: 32px
 			font-weight: bold
 			font-size: 1.4rem
 		+r(568)
 			span
-				padding: 8px 42px 8px 59px 
+				padding: 8px 42px 8px 59px
 // breadcrumbs
 .breadcrumbs
 	margin-bottom: 15px
@@ -235,14 +235,14 @@ h4, .h4
 					display: none
 			&:last-child
 				a
-					text-decoration: none	
+					text-decoration: none
 			a
 				color: #979797
 				font-size: 1.3rem
 				text-decoration: underline
 				&:hover
-					text-decoration: none	
-	
+					text-decoration: none
+
 // grid
 .row
 	+clr
@@ -252,20 +252,20 @@ h4, .h4
 	+r(479)
 		margin-left: 0
 		& > div, & > a
-			margin-left: 0	
+			margin-left: 0
 .col2
 	float: left
 	width: 48%
 	+r(767)
 		margin-bottom: 2%
 	+r(479)
-		width: 100% 
+		width: 100%
 	+r(360)
-		margin-bottom: 10px		
-	 
+		margin-bottom: 10px
+
 .col4
 	float: left
-	width: 23%	
+	width: 23%
 	+r(767)
 		width: 48%
 		margin-bottom: 2%
@@ -277,7 +277,7 @@ h4, .h4
 		&.wide
 			width: 100%
 	+r(360)
-		margin-bottom: 10px		 		
+		margin-bottom: 10px
 
 // header
 .header
@@ -296,15 +296,15 @@ h4, .h4
 		float: none
 		a
 			width: 120px
-			height: 27px 
+			height: 27px
 	a
 		display: inline-block
 		width: 152px
 		height: 33px
 		background: url(../img/logo.png) 0 0 no-repeat
-		-webkit-background-size: 100% 
-		-o-background-size: 100% 
-		background-size: 100%   
+		-webkit-background-size: 100%
+		-o-background-size: 100%
+		background-size: 100%
 .menu
 	float: left
 	+r(767)
@@ -318,13 +318,14 @@ h4, .h4
 		right: 15px
 		background: transparent
 		font-size: 20px
-		color: $dark 
+		color: $dark
 		+r(767)
-			display: block	
+			display: block
 	&__list
 		+clr
 		&.is-open
-			transform: translateX(0)
+			// transform: translateX(0)
+
 		& > div
 			float: left
 			& > a
@@ -340,7 +341,7 @@ h4, .h4
 						&.icon-hamburger
 							text-decoration: none
 				&.is-open
-					background: #fff 
+					background: #fff
 					box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29)
 				span
 					display: inline-block
@@ -356,7 +357,7 @@ h4, .h4
 						position: relative
 						top: 1px
 						margin-left: 10px
-						font-size: 12px 
+						font-size: 12px
 		+r(767)
 			position: fixed
 			top: 0
@@ -364,16 +365,18 @@ h4, .h4
 			right: 0
 			width: 50%
 			overflow-y: auto
-			transform: translateX(100%)
-			transition: transform 300ms
+			// transform: translateX(100%)
+			margin-right: -385px
+			transition: all 300ms
 			padding-top: 50px
 			background: #fff
 			z-index: 99
 			&.is-open
 				box-shadow: 0 0 7px #ccc
+				margin-right: 0
 			& > div
 				float: none
-				padding: 0 30px 
+				padding: 0 30px
 				&:before
 					content: ""
 					position: absolute
@@ -384,28 +387,28 @@ h4, .h4
 					background: #d5d5d5
 				&:last-child
 					&:before
-						display: none	
+						display: none
 				& > a
 					text-align: left
-					padding: 0 
-					border-bottom: 1px solid #D5D5D5 
+					padding: 0
+					border-bottom: 1px solid #D5D5D5
 					&.is-open
-						background: #fff 
+						background: #fff
 						box-shadow: 0 -12px 30px -3px rgba(0, 0, 0, 0.29)
 					span
 						font-size: 2rem
 						&.icon-hamburger
-							display: none 
+							display: none
 						&.icon-next
-							display: inline-block			
+							display: inline-block
 		+r(480)
-			width: 75%							
+			width: 75%
 .hamburger
 	display: none
 	font-size: 20px
-	background: transparent 
+	background: transparent
 	+r(767)
-		display: block						
+		display: block
 .dropdown
 	position: absolute
 	top: 100%
@@ -438,7 +441,7 @@ h4, .h4
 		+r(767)
 			display: block
 	.dropdown__premiere
-		padding: 26px 40px 
+		padding: 26px 40px
 		background: #f8f8f8
 		border-top: 1px solid #f0f0f0
 		+r(900)
@@ -451,13 +454,13 @@ h4, .h4
 		color: $black
 	.dropdown__list
 		display: table
-		width: 100% 
+		width: 100%
 		padding: 26px 40px
 		+r(900)
 			padding: 15px
 		+r(767)
 			display: block
-			padding: 50px 30px 30px 	 
+			padding: 50px 30px 30px
 	.dropdown__cat
 		display: table-cell
 		vertical-align: top
@@ -467,7 +470,7 @@ h4, .h4
 		&:first-child
 			border-left: none
 			padding-left: 0
-		+r(900)	
+		+r(900)
 			padding-left: 15px
 		+r(767)
 			display: block
@@ -478,7 +481,7 @@ h4, .h4
 			border-left: none
 			border-top: 1px solid #f0f0f0
 			&:first-child
-				border-top: none   	 
+				border-top: none
 	.dropdown__channels
 		font-size: 0
 		line-height: 1
@@ -493,7 +496,7 @@ h4, .h4
 	.dropdown__links
 		+justify
 		li
-			width: 133px 
+			width: 133px
 			+justify-child
 			a
 				display: block
@@ -504,12 +507,12 @@ h4, .h4
 					margin-bottom: 5px
 				p
 					font-size: 1.3rem
-					color: $dark 
+					color: $dark
 .time
 	position: relative
 	float: right
 	padding-top: 19px
-	padding-left: 38px 
+	padding-left: 38px
 	font-size: 1.2rem
 	line-height: 1
 	+r(800)
@@ -519,7 +522,7 @@ h4, .h4
 		top: 19px
 		left: 0
 		color: #c0c0c0
-		font-size: 29px 
+		font-size: 29px
 	.time__local
 		color: #7d7d7d
 		span
@@ -527,26 +530,26 @@ h4, .h4
 			font-weight: bold
 			font-size: 1.6rem
 	.time__date
-		color: $dark	
+		color: $dark
 		font-weight: bold
-		
+
 // footer
 .footer
 	background: #fff
 	&__in
 		+center
-		padding: 40px 0 80px 
+		padding: 40px 0 80px
 		+r(1150)
 			padding: 40px 10px 80px
 		+r(600)
-			padding: 30px 10px 
+			padding: 30px 10px
 	.footer__left
 		float: left
 		width: 20%
 		margin-right: 5%
 		+r(600)
 			width: 100%
-			text-align: center 
+			text-align: center
 			.logo
 				display: inline-block
 	.footer__right
@@ -554,14 +557,14 @@ h4, .h4
 		width: 75%
 		+clr
 		+r(600)
-			width: 100% 
+			width: 100%
 			margin-bottom: 20px
 	.footer__list
 		+clr
 	.footer__col
 		float: left
 		width: 22%
-		margin-left: 3% 
+		margin-left: 3%
 		+r(600)
 			width: 25%
 			margin-left: 0
@@ -570,7 +573,7 @@ h4, .h4
 			width: 100%
 			text-align: center
 			padding-right: 0
-			margin-bottom: 20px 	
+			margin-bottom: 20px
 		& > ul
 			li
 				margin-bottom: 5px
@@ -592,19 +595,19 @@ h4, .h4
 		&:hover
 			text-decoration: underline
 		+r(480)
-			margin-bottom: 5px 	
+			margin-bottom: 5px
 	.footer__post
 		text-decoration: none
 		color: $dark
-		font-size: 1.4rem				 	 
+		font-size: 1.4rem
 .copyrights
 	font-size: 1.2rem
-	color: #888 					 	
+	color: #888
 .date
 	font-size: 1.2rem
 	color: #868686
 	font-style: italic
-	
+
 // socials
 .fb-counter
 	position: relative
@@ -612,17 +615,17 @@ h4, .h4
 	+clr
 	height: 32px
 	margin-bottom: 8px
-	padding: 7px 9px 7px 7px 
+	padding: 7px 9px 7px 7px
 	border-radius: 3px
 	text-decoration: none
 	color: #fff
 	background: #4c68b3
 	font-size: 1.1rem
-	font-weight: 900  
+	font-weight: 900
 	span
 		position: relative
-		top: 3px 
-		float: right  
+		top: 3px
+		float: right
 .fb-q
 	position: relative
 	float: left
@@ -635,54 +638,27 @@ h4, .h4
 	i
 		position: absolute
 		bottom: 0
-		right: 2px 
+		right: 2px
 .tw-counter, .gp-counter
 	position: relative
 	display: block
 	+clr
 	height: 32px
-	padding: 7px 9px 7px 7px 
+	padding: 7px 9px 7px 7px
 	margin-bottom: 8px
 	border-radius: 3px
 	text-decoration: none
 	color: #fff
 	background: #00abed
 	font-size: 1.1rem
-	font-weight: 900  
+	font-weight: 900
 	span
 		position: relative
-		top: 3px 
-		float: right 
+		top: 3px
+		float: right
 	i
 		float: left
 		font-size: 1.4rem
-		color: #fff	
+		color: #fff
 .gp-counter
-	background: #eb5e4b			
-				 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	background: #eb5e4b
