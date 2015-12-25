@@ -791,7 +791,7 @@ h4, .h4 { margin-bottom: 15px; font-size: 2rem; font-weight: bold; color: #35353
   .schedule .schedule__item:first-child .schedule__content:before { display: none; } }
 .schedule .schedule__link { position: relative; float: right; width: 41%; height: 150px; min-height: 100%; overflow: hidden; }
 .schedule .schedule__link:hover .schedule__overlay { opacity: 1; }
-.schedule .schedule__link img { display: block; width: 100%; min-height: 100%; }
+.schedule .schedule__link img { display: block; width: 100%; }
 @media screen and (max-width: 767px) { .schedule .schedule__link { float: none; width: 100%; height: auto; overflow: visible; } }
 .schedule .schedule__overlay { position: absolute; top: 0; bottom: 0; right: 0; left: 0; background: rgba(0, 0, 0, 0.6); text-align: center; font-size: 0; opacity: 0; -webkit-transition: opacity 300ms; transition: opacity 300ms; }
 .schedule .schedule__overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
