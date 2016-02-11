@@ -1,0 +1,29 @@
+{
+	"name": "gulp",
+	"version": "0.0.1",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/arturmoroz/gulp"
+	},
+	"author": "Artur Moroz",
+	"license": "ISC",
+	"homepage": "https://arturmoroz.com",
+	"devDependencies": {
+		"autoprefixer": "*",
+		"browser-sync": "*",
+		"gulp": "*",
+		"gulp-postcss": "*",
+		"gulp-sass": "*",
+		"gulp-sourcemaps": "*",
+		"gulp-consolidate": "*",
+		"gulp-iconfont": "*",
+		"gulp-svgmin": "*",
+		"gulp-jade": "*",
+		"lodash": "*"
+	},
+	"dependencies": {}
+}

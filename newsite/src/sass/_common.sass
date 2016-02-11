@@ -1,0 +1,396 @@
+// ## use cycles
+//	 @for $i from 1 through 3
+//	   .item-#{$i}
+//			width: 2em * $i;
+//	 @each $s in a,b,c
+// 			#{$s}
+//				display: none
+
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,400italic,500,700,300italic&subset=latin,cyrillic)
+=f
+	font-family: Roboto, Arial, sans-serif
+=fi
+	font-family: "iconfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+$blue: #00acd3
+$cl: #353535
+$border: #e0e0e0
+
+body
+	+f 
+	font-size: 14px
+	line-height: 1.3
+	color: $cl 
+button,
+input,
+textarea
+	+f
+	font-size: 14px
+button
+	background: none 
+a
+	text-decoration: none
+	color: $blue
+
+.center
+	max-width: 1250px
+	margin: 0 auto
+	padding: 0 50px
+
+.header
+	position: relative
+	height: 70px
+	background: #FFF
+	z-index: 10 
+	&__center
+		position: relative
+		+clr
+	&__logo
+		float: left
+		width: 152px
+		height: 33px
+		margin: 20px 25px 0 0
+		background: url(../img/logo.png) no-repeat 0 0
+		background-size: cover
+	&__menu
+		float: left
+	&__time
+		float: right
+		margin-top: 17px
+		
+.menu
+	&__list
+		+clr
+	&__item	
+		float: left
+	&__item:hover &__link_drop
+		background: #FFF
+		box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: #FFF
+			z-index: 2
+	&__item:hover &__drop
+		visibility: visible
+	&__link
+		position: relative
+		display: table-cell
+		height: 70px
+		padding: 0 20px
+		vertical-align: middle
+		font-size: 0
+		color: #000
+		&:hover
+			background: #EEE  
+		&_red
+			background: #FF0303
+			color: #fff
+			&:hover
+				background: #FF0303 
+	&__icon,
+	&__title
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		z-index: 4 
+		.icon-menu
+			margin-right: 10px
+			padding-bottom: 2px
+			font-size: 12px
+	&__title
+		font-size: 16px
+		font-weight: 700
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50px
+		right: 50px
+		min-height: 200px
+		background: #FFF
+		box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
+		visibility: hidden
+	&__channels
+		display: table
+		width: 100%
+		padding: 30px 40px 25px 0
+		table-layout: fixed
+		&-col
+			display: table-cell
+			padding-left: 40px
+			border-left: 1px solid $border
+			vertical-align: top
+			&:first-child
+				border-color: transparent
+		&-col:nth-child(1) &-pic
+			height: 30px
+		&-col:nth-child(2) &-pic
+			height: 23px
+		&-col:nth-child(3) &-pic
+			height: 32px
+		&-title
+			margin-bottom: 20px
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1
+		&-list
+			margin-bottom: -18px
+			columns: 2
+		&-link
+			display: inline-block
+			width: 100%
+			height: 32px
+			margin-bottom: 28px
+			+vert
+		&-pic
+			display: inline-block
+			max-height: 32px
+			vertical-align: middle
+	&__premieres
+		padding: 25px 40px
+		background: #F8F8F8
+		border-top: 1px solid $border
+		&-head
+			margin-bottom: 20px
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1
+		&-row
+			margin: 0 -20px
+			+clr
+		&-col
+			float: left
+			width: 16.66%
+			padding: 0 20px
+		&-link
+			display: block
+		&-preview
+			margin-bottom: 7px
+		&-pic
+			display: block
+			max-width: 100%
+		&-title
+			font-size: 13px
+			font-weight: 500 
+			color: $cl 
+
+.time
+	&__cell
+		display: table-cell
+		vertical-align: middle
+		&:first-child
+			padding-right: 10px
+	&__icon
+		font-size: 0
+		color: #C0C0C0 
+		.icon-clock
+			font-size: 29px
+	&__wrap
+		font-size: 0
+	&__value,
+	&__type
+		display: inline-block
+	&__value
+		font-size: 16px
+		font-weight: 700
+		color: #000 
+	&__type
+		margin-left: 5px
+		font-size: 12px
+		color: #7D7D7D
+	&__date
+		font-size: 12px
+		font-weight: 700 
+
+.promo
+	max-height: 520px
+	overflow: hidden
+	&__item
+		height: 520px
+		background-size: cover 
+		background-position: 50% 50%
+	&__wrap
+		padding: 130px 0 0 70px
+	&__channel
+		margin-bottom: 20px
+		&-pic
+			display: block
+	&__info
+		display: table
+		padding: 20px 25px 22px
+		background: #D62228
+		color: #fff
+		text-transform: uppercase
+		line-height: 1
+	&__title
+		margin-bottom: 5px
+		font-size: 42px
+		font-weight: 700
+	&__text
+		font-size: 24px
+	&__when
+		display: table
+		padding: 12px 25px
+		background: #fff
+		font-size: 0
+		font-weight: 700 
+		color: #D62228
+		text-transform: uppercase
+		line-height: 1
+	&__date,
+	&__time
+		display: inline-block
+		font-size: 13px
+	&__date
+		margin-right: 10px
+		padding-right: 10px
+		border-right: 2px solid
+	.slick-prev,
+	.slick-next
+		position: absolute
+		top: 50%
+		width: 50px
+		height: 100px
+		margin-top: -50px
+		background: #161F2D
+		+fi
+		font-size: 0
+		color: #fff 
+		z-index: 2
+		&:before
+			font-size: 38px
+	.slick-prev
+		left: 50%
+		margin-left: -625px
+		&:before
+			content: "\EA09"
+	.slick-next
+		right: 50%
+		margin-right: -625px
+		&:before
+			content: "\EA08"
+	.slick-dots
+		position: absolute
+		left: 50%
+		bottom: 35px
+		transform: translateX(-50%)
+		font-size: 0
+		white-space: nowrap
+		z-index: 2
+		li
+			display: inline-block
+			&.slick-active
+				button
+					&:before
+						transform: scale(2)
+		button
+			width: 20px
+			height: 20px
+			font-size: 0
+			vertical-align: middle
+			&:before
+				content: ""
+				display: inline-block
+				width: 6px
+				height: 6px
+				background: #FFF
+				border-radius: 50% 
+
+.search
+	padding: 25px 0
+	background: url(../img/bg-search.jpg) no-repeat 50% 50%
+	background-size: cover
+	color: #FFF
+	&__wrap
+		max-width: 620px
+		margin: 0 auto
+		text-align: center
+	&__title
+		font-size: 36px
+		font-weight: 700
+	&__form
+		position: relative
+		border-radius: 3px
+		background: #FFF
+	&__input
+		position: relative
+		width: 100%
+		height: 50px
+		padding: 0 15px 0 50px
+		background: none
+		font-size: 20px
+		z-index: 2 
+	&__icon
+		position: absolute
+		top: 16px
+		left: 16px
+		font-size: 0
+		color: $cl 
+		.icon-search
+			font-size: 18px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
