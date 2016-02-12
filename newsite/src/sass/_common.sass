@@ -25,7 +25,12 @@
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 
++font(GothamPro-Medium, GothamPro-Medium)
+=fg
+	font-family: "GothamPro-Medium", Roboto, Arial, sans-serif
+
 $blue: #00acd3
+$red: #ff0303
 $cl: #353535
 $border: #e0e0e0
 
@@ -50,9 +55,73 @@ a
 	margin: 0 auto
 	padding: 0 50px
 
+.row
+	margin: 0 -15px
+	+clr
+
+[class*="col-"]
+	float: left
+	padding: 0 15px
+.col-20
+	width: 20%
+.col-25
+	width: 25%
+.col-33
+	width: 33.33%
+.col-50
+	width: 50%
+.col-75
+	width: 75%
+
+.slick-slide img
+	display: inline-block
+.slick-prev,
+.slick-next
+	position: absolute
+	top: 50%
+	+fi
+	font-size: 0
+	color: #fff 
+	z-index: 2
+.slick-prev
+	left: 50%
+	margin-left: -625px
+	&:before
+		content: "\EA01"
+.slick-next
+	right: 50%
+	margin-right: -625px
+	&:before
+		content: "\EA02"
+.slick-dots
+	padding-top: 30px
+	font-size: 0
+	white-space: nowrap
+	text-align: center
+	z-index: 2
+	li
+		display: inline-block
+		&.slick-active
+			button
+				&:before
+					transform: scale(2)
+	button
+		width: 20px
+		height: 20px
+		font-size: 0
+		vertical-align: middle
+		&:before
+			content: ""
+			display: inline-block
+			width: 6px
+			height: 6px
+			background: #FFF
+			border-radius: 50%
+			box-shadow: 0 0 2px rgba(#000,.5)
+
 .header
 	position: relative
-	height: 70px
+	min-height: 70px
 	background: #FFF
 	z-index: 10 
 	&__center
@@ -101,10 +170,10 @@ a
 		&:hover
 			background: #EEE  
 		&_red
-			background: #FF0303
+			background: $red
 			color: #fff
 			&:hover
-				background: #FF0303 
+				background: $red 
 	&__icon,
 	&__title
 		position: relative
@@ -221,6 +290,29 @@ a
 		font-size: 12px
 		font-weight: 700 
 
+.footer
+	padding: 40px 0 100px
+	&__logo
+		display: block
+		width: 122px
+		height: 26px
+		margin-bottom: 19px
+		background: url(../img/logo.png) no-repeat 0 0
+		background-size: cover
+	&__copyright
+		font-size: 12px
+		color: #888
+	&__nav
+		&-link
+			display: table
+			margin-bottom: 5px
+			font-size: 14px
+			color: $cl
+			&:first-child
+				margin-bottom: 10px
+				font-weight: 700 
+				text-transform: uppercase
+
 .promo
 	max-height: 520px
 	overflow: hidden
@@ -266,26 +358,18 @@ a
 		border-right: 2px solid
 	.slick-prev,
 	.slick-next
-		position: absolute
-		top: 50%
 		width: 50px
 		height: 100px
 		margin-top: -50px
-		background: #161F2D
-		+fi
-		font-size: 0
-		color: #fff 
-		z-index: 2
 		&:before
 			font-size: 38px
+			text-shadow: 0 0 1px rgba(#000,.7)
+		&:hover
+			background: #161F2D
 	.slick-prev
-		left: 50%
-		margin-left: -625px
 		&:before
 			content: "\EA09"
 	.slick-next
-		right: 50%
-		margin-right: -625px
 		&:before
 			content: "\EA08"
 	.slick-dots
@@ -293,27 +377,13 @@ a
 		left: 50%
 		bottom: 35px
 		transform: translateX(-50%)
-		font-size: 0
-		white-space: nowrap
-		z-index: 2
-		li
-			display: inline-block
-			&.slick-active
-				button
-					&:before
-						transform: scale(2)
-		button
-			width: 20px
-			height: 20px
-			font-size: 0
-			vertical-align: middle
-			&:before
-				content: ""
-				display: inline-block
-				width: 6px
-				height: 6px
-				background: #FFF
-				border-radius: 50% 
+
+.title
+	margin-bottom: 25px
+	+fg
+	font-size: 36px
+	font-weight: 700
+	text-align: center
 
 .search
 	padding: 25px 0
@@ -325,10 +395,10 @@ a
 		margin: 0 auto
 		text-align: center
 	&__title
-		font-size: 36px
-		font-weight: 700
+		margin-bottom: 15px
 	&__form
 		position: relative
+		margin-bottom: 20px
 		border-radius: 3px
 		background: #FFF
 	&__input
@@ -347,18 +417,321 @@ a
 		color: $cl 
 		.icon-search
 			font-size: 18px
+	&__text
+		max-width: 440px
+		margin: 0 auto
+		font-size: 16px
+		font-weight: 300 
 
+.section
+	padding: 40px 0 50px
+	&_blue
+		background: #1773c3 
+		color: #FFF
+	&_banners
+		padding-bottom: 40px
+		background: #e5e5e6
+	&_slider
+		padding-bottom: 15px
+		background: #f2f2f3  
 
+.blog
+	&__head
+		margin-bottom: 10px
+		font-size: 0
+		&-lines,
+		&-title
+			display: inline-block
+			font-size: 14px
+		&-lines
+			margin-right: 5px
+			letter-spacing: -2px
+		&-title
+			text-transform: uppercase
+			font-weight: 700
+	&__preview
+		margin-bottom: 10px
+	&__pic
+		display: block
+		width: 100%
+	&__link
+		display: block
+		position: relative
+		margin-bottom: 10px
+		padding-bottom: 6px 
+		color: $cl
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 50px
+			height: 1px
+			background: $border
+		&:hover
+			color: $blue
+		&:first-child
+			font-size: 16px
+			font-weight: 700 
+		&:last-child
+			margin: 0
+			padding: 0
+			&:before
+				display: none
+	&__more
+		padding-top: 30px
+		
+.more
+	text-align: center
+	&__btn
+		height: 42px
+		padding: 0 20px
+		border: 2px solid #adafb1
+		border-radius: 3px
+		font-size: 0
+	&__icon,
+	&__title
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		padding: 2px 15px 0 0
+		font-size: 12px
+	&__title
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700 
 
+.label
+	position: absolute
+	top: 15px
+	left: 0
+	padding: 10px 20px 10px 10px
+	font-size: 12px
+	overflow: hidden
+	&__cover
+		position: absolute
+		top: 0
+		left: -10px
+		right: 5px
+		bottom: 0
+		transform: skew(-15deg)
+		opacity: .6 
+	&__title
+		position: relative
+		z-index: 2 
 
+.premieres
+	&__group
+		margin-bottom: 30px
+	&__head
+		margin-bottom: 25px
+		&-title
+			margin-bottom: 5px
+			font-size: 30px
+			font-weight: 700
+			color: #000  
+		&-text
+			font-size: 16px
+			font-weight: 300 
+	&__detail
+		display: table
+		float: right
+		margin-top: 44px
+		font-size: 0
+		&-title,
+		&-icon
+			display: table-cell
+			vertical-align: middle
+		&-title
+			font-size: 16px
+			font-weight: 700
+		&-icon
+			padding-left: 10px
+			.icon
+				font-size: 16px
+	&__item
+		display: block
+		color: #fff
+	&__preview
+		position: relative
+		margin-bottom: 10px
+	&__pic
+		display: block
+		width: 100%
+	&__when
+		position: absolute
+		right: 0
+		bottom: 0
+		padding: 15px
+		text-shadow: 0 0 1px rgba(#000,.7)
+		text-align: center
+	&__time
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.1
+	&__date
+		font-size: 12px
+	&__title
+		font-size: 16px
+		font-weight: 700
+	&__text
+		font-size: 13px
+		font-style: italic
+	&__grid &__col
+		&:nth-child(4)
+			clear: both
+	&__grid &__label
+		padding: 7px 15px 7px 10px
+	&__grid &__content
+		min-height: 80px
+		padding-bottom: 10px
+	&__grid &__title
+		color: $cl
+	&__grid &__text
+		color: #7F7F7F 
+	.slick-prev,
+	.slick-next
+		width: 30px
+		height: 44px
+		margin-top: -22px
+		transform: translateY(-130%)
+		color: #FFF 
+		&:before
+			font-size: 20px
+		&:hover
+			background: #FFF
+			color: #1773c3
 
+.selfpromo
+	display: block
+	background-size: cover
+	background-position: 50% 50%
+	&__center
+		height: 120px
+		+vertical
+	&__title
+		display: inline-block
+		font-size: 36px
+		font-weight: 100 
+		vertical-align: middle
+		color: #FFF 
 
+.banner
+	display: block
+	min-height: 210px
+	background-size: cover 
+	background-position: 50% 50% 
+	color: #FFF
+	&__wrap
+		padding: 30px
+	&__title
+		margin-bottom: 8px
+		font-weight: 300 
+		text-transform: uppercase
+	&__text
+		max-width: 210px
+		margin-bottom: 20px
+		font-weight: 700
+	&__btn
+		min-width: 205px
+		height: 55px
+		background: #FFF 
+		border: 2px solid #fff
+		border-radius: 3px
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 700 
+		color: #000
+	&__logo
+		height: 30px
+		+vert
+		&-pic
+			vertical-align: middle
+	&_link
+		min-height: 90px
+		text-align: center
+	&_link &__wrap
+		padding: 15px 30px
+	&_catalog &__text
+		font-weight: 400
+	&_catalog &__btn
+		background: transparent
+		color: #fff  
 
+.banners
+	margin-bottom: 30px
+	&__list
+		&-col
+			&:nth-child(1)
+				margin-bottom: 30px
 
+.subscribe
+	padding: 25px 0 50px
+	background: #FFF 
+	text-align: center
+	&__wrap
+		max-width: 480px
+		margin: 0 auto
+	&__title
+		margin-bottom: 0
+	&__text
+		margin-bottom: 20px
+		font-weight: 300
+	&__form
+		position: relative
+		margin-bottom: 10px
+	&__input
+		width: 100%
+		height: 50px
+		padding: 0 100px 0 20px
+		background: #ededed
+		border-radius: 3px
+		font-size: 24px
+		font-weight: 300
+		font-style: italic
+	&__btn
+		position: absolute
+		top: 0
+		right: 0
+		width: 80px
+		height: 50px
+		background: $red
+		border-radius: 0 3px 3px 0
+		font-size: 24px
+		text-transform: uppercase
+		color: #fff
+	&__info
+		font-weight: 300 
+		font-style: italic
 
-
-
-
+.slider
+	&__row
+		margin: 0 -15px
+	&__link
+		display: block
+		height: 40px
+		padding: 0 15px
+		+vert
+	&__link:hover &__logo
+		+gray-zero
+	&__logo
+		max-width: 100%
+		max-height: 100%
+		+gray
+		vertical-align: middle
+	.slick-dots
+		padding-top: 15px
+	.slick-prev,
+	.slick-next
+		width: 30px
+		height: 44px
+		margin-top: -22px
+		transform: translateY(-40%)
+		color: $cl
+		&:before
+			font-size: 20px
+		&:hover
+			background: #FFF
 
 
 
