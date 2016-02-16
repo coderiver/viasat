@@ -1,5 +1,15 @@
 head.ready(function() {
 
+	// menu
+	(function () {
+		var btn  = $('.js-menu-btn'),
+			menu = $('.js-menu');
+		btn.on('click', function () {
+			btn.toggleClass('is-active');
+			menu.toggleClass('is-active');
+		});
+	}());
+
 	// promo
 	(function () {
 		var sl = $('.js-promo');
@@ -15,7 +25,22 @@ head.ready(function() {
 		var sl = $('.js-blog');
 		if (sl.length) {
 			sl.slick({
-				slidesToShow: 5
+				slidesToShow: 5,
+				responsive: [{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						dots: true
+					}
+				},{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						dots: true
+					}
+				}]
 			});
 		};
 	}());
@@ -27,7 +52,20 @@ head.ready(function() {
 			sl.slick({
 				slidesToShow: 3,
 				slidesToScroll: 3,
-				dots: true
+				dots: true,
+				responsive: [{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
 			});
 		};
 	}());
@@ -39,7 +77,20 @@ head.ready(function() {
 			sl.slick({
 				slidesToShow: 6,
 				slidesToScroll: 6,
-				dots: true
+				dots: true,
+				responsive: [{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4
+					}
+				},{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				}]
 			});
 		};
 	}());

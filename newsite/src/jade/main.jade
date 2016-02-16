@@ -14,7 +14,10 @@ html
 				.header__center.center
 					a.header__logo(href="#")
 					//- menu
-					.header__menu.menu
+					button.header__btn-menu.js-menu-btn
+						i.icon.icon-close
+						i.icon.icon-menu
+					.header__menu.menu.js-menu
 						.menu__list
 							.menu__item
 								a.menu__link.menu__link_drop(href="#")
@@ -120,7 +123,7 @@ html
 						.promo__center.center
 							.promo__wrap
 								.promo__channel
-									img.promo__channel-pic(src="img/action-tv-1000.svg" width="175")
+									img.promo__channel-pic(src="img/action-tv-1000.png")
 								.promo__info
 									.promo__title БЕЗУМНЫЙ МАКС
 									.promo__text Дорога ярости
@@ -131,7 +134,7 @@ html
 						.promo__center.center
 							.promo__wrap
 								.promo__channel
-									img.promo__channel-pic(src="img/action-tv-1000.svg" width="175")
+									img.promo__channel-pic(src="img/action-tv-1000.png")
 								.promo__info
 									.promo__title БЕЗУМНЫЙ МАКС
 									.promo__text Дорога ярости
@@ -142,7 +145,7 @@ html
 						.promo__center.center
 							.promo__wrap
 								.promo__channel
-									img.promo__channel-pic(src="img/action-tv-1000.svg" width="175")
+									img.promo__channel-pic(src="img/action-tv-1000.png")
 								.promo__info
 									.promo__title БЕЗУМНЫЙ МАКС
 									.promo__text Дорога ярости
@@ -169,72 +172,77 @@ html
 					//- blog
 					.blog
 						//- row
-						.blog__row.row
-							.blog__col.col-20
-								.blog__head
-									.blog__head-lines(style="color: #d81e59;") //
-									.blog__head-title События
-								.blog__list
-									a.blog__link(href="#")
-										.blog__preview
-											img.blog__pic(src="img/pic6.jpg")
-										.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
-									a.blog__link(href="#")
-										.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
-									a.blog__link(href="#")
-										.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
-							.blog__col.col-20
-								.blog__head
-									.blog__head-lines(style="color: #8d39ce;") //
-									.blog__head-title Звездная жизнь
-								.blog__list
-									a.blog__link(href="#")
-										.blog__preview
-											img.blog__pic(src="img/pic6.jpg")
-										.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
-									a.blog__link(href="#")
-										.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
-									a.blog__link(href="#")
-										.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
-							.blog__col.col-20
-								.blog__head
-									.blog__head-lines(style="color: #1fd166;") //
-									.blog__head-title Мудрые мысли
-								.blog__list
-									a.blog__link(href="#")
-										.blog__preview
-											img.blog__pic(src="img/pic6.jpg")
-										.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
-									a.blog__link(href="#")
-										.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
-									a.blog__link(href="#")
-										.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
-							.blog__col.col-20
-								.blog__head
-									.blog__head-lines(style="color: #5a78f1;") //
-									.blog__head-title Коллекция
-								.blog__list
-									a.blog__link(href="#")
-										.blog__preview
-											img.blog__pic(src="img/pic6.jpg")
-										.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
-									a.blog__link(href="#")
-										.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
-									a.blog__link(href="#")
-										.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
-							.blog__col.col-20
-								.blog__head
-									.blog__head-lines(style="color: #ff7e00;") //
-									.blog__head-title Кинолента
-								.blog__list
-									a.blog__link(href="#")
-										.blog__preview
-											img.blog__pic(src="img/pic6.jpg")
-										.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
-									a.blog__link(href="#")
-										.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
-									a.blog__link(href="#")
-										.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
+						.blog__row.row.js-blog
+							.blog__col
+								.blog__group
+									.blog__head
+										.blog__head-lines(style="color: #d81e59;") //
+										.blog__head-title События
+									.blog__list
+										a.blog__link(href="#")
+											.blog__preview
+												img.blog__pic(src="img/pic6.jpg")
+											.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
+										a.blog__link(href="#")
+											.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
+										a.blog__link(href="#")
+											.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
+							.blog__col
+								.blog__group
+									.blog__head
+										.blog__head-lines(style="color: #8d39ce;") //
+										.blog__head-title Звездная жизнь
+									.blog__list
+										a.blog__link(href="#")
+											.blog__preview
+												img.blog__pic(src="img/pic6.jpg")
+											.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
+										a.blog__link(href="#")
+											.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
+										a.blog__link(href="#")
+											.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
+							.blog__col
+								.blog__group
+									.blog__head
+										.blog__head-lines(style="color: #1fd166;") //
+										.blog__head-title Мудрые мысли
+									.blog__list
+										a.blog__link(href="#")
+											.blog__preview
+												img.blog__pic(src="img/pic6.jpg")
+											.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
+										a.blog__link(href="#")
+											.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
+										a.blog__link(href="#")
+											.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
+							.blog__col
+								.blog__group
+									.blog__head
+										.blog__head-lines(style="color: #5a78f1;") //
+										.blog__head-title Коллекция
+									.blog__list
+										a.blog__link(href="#")
+											.blog__preview
+												img.blog__pic(src="img/pic6.jpg")
+											.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
+										a.blog__link(href="#")
+											.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
+										a.blog__link(href="#")
+											.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
+							.blog__col
+								.blog__group
+									.blog__head
+										.blog__head-lines(style="color: #ff7e00;") //
+										.blog__head-title Кинолента
+									.blog__list
+										a.blog__link(href="#")
+											.blog__preview
+												img.blog__pic(src="img/pic6.jpg")
+											.blog__link-title ПРЕМЬЕРА! Самое интересное о новом сезоне "The X-Files"
+										a.blog__link(href="#")
+											.blog__link-title Лучшие сериалы по версии иностранной прессы Голливуда
+										a.blog__link(href="#")
+											.blog__link-title Великолепная десятка: победители премии "Золотой глобус - 2016"
 						//- more
 						.blog__more.more
 							button.more__btn
@@ -246,86 +254,91 @@ html
 				//- center
 				.center
 					//- title
-					.title Публикации в блоге
+					.title Премьеры на&nbsp;VIASAT
 					//- premieres
 					.premieres
 						//- row
 						.premieres__row.row.js-premiers
-							.premieres__col.col-33
-								a.premieres__item(href="#")
-									.premieres__preview
-										img.premieres__pic(src="img/pic3.jpg")
-										//- label
-										.premieres__label.label
-											.label__cover(style="background: #e66d20;")
-											.label__title Viasat Comedy HD
-										.premieres__when
-											.premieres__time 17:55
-											.premieres__date 27 января
-									.premieres__content
-										.premieres__title Копы в глубоком запасе
-										.premieres__text 2010, США
-										.premieres__text Боевик, Комедия, Криминальное кино
-							.premieres__col.col-33
-								a.premieres__item(href="#")
-									.premieres__preview
-										img.premieres__pic(src="img/pic3.jpg")
-										//- label
-										.premieres__label.label
-											.label__cover(style="background: #0d4f7d;")
-											.label__title Viasat Comedy HD
-										.premieres__when
-											.premieres__time 17:55
-											.premieres__date 27 января
-									.premieres__content
-										.premieres__title Копы в глубоком запасе
-										.premieres__text 2010, США
-										.premieres__text Боевик, Комедия, Криминальное кино
-							.premieres__col.col-33
-								a.premieres__item(href="#")
-									.premieres__preview
-										img.premieres__pic(src="img/pic3.jpg")
-										//- label
-										.premieres__label.label
-											.label__cover(style="background: #e66d20;")
-											.label__title Viasat Comedy HD
-										.premieres__when
-											.premieres__time 17:55
-											.premieres__date 27 января
-									.premieres__content
-										.premieres__title Копы в глубоком запасе
-										.premieres__text 2010, США
-										.premieres__text Боевик, Комедия, Криминальное кино
-							.premieres__col.col-33
-								a.premieres__item(href="#")
-									.premieres__preview
-										img.premieres__pic(src="img/pic3.jpg")
-										//- label
-										.premieres__label.label
-											.label__cover(style="background: #e66d20;")
-											.label__title Viasat Comedy HD
-										.premieres__when
-											.premieres__time 17:55
-											.premieres__date 27 января
-									.premieres__content
-										.premieres__title Копы в глубоком запасе
-										.premieres__text 2010, США
-										.premieres__text Боевик, Комедия, Криминальное кино
-							.premieres__col.col-33
-								a.premieres__item(href="#")
-									.premieres__preview
-										img.premieres__pic(src="img/pic3.jpg")
-										//- label
-										.premieres__label.label
-											.label__cover(style="background: #e66d20;")
-											.label__title Viasat Comedy HD
-										.premieres__when
-											.premieres__time 17:55
-											.premieres__date 27 января
-									.premieres__content
-										.premieres__title Копы в глубоком запасе
-										.premieres__text 2010, США
-										.premieres__text Боевик, Комедия, Криминальное кино
+							.premieres__col
+								.premieres__item
+									a.premieres__link(href="#")
+										.premieres__preview
+											img.premieres__pic(src="img/pic3.jpg")
+											//- label
+											.premieres__label.label
+												.label__cover(style="background: #e66d20;")
+												.label__title Viasat Comedy HD
+											.premieres__when
+												.premieres__time 17:55
+												.premieres__date 27 января
+										.premieres__content
+											.premieres__title Копы в глубоком запасе
+											.premieres__text 2010, США
+											.premieres__text Боевик, Комедия, Криминальное кино
+							.premieres__col
+								.premieres__item
+									a.premieres__link(href="#")
+										.premieres__preview
+											img.premieres__pic(src="img/pic3.jpg")
+											//- label
+											.premieres__label.label
+												.label__cover(style="background: #0d4f7d;")
+												.label__title Viasat Comedy HD
+											.premieres__when
+												.premieres__time 17:55
+												.premieres__date 27 января
+										.premieres__content
+											.premieres__title Копы в глубоком запасе
+											.premieres__text 2010, США
+											.premieres__text Боевик, Комедия, Криминальное кино
+							.premieres__col
+								.premieres__item
+									a.premieres__link(href="#")
+										.premieres__preview
+											img.premieres__pic(src="img/pic3.jpg")
+											//- label
+											.premieres__label.label
+												.label__cover(style="background: #e66d20;")
+												.label__title Viasat Comedy HD
+											.premieres__when
+												.premieres__time 17:55
+												.premieres__date 27 января
+										.premieres__content
+											.premieres__title Копы в глубоком запасе
+											.premieres__text 2010, США
+											.premieres__text Боевик, Комедия, Криминальное кино
+							.premieres__col
+								.premieres__item
+									a.premieres__link(href="#")
+										.premieres__preview
+											img.premieres__pic(src="img/pic3.jpg")
+											//- label
+											.premieres__label.label
+												.label__cover(style="background: #e66d20;")
+												.label__title Viasat Comedy HD
+											.premieres__when
+												.premieres__time 17:55
+												.premieres__date 27 января
+										.premieres__content
+											.premieres__title Копы в глубоком запасе
+											.premieres__text 2010, США
+											.premieres__text Боевик, Комедия, Криминальное кино
+							.premieres__col
+								.premieres__item
+									a.premieres__link(href="#")
+										.premieres__preview
+											img.premieres__pic(src="img/pic3.jpg")
+											//- label
+											.premieres__label.label
+												.label__cover(style="background: #e66d20;")
+												.label__title Viasat Comedy HD
+											.premieres__when
+												.premieres__time 17:55
+												.premieres__date 27 января
+										.premieres__content
+											.premieres__title Копы в глубоком запасе
+											.premieres__text 2010, США
+											.premieres__text Боевик, Комедия, Криминальное кино
 			//- section
 			.section
 				//- center
@@ -338,19 +351,19 @@ html
 							.premieres__head
 								//- row
 								.premieres__head-row.row
+									.premieres__head-col.col-25
+										a.premieres__detail(href="#")
+											.premieres__detail-title Узнать подробнее
+											.premieres__detail-icon
+												i.icon.icon-arrow-right
 									.premieres__head-col.col-75
 										.premieres__head-title Кино
 										.premieres__head-text Лучшие голливудские и российские фильмы последних лет. Самые яркие и запоминающиеся премьеры, лидеры проката, шедевры мирового кинематографа
-									.premieres__head-col.col-25
-										a.premieres__detail(href="#")
-											.premieres__detail-title Узнать подробнее
-											.premieres__detail-icon
-												i.icon.icon-arrow-right
 							.premieres__grid
 								//- row
 								.premieres__grid-row.row
 									.premieres__grid-col.col-50
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic4.jpg")
 												//- label
@@ -365,7 +378,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -380,7 +393,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -395,7 +408,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -410,7 +423,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -424,23 +437,24 @@ html
 												.premieres__title Копы в глубоком запасе
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
+								a.premieres__grid-more(href="#") Узнать подробнее
 						.premieres__group
 							.premieres__head
 								//- row
 								.premieres__head-row.row
+									.premieres__head-col.col-25
+										a.premieres__detail(href="#")
+											.premieres__detail-title Узнать подробнее
+											.premieres__detail-icon
+												i.icon.icon-arrow-right
 									.premieres__head-col.col-75
 										.premieres__head-title Познавательные
 										.premieres__head-text Самые впечатляющие и зрелищные документальные сериалы, которые погружают зрителя в мир дикой природы, исторических сенсаций, приключений и открытий
-									.premieres__head-col.col-25
-										a.premieres__detail(href="#")
-											.premieres__detail-title Узнать подробнее
-											.premieres__detail-icon
-												i.icon.icon-arrow-right
 							.premieres__grid
 								//- row
 								.premieres__grid-row.row
 									.premieres__grid-col.col-50
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic4.jpg")
 												//- label
@@ -455,7 +469,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -470,7 +484,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -485,7 +499,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -500,7 +514,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -514,23 +528,24 @@ html
 												.premieres__title Копы в глубоком запасе
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
+								a.premieres__grid-more(href="#") Узнать подробнее
 						.premieres__group
 							.premieres__head
 								//- row
 								.premieres__head-row.row
-									.premieres__head-col.col-75
-										.premieres__head-title Cпорт
-										.premieres__head-text Бокс, баскетбол, бейсбол, гонки, волейбол, американский футбол и многое другое. Популярнейшие соревнования и спортивные поединки, прямые трансляции и повторы лучших матчей
 									.premieres__head-col.col-25
 										a.premieres__detail(href="#")
 											.premieres__detail-title Узнать подробнее
 											.premieres__detail-icon
 												i.icon.icon-arrow-right
+									.premieres__head-col.col-75
+										.premieres__head-title Cпорт
+										.premieres__head-text Бокс, баскетбол, бейсбол, гонки, волейбол, американский футбол и многое другое. Популярнейшие соревнования и спортивные поединки, прямые трансляции и повторы лучших матчей
 							.premieres__grid
 								//- row
 								.premieres__grid-row.row
 									.premieres__grid-col.col-50
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic4.jpg")
 												//- label
@@ -545,7 +560,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -560,7 +575,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -575,7 +590,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -590,7 +605,7 @@ html
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
 									.premieres__grid-col.col-25
-										a.premieres__item(href="#")
+										a.premieres__link(href="#")
 											.premieres__preview
 												img.premieres__pic(src="img/pic3.jpg")
 												//- label
@@ -604,6 +619,7 @@ html
 												.premieres__title Копы в глубоком запасе
 												.premieres__text 2010, США
 												.premieres__text Боевик, Комедия, Криминальное кино
+								a.premieres__grid-more(href="#") Узнать подробнее
 						//- more
 						.premieres__more.more
 							button.more__btn
@@ -655,7 +671,7 @@ html
 					.subscribe
 						.subscribe__wrap
 							//- title
-							.subscribe__title.title Подпишитесь на анонсы!
+							.subscribe__title.title Подпишитесь на&nbsp;анонсы!
 							.subscribe__text Еженедельная рассылка анонсов на телеканалах Viasat
 							.subscribe__form
 								input.subscribe__input(placeholder="Ваш e-mail")
