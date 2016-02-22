@@ -1154,8 +1154,9 @@ a {
   .premieres__grid-col:first-child {
     width: 100%; } }
 
-.premieres__grid-col:nth-child(4) {
-  clear: both; }
+@media only screen and (max-width: 1023px) {
+  .premieres__grid-col:nth-child(4) {
+    clear: both; } }
 
 @media only screen and (max-width: 767px) {
   .premieres__grid-col:first-child .premieres__link {
@@ -1172,36 +1173,45 @@ a {
     width: 60px;
     padding-right: 10px; } }
 
-.premieres__grid-col:not(:first-child) .premieres__label {
-  display: none; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__label {
+    display: none; } }
 
-.premieres__grid-col:not(:first-child) .premieres__pic {
-  display: none; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__pic {
+    display: none; } }
 
-.premieres__grid-col:not(:first-child) .premieres__when {
-  position: relative;
-  padding: 0;
-  color: #353535;
-  text-align: left;
-  text-shadow: none; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__when {
+    position: relative;
+    padding: 0;
+    color: #353535;
+    text-align: left;
+    text-shadow: none; } }
 
-.premieres__grid-col:not(:first-child) .premieres__time {
-  font-size: 16px; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__time {
+    font-size: 16px; } }
 
 .premieres__grid-col:not(:first-child) .premieres__date {
-  font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .premieres__grid-col:not(:first-child) .premieres__date {
+      font-size: 12px; } }
 
-.premieres__grid-col:not(:first-child) .premieres__content {
-  display: table; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__content {
+    display: table; } }
 
-.premieres__grid-col:not(:first-child) .premieres__title {
-  font-size: 14px; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__title {
+    font-size: 14px; } }
 
-.premieres__grid-col:not(:first-child) .premieres__text {
-  font-size: 12px; }
+@media only screen and (max-width: 767px) {
+  .premieres__grid-col:not(:first-child) .premieres__text {
+    font-size: 12px; } }
 
 .premieres__grid-more {
   display: none;

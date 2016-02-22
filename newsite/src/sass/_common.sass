@@ -847,7 +847,8 @@ a
 			+r(1023)
 				width: 100%
 		&:nth-child(4)
-			clear: both
+			+r(1023)
+				clear: both
 	&__grid-col:first-child &__link
 		+r(767)
 			padding-bottom: 10px
@@ -861,26 +862,34 @@ a
 			width: 60px
 			padding-right: 10px
 	&__grid-col:not(:first-child) &__label
-		display: none
+		+r(767)
+			display: none
 	&__grid-col:not(:first-child) &__pic
-		display: none
+		+r(767)
+			display: none
 	&__grid-col:not(:first-child) &__when
-		position: relative
-		padding: 0
-		color: $cl
-		text-align: left
-		text-shadow: none
+		+r(767)
+			position: relative
+			padding: 0
+			color: $cl
+			text-align: left
+			text-shadow: none
 	&__grid-col:not(:first-child) &__time
-		font-size: 16px 
+		+r(767)
+			font-size: 16px 
 	&__grid-col:not(:first-child) &__date
-		font-size: 12px 
+		+r(767)
+			font-size: 12px 
 		+text-overflow
 	&__grid-col:not(:first-child) &__content
-		display: table
+		+r(767)
+			display: table
 	&__grid-col:not(:first-child) &__title
-		font-size: 14px
+		+r(767)
+			font-size: 14px
 	&__grid-col:not(:first-child) &__text
-		font-size: 12px
+		+r(767)
+			font-size: 12px
 	&__grid-more
 		display: none
 		padding: 15px 20px
