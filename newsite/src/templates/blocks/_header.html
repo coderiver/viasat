@@ -1,6 +1,9 @@
 <header class="header">
     <div class="header__center center"><a href="#" class="header__logo"></a>
-        <button class="header__btn-menu js-menu-btn"><i class="icon icon-close"></i><i class="icon icon-menu"></i></button>
+        <button class="header__btn-menu js-menu-btn">
+            {{ mixins.icon('menu') }}
+            {{ mixins.icon('close') }}
+        </button>
         <div class="header__menu menu js-menu">
             <div class="menu__list">
                 <div class="menu__item"><a href="#" class="menu__link menu__link_drop">

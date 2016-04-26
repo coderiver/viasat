@@ -5,7 +5,7 @@
 	+r(767)
 		padding: 30px 0
 	&__logo
-		display: block
+		display: inline-block
 		width: 122px
 		height: 26px
 		margin-bottom: 19px
@@ -24,18 +24,49 @@
 				margin-bottom: 10px
 				font-weight: 700
 				text-transform: uppercase
+			+r(479)
+				width: 100%
 	&__center
 		+clr
 	&__left
 		float: left
+		.footer__col
+			float: none
+			&:last-child
+				text-align: left
+		+r(1023)
+			float: none
+			width: 100%
+			margin-bottom: 30px
+			text-align: center
+			.footer__col
+				&:last-child
+					text-align: center
 	&__right
 		float: right
 		+clr
+		+r(1023)
+			float: none
+			width: 100%
 	&__col
 		float: left
 		width: 195px
 		&:last-child
 			width: auto
+			text-align: right
+		+r(1023)
+			width: 25%
+		+r(767)
+			width: 50%
+			margin-top: 20px
+			&:first-child
+				margin-top: 0
+		+r(479)
+			width: 100%
+			text-align: center
+			&:last-child
+				width: 100%
+				text-align: center
 	&__blog-link
 		font-size: 14px
 		color: $cl

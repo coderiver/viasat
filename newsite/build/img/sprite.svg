@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-arr-left" viewBox="0 0 12 14">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs><symbol id="icon-arr-left" viewBox="0 0 12 14">
     <path fill-rule="evenodd" d="M4.6.54L.19 6.15c-.25.32-.25.82 0 1.13L4.6 12.9c.14.18.34.29.57.31.22.02.43-.05.61-.2.19-.17.3-.42.3-.68 0-.2-.07-.4-.2-.56L2.6 7.6l8.56.01c.46 0 .84-.4.84-.89 0-.48-.37-.88-.84-.88l-8.55-.01 3.27-4.16a.916.916 0 0 0-.1-1.25.822.822 0 0 0-.61-.2.81.81 0 0 0-.57.32z"/>
 </symbol><symbol id="icon-arr-right" viewBox="0 0 12 13">
     <path fill-rule="evenodd" d="M7.4 12.69l4.42-5.62a.96.96 0 0 0 0-1.13L7.4.32A.81.81 0 0 0 6.83 0a.809.809 0 0 0-.61.2.916.916 0 0 0-.1 1.25L9.4 5.62.84 5.61c-.46 0-.84.4-.84.89 0 .48.38.88.84.88l8.55.01-3.27 4.17c-.13.15-.2.35-.2.56 0 .26.11.51.3.68.17.15.39.22.61.2.23-.02.43-.13.57-.31z"/>
 </symbol><symbol id="icon-clock" viewBox="0 0 30 29">
     <path opacity=".28" fill-rule="evenodd" d="M15 29C6.99 29 .5 22.51.5 14.5S6.99 0 15 0s14.5 6.49 14.5 14.5S23.01 29 15 29zm.52-26.4v3.1h-1.73V2.6C8.61 3.02 3.52 8.11 3.1 13.98h2.06v1.73H3.1c.42 5.18 5.51 10.27 10.69 10.69v-2.06h1.73v2.06c5.87-.42 10.96-5.51 11.38-10.69h-3.1v-1.73h3.1C26.48 8.11 21.39 3.02 15.52 2.6zm1.04 11.97c0 .9-.73 1.64-1.63 1.64-.84 0-1.52-.64-1.62-1.45L9.28 9.42l5.11 3.61c.17-.05.35-.09.54-.09.03 0 .06 0 .09.01l7.76-6.34-6.25 7.62c.02.11.03.22.03.34z"/>
+</symbol><symbol id="icon-close" viewBox="0 0 15.41 15.407">
+    
+    <path d="M15.408 14.213l-1.186 1.185-6.518-6.519-6.524 6.524-1.185-1.186 6.523-6.523L.004 1.18 1.19-.006l6.514 6.514 6.509-6.509 1.185 1.185-6.509 6.51 6.519 6.519z" class="cls-1"/>
 </symbol><symbol id="icon-menu-blog" viewBox="-15 20 18 12">
     <path d="M-10 27v-2H3v2h-13zm0-7H3v2h-13v-2zm-5 5h3v2h-3v-2zm0-5h3v2h-3v-2zm3 12h-3v-2h3v2zm15 0h-13v-2H3v2z"/>
 </symbol><symbol id="icon-menu" viewBox="0 0 18 12">

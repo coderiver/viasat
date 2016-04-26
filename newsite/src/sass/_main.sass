@@ -90,11 +90,15 @@
 	.slick-prev
 		+r(1023)
 			left: 0
+		+r(768)
+			left: 10px
 		&:before
 			background: url("../img/arr-left-white.svg") center no-repeat
 	.slick-next
 		+r(1023)
 			right: 0
+		+r(768)
+			right: 10px
 		&:before
 			background: url("../img/arr-right-white.svg") center no-repeat
 	.slick-dots
@@ -617,9 +621,12 @@
 		top: 10px
 		color: $cl
 	.slick-prev
-		left: -50px
+		left: -40px
+		+r(1160)
+			left: -30px
+		+r(768)
+			left: 0
 		&:before
-			&:before
 			position: absolute
 			top: 0
 			left: 0
@@ -629,7 +636,11 @@
 			border: 2px solid #dadada
 			background: url("../img/arr-left-white.svg") center no-repeat
 	.slick-next
-		right: -50px
+		right: -40px
+		+r(1160)
+			right: -30px
+		+r(768)
+			right: 0
 		&:before
 			position: absolute
 			top: 0
@@ -650,13 +661,17 @@
 .slider
 	position: relative
 	padding: 0 80px
+	+r(1024)
+		padding: 0 30px
 	.slick-prev, .slick-next
-		top: 85px
-		margin-top: 0
+		top: 35%
+		margin-top: -15px
 		width: 30px
 		height: 30px
 	.slick-prev
 		left: -80px
+		+r(1024)
+			left: -45px
 		&:before
 			position: absolute
 			top: 0
@@ -668,6 +683,8 @@
 			background: url("../img/arr-left-white.svg") center no-repeat
 	.slick-next
 		right: -80px
+		+r(1024)
+			right: -45px
 		&:before
 			position: absolute
 			top: 0
@@ -690,6 +707,8 @@
 		padding: 15px 35px 0
 		border-right: 1px solid rgba(#e6e6e6, .5)
 		border-left: 1px solid rgba(#e6e6e6, .5)
+		+r(768)
+			border: none
 	.card__channel
 		margin-bottom: 20px
 		font-size: 12px
