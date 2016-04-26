@@ -1,0 +1,44 @@
+.footer
+	padding: 40px 0
+	+r(1023)
+		padding: 40px 0
+	+r(767)
+		padding: 30px 0
+	&__logo
+		display: block
+		width: 122px
+		height: 26px
+		margin-bottom: 19px
+		background: url(../img/logo.png) no-repeat 0 0
+		background-size: cover
+	&__copyright
+		font-size: 12px
+		color: #888
+	&__nav
+		&-link
+			display: table
+			margin-bottom: 5px
+			font-size: 14px
+			color: $cl
+			&:first-child
+				margin-bottom: 10px
+				font-weight: 700
+				text-transform: uppercase
+	&__center
+		+clr
+	&__left
+		float: left
+	&__right
+		float: right
+		+clr
+	&__col
+		float: left
+		width: 195px
+		&:last-child
+			width: auto
+	&__blog-link
+		font-size: 14px
+		color: $cl
+		small
+			font-size: 12px
+			color: #868686

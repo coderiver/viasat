@@ -1,0 +1,299 @@
+.header
+	position: relative
+	height: 70px
+	background: #FFF
+	z-index: 10
+	+r(1023)
+		height: 60px
+	+r(767)
+		height: 50px
+	&__center
+		position: relative
+		+clr
+		+r(1023)
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				height: 60px
+				background: #FFF
+				z-index: 2
+				+r(767)
+					height: 50px
+		+r(767)
+			padding-left: 15px
+	&__logo
+		position: relative
+		float: left
+		width: 158px
+		height: 34px
+		margin: 20px 25px 0 0
+		background: url(../img/logo.png) no-repeat 0 0
+		background-size: cover
+		z-index: 4
+		+r(1023)
+			margin: 13px 0 0 0
+		+r(767)
+			width: 130px
+			height: 28px
+			margin-top: 11px
+	&__btn-menu
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		width: 60px
+		height: 60px
+		font-size: 0
+		z-index: 4
+		+r(1023)
+			display: block
+		+r(767)
+			width: 50px
+			height: 50px
+		&.is-active
+			+r(1023)
+				background: #446591
+				color: #FFF
+			.icon-menu
+				+r(1023)
+					display: none
+			.icon-close
+				+r(1023)
+					display: inline-block
+		.icon-menu
+			font-size: 12px
+		.icon-close
+			display: none
+			font-size: 18px
+	&__menu
+		float: left
+		+r(1270)
+			float: right
+		+r(1023)
+			position: absolute
+			top: 60px
+			left: 0
+			right: 0
+			height: 0
+			background: #fff
+			border-top: 1px solid #d9d9d9
+			box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
+			transition: all .4s
+			visibility: hidden
+			overflow: hidden
+		+r(767)
+			top: 50px
+		&.is-active
+			+r(1023)
+				height: 560px
+				visibility: visible
+	&__time
+		float: right
+		margin-top: 17px
+		+r(1270)
+			display: none
+
+.menu
+	&__list
+		font-size: 0
+		+r(1023)
+			display: flex
+			flex-flow: wrap
+			padding: 20px 10px 0
+	&__item
+		display: inline-block
+		vertical-align: top
+	&__item:first-child
+		+r(1023)
+			order: 5
+	&__item:first-child &__link
+		+r(1023)
+			display: none
+	&__item:hover &__link_drop
+		background: #FFF
+		box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: #FFF
+			z-index: 2
+	&__item:hover &__drop
+		visibility: visible
+	&__link
+		position: relative
+		display: table-cell
+		height: 70px
+		padding: 0 20px
+		vertical-align: middle
+		font-size: 0
+		color: #000
+		+r(1023)
+			height: auto
+			padding: 10px 20px
+		&:hover
+			background: #EEE
+			+r(1023)
+				background: transparent
+		&_red
+			background: #523796
+			color: #fff
+			+r(1023)
+				background: transparent
+				color: #000
+			&:hover
+				background: $red
+				+r(1023)
+					background: transparent
+	&__icon,
+	&__title
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		z-index: 4
+		.icon-menu
+			margin-right: 10px
+			padding-bottom: 2px
+			font-size: 12px
+			color: #000
+	&__title
+		font-size: 16px
+		font-weight: 700
+		+r(1023)
+			font-size: 20px
+			text-transform: uppercase
+	&__drop
+		position: absolute
+		top: 100%
+		left: 50px
+		right: 50px
+		min-height: 200px
+		background: #FFF
+		box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
+		visibility: hidden
+		+r(1023)
+			position: relative
+			left: auto
+			right: auto
+			margin: 20px -10px 0
+			box-shadow: none
+			border-top: 1px solid #d9d9d9
+			background: #F9F9F9
+			text-align: left
+			visibility: visible
+	&__channels
+		display: table
+		width: 100%
+		padding: 30px 40px 25px 0
+		table-layout: fixed
+		+r(1023)
+			display: block
+			padding: 30px
+		&-col
+			display: table-cell
+			padding-left: 40px
+			border-left: 1px solid $border
+			vertical-align: top
+			+r(1023)
+				display: block
+				margin-bottom: 30px
+				padding: 0
+				border: none
+			&:first-child
+				border-color: transparent
+			&:last-child
+				+r(1023)
+					margin: 0
+		&-col:nth-child(1) &-pic
+			height: 30px
+		&-col:nth-child(2) &-pic
+			height: 23px
+		&-col:nth-child(3) &-pic
+			height: 32px
+		&-title
+			margin-bottom: 20px
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1
+			+r(1023)
+				font-size: 18px
+		&-list
+			margin-bottom: -18px
+			columns: 2
+			+r(1023)
+				columns: 3
+		&-link
+			display: inline-block
+			width: 100%
+			height: 32px
+			margin-bottom: 28px
+			+vertical
+		&-pic
+			display: inline-block
+			max-height: 32px
+			vertical-align: middle
+	&__premieres
+		padding: 25px 40px
+		background: #F8F8F8
+		border-top: 1px solid $border
+		+r(1023)
+			display: none
+		&-head
+			margin-bottom: 20px
+			font-size: 16px
+			text-transform: uppercase
+			font-weight: 700
+			line-height: 1
+		&-row
+			margin: 0 -20px
+			+clr
+		&-col
+			float: left
+			width: 16.66%
+			padding: 0 20px
+		&-link
+			display: block
+		&-preview
+			margin-bottom: 7px
+		&-pic
+			display: block
+			max-width: 100%
+		&-title
+			font-size: 13px
+			font-weight: 500
+			color: $cl
+
+.time
+	&__cell
+		display: table-cell
+		vertical-align: middle
+		&:first-child
+			padding-right: 10px
+	&__icon
+		font-size: 0
+		color: #1c1c1c
+		.icon-clock
+			font-size: 29px
+	&__wrap
+		font-size: 0
+	&__value,
+	&__type
+		display: inline-block
+	&__value
+		font-size: 16px
+		font-weight: 700
+		color: #000
+	&__type
+		margin-left: 5px
+		font-size: 12px
+		color: #7D7D7D
+	&__date
+		font-size: 12px
+		font-weight: 700

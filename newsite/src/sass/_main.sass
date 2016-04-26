@@ -1,0 +1,718 @@
+// main page styles
+
+.promo
+	overflow: hidden
+	&__item
+		height: 520px
+		background-size: cover
+		background-position: 50% 50%
+		+r(1023)
+			height: 400px
+	&__wrap
+		padding: 130px 0 0 70px
+		+r(767)
+			padding: 170px 10px 0
+	&__channel
+		margin-bottom: 20px
+		+r(1023)
+			margin-bottom: 10px
+		&-pic
+			max-height: 50px
+			vertical-align: top
+			+r(1023)
+				max-height: 46px
+	&__info
+		display: table
+		padding: 20px 25px 22px
+		background: #D62228
+		color: #fff
+		text-transform: uppercase
+		line-height: 1
+		+r(1023)
+			padding: 20px 20px 22px
+	&__title
+		margin-bottom: 5px
+		font-size: 42px
+		font-weight: 700
+		+r(1023)
+			font-size: 34px
+		+r(767)
+			font-size: 24px
+	&__text
+		font-size: 24px
+		+r(1023)
+			font-size: 18px
+		+r(767)
+			font-size: 14px
+	&__when
+		display: table
+		padding: 12px 25px
+		background: #fff
+		font-size: 0
+		font-weight: 700
+		color: #D62228
+		text-transform: uppercase
+		line-height: 1
+		+r(1023)
+			padding: 12px 20px
+	&__date,
+	&__time
+		display: inline-block
+		font-size: 13px
+		+r(1023)
+			font-size: 12px
+	&__date
+		margin-right: 10px
+		padding-right: 10px
+		border-right: 2px solid
+	.slick-prev,
+	.slick-next
+		width: 50px
+		height: 100px
+		margin-top: -50px
+		+r(767)
+			width: 20px
+			height: 40px
+		&:before
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -15px 0 0 -15px
+			width: 30px
+			height: 30px
+			border: 2px solid #dadada
+			border-radius: 50%
+
+			+r(767)
+				font-size: 24px
+		&:hover
+			background: #161F2D
+	.slick-prev
+		+r(1023)
+			left: 0
+		&:before
+			background: url("../img/arr-left-white.svg") center no-repeat
+	.slick-next
+		+r(1023)
+			right: 0
+		&:before
+			background: url("../img/arr-right-white.svg") center no-repeat
+	.slick-dots
+		position: absolute
+		left: 50%
+		bottom: 35px
+		padding: 0
+		transform: translateX(-50%)
+		+r(1023)
+			bottom: 15px
+
+.title
+	margin-bottom: 30px
+	+fg
+	font-size: 36px
+	font-weight: 700
+	text-align: center
+	+r(1023)
+		font-size: 30px
+	+r(767)
+		font-size: 26px
+
+.search
+	padding: 25px 0
+	background: url(../img/bg-search.jpg) no-repeat 50% 50%
+	background-size: cover
+	color: #FFF
+	+r(1023)
+		padding: 30px 0
+	&__wrap
+		max-width: 620px
+		margin: 0 auto
+		text-align: center
+		+r(1023)
+			max-width: 520px
+	&__title
+		margin-bottom: 15px
+	&__form
+		position: relative
+		margin-bottom: 20px
+		border-radius: 3px
+		background: #FFF
+	&__input
+		position: relative
+		width: 100%
+		height: 50px
+		padding: 0 15px 0 50px
+		background: none
+		font-size: 20px
+		z-index: 2
+	&__icon
+		position: absolute
+		top: 16px
+		left: 16px
+		font-size: 0
+		color: $cl
+		.icon-search
+			font-size: 18px
+	&__text
+		max-width: 440px
+		margin: 0 auto
+		font-size: 16px
+		font-weight: 300
+
+.section
+	padding: 40px 0 50px
+	&_blue
+		background: #1773c3
+		color: #FFF
+		+r(767)
+			padding-bottom: 40px
+	&_banners
+		padding-bottom: 40px
+		background: #e5e5e6
+	&_slider
+		padding-bottom: 15px
+		background: #f2f2f3
+
+.blog
+	&__row
+		+r(1023)
+			margin: 0 5px
+		+r(767)
+			margin: 0 -5px
+	&__group
+		padding: 0 15px
+	&__head
+		margin-bottom: 10px
+		font-size: 0
+		&-lines,
+		&-title
+			display: inline-block
+			font-size: 14px
+		&-lines
+			margin-right: 5px
+			letter-spacing: -2px
+		&-title
+			text-transform: uppercase
+			font-weight: 700
+	&__preview
+		margin-bottom: 10px
+	&__pic
+		display: block
+		width: 100%
+	&__link
+		display: block
+		position: relative
+		margin-bottom: 10px
+		padding-bottom: 6px
+		color: $cl
+		&:before
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 50px
+			height: 1px
+			background: $border
+		&:hover
+			color: $blue
+		&:first-child
+			font-size: 16px
+			font-weight: 700
+		&:last-child
+			margin: 0
+			padding: 0
+			&:before
+				display: none
+	&__more
+		padding-top: 30px
+	.slick-prev,
+	.slick-next
+		width: 30px
+		height: 44px
+		margin-top: -22px
+		transform: translateY(-130%)
+		color: $cl
+		&:before
+			font-size: 20px
+
+.more
+	text-align: center
+	&__btn
+		height: 42px
+		padding: 0 20px
+		border: 2px solid #adafb1
+		border-radius: 3px
+		font-size: 0
+	&__icon,
+	&__title
+		display: inline-block
+		vertical-align: middle
+	&__icon
+		padding: 2px 15px 0 0
+		font-size: 12px
+	&__title
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+
+.label
+	position: absolute
+	top: 15px
+	left: 0
+	padding: 10px 20px 10px 10px
+	font-size: 12px
+	overflow: hidden
+	&__cover
+		position: absolute
+		top: 0
+		left: -10px
+		right: 5px
+		bottom: 0
+		transform: skew(-15deg)
+		opacity: .6
+	&__title
+		position: relative
+		z-index: 2
+
+.premieres
+	&__row
+		+r(1023)
+			margin: 0 5px
+		+r(767)
+			margin: 0 -5px
+	&__group
+		margin-bottom: 30px
+	&__head
+		margin-bottom: 25px
+		&-title
+			margin-bottom: 5px
+			font-size: 30px
+			font-weight: 700
+			color: #000
+			+r(1023)
+				margin-bottom: 10px
+			+r(767)
+				font-size: 24px
+		&-text
+			font-size: 16px
+			font-weight: 300
+		&-col
+			float: right
+			+r(1023)
+				position: relative
+			&:first-child
+				+r(1023)
+					width: 50%
+					z-index: 2
+				+r(767)
+					display: none
+			&:last-child
+				+r(1023)
+					width: 100%
+					margin-top: -35px
+				+r(767)
+					margin-top: 0
+	&__detail
+		display: table
+		float: right
+		margin-top: 44px
+		font-size: 0
+		+r(1023)
+			margin-top: 0
+		&-title,
+		&-icon
+			display: table-cell
+			vertical-align: middle
+		&-title
+			font-size: 16px
+			font-weight: 700
+		&-icon
+			padding-left: 10px
+			.icon
+				font-size: 16px
+	&__item
+		padding: 0 15px
+	&__link
+		display: block
+		color: #fff
+	&__preview
+		position: relative
+		margin-bottom: 10px
+	&__pic
+		display: block
+		width: 100%
+	&__when
+		position: absolute
+		right: 0
+		bottom: 0
+		padding: 15px
+		text-shadow: 0 0 1px rgba(#000,.7)
+		text-align: center
+	&__time
+		font-size: 24px
+		font-weight: 700
+		line-height: 1.1
+	&__date
+		font-size: 12px
+	&__title
+		font-size: 16px
+		font-weight: 700
+		+r(767)
+			font-size: 18px
+	&__text
+		font-size: 13px
+		font-style: italic
+		+r(767)
+			font-size: 14px
+	&__grid-col
+		+r(1023)
+			width: 50%
+		+r(767)
+			width: 100%
+		&:first-child
+			+r(1023)
+				width: 100%
+		&:nth-child(4)
+			+r(1023)
+				clear: both
+	&__grid-col:first-child &__link
+		+r(767)
+			padding-bottom: 10px
+	&__grid-col:not(:first-child) &__link
+		+r(767)
+			padding: 10px 0
+			border-top: 1px solid #E1E1E1
+	&__grid-col:not(:first-child) &__preview
+		+r(767)
+			float: left
+			width: 60px
+			padding-right: 10px
+	&__grid-col:not(:first-child) &__label
+		+r(767)
+			display: none
+	&__grid-col:not(:first-child) &__pic
+		+r(767)
+			display: none
+	&__grid-col:not(:first-child) &__when
+		+r(767)
+			position: relative
+			padding: 0
+			color: $cl
+			text-align: left
+			text-shadow: none
+	&__grid-col:not(:first-child) &__time
+		+r(767)
+			font-size: 16px
+	&__grid-col:not(:first-child) &__date
+		+r(767)
+			font-size: 12px
+		+text-overflow
+	&__grid-col:not(:first-child) &__content
+		+r(767)
+			display: table
+	&__grid-col:not(:first-child) &__title
+		+r(767)
+			font-size: 14px
+	&__grid-col:not(:first-child) &__text
+		+r(767)
+			font-size: 12px
+	&__grid-more
+		display: none
+		padding: 15px 20px
+		background: #F3F3F3
+		font-size: 16px
+		font-weight: 700
+		text-align: center
+		+r(767)
+			display: block
+	&__grid &__link
+		+r(1023)
+			margin-bottom: 35px
+		+r(767)
+			margin: 0
+	&__grid &__label
+		padding: 7px 15px 7px 10px
+	&__grid &__content
+		min-height: 80px
+		padding-bottom: 10px
+		+r(1023)
+			min-height: 0
+			padding-bottom: 0
+	&__grid &__title
+		color: $cl
+	&__grid &__text
+		color: #7F7F7F
+	.slick-prev,
+	.slick-next
+		width: 30px
+		height: 44px
+		margin-top: -22px
+		transform: translateY(-130%)
+		color: #FFF
+		&:before
+			font-size: 20px
+		&:hover
+			background: #FFF
+			color: #1773c3
+
+.selfpromo
+	display: block
+	background-size: cover
+	background-position: 50% 50%
+	&__center
+		height: 120px
+		+vertical
+	&__title
+		display: inline-block
+		font-size: 36px
+		font-weight: 100
+		vertical-align: middle
+		color: #FFF
+
+.banner
+	display: block
+	min-height: 210px
+	background-size: cover
+	background-position: 50% 50%
+	color: #FFF
+	&__wrap
+		padding: 30px
+	&__title
+		margin-bottom: 8px
+		font-weight: 300
+		text-transform: uppercase
+	&__text
+		max-width: 210px
+		margin-bottom: 20px
+		font-weight: 700
+	&__btn
+		min-width: 205px
+		height: 55px
+		background: #FFF
+		border: 2px solid #fff
+		border-radius: 3px
+		font-size: 16px
+		text-transform: uppercase
+		font-weight: 700
+		color: #000
+	&__logo
+		height: 30px
+		+vertical
+		&-pic
+			vertical-align: middle
+	&_link
+		min-height: 90px
+		text-align: center
+	&_link &__wrap
+		padding: 15px 30px
+	&_catalog &__text
+		font-weight: 400
+	&_catalog &__btn
+		background: transparent
+		color: #fff
+
+.banners
+	margin-bottom: 30px
+	&__list
+		&-col
+			&:nth-child(1)
+				margin-bottom: 30px
+				+r(767)
+					margin-bottom: 20px
+	&__row
+		+r(1023)
+			display: flex
+			flex-flow: wrap
+	&__col
+		&:first-child,
+		&:nth-child(3)
+			+r(1023)
+				width: 50%
+				margin-bottom: 30px
+			+r(767)
+				width: 100%
+				margin-bottom: 20px
+		&:nth-child(2)
+			+r(1023)
+				width: 100%
+				order: 3
+
+
+.subscribe
+	padding: 25px 20px 50px
+	background: #FFF
+	text-align: center
+	+r(767)
+		padding: 25px 20px
+	&__wrap
+		max-width: 480px
+		margin: 0 auto
+	&__title
+		margin-bottom: 0
+		+r(767)
+			margin-bottom: 10px
+	&__text
+		margin-bottom: 20px
+		font-weight: 300
+	&__form
+		position: relative
+		margin-bottom: 10px
+	&__input
+		width: 100%
+		height: 50px
+		padding: 0 100px 0 20px
+		background: #ededed
+		border-radius: 3px
+		font-size: 24px
+		font-weight: 300
+		font-style: italic
+		+r(767)
+			height: 40px
+			padding: 0 60px 0 10px
+			font-size: 18px
+	&__btn
+		position: absolute
+		top: 0
+		right: 0
+		width: 80px
+		height: 50px
+		background: #f8b636
+		border-radius: 0 3px 3px 0
+		font-size: 24px
+		text-transform: uppercase
+		color: #fff
+		+r(767)
+			width: 50px
+			height: 40px
+			font-size: 18px
+	&__info
+		font-weight: 300
+		font-style: italic
+
+.channels
+	&__row
+		margin: 0 -15px
+		+r(1023)
+			margin: 0 5px
+		+r(767)
+			margin: 0 -5px
+	&__link
+		display: block
+		height: 40px
+		padding: 0 15px
+		+vertical
+	&__link:hover &__logo
+		+gray-zero
+	&__logo
+		max-width: 100%
+		max-height: 100%
+		+gray
+		vertical-align: middle
+	.slick-dots
+		padding-top: 15px
+	.slick-prev,
+	.slick-next
+		width: 30px
+		height: 30px
+		top: 10px
+		color: $cl
+	.slick-prev
+		left: -50px
+		&:before
+			&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			border: 2px solid #dadada
+			background: url("../img/arr-left-white.svg") center no-repeat
+	.slick-next
+		right: -50px
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			border: 2px solid #dadada
+			background: url("../img/arr-right-white.svg") center no-repeat
+
+// card
+.section_premiere
+	padding: 40px 0 80px
+	+g(#805eac, #55387a)
+	color: #fff
+	.title
+		margin-bottom: 70px
+.slider
+	position: relative
+	padding: 0 80px
+	.slick-prev, .slick-next
+		top: 85px
+		margin-top: 0
+		width: 30px
+		height: 30px
+	.slick-prev
+		left: -80px
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			border: 2px solid #dadada
+			background: url("../img/arr-left-white.svg") center no-repeat
+	.slick-next
+		right: -80px
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			border: 2px solid #dadada
+			background: url("../img/arr-right-white.svg") center no-repeat
+	.card
+		.card__in
+			border-left: none
+.card
+	position: relative
+	.card__poster
+		img
+			display: block
+			width: 100%
+	.card__in
+		padding: 15px 35px 0
+		border-right: 1px solid rgba(#e6e6e6, .5)
+		border-left: 1px solid rgba(#e6e6e6, .5)
+	.card__channel
+		margin-bottom: 20px
+		font-size: 12px
+		.channel
+			margin-right: 15px
+	.card__title
+		font-size: 16px
+		font-weight: bold
+	.card__time
+		font-size: 26px
+		font-weight: bold
+		line-height: 1
+	.card__date
+		font-weight: bold
+		font-size: 14px
+		line-height: 1
+	.card__about
+		padding-top: 5px
+		color: #7f7f7f
+		font-size: 12px
+		font-style: italic
+	&.card_time
+		.card__title
+			font-size: 14px
+.section_channels
+	background: #f2f2f3
