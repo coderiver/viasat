@@ -963,24 +963,10 @@ a.btn {
   background: #f8f7f7;
   border-bottom: 1px solid #e7e5e5; }
   .nav ul {
-    text-align: justify;
-    line-height: 0;
-    font-size: 0;
-    text-justify: newspaper;
-    zoom: 1;
-    -moz-text-align-last: justify;
-    text-align-last: justify;
-    margin: 0 -10px; }
-    .nav ul:after {
-      content: "";
-      display: inline-block;
-      width: 100%;
-      height: 0px;
-      visibility: hidden;
-      overflow: hidden; }
+    margin: 0 -20px; }
     .nav ul li {
       display: inline-block;
-      margin: 0 10px; }
+      margin: 0 20px; }
       .nav ul li a {
         display: block;
         height: 86px;

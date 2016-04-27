@@ -1,0 +1,141 @@
+---
+title: Category
+cards:
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия'
+  country: 'США, 2014'
+---
+
+{% extends "./layouts/_layout.html" %}
+
+{% block content %}
+    <div class="out">
+        <div class="topper" style="background-image: url(img/topper2.jpg)">
+            <div class="topper__in">
+                <div class="center">
+                    {# nav #}
+                    <nav class="breadcrumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Фильмoтека</a></li>
+                            <li>Фильмы</li>
+                        </ul>
+                    </nav>
+                    <div class="topper__head">
+                        <h1 class="h1">Фильмы</h1>
+                        <ul class="socials">
+                            <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                            <li><a href="#">{{ mixins.icon('vk') }}</a></li>
+                            <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+                        </ul>
+                    </div>
+                    <div class="s">
+                        <form>
+                            <label class="s__field">
+                                <input type="text" role="search" placeholder="Марсианин">
+                            </label>
+                            <button class="s__submit" type="submit">{{ mixins.icon('search') }}</button>
+                        </form>
+                    </div>
+                    <div class="topper__bottom">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#" class="active">Все фильмы</a></li>
+                                <li><a href="#">Новинки</a></li>
+                                <li><a href="#">Популярные</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# main page content #}
+        <div class="main">
+            <div class="center">
+
+                <div class="catalog">
+                    <div class="catalog__in">
+                        {% for card in cards %}
+                            <a href="#" class="card">
+                                <div class="card__poster">
+                                    <img src="{{ card.img }}" alt="">
+                                </div>
+                                <div class="card__in">
+                                    <div class="card__title">{{ card.title }}</div>
+                                    <div class="card__about">
+                                        <p>{{ card.genre }}</p>
+                                        <p>{{ card.country }}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                    <div class="more">
+                        <a href="#" class="btn btn_small btn_white">Показать еще</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
