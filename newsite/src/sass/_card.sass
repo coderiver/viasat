@@ -1,0 +1,64 @@
+.card
+	position: relative
+	color: #000
+	.card__poster
+		position: relative
+		padding: 0 13px
+		img
+			display: block
+			width: 100%
+	.card__in
+		padding: 15px 35px 0
+		border-right: 1px solid rgba(#e6e6e6, .5)
+		+r(1024)
+			padding: 15px 15px 0
+		+r(768)
+			border: none
+	.card__channel
+		margin-bottom: 20px
+		font-size: 12px
+		color: #adadad
+		.channel
+			margin-right: 15px
+	.card__title
+		font-size: 16px
+		font-weight: bold
+	.card__time
+		font-size: 26px
+		font-weight: bold
+		line-height: 1
+	.card__date
+		font-weight: bold
+		font-size: 14px
+		line-height: 1
+	.card__about
+		padding-top: 5px
+		color: #7f7f7f
+		font-size: 12px
+		font-style: italic
+	&.card_time
+		.card__poster
+			padding: 0
+		.card__title
+			font-size: 14px
+	&.card_violet
+		.card__poster:before
+			content: ""
+			position: absolute
+			top: 0
+			right: 13px
+			+arr(52, 35, $violet, tr)
+	&.card_red
+		.card__poster:before
+			content: ""
+			position: absolute
+			top: 0
+			right: 13px
+			+arr(52, 35, $red, tr)
+	&.card_orange
+		.card__poster:before
+			content: ""
+			position: absolute
+			top: 0
+			right: 13px
+			+arr(52, 35, $orange, tr)		

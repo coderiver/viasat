@@ -4,26 +4,19 @@
 	font-family: Roboto, Arial, sans-serif
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-=fi
-	font-family: "iconfont"
-	font-style: normal
-	font-weight: normal
-	text-rendering: auto
-	speak: none
-	line-height: 1
-	-webkit-font-smoothing: antialiased
-	-moz-osx-font-smoothing: grayscale
 
 +font(GothamPro-Medium, GothamPro-Medium)
 =fg
 	font-family: "GothamPro-Medium", Roboto, Arial, sans-serif
 
+//colors
 $blue: #00acd3
-$red: #ff0303
 $cl: #353535
 $border: #e0e0e0
+// channel colors
 $orange: #f0a852
 $violet: #523796
+$red: #ff0303
 
 body
 	+f
@@ -42,13 +35,15 @@ a
 	color: $blue
 
 .center
-	max-width: 1150px
+	max-width: 1250px
 	margin: 0 auto
 	padding: 0 50px
-	+r(1023)
+	+r(1024)
 		padding: 0 30px
-	+r(767)
+	+r(768)
 		padding: 0 20px
+	+r(480)
+		padding: 0 15px
 
 //grid
 .row
@@ -71,10 +66,6 @@ a
 
 .icon
 	fill: currentColor
-.wrapper
-	//min-height: 100%
-	//height: auto
-	//margin-bottom: -205px
 	
 // channels	
 .channel
@@ -95,15 +86,72 @@ a
 	padding: 0 30px
 	background: #f8b636
 	border-radius: 5px
-	transition: background 200ms
+	transition: background 200ms, color 200ms, border-color 200ms
 	color: #fff
 	font-size: 19px
+	border: 2px solid #f8b636
 	&:hover
 		background: darken(#f8b636, 5%)
+	&.btn_white
+		background: #fff
+		color: #979292
+		border: 2px solid #979292
+		&:hover
+			color: #b11226
+			border-color: #b11226
+	&.btn_small
+		height: 44px
 a.btn
 	text-decoration: none
 	display: inline-block
-	line-height: 55px
+	line-height: 51px
+	&.btn_small
+		line-height: 40px
 .more
 	text-align: center
 	padding-top: 40px
+
+// heading
+.title
+	margin-bottom: 30px
+	+fg
+	font-size: 36px
+	font-weight: 700
+	text-align: center
+	&.title_white
+		color: #fff
+	+r(1024)
+		font-size: 30px
+	+r(768)
+		font-size: 26px
+.h1
+	color: #fff
+	text-shadow: 0 1px 1px rgba(72, 54, 110, 0.75)
+	font-size: 36px
+	font-weight: 900
+	+r(768)
+		font-size: 32px
+	+r(480)
+		font-size: 30px
+.h2
+	margin-bottom: 25px
+	color: #222121
+	font-size: 30px
+	font-weight: 300
+	text-shadow: 0 1px 1px rgba(72, 54, 110, 0.75)
+	&.h2_white
+		color: #fff
+	+r(480)
+		padding: 0 10px
+	+r(414)
+		padding: 0
+.h3
+	margin-bottom: 20px
+	font-size: 24px
+	font-weight: 300
+	color: #222121
+	+r(480)
+		padding: 0 10px
+	+r(414)
+		padding: 0
+	

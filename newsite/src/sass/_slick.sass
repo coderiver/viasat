@@ -79,30 +79,40 @@
 	position: absolute
 	top: 50%
 	font-size: 0
+	width: 30px
+	height: 30px
 	color: #fff
 	z-index: 2
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: 50%
 .slick-prev
 	left: 20px
 	+r(1270)
 		left: 0
 		margin-left: 0
-	+r(1023)
+	+r(1024)
 		left: -25px
-	+r(767)
-		left: -15px
-	&:before
-		content: ""
+	+r(768)
+		left: -10px
+	+r(470)
+		left: -8px
 .slick-next
 	right: 20px
 	+r(1270)
 		right: 0
 		margin-right: 0
-	+r(1023)
+	+r(1024)
 		right: -25px
-	+r(767)
-		right: -15px
-	&:before
-		content: ""
+	+r(768)
+		right: -10px
+	+r(480)
+		right: -8px
 .slick-dots
 	padding-top: 30px
 	font-size: 0

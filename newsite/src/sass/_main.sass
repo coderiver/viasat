@@ -6,20 +6,20 @@
 		height: 520px
 		background-size: cover
 		background-position: 50% 50%
-		+r(1023)
+		+r(1024)
 			height: 400px
 	&__wrap
 		padding: 130px 0 0 70px
-		+r(767)
+		+r(768)
 			padding: 170px 10px 0
 	&__channel
 		margin-bottom: 20px
-		+r(1023)
+		+r(1024)
 			margin-bottom: 10px
 		&-pic
 			max-height: 50px
 			vertical-align: top
-			+r(1023)
+			+r(1024)
 				max-height: 46px
 	&__info
 		display: table
@@ -28,21 +28,21 @@
 		color: #fff
 		text-transform: uppercase
 		line-height: 1
-		+r(1023)
+		+r(1024)
 			padding: 20px 20px 22px
 	&__title
 		margin-bottom: 5px
 		font-size: 42px
 		font-weight: 700
-		+r(1023)
+		+r(1024)
 			font-size: 34px
-		+r(767)
+		+r(768)
 			font-size: 24px
 	&__text
 		font-size: 24px
-		+r(1023)
+		+r(1024)
 			font-size: 18px
-		+r(767)
+		+r(768)
 			font-size: 14px
 	&__when
 		display: table
@@ -53,13 +53,13 @@
 		color: #D62228
 		text-transform: uppercase
 		line-height: 1
-		+r(1023)
+		+r(1024)
 			padding: 12px 20px
 	&__date,
 	&__time
 		display: inline-block
 		font-size: 13px
-		+r(1023)
+		+r(1024)
 			font-size: 12px
 	&__date
 		margin-right: 10px
@@ -70,7 +70,7 @@
 		width: 50px
 		height: 100px
 		margin-top: -50px
-		+r(767)
+		+r(768)
 			width: 20px
 			height: 40px
 		&:before
@@ -83,19 +83,17 @@
 			border: 2px solid #dadada
 			border-radius: 50%
 
-			+r(767)
+			+r(768)
 				font-size: 24px
-		&:hover
-			background: #161F2D
 	.slick-prev
-		+r(1023)
+		+r(1024)
 			left: 0
 		+r(768)
 			left: 10px
 		&:before
 			background: url("../img/arr-left-white.svg") center no-repeat
 	.slick-next
-		+r(1023)
+		+r(1024)
 			right: 0
 		+r(768)
 			right: 10px
@@ -107,32 +105,21 @@
 		bottom: 35px
 		padding: 0
 		transform: translateX(-50%)
-		+r(1023)
+		+r(1024)
 			bottom: 15px
-
-.title
-	margin-bottom: 30px
-	+fg
-	font-size: 36px
-	font-weight: 700
-	text-align: center
-	+r(1023)
-		font-size: 30px
-	+r(767)
-		font-size: 26px
 
 .search
 	padding: 25px 0
 	background: url(../img/bg-search.jpg) no-repeat 50% 50%
 	background-size: cover
 	color: #FFF
-	+r(1023)
+	+r(1024)
 		padding: 30px 0
 	&__wrap
 		max-width: 620px
 		margin: 0 auto
 		text-align: center
-		+r(1023)
+		+r(1024)
 			max-width: 520px
 	&__title
 		margin-bottom: 15px
@@ -168,7 +155,7 @@
 	&_blue
 		background: #1773c3
 		color: #FFF
-		+r(767)
+		+r(768)
 			padding-bottom: 40px
 	&_banners
 		padding-bottom: 40px
@@ -179,9 +166,10 @@
 
 .blog
 	&__row
-		+r(1023)
+		+r(1024)
 			margin: 0 5px
-		+r(767)
+			padding: 0 10px
+		+r(768)
 			margin: 0 -5px
 	&__group
 		padding: 0 15px
@@ -231,13 +219,17 @@
 		padding-top: 30px
 	.slick-prev,
 	.slick-next
-		width: 30px
-		height: 44px
-		margin-top: -22px
+		margin-top: -15px
 		transform: translateY(-130%)
 		color: $cl
 		&:before
 			font-size: 20px
+	.slick-prev:before
+		background: url("../img/arr-left-white.svg") center no-repeat
+		border: 2px solid #dadada
+	.slick-next:before
+		background: url("../img/arr-right-white.svg") center no-repeat
+		border: 2px solid #dadada
 
 .more
 	text-align: center
@@ -280,9 +272,9 @@
 
 .premieres
 	&__row
-		+r(1023)
+		+r(1024)
 			margin: 0 5px
-		+r(767)
+		+r(768)
 			margin: 0 -5px
 	&__group
 		margin-bottom: 30px
@@ -293,35 +285,35 @@
 			font-size: 30px
 			font-weight: 700
 			color: #000
-			+r(1023)
+			+r(1024)
 				margin-bottom: 10px
-			+r(767)
+			+r(768)
 				font-size: 24px
 		&-text
 			font-size: 16px
 			font-weight: 300
 		&-col
 			float: right
-			+r(1023)
+			+r(1024)
 				position: relative
 			&:first-child
-				+r(1023)
+				+r(1024)
 					width: 50%
 					z-index: 2
-				+r(767)
+				+r(768)
 					display: none
 			&:last-child
-				+r(1023)
+				+r(1024)
 					width: 100%
 					margin-top: -35px
-				+r(767)
+				+r(768)
 					margin-top: 0
 	&__detail
 		display: table
 		float: right
 		margin-top: 44px
 		font-size: 0
-		+r(1023)
+		+r(1024)
 			margin-top: 0
 		&-title,
 		&-icon
@@ -361,64 +353,64 @@
 	&__title
 		font-size: 16px
 		font-weight: 700
-		+r(767)
+		+r(768)
 			font-size: 18px
 	&__text
 		font-size: 13px
 		font-style: italic
-		+r(767)
+		+r(768)
 			font-size: 14px
 	&__grid-col
-		+r(1023)
+		+r(1024)
 			width: 50%
-		+r(767)
+		+r(768)
 			width: 100%
 		&:first-child
-			+r(1023)
+			+r(1024)
 				width: 100%
 		&:nth-child(4)
-			+r(1023)
+			+r(1024)
 				clear: both
 	&__grid-col:first-child &__link
-		+r(767)
+		+r(768)
 			padding-bottom: 10px
 	&__grid-col:not(:first-child) &__link
-		+r(767)
+		+r(768)
 			padding: 10px 0
 			border-top: 1px solid #E1E1E1
 	&__grid-col:not(:first-child) &__preview
-		+r(767)
+		+r(768)
 			float: left
 			width: 60px
 			padding-right: 10px
 	&__grid-col:not(:first-child) &__label
-		+r(767)
+		+r(768)
 			display: none
 	&__grid-col:not(:first-child) &__pic
-		+r(767)
+		+r(768)
 			display: none
 	&__grid-col:not(:first-child) &__when
-		+r(767)
+		+r(768)
 			position: relative
 			padding: 0
 			color: $cl
 			text-align: left
 			text-shadow: none
 	&__grid-col:not(:first-child) &__time
-		+r(767)
+		+r(768)
 			font-size: 16px
 	&__grid-col:not(:first-child) &__date
-		+r(767)
+		+r(768)
 			font-size: 12px
 		+text-overflow
 	&__grid-col:not(:first-child) &__content
-		+r(767)
+		+r(768)
 			display: table
 	&__grid-col:not(:first-child) &__title
-		+r(767)
+		+r(768)
 			font-size: 14px
 	&__grid-col:not(:first-child) &__text
-		+r(767)
+		+r(768)
 			font-size: 12px
 	&__grid-more
 		display: none
@@ -427,19 +419,19 @@
 		font-size: 16px
 		font-weight: 700
 		text-align: center
-		+r(767)
+		+r(768)
 			display: block
 	&__grid &__link
-		+r(1023)
+		+r(1024)
 			margin-bottom: 35px
-		+r(767)
+		+r(768)
 			margin: 0
 	&__grid &__label
 		padding: 7px 15px 7px 10px
 	&__grid &__content
 		min-height: 80px
 		padding-bottom: 10px
-		+r(1023)
+		+r(1024)
 			min-height: 0
 			padding-bottom: 0
 	&__grid &__title
@@ -521,23 +513,23 @@
 		&-col
 			&:nth-child(1)
 				margin-bottom: 30px
-				+r(767)
+				+r(768)
 					margin-bottom: 20px
 	&__row
-		+r(1023)
+		+r(1024)
 			display: flex
 			flex-flow: wrap
 	&__col
 		&:first-child,
 		&:nth-child(3)
-			+r(1023)
+			+r(1024)
 				width: 50%
 				margin-bottom: 30px
-			+r(767)
+			+r(768)
 				width: 100%
 				margin-bottom: 20px
 		&:nth-child(2)
-			+r(1023)
+			+r(1024)
 				width: 100%
 				order: 3
 
@@ -546,14 +538,14 @@
 	padding: 25px 20px 50px
 	background: #FFF
 	text-align: center
-	+r(767)
+	+r(768)
 		padding: 25px 20px
 	&__wrap
 		max-width: 480px
 		margin: 0 auto
 	&__title
 		margin-bottom: 0
-		+r(767)
+		+r(768)
 			margin-bottom: 10px
 	&__text
 		margin-bottom: 20px
@@ -570,7 +562,7 @@
 		font-size: 24px
 		font-weight: 300
 		font-style: italic
-		+r(767)
+		+r(768)
 			height: 40px
 			padding: 0 60px 0 10px
 			font-size: 18px
@@ -585,7 +577,7 @@
 		font-size: 24px
 		text-transform: uppercase
 		color: #fff
-		+r(767)
+		+r(768)
 			width: 50px
 			height: 40px
 			font-size: 18px
@@ -596,9 +588,9 @@
 .channels
 	&__row
 		margin: 0 -15px
-		+r(1023)
+		+r(1024)
 			margin: 0 5px
-		+r(767)
+		+r(768)
 			margin: 0 -5px
 	&__link
 		display: block
@@ -694,44 +686,203 @@
 			border-radius: 50%
 			border: 2px solid #dadada
 			background: url("../img/arr-right-white.svg") center no-repeat
-	.card
+	.card:nth-child(3n)
 		.card__in
-			border-left: none
-.card
-	position: relative
-	.card__poster
-		img
-			display: block
-			width: 100%
-	.card__in
-		padding: 15px 35px 0
-		border-right: 1px solid rgba(#e6e6e6, .5)
-		border-left: 1px solid rgba(#e6e6e6, .5)
-		+r(768)
-			border: none
-	.card__channel
-		margin-bottom: 20px
-		font-size: 12px
-		.channel
-			margin-right: 15px
-	.card__title
-		font-size: 16px
-		font-weight: bold
-	.card__time
-		font-size: 26px
-		font-weight: bold
-		line-height: 1
-	.card__date
-		font-weight: bold
-		font-size: 14px
-		line-height: 1
-	.card__about
-		padding-top: 5px
-		color: #7f7f7f
-		font-size: 12px
-		font-style: italic
-	&.card_time
-		.card__title
-			font-size: 14px
+			border-width: 0
+	+r(1024)
+		.card:nth-child(3n)
+			.card__in
+				border-width: 1px
+		.card:nth-child(2n)
+			.card__in
+				border-width: 0
+
+
 .section_channels
 	background: #f2f2f3
+
+// content
+.out
+	background: #e9e9e9
+	padding-bottom: 30px
+.topper
+	padding: 50px 0 0
+	+cover
+	.topper__head
+		+clr
+		margin-bottom: 20px
+		.h1
+			float: left
+			width: 50%
+			+r(600)
+				float: none
+				width: 100%
+		.socials
+			float: right
+			width: 50%
+			text-align: right
+			margin-top: 10px
+			+r(600)
+				float: none
+				width: 100%
+				text-align: left
+.socials
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: middle
+		margin-left: 45px
+		&:first-child
+			margin-left: 0
+		a
+			font-size: 24px
+			color: #fff
+			transition: color 200ms
+			&:hover
+				color: $orange
+			.icon-vk
+				font-size: 28px
+	+r(768)
+		li
+			margin-left: 25px
+			a
+				font-size: 20px
+.s
+	position: relative
+	margin-bottom: 110px
+	+r(768)
+		margin-bottom: 44px
+	form
+		position: relative
+		display: block
+		max-width: 450px
+		+r(500)
+			max-width: 100%
+			width: 100%
+	.s__field
+		position: relative
+		input
+			width: 450px
+			height: 44px
+			border-radius: 22px
+			border: 2px solid #fff
+			padding: 0 40px 0 20px
+			background: transparent
+			font-size: 15px
+			font-weight: 500
+			color: #fff
+			+placeholder
+				color: #fff
+			+r(500)
+				width: 100%
+	.s__submit
+		position: absolute
+		top: 10px
+		right: 15px
+		font-size: 22px
+		color: #fff
+
+// breadcrumbs
+.breadcrumbs
+	margin-bottom: 15px
+	ul
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: middle
+			font-size: 12px
+			color: rgba(#fff, 0.5)
+			a
+				color: rgba(#fff, 0.5)
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+			&:before
+				content: "/"
+				display: inline-block
+				vertical-align: middle
+				margin: 0 3px
+			&:first-child:before
+				display: none
+// main
+.main
+	position: relative
+.nav
+	position: relative
+	padding: 0 60px
+	background: #f8f7f7
+	border-bottom: 1px solid #e7e5e5
+	+r(1024)
+		padding: 5px 30px
+	+r(768)
+		padding: 10px 20px
+	+r(480)
+		padding: 0 10px 10px
+	ul
+		+justify
+		margin: 0 -10px
+		li
+			display: inline-block
+			margin: 0 10px
+			a
+				display: block
+				height: 86px
+				padding-top: 30px
+				font-weight: 500
+				font-size: 18px
+				line-height: 24px
+				color: #222121
+				transition: color 200ms, border-color 200ms
+				border-bottom: 2px solid #f8f7f7
+				&.active, &:hover
+					color: $orange
+					border-color: $orange
+		+r(1024)
+			text-align: left
+			li
+				a
+					height: 50px
+					padding-top: 20px
+					font-size: 16px
+		+r(768)
+			margin: 0
+			li
+				vertical-align: top
+				padding-right: 10px
+				width: 50%
+				margin: 0
+				a
+					display: inline-block
+					height: auto
+					font-size: 14px
+					line-height: 1.2
+.catalog
+	padding: 40px 60px
+	background: #fff
+	.catalog__in
+		font-size: 0
+		.card
+			display: inline-block
+			vertical-align: top
+			width: 25%
+			margin: 0 0 50px
+			+r(768)
+				width: 50%
+	+r(1024)
+		padding: 40px 30px
+	+r(768)
+		padding: 30px 20px
+		.catalog__in
+			.card
+				width: 50%
+	+r(480)
+		padding: 20px 10px
+		.catalog__in
+			.card
+				width: 50%
+	+r(414)
+		.catalog__in
+			.card
+				width: 100%
+				.card__poster
+					padding: 0

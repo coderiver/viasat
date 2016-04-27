@@ -3,14 +3,14 @@
 	height: 70px
 	background: #FFF
 	z-index: 10
-	+r(1023)
+	+r(1024)
 		height: 60px
-	+r(767)
+	+r(768)
 		height: 50px
 	&__center
 		position: relative
 		+clr
-		+r(1023)
+		+r(1024)
 			&:before
 				content: ""
 				position: absolute
@@ -20,9 +20,9 @@
 				height: 60px
 				background: #FFF
 				z-index: 2
-				+r(767)
+				+r(768)
 					height: 50px
-		+r(767)
+		+r(768)
 			padding-left: 15px
 	&__logo
 		position: relative
@@ -33,9 +33,9 @@
 		background: url(../img/logo.png) no-repeat 0 0
 		background-size: cover
 		z-index: 4
-		+r(1023)
+		+r(1024)
 			margin: 13px 0 0 0
-		+r(767)
+		+r(768)
 			width: 130px
 			height: 28px
 			margin-top: 11px
@@ -48,20 +48,20 @@
 		height: 60px
 		font-size: 0
 		z-index: 4
-		+r(1023)
+		+r(1024)
 			display: block
-		+r(767)
+		+r(768)
 			width: 50px
 			height: 50px
 		&.is-active
-			+r(1023)
+			+r(1024)
 				background: #446591
 				color: #FFF
 			.icon-menu
-				+r(1023)
+				+r(1024)
 					display: none
 			.icon-close
-				+r(1023)
+				+r(1024)
 					display: inline-block
 		.icon-menu
 			font-size: 12px
@@ -72,24 +72,22 @@
 		float: left
 		+r(1270)
 			float: right
-		+r(1023)
+		+r(1024)
 			position: absolute
 			top: 60px
 			left: 0
 			right: 0
-			height: 0
+			display: none
 			background: #fff
 			border-top: 1px solid #d9d9d9
 			box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
 			transition: all .4s
-			visibility: hidden
 			overflow: hidden
-		+r(767)
+		+r(768)
 			top: 50px
 		&.is-active
-			+r(1023)
-				height: 560px
-				visibility: visible
+			+r(1024)
+				display: block
 	&__time
 		float: right
 		margin-top: 17px
@@ -99,7 +97,7 @@
 .menu
 	&__list
 		font-size: 0
-		+r(1023)
+		+r(1024)
 			display: flex
 			flex-flow: wrap
 			padding: 20px 10px 0
@@ -107,10 +105,11 @@
 		display: inline-block
 		vertical-align: top
 	&__item:first-child
-		+r(1023)
+		+r(1024)
 			order: 5
+			width: 100%
 	&__item:first-child &__link
-		+r(1023)
+		+r(1024)
 			display: none
 	&__item:hover &__link_drop
 		background: #FFF
@@ -134,22 +133,22 @@
 		vertical-align: middle
 		font-size: 0
 		color: #000
-		+r(1023)
+		+r(1024)
 			height: auto
 			padding: 10px 20px
 		&:hover
 			background: #EEE
-			+r(1023)
+			+r(1024)
 				background: transparent
 		&_red
 			background: #523796
 			color: #fff
-			+r(1023)
+			+r(1024)
 				background: transparent
 				color: #000
 			&:hover
 				background: $red
-				+r(1023)
+				+r(1024)
 					background: transparent
 	&__icon,
 	&__title
@@ -165,9 +164,11 @@
 	&__title
 		font-size: 16px
 		font-weight: 700
-		+r(1023)
+		+r(1024)
 			font-size: 20px
 			text-transform: uppercase
+		+r(768)
+			font-size: 16px
 	&__drop
 		position: absolute
 		top: 100%
@@ -177,7 +178,7 @@
 		background: #FFF
 		box-shadow: 0 9px 30px rgba(0, 0, 0, 0.29)
 		visibility: hidden
-		+r(1023)
+		+r(1024)
 			position: relative
 			left: auto
 			right: auto
@@ -192,7 +193,7 @@
 		width: 100%
 		padding: 30px 40px 25px 0
 		table-layout: fixed
-		+r(1023)
+		+r(1024)
 			display: block
 			padding: 30px
 		&-col
@@ -200,7 +201,7 @@
 			padding-left: 40px
 			border-left: 1px solid $border
 			vertical-align: top
-			+r(1023)
+			+r(1024)
 				display: block
 				margin-bottom: 30px
 				padding: 0
@@ -208,7 +209,7 @@
 			&:first-child
 				border-color: transparent
 			&:last-child
-				+r(1023)
+				+r(1024)
 					margin: 0
 		&-col:nth-child(1) &-pic
 			height: 30px
@@ -222,19 +223,29 @@
 			text-transform: uppercase
 			font-weight: 700
 			line-height: 1
-			+r(1023)
+			+r(1024)
 				font-size: 18px
 		&-list
 			margin-bottom: -18px
 			columns: 2
-			+r(1023)
+			+r(1024)
 				columns: 3
+			+r(768)
+				columns: auto
+				text-align: left
 		&-link
 			display: inline-block
 			width: 100%
 			height: 32px
 			margin-bottom: 28px
 			+vertical
+			+r(768)
+				width: 25%
+				text-align: left
+			+r(568)
+				width: 33.3%
+			+r(480)
+				width: 50%
 		&-pic
 			display: inline-block
 			max-height: 32px
@@ -243,7 +254,7 @@
 		padding: 25px 40px
 		background: #F8F8F8
 		border-top: 1px solid $border
-		+r(1023)
+		+r(1024)
 			display: none
 		&-head
 			margin-bottom: 20px
