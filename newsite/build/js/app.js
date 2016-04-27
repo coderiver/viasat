@@ -117,5 +117,23 @@ $(document).ready(function() {
             });
         };
     }());
+    
+    // scrolltop btn
+
+    $(document).on('scroll', function () {
+       if($(window).scrollTop() >= 500){
+           $('.js-scrolltop').addClass('visible');
+       }
+        else {
+           $('.js-scrolltop').removeClass('visible');
+       }
+    });
+
+    $('.js-scrolltop').on('click', function () {
+       $('html, body').animate({
+           scrollTop: 0
+       })
+    });
+    
 
 });

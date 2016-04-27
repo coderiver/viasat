@@ -154,4 +154,31 @@ a.btn
 		padding: 0 10px
 	+r(414)
 		padding: 0
-	
+
+.scrolltop
+	display: none
+	position: fixed
+	top: 20px
+	left: 50%
+	margin-left: -103px
+	width: 206px
+	height: 48px
+	border-radius: 3px
+	background-color: #f8b636
+	padding: 0 10px 0 50px
+	font-weight: 700
+	color: rgba(#fff, 0.7)
+	transform: translateY(-68px)
+	opacity: 0
+	transition: transform 200ms, opacity 200ms
+	z-index: 99
+	&.visible
+		opacity: 1
+		transform: translateY(0)
+	.icon-top
+		position: absolute
+		top: 18px
+		left: 18px
+		font-size: 8px
+	+r(768)
+		display: block
