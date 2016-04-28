@@ -234,6 +234,13 @@ a.btn {
 select {
   width: 100%; }
 
+.reset {
+  color: #353535;
+  -webkit-transition: color 200ms;
+  transition: color 200ms; }
+  .reset:hover {
+    color: #000; }
+
 .title {
   margin-bottom: 30px;
   font-family: "GothamPro-Medium", Roboto, Arial, sans-serif;
@@ -874,7 +881,7 @@ select {
   background-position: 50% 50%; }
   .topper .topper__head {
     *zoom: 1;
-    margin-bottom: 20px; }
+    margin-bottom: 110px; }
     .topper .topper__head:after {
       content: " ";
       display: table;
@@ -909,8 +916,7 @@ select {
         font-size: 28px; }
 
 .s {
-  position: relative;
-  margin-bottom: 110px; }
+  position: relative; }
   .s form {
     position: relative;
     display: block;
