@@ -111,5 +111,17 @@ $(document).ready(function() {
        })
     });
     
+    // custom select with js-scrollpane
+
+    $('.js-select').select2({
+        minimumResultsForSearch: -1
+    });
+
+    $(document).on("select2:open", ".js-select", function () {
+        $('.select2-results').perfectScrollbar();
+        setTimeout(function () {
+            $('.select2-results').perfectScrollbar('update');
+        },100);
+    });
 
 });

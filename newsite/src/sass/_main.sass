@@ -726,6 +726,8 @@
 				float: none
 				width: 100%
 				text-align: left
+	.topper__bottom
+		position: relative
 .socials
 	font-size: 0
 	li
@@ -820,6 +822,7 @@
 		padding: 0 10px 10px
 	ul
 		margin: 0 -20px
+		font-size: 0
 		li
 			display: inline-block
 			margin: 0 20px
@@ -885,3 +888,35 @@
 				width: 100%
 				.card__poster
 					padding: 0
+
+// filters
+.filters
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 360px
+	padding: 25px 0 25px 25px
+	background: #f8b636
+	.filters__row
+		margin-top: 15px
+		+clr
+		&:first-child
+			margin-top: 0
+	.filters__left
+		float: left
+		width: 140px
+	.filters__right
+		overflow: hidden
+		padding-right: 10px
+	.filter__item
+		margin-top: 10px
+		&:first-child
+			margin-top: 0
+	+r(900)
+		position: relative
+		width: 100%
+		padding: 25px 0 25px 10px
+	+r(768)
+		.filters__left
+			width: 120px
+
