@@ -5,7 +5,7 @@ title: Film
 {% extends "./layouts/_layout.html" %}
 
 {% block content %}
-    <div class="out">
+    <div class="out out_film">
         <div class="topper" style="background-image: url(img/film1.jpg)">
             <div class="topper__in">
                 <div class="center">
@@ -25,76 +25,53 @@ title: Film
                             <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
                         </ul>
                     </div>
+                    <div class="film-main">
+                        <div class="film-main__title">Одержимость</div>
+                        <div class="film-main__original">Whiplash</div>
+                        <div class="film-main__about">
+                            <div class="film-main__item">
+                                <ul>
+                                    <li>2014</li>
+                                </ul>
+                            </div>
+                            <div class="film-main__item">
+                                <ul>
+                                    <li>США</li>
+                                    <li>Англия</li>
+                                    <li>Франция</li>
+                                    <li>Италия</li>
+                                </ul>
+                            </div>
+                            <div class="film-main__item">
+                                <ul class="film-main__genre">
+                                    <li>Драма</li>
+                                    <li>Музыка</li>
+                                    <li>Комедия</li>
+                                    <li>Боевик</li>
+                                </ul>
+                            </div>
+                            <div class="film-main__item">
+                                <ul>
+                                    <li>107 мин.</li>
+                                </ul>
+                            </div>
+                            <div class="film-main__item">
+                                <ul>
+                                    <li>16+</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="topper__bottom">
                         <nav class="nav">
                             <ul>
-                                <li><a href="#" class="active">Все фильмы</a></li>
-                                <li><a href="#">Новинки</a></li>
-                                <li><a href="#">Популярные</a></li>
+                                <li><a href="#" class="active">Постеры</a></li>
+                                <li><a href="#">Кадры и цитаты</a></li>
+                                <li><a href="#">Трейлеры</a></li>
+                                <li><a href="#">Награды</a></li>
+                                <li><a href="#">Отзывы</a></li>
                             </ul>
                         </nav>
-                        <div class="filters">
-                            <div class="filters__row">
-                                <div class="filters__left">Сортировать по:</div>
-                                <div class="filters__right">
-                                    <div class="filter__item">
-                                        <select class="js-select" style="width: 100%" data-placeholder="Жанр">
-                                            <option></option>
-                                            <option value="Драма">Драма</option>
-                                            <option value="Мелодрама">Мелодрама</option>
-                                            <option value="Комедия">Комедия</option>
-                                            <option value="Боевик">Боевик</option>
-                                            <option value="Вестерн">Вестерн</option>
-                                            <option value="Военный">Военный</option>
-                                            <option value="Ужасы">Ужасы</option>
-                                            <option value="Фантастика">Фантастика</option>
-                                            <option value="Семейный">Семейный</option>
-                                            <option value="История">История</option>
-                                        </select>
-                                    </div>
-                                    <div class="filter__item">
-                                        <select class="js-select" style="width: 100%" data-placeholder="Страна производства">
-                                            <option></option>
-                                            <option value="Австрия">Австрия</option>
-                                            <option value="Болгария">Болгария</option>
-                                            <option value="Венгрия">Венгрия</option>
-                                            <option value="Испания">Испания</option>
-                                            <option value="Италия">Италия</option>
-                                            <option value="Канада">Канада</option>
-                                            <option value="Мексика">Мексика</option>
-                                            <option value="США">США</option>
-                                            <option value="Испания">Испания</option>
-                                            <option value="Италия">Италия</option>
-                                            <option value="Исландия">Исландия</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filters__row">
-                                <div class="filters__left"><button class="reset" type="reset">Сбросить</button></div>
-                                <div class="filters__right">
-                                    <div class="filter__item">
-                                        <select class="js-select" style="width: 100%" data-placeholder="Год выпуска">
-                                            <option></option>
-                                            <option value="2016">2016</option>
-                                            <option value="2015">2015</option>
-                                            <option value="2014">2014</option>
-                                            <option value="2013">2013</option>
-                                            <option value="2012">2012</option>
-                                            <option value="2011">2011</option>
-                                            <option value="2010">2010</option>
-                                            <option value="2009">2009</option>
-                                            <option value="2008">2008</option>
-                                            <option value="2007">2007</option>
-                                            <option value="2006">2006</option>
-                                            <option value="2005">2005</option>
-                                            <option value="2004">2004</option>
-                                            <option value="2003">2003</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +79,89 @@ title: Film
         {# main page content #}
         <div class="main">
             <div class="center">
-
+                <div class="film">
+                    <div class="film__left">
+                        <div class="film__poster">
+                            <img src="img/poster.jpg" alt="">
+                        </div>
+                        <div class="like-block">
+                            <button class="like">{{ mixins.icon('like') }} <span>712</span></button>
+                            <button class="dislike">{{ mixins.icon('like') }} <span></span></button>
+                        </div>
+                        <div class="rating rating_small">
+                            <div class="rating__item">
+                                <ul class="rating__stars">
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                    <li class="star">{{ mixins.icon('star-full') }}</li>
+                                </ul>
+                                <div class="rating__value">9.1</div>
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team__block">
+                                <div class="team__row">
+                                    <div class="team__left">Режиссер:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Сценарий:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Продюсер:</div>
+                                    <div class="team__right">
+                                        <p>Джейсон Блум</p>
+                                        <p>Хелен Блум</p>
+                                        <p>Дэвид Ланкастер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__block">
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">
+                                        <p>Джейсон Блум</p>
+                                        <p>Хелен Блум</p>
+                                        <p>Дэвид Ланкастер</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__block">
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                                <div class="team__row">
+                                    <div class="team__left">Оператор:</div>
+                                    <div class="team__right">Дэмьен Шазелл</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quote">
+                            <p>Дорога к величию может привести вас к краю...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
