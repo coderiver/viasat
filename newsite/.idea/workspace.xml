@@ -24,34 +24,67 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="335" column="14" selection-start-line="335" selection-start-column="14" selection-end-line="335" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="film.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/film.html">
+      <file leaf-file-name="film-premiere.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/film-premiere.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="159" column="41" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="41" />
+            <state relative-caret-position="490">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding>
-                <element signature="e#120#3380#0#HTML" expanded="false" />
-                <element signature="e#310#590#0#HTML" expanded="false" />
-                <element signature="e#4003#5276#0#HTML" expanded="false" />
-                <element signature="e#5301#8295#0#HTML" expanded="false" />
+                <element signature="e#913#4173#0#HTML" expanded="false" />
+                <element signature="e#4282#30666#0#HTML" expanded="false" />
+                <element signature="e#4335#9285#0#HTML" expanded="false" />
+                <element signature="e#9306#13293#0#HTML" expanded="false" />
+                <element signature="e#9395#11114#0#HTML" expanded="false" />
+                <element signature="e#13314#19880#0#HTML" expanded="false" />
+                <element signature="e#13399#15298#0#HTML" expanded="false" />
+                <element signature="e#16894#18293#0#HTML" expanded="false" />
+                <element signature="e#20195#20240#0#HTML" expanded="true" />
+                <element signature="e#20996#21041#0#HTML" expanded="true" />
+                <element signature="e#22290#26187#0#HTML" expanded="false" />
+                <element signature="e#22609#22655#0#HTML" expanded="true" />
+                <element signature="e#22821#22867#0#HTML" expanded="true" />
+                <element signature="e#23596#23642#0#HTML" expanded="true" />
+                <element signature="e#24154#24200#0#HTML" expanded="true" />
+                <element signature="e#24457#24503#0#HTML" expanded="true" />
+                <element signature="e#24669#24715#0#HTML" expanded="true" />
+                <element signature="e#25444#25490#0#HTML" expanded="true" />
+                <element signature="e#26002#26048#0#HTML" expanded="true" />
+                <element signature="e#27149#29706#0#HTML" expanded="false" />
+                <element signature="e#29815#29861#0#HTML" expanded="true" />
+                <element signature="e#30683#33479#0#HTML" expanded="false" />
+                <marker date="1462374218000" expanded="false" signature="15490:16864" placeholder="..." />
+                <marker date="1462374218000" expanded="false" signature="18341:19726" placeholder="..." />
+                <marker date="1462374218000" expanded="false" signature="20082:21715" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_film.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_film.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_film.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+            <state relative-caret-position="250">
+              <caret line="688" column="23" selection-start-line="688" selection-start-column="23" selection-end-line="688" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_main.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="708" column="25" selection-start-line="708" selection-start-column="25" selection-end-line="708" selection-end-column="25" />
+              <folding>
+                <marker date="1462374292000" expanded="true" signature="11813:11886" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +92,8 @@
       <file leaf-file-name="_common.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+            <state relative-caret-position="520">
+              <caret line="221" column="23" selection-start-line="221" selection-start-column="23" selection-end-line="221" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -79,8 +112,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+            <state relative-caret-position="424">
+              <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -105,15 +138,16 @@
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/sass/_perfectscrollbar.sass" />
         <option value="$PROJECT_DIR$/src/sass/_select2.sass" />
-        <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/templates/podborka.html" />
         <option value="$PROJECT_DIR$/src/sass/_card.sass" />
         <option value="$PROJECT_DIR$/src/templates/category.html" />
-        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/sass/style.sass" />
         <option value="$PROJECT_DIR$/src/templates/film.html" />
+        <option value="$PROJECT_DIR$/src/js/common.js" />
+        <option value="$PROJECT_DIR$/src/sass/_common.sass" />
         <option value="$PROJECT_DIR$/src/sass/_film.sass" />
+        <option value="$PROJECT_DIR$/src/templates/film-premiere.html" />
+        <option value="$PROJECT_DIR$/src/sass/_main.sass" />
       </list>
     </option>
   </component>
@@ -157,7 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -246,7 +280,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,6 +351,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="55241d35-1684-4f8b-aa24-6b88cee066f1" name="Default" comment="" />
@@ -331,11 +368,12 @@
       <workItem from="1461829897583" duration="16629000" />
       <workItem from="1461916864357" duration="134000" />
       <workItem from="1461918868037" duration="9880000" />
+      <workItem from="1462346224008" duration="21452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67248000" />
+    <option name="totallyTimeSpent" value="88700000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,19 +393,27 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -672,42 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="145" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="202" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="712" column="28" selection-start-line="712" selection-start-column="28" selection-end-line="712" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="335" column="14" selection-start-line="335" selection-start-column="14" selection-end-line="335" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,24 +733,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/film.html">
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="159" column="41" selection-start-line="159" selection-start-column="36" selection-end-line="159" selection-end-column="41" />
-          <folding>
-            <element signature="e#120#3380#0#HTML" expanded="false" />
-            <element signature="e#310#590#0#HTML" expanded="false" />
-            <element signature="e#4003#5276#0#HTML" expanded="false" />
-            <element signature="e#5301#8295#0#HTML" expanded="false" />
-          </folding>
+        <state relative-caret-position="424">
+          <caret line="109" column="30" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="221" column="23" selection-start-line="221" selection-start-column="23" selection-end-line="221" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_film.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+        <state relative-caret-position="250">
+          <caret line="688" column="23" selection-start-line="688" selection-start-column="23" selection-end-line="688" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/film-premiere.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="e#913#4173#0#HTML" expanded="false" />
+            <element signature="e#4282#30666#0#HTML" expanded="false" />
+            <element signature="e#4335#9285#0#HTML" expanded="false" />
+            <element signature="e#9306#13293#0#HTML" expanded="false" />
+            <element signature="e#9395#11114#0#HTML" expanded="false" />
+            <element signature="e#13314#19880#0#HTML" expanded="false" />
+            <element signature="e#13399#15298#0#HTML" expanded="false" />
+            <element signature="e#16894#18293#0#HTML" expanded="false" />
+            <element signature="e#20195#20240#0#HTML" expanded="true" />
+            <element signature="e#20996#21041#0#HTML" expanded="true" />
+            <element signature="e#22290#26187#0#HTML" expanded="false" />
+            <element signature="e#22609#22655#0#HTML" expanded="true" />
+            <element signature="e#22821#22867#0#HTML" expanded="true" />
+            <element signature="e#23596#23642#0#HTML" expanded="true" />
+            <element signature="e#24154#24200#0#HTML" expanded="true" />
+            <element signature="e#24457#24503#0#HTML" expanded="true" />
+            <element signature="e#24669#24715#0#HTML" expanded="true" />
+            <element signature="e#25444#25490#0#HTML" expanded="true" />
+            <element signature="e#26002#26048#0#HTML" expanded="true" />
+            <element signature="e#27149#29706#0#HTML" expanded="false" />
+            <element signature="e#29815#29861#0#HTML" expanded="true" />
+            <element signature="e#30683#33479#0#HTML" expanded="false" />
+            <marker date="1462374218000" expanded="false" signature="15490:16864" placeholder="..." />
+            <marker date="1462374218000" expanded="false" signature="18341:19726" placeholder="..." />
+            <marker date="1462374218000" expanded="false" signature="20082:21715" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="708" column="25" selection-start-line="708" selection-start-column="25" selection-end-line="708" selection-end-column="25" />
+          <folding>
+            <marker date="1462374292000" expanded="true" signature="11813:11886" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

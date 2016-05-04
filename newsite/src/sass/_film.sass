@@ -8,7 +8,7 @@
 				a
 					font-size: 14px
 .film-main
-	padding: 0 390px 0 276px
+	padding: 110px 390px 0 276px
 	color: #fff
 	.film-main__title
 		font-size: 35px
@@ -60,15 +60,30 @@
 .film
 	+clr
 	background: #fff
+	margin-bottom: 20px
 	.film__left
 		position: relative
 		top: -230px
 		width: 276px
+		float: left
 		padding: 0 38px 0 24px
+		margin-bottom: -230px
 	.film__poster
 		img
 			display: block
 			width: 100%
+	.film__right
+		float: right
+		width: 364px
+		border-left: 1px solid #e7e5e5
+	.film__main
+		overflow: hidden
+		padding-top: 25px
+		padding-right: 25px
+	&.film_premiere
+		.film__right
+			margin-top: -230px
+			margin-bottom: -230px
 //likes
 .like-block
 	+clr
@@ -166,6 +181,553 @@
 		font-size: 85px
 		font-weight: 400
 		line-height: 1
+
+.premiere
+	position: relative
+	padding: 20px 28px
+	background: #f8b636
+	margin-left: -1px
+	.premiere__channel
+		font-size: 16px
+		color: #222121
+		padding-bottom: 5px
+		border-bottom: 1px solid #eba84c
+	.premiere__time
+		font-size: 0
+		padding: 13px 0
+		border-bottom: 1px solid #eba84c
+		.date
+			display: inline-block
+			vertical-align: middle
+			margin: 0 20px 0 85px
+	.premiere__title
+		display: inline-block
+		vertical-align: middle
+		font-size: 14px
+		color: rgba(#222121, 0.7)
+	.premiere__repeat
+		padding: 13px 0
+		.date
+			display: inline-block
+			vertical-align: middle
+			margin: 0 10px 0 10px
+.date
+	position: relative
+	color: #222121
+	text-align: center
+	.date__time
+		font-size: 22px
+		font-weight: bold
+	.date__day
+		font-size: 12px
+	&.date_big
+		.date__time
+			font-size: 32px
+		.date__day
+			font-size: 20px
+.remind
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	&:hover
+		.remind__hint
+			opacity: 1
+			display: block
+	.remind__btn
+		width: 50px
+		height: 50px
+		border-radius: 3px
+		background: #fff
+		font-size: 23px
+		color: #734fa1
+	.remind__hint
+		position: absolute
+		top: 0
+		left: 55px
+		height: 50px
+		opacity: 0
+		display: none
+		min-width: 170px
+		background-color: #6d57a5
+		border-radius: 3px
+		padding: 0 16px
+		+vertical
+		span
+			display: inline-block
+			vertical-align: middle
+			font-size: 12px
+			color: #fff
+		+r(1450)
+			left: auto
+			right: 55px
+.connect-channels
+	display: block
+	height: 70px
+	line-height: 70px
+	background: #734fa1
+	font-size: 14px
+	font-weight: bold
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+.watch
+	position: relative
+	.watch__btn
+		height: 70px
+		+vertical
+		text-align: left
+		padding-left: 100px
+		background: #f8b636
+		span
+			position: relative
+			display: inline-block
+			vertical-align: middle
+			font-size: 14px
+			font-weight: bold
+			color: #222121
+			&:after
+				content: ""
+				display: inline-block
+				vertical-align: middle
+				margin-left: 20px
+				+arr(12, 7, #222121, b)
+				transition: transform 200ms
+		&.open
+			span:after
+				transform: rotate(180deg)
+	.watch__list
+		position: absolute
+		top: 70px
+		left: 0
+		right: 0
+		padding: 20px 0
+		background: #ffc34f
+		display: none
+		li
+			padding-left: 100px
+			margin-top: 10px
+			&:first-child
+				margin-top: 0
+		a
+			color: #222121
+			font-size: 14px
+			font-weight: bold
+			text-transform: uppercase
+.actors
+	position: relative
+	padding: 30px
+	.actors__topper
+		+clr
+		margin-bottom: 30px
+	.h4
+		float: left
+	.actors__all
+		float: right
+		margin-top: 4px
+		color: rgba(#838382, 0.5)
+		font-size: 14px
+		font-weight: 500
+		svg
+			vertical-align: middle
+			font-size: 13px
+			color: #353535
+	.actors__item
+		margin-top: 40px
+		+clr
+		&:first-child
+			margin-top: 0
+	.actors__img
+		float: left
+		width: 60px
+		height: 60px
+		margin-right: 40px
+		border-radius: 50%
+		overflow: hidden
+		img
+			width: 100%
+	.actors__about
+		padding-top: 7px
+		overflow: hidden
+	.actors__name
+		font-size: 17px
+		font-weight: 500
+		color: #353535
+	.actors__role
+		font-size: 14px
+		color: #919191
+		font-style: italic
+.story
+	position: relative
+	margin-bottom: 40px
+	.story__topper
+		+clr
+		margin-bottom: 30px
+		.h4
+			float: left
+			padding-top: 10px
+		.awards
+			float: right
+	.story__article
+		color: #919191
+		font-size: 14px
+		p
+			margin-bottom: 25px
+
+.awards
+	font-size: 0
+	.awards__item
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin-left: 25px
+		padding-left: 25px
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 0
+			width: 1px
+			height: 24px
+			margin-top: -12px
+			background: #b7b7b7
+		&:first-child
+			margin-left: 0
+			padding-left: 0
+			&:before
+				display: none
+	.awards__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+	.awards__counter
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+		color: #010101
+		font-size: 16px
+		span
+			font-size: 18px
+	.award__title
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+		color: #353535
+		strong
+			font-weight: 700
+.rating-hint
+	color: rgba(#403f3f, 0.6)
+	text-align: right
+
+.facts
+	position: relative
+	clear: both
+	.h4
+		position: absolute
+		top: 30px
+		left: 20%
+		z-index: 2
+	.facts__slider
+		position: relative
+		.slick-prev
+			position: absolute
+			top: 50%
+			left: 45px
+			width: 40px
+			height: 40px
+			transform: translateY(-50%)
+			z-index: 2
+			border: 1px solid #fff
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background: url("../img/arr-left-white.svg") center no-repeat
+		.slick-next
+			position: absolute
+			top: 50%
+			right: 45px
+			width: 40px
+			height: 40px
+			transform: translateY(-50%)
+			z-index: 2
+			border: 1px solid #fff
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background: url("../img/arr-right-white.svg") center no-repeat
+	.facts__slide
+		position: relative
+		padding-top: 100px
+		min-height: 280px
+	.facts__img
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		+cover
+		z-index: 1
+	.facts__in
+		position: relative
+		max-width: 840px
+		margin: 0 auto
+		+clr
+		z-index: 2
+	.facts__text
+		float: right
+		width: 50%
+		font-size: 14px
+		color: rgba(#fff, 0.6)
+.headline
+	position: relative
+	margin: 44px 0 30px 277px
+	color: #353535
+	font-size: 20px
+	font-weight: 700
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		height: 26px
+		left: -20px
+		width: 3px
+		background: #f8b636
+
+.trailer
+	position: relative
+	.trailer__in
+		position: relative
+		padding-left: 277px
+	.trailer__video
+		position: relative
+		padding-bottom: 50%
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+.quotes
+	.quotes__slider
+		.slick-prev
+			position: absolute
+			top: 75%
+			left: 45px
+			width: 40px
+			height: 40px
+			transform: translateY(-50%)
+			z-index: 2
+			border: 1px solid #fff
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background: url("../img/arr-left-white.svg") center no-repeat
+		.slick-next
+			position: absolute
+			top: 25%
+			right: 45px
+			width: 40px
+			height: 40px
+			transform: translateY(-50%)
+			z-index: 2
+			border: 1px solid #fff
+			border-radius: 50%
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				background: url("../img/arr-right-white.svg") center no-repeat
+	.quotes__slide
+		+clr
+	.quotes__cell
+		position: relative
+		float: left
+		width: 50%
+		padding-bottom: 35%
+		&:nth-child(3)
+			.quotes__content
+				padding: 45px 45px 45px 100px
+	.quotes__bg
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		+cover
+		z-index: 1
+	.quotes__content
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		padding: 45px 100px 45px 45px
+		z-index: 2
+		.quote
+			border-top: none
+			color: #fff
+			text-align: left
+.posters
+	margin-bottom: 40px
+	padding-right: 40px
+	.posters__list
+		padding-left: 277px
+		+clr
+.poster
+	width: 25%
+	float: left
+	padding: 0 1%
+	text-align: center
+	.poster__img
+		margin-bottom: 15px
+		img
+			display: block
+			width: 100%
+	.poster__size
+		margin-bottom: 8px
+		font-size: 14px
+		color: #575656
+	.poster__download
+		display: inline-block
+		font-size: 14px
+		font-weight: 700
+		color: #2c2c2c
+		svg
+			margin-right: 10px
+.rewards
+	+clr
+	.rewards__left
+		float: left
+		width: 70%
+		padding-left: 277px
+		.headline
+			margin-left: 0
+			margin-bottom: 50px
+	.rewards__list
+		font-size: 0
+	.rewards__right
+		float: right
+		width: 30%
+	.rewards__more
+		padding: 45px 60px
+		min-height: 500px
+		+cover
+		color: #fff
+	.rewards__all
+		margin-bottom: 90px
+		a
+			color: #fff
+			svg
+				vertical-align: middle
+	.rewards__year
+		margin-bottom: 130px
+		a
+			display: inline-block
+			font-size: 14px
+			color: #fff
+			font-weight: 500
+			border-bottom: 2px solid #fff
+
+.reward
+	position: relative
+	display: inline-block
+	vertical-align: top
+	width: 33.3%
+	padding: 0 1%
+	font-size: 14px
+	.reward__img
+		min-height: 115px
+		margin-bottom: 20px
+		text-align: center
+		img
+			max-width: 100%
+	.reward__year
+		position: absolute
+		top: 0
+		left: 0
+		color: #919191
+		font-weight: 500
+	.reward__name
+		margin-bottom: 30px
+		color: #353535
+		font-weight: 700
+		text-transform: uppercase
+	.reward__titles
+		li
+			position: relative
+			font-size: 13px
+			margin-bottom: 15px
+			color: #919191
+			&:before
+				content: ""
+				position: absolute
+				top: 6px
+				left: -10px
+				width: 4px
+				height: 4px
+				border-radius: 50%
+				background: #353535
+.comments
+	+clr
+	.comments__in
+		float: left
+		width: 67.5%
+		padding-right: 5%
+		background: #fff url("../img/comments.png") 0 100px no-repeat
+	.comments__aside
+		float: right
+		width: 30%
+		margin-left: 2.5%
+	.comments__wrap
+		padding-left: 277px
+	.comments__form
+		margin-bottom: 20px
+		& > p
+			margin-bottom: 10px
+			color: #919191
+			font-size: 14px
+	.comments__input
+		width: 100%
+		resize: none
+		padding: 5px 10px
+		height: 100px
+		border: 1px solid transparent
+		transition: border 200ms
+		+placeholder
+			color: rgba(#919191, 0.6)
+		&:focus
+			border-color: #353535
+	.comments__list
+		padding-bottom: 30px
+.comment
+	position: relative
+	+clr
+	border-top: 1px solid #f3f3f3
+	padding: 30px 0
+	&:first-child
+		border-top: none
+	.comment__user
+		float: left
+		width: 60px
+	.comment__text
+		overflow: hidden
+		color: #919191
+		font-size: 14px
+
+
+
+
+
+
 
 
 

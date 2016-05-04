@@ -93,6 +93,28 @@ $(document).ready(function() {
             });
         };
     }());
+
+    // facts slider
+    (function () {
+        var sl = $('.js-facts');
+        if (sl.length) {
+            sl.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        };
+    }());
+
+    // quotes slider
+    (function () {
+        var sl = $('.js-quotes');
+        if (sl.length) {
+            sl.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        };
+    }());
     
     // scrolltop btn
 
@@ -125,5 +147,12 @@ $(document).ready(function() {
             },100);
         });
     }
+    
+    // watch list dropdown
+    
+    $('.js-watch-btn').on('click', function () {
+        $(this).toggleClass('open');
+        $(this).closest('.js-watch').find('.watch__list').slideToggle();
+    });
 
 });
