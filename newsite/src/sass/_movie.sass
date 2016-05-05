@@ -1,0 +1,62 @@
+.movie
+	position: relative
+	display: block
+	text-decoration: none
+	color: #353535
+	.movie__poster
+		img
+			display: block
+			width: 100%
+	.movie__in
+		position: relative
+		+clr
+		background: #fff
+	.movie__channel
+		position: absolute
+		bottom: 100%
+		left: 0
+		right: 0
+		padding: 5px 20px
+		text-align: right
+		color: #fff
+		background: rgba(#fff, 0.5)
+	.movie__left
+		float: left
+		width: 70%
+		padding: 10px 15px
+		font-size: 16px
+		font-weight: 500
+	.movie__right
+		float: right
+		width: 30%
+		padding: 10px 10px 10px 0
+		text-align: center
+	.movie__time
+		font-size: 18px
+		font-weight: 500
+	.movie__date
+		font-size: 12px
+	&.movie_orange
+		.movie__in
+			background: $orange
+			color: #fff
+		.movie__channel
+			background: rgba($orange, 0.5)
+	&.movie_red
+		.movie__in
+			background: $red
+			color: #fff
+		.movie__channel
+			background: rgba($red, 0.5)
+	&.movie_violet
+		.movie__in
+			background: $violet
+			color: #fff
+		.movie__channel
+			background: rgba($violet, 0.5)
+	&.movie_green
+		.movie__in
+			background: $green
+			color: #fff
+		.movie__channel
+			background: rgba($green, 0.5)

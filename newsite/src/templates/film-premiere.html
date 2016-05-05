@@ -36,6 +36,55 @@ channels:
 - img: img/channel10.png
 - img: img/channel11.png
 - img: img/channel12.png
+movies:
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: green
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия'
+  country: 'США, 2014'
 ---
 
 {% extends "./layouts/_layout.html" %}
@@ -585,6 +634,59 @@ channels:
                                 <div class="channels__item"><a href="#" class="channels__link"><img href="#" src="{{ channel.img }}" class="channels__logo"></a></div>
                             {% endfor %}
                         </div>
+                    </div>
+                </div>
+            </div>
+            {# tvshows #}
+            <div class="tvshows">
+                <div class="center">
+                    <div class="headtitle">СМОТРИТЕ НА КАНАЛЕ <strong>TV1000 Premium HD</strong></div>
+                    <div class="tvshows__slider js-tvshow">
+                        {% for movie in movies %}
+                            <div class="tvshows__item">
+                                <a href="#" class="movie">
+                                    <div class="movie__poster">
+                                        <img src="{{ movie.img }}" alt="">
+                                    </div>
+                                    <div class="movie__in">
+                                        <div class="movie__left">
+                                            <div class="movie__title">{{ movie.title }}</div>
+                                        </div>
+                                        <div class="movie__right">
+                                            <div class="movie__time">{{ movie.time }}</div>
+                                            <div class="movie__date">{{ movie.date }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {# tvshows #}
+            <div class="tvshows tvshows_gray">
+                <div class="center">
+                    <div class="headtitle">ИНТЕРЕСНОЕ НА ЭТОЙ НЕДЕЛЕ</div>
+                    <div class="tvshows__slider js-tvshow">
+                        {% for movie in movies %}
+                            <div class="tvshows__item">
+                                <a href="#" class="movie movie_{{ movie.color }}">
+                                    <div class="movie__poster">
+                                        <img src="{{ movie.img }}" alt="">
+                                    </div>
+                                    <div class="movie__in">
+                                        <div class="movie__channel">{{ movie.channel }}</div>
+                                        <div class="movie__left">
+                                            <div class="movie__title">{{ movie.title }}</div>
+                                        </div>
+                                        <div class="movie__right">
+                                            <div class="movie__time">{{ movie.time }}</div>
+                                            <div class="movie__date">{{ movie.date }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

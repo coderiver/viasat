@@ -97,6 +97,28 @@ $(document).ready(function() {
         };
     }());
 
+    // watch at channel slider
+    (function () {
+        var sl = $('.js-tvshow');
+        if (sl.length) {
+            sl.slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },{
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }]
+            });
+        };
+    }());
+
     // channels slider
     (function () {
         var sl = $('.js-channels');

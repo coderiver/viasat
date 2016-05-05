@@ -722,6 +722,48 @@
 		overflow: hidden
 		color: #919191
 		font-size: 14px
+.tvshows
+	position: relative
+	background: #352361
+	padding: 24px 0 48px
+	&.tvshows_gray
+		background: #504f58
+	.tvshows__slider
+		margin: 0 -20px
+	.tvshows__item
+		padding: 0 20px
+	.slick-prev
+		position: absolute
+		top: 50%
+		left: -45px
+		width: 40px
+		height: 40px
+		transform: translateY(-50%)
+		z-index: 2
+		border: 1px solid #fff
+		border-radius: 50%
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			background: url("../img/arr-left-white.svg") center no-repeat
+	.slick-next
+		position: absolute
+		top: 50%
+		right: -45px
+		width: 40px
+		height: 40px
+		transform: translateY(-50%)
+		z-index: 2
+		border: 1px solid #fff
+		border-radius: 50%
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			background: url("../img/arr-right-white.svg") center no-repeat
 
 
 
