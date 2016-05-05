@@ -7,9 +7,22 @@
 				margin: 0 8px
 				a
 					font-size: 14px
+		+r(1280)
+			padding: 0 0 0 276px
+		+r(900)
+			padding: 0 25px
+		+r(768)
+			padding: 0 25px 10px
+			ul
+				li
+					margin: 0
 .film-main
 	padding: 110px 390px 0 276px
 	color: #fff
+	+r(1024)
+		padding: 110px 0 0 276px
+	+r(900)
+		padding: 110px 0 0
 	.film-main__title
 		font-size: 35px
 		font-weight: 500
@@ -68,20 +81,63 @@
 		float: left
 		padding: 0 38px 0 24px
 		margin-bottom: -230px
+		+r(1024)
+			padding: 0 20px
+		+r(900)
+			top: 0
+			margin-bottom: 0
+			float: none
+			width: 100%
+			.quote
+				display: none
+		+r(568)
+			padding: 0 10px
+	.film__row
+		+clr
+		margin: 0 -10px
+	.film__col
+		padding: 0 10px
+		.film__rating, .awards
+			display: none
+		+r(900)
+			float: left
+			width: 50%
+			.film__rating, .awards
+				display: block
+			.film__rating
+				border-top: 1px solid #e7e5e5
+				padding-top: 10px
+			.awards
+				padding-top: 20px
 	.film__poster
 		img
 			display: block
 			width: 100%
+		+r(900)
+			padding-top: 20px
 	.film__right
 		float: right
 		margin-top: -87px
 		margin-bottom: -87px
 		width: 364px
 		border-left: 1px solid #e7e5e5
+		+r(1280)
+			width: 320px
+			margin-top: 0
+			margin-bottom: 0
+		+r(1024)
+			width: 280px
+		+r(900)
+			float: none
+			width: 100%
 	.film__main
 		overflow: hidden
 		padding-top: 25px
 		padding-right: 25px
+	.film__rating
+		padding-bottom: 20px
+		+r(900)
+			display: none
 	&.film_premiere
 		.film__right
 			margin-top: -230px
@@ -111,11 +167,25 @@
 		float: right
 		svg
 			transform: rotate(180deg)
+	+r(568)
+		.like, .dislike
+			float: none
+			width: 100%
+			margin-bottom: 10px
 // rating
 .rating
 	margin-bottom: 20px
+	+clr
+	.rating__title
+		+r(600)
+			float: left
+			width: 50%
 	.rating__item
 		+clr
+		+r(600)
+			float: right
+			width: 50%
+			text-align: right
 	.rating__stars
 		float: left
 		font-size: 0
@@ -124,11 +194,67 @@
 		font-size: 20px
 		font-weight: 900
 		color: #353535
+		+r(600)
+			display: inline-block
+	+r(1024)
+		.star
+			font-size: 17px
+		.rating__value
+			font-size: 16px
+	+r(900)
+		.star
+			font-size: 28px
+		.rating__value
+			font-size: 20px
+	+r(768)
+		.rating__stars
+			float: none
+			display: inline-block
+			vertical-align: middle
+		.rating__value
+			float: none
+			display: inline-block
+			vertical-align: middle
+			text-align: center
+		.star
+			font-size: 20px
+	+r(600)
+		.rating__stars
+			display: inline-block
+			vertical-align: middle
+			width: auto
+			.star
+				display: none
+				font-size: 13px
+				&:first-child
+					display: inline-block
+					vertical-align: middle
+		.rating__value
+			font-size: 14px
 	&.rating_small
 		.star
 			font-size: 17px
 		.rating__value
 			font-size: 16px
+		+r(900)
+			.star
+				font-size: 28px
+			.rating__value
+				font-size: 20px
+		+r(768)
+			.rating__item
+				float: none
+				width: 100%
+			.rating__stars
+				display: block
+				text-align: center
+				.star
+					font-size: 20px
+					display: inline-block
+			.rating__value
+				font-size: 30px
+				display: block
+				text-align: center
 
 .star
 	display: inline-block
@@ -139,6 +265,14 @@
 		color: #f8b636
 .team
 	margin-bottom: 20px
+	.headline
+		display: none
+		margin: 44px 0 30px
+		+r(768)
+			display: block
+	.team__wrap
+		+r(768)
+			display: none
 	.team__block
 		margin-top: 40px
 		&:first-child
@@ -147,6 +281,10 @@
 		+clr
 		font-size: 12px
 		margin-bottom: 10px
+		+r(900)
+			font-size: 14px
+		+r(480)
+			font-size: 12px
 	.team__left
 		float: left
 		width: 50%
@@ -274,6 +412,7 @@
 	color: #fff
 .watch
 	position: relative
+	z-index: 2
 	.watch__btn
 		height: 70px
 		+vertical
@@ -297,6 +436,8 @@
 		&.open
 			span:after
 				transform: rotate(180deg)
+		+r(768)
+			padding-left: 20px
 	.watch__list
 		position: absolute
 		top: 70px
@@ -318,13 +459,30 @@
 .actors
 	position: relative
 	padding: 30px
+	+r(900)
+		padding: 20px
+	.actors__head
+		display: none
+		.headline
+			margin-left: 0
+		+r(768)
+			display: block
+	.actors__main
+		+r(768)
+			display: none
 	.actors__topper
 		+clr
 		margin-bottom: 30px
+		+r(768)
+			display: none
 	.h4
 		float: left
+		+r(1024)
+			float: none
+			width: 100%
 	.actors__all
 		float: right
+		display: inline-block
 		margin-top: 4px
 		color: rgba(#838382, 0.5)
 		font-size: 14px
@@ -333,6 +491,9 @@
 			vertical-align: middle
 			font-size: 13px
 			color: #353535
+		+r(1024)
+			float: none
+			margin-bottom: 10px
 	.actors__item
 		margin-top: 40px
 		+clr
@@ -361,6 +522,10 @@
 .story
 	position: relative
 	margin-bottom: 40px
+	.story__head
+		display: none
+		+r(768)
+			display: block
 	.story__topper
 		+clr
 		margin-bottom: 30px
@@ -369,11 +534,24 @@
 			padding-top: 10px
 		.awards
 			float: right
+			+r(1280)
+				float: none
+				width: 100%
+			+r(900)
+				display: none
+		+r(900)
+			padding: 0 20px
+		+r(768)
+			display: none
 	.story__article
 		color: #919191
 		font-size: 14px
 		p
 			margin-bottom: 25px
+		+r(900)
+			padding: 0 20px
+		+r(768)
+			display: none
 
 .awards
 	font-size: 0
@@ -397,10 +575,28 @@
 			padding-left: 0
 			&:before
 				display: none
+		+r(1280)
+			margin-left: 10px
+			padding-left: 10px
+		+r(900)
+			display: block
+			margin-left: 0
+			padding-left: 50px
+			margin-bottom: 20px
+			&:before
+				display: none
+			&:first-child
+				padding-left: 50px
+		+r(768)
+			padding-left: 0
+			&:first-child
+				padding-left: 0
 	.awards__img
 		display: inline-block
 		vertical-align: middle
 		margin-right: 10px
+		+r(480)
+			margin-right: 2px
 	.awards__counter
 		display: inline-block
 		vertical-align: middle
@@ -409,6 +605,11 @@
 		font-size: 16px
 		span
 			font-size: 18px
+		+r(480)
+			font-size: 13px
+			margin-right: 0
+			span
+				font-size: 15px
 	.award__title
 		display: inline-block
 		vertical-align: middle
@@ -416,18 +617,37 @@
 		color: #353535
 		strong
 			font-weight: 700
+		+r(900)
+			font-size: 18px
+		+r(480)
+			font-size: 13px
+			max-width: 80px
+			text-align: center
 .rating-hint
 	color: rgba(#403f3f, 0.6)
 	text-align: right
+	+r(480)
+		font-size: 11px
 
 .facts
 	position: relative
 	clear: both
-	.h4
+	+r(768)
+		margin-bottom: 30px
+	.slick-dots
 		position: absolute
-		top: 30px
-		left: 20%
-		z-index: 2
+		top: 20px
+		left: 50%
+		padding-top: 0
+		li
+			&.slick-active
+				button
+					&:before
+						opacity: 1
+						transform: scale(1)
+		button
+			&:before
+				opacity: 0.5
 	.facts__slider
 		position: relative
 		.slick-prev
@@ -446,6 +666,8 @@
 				top: 0
 				left: 0
 				background: url("../img/arr-left-white.svg") center no-repeat
+			+r(640)
+				left: 10px
 		.slick-next
 			position: absolute
 			top: 50%
@@ -462,9 +684,11 @@
 				top: 0
 				left: 0
 				background: url("../img/arr-right-white.svg") center no-repeat
+			+r(640)
+				right: 10px
 	.facts__slide
 		position: relative
-		padding-top: 100px
+		padding-top: 70px
 		min-height: 280px
 	.facts__img
 		position: absolute
@@ -473,16 +697,17 @@
 		right: 0
 		left: 0
 		+cover
+		+g(#8f7dbd, #302649)
 		z-index: 1
 	.facts__in
 		position: relative
-		max-width: 840px
+		padding: 0 20%
 		margin: 0 auto
 		+clr
 		z-index: 2
+		+r(640)
+			padding: 0 10%
 	.facts__text
-		float: right
-		width: 50%
 		font-size: 14px
 		color: rgba(#fff, 0.6)
 .headline
@@ -499,12 +724,34 @@
 		left: -20px
 		width: 3px
 		background: #f8b636
+	+r(1024)
+		margin: 44px 0 30px 150px
+	+r(768)
+		margin: 0 20px 20px
+		cursor: pointer
+		&:after
+			content: ""
+			position: absolute
+			top: 5px
+			right: 0
+			width: 16px
+			height: 10px
+			background: url("../img/top.svg")
+			+cover
+			transform: rotate(180deg)
+
 
 .trailer
 	position: relative
+	+r(768)
+		margin-bottom: 30px
 	.trailer__in
 		position: relative
 		padding-left: 277px
+		+r(1024)
+			padding-left: 150px
+		+r(768)
+			padding-left: 0
 	.trailer__video
 		position: relative
 		padding-bottom: 50%
@@ -584,6 +831,14 @@
 	.posters__list
 		padding-left: 277px
 		+clr
+		margin: 0 -1%
+	+r(1024)
+		padding-right: 20px
+		.posters__list
+			padding-left: 150px
+	+r(768)
+		.posters__list
+			padding-left: 20px
 .poster
 	width: 25%
 	float: left
@@ -614,6 +869,10 @@
 		.headline
 			margin-left: 0
 			margin-bottom: 50px
+		+r(1024)
+			padding-left: 150px
+		+r(768)
+			padding-left: 20px
 	.rewards__list
 		font-size: 0
 	.rewards__right
@@ -624,6 +883,9 @@
 		min-height: 500px
 		+cover
 		color: #fff
+		+r(1024)
+			padding: 35px 40px
+			min-height: 400px
 	.rewards__all
 		margin-bottom: 90px
 		a
@@ -691,6 +953,8 @@
 		margin-left: 2.5%
 	.comments__wrap
 		padding-left: 277px
+		+r(1024)
+			padding-left: 150px
 	.comments__form
 		margin-bottom: 20px
 		& > p
@@ -732,6 +996,9 @@
 		background: #504f58
 	.tvshows__slider
 		margin: 0 -20px
+		+r(1024)
+			margin: 0
+			padding: 0 20px
 	.tvshows__item
 		padding: 0 20px
 	.slick-prev
@@ -750,6 +1017,8 @@
 			top: 0
 			left: 0
 			background: url("../img/arr-left-white.svg") center no-repeat
+		+r(1024)
+			left: -10px
 	.slick-next
 		position: absolute
 		top: 50%
@@ -766,6 +1035,8 @@
 			top: 0
 			left: 0
 			background: url("../img/arr-right-white.svg") center no-repeat
+		+r(1024)
+			right: -10px
 
 
 

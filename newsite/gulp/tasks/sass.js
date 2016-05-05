@@ -9,24 +9,24 @@ var config = require('../config');
 
 
 var processors = [
-    autoprefixer({browsers: ['last 5 versions'], cascade: false}),
-    mqpacker({
-        sort: function(a, b) {
-            A = a.replace(/\D/g, '');
-            B = b.replace(/\D/g, '');
-
-            if (isMax(a) && isMax(b)) {
-                return B - A;
-            } else if (isMin(a) && isMin(b)) {
-                return A - B;
-            } else if (isMax(a) && isMin(b)) {
-                return 1;
-            } else if (isMin(a) && isMax(b)) {
-                return -1;
-            }
-            return 1;
-        }
-    })
+    autoprefixer({browsers: ['last 5 versions'], cascade: false})
+    // mqpacker({
+    //     sort: function(a, b) {
+    //         A = a.replace(/\D/g, '');
+    //         B = b.replace(/\D/g, '');
+    //
+    //         if (isMax(a) && isMax(b)) {
+    //             return B - A;
+    //         } else if (isMin(a) && isMin(b)) {
+    //             return A - B;
+    //         } else if (isMax(a) && isMin(b)) {
+    //             return 1;
+    //         } else if (isMin(a) && isMax(b)) {
+    //             return -1;
+    //         }
+    //         return 1;
+    //     }
+    // })
 ];
 
 function isMax(mq) {

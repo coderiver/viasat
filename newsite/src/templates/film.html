@@ -166,79 +166,170 @@ movies:
             <div class="center">
                 <div class="film">
                     <div class="film__left">
-                        <div class="film__poster">
-                            <img src="img/poster.jpg" alt="">
-                        </div>
-                        <div class="like-block">
-                            <button class="like">{{ mixins.icon('like') }} <span>712</span></button>
-                            <button class="dislike">{{ mixins.icon('like') }} <span></span></button>
-                        </div>
-                        <div class="rating rating_small">
-                            <div class="rating__item">
-                                <ul class="rating__stars">
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                    <li class="star">{{ mixins.icon('star-full') }}</li>
-                                </ul>
-                                <div class="rating__value">9.1</div>
+                        <div class="film__row">
+                            <div class="film__col">
+                                <div class="film__poster">
+                                    <img src="img/poster.jpg" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="team">
-                            <div class="team__block">
-                                <div class="team__row">
-                                    <div class="team__left">Режиссер:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
-                                </div>
-                                <div class="team__row">
-                                    <div class="team__left">Сценарий:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
-                                </div>
-                                <div class="team__row">
-                                    <div class="team__left">Продюсер:</div>
-                                    <div class="team__right">
-                                        <p>Джейсон Блум</p>
-                                        <p>Хелен Блум</p>
-                                        <p>Дэвид Ланкастер</p>
+                            <div class="film__col">
+                                <div class="awards">
+                                    <div class="awards__item">
+                                        <img src="img/oscar.png" class="awards__img" alt="">
+                                        <div class="awards__counter">x<span>3</span></div>
+                                        <div class="award__title">
+                                            <p>Премия</p>
+                                            <strong>“Золотой глобус”</strong>
+                                        </div>
+                                    </div>
+                                    <div class="awards__item">
+                                        <img src="img/golden-globe.png" class="awards__img" alt="">
+                                        <div class="award__title">
+                                            <p>Премия</p>
+                                            <strong>“Золотой глобус”</strong>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="team__block">
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
+                        </div>
+                        <div class="film__row">
+                            <div class="film__col">
+                                <div class="like-block">
+                                    <button class="like">{{ mixins.icon('like') }} <span>712</span></button>
+                                    <button class="dislike">{{ mixins.icon('like') }} <span></span></button>
                                 </div>
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
-                                </div>
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">
-                                        <p>Джейсон Блум</p>
-                                        <p>Хелен Блум</p>
-                                        <p>Дэвид Ланкастер</p>
+                                <div class="rating rating_small">
+                                    <div class="rating__item">
+                                        <ul class="rating__stars">
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                            <li class="star">{{ mixins.icon('star-full') }}</li>
+                                        </ul>
+                                        <div class="rating__value">9.1</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="team__block">
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
+                            <div class="film__col">
+                                {# rating #}
+                                <div class="film__rating">
+                                    <h4 class="h4">Рейтинг</h4>
+                                    <div class="rating">
+                                        <div class="rating__title">IMDB</div>
+                                        <div class="rating__item">
+                                            <ul class="rating__stars">
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                            </ul>
+                                            <div class="rating__value">9.1</div>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="rating__title">Кинопоиск</div>
+                                        <div class="rating__item">
+                                            <ul class="rating__stars">
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                            </ul>
+                                            <div class="rating__value">9.1</div>
+                                        </div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="rating__title">Rotten Tomatoes</div>
+                                        <div class="rating__item">
+                                            <ul class="rating__stars">
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                            </ul>
+                                            <div class="rating__value">95%</div>
+                                        </div>
+                                    </div>
+                                    <div class="rating-hint">положительных рецензий кинокритиков</div>
                                 </div>
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
+                            </div>
+                        </div>
+                        <div class="team js-wrap">
+                            <div class="headline js-wrap-btn">Команда</div>
+                            <div class="team__wrap js-wrap-cont">
+                                <div class="team__block">
+                                    <div class="team__row">
+                                        <div class="team__left">Режиссер:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Сценарий:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Продюсер:</div>
+                                        <div class="team__right">
+                                            <p>Джейсон Блум</p>
+                                            <p>Хелен Блум</p>
+                                            <p>Дэвид Ланкастер</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="team__row">
-                                    <div class="team__left">Оператор:</div>
-                                    <div class="team__right">Дэмьен Шазелл</div>
+                                <div class="team__block">
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">
+                                            <p>Джейсон Блум</p>
+                                            <p>Хелен Блум</p>
+                                            <p>Дэвид Ланкастер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team__block">
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__right">Дэмьен Шазелл</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -264,31 +355,38 @@ movies:
                             </ul>
                         </div>
                         {# actors #}
-                        <div class="actors">
-                            <div class="actors__topper">
-                                <h4 class="h4">В ролях:</h4>
-                                <a href="#" class="actors__all">Смотреть весь список {{ mixins.icon('right') }}</a>
+                        <div class="actors js-wrap">
+                            <div class="actors__head">
+                                <div class="headline js-wrap-btn">В ролях</div>
                             </div>
-                            <div class="actors__list">
-                                {% for actor in actors %}
-                                    <div class="actors__item">
-                                        <div class="actors__img">
-                                            <img src="{{ actor.img }}" alt="">
+                            <div class="actors__main js-wrap-cont">
+                                <div class="actors__topper">
+                                    <h4 class="h4">В ролях:</h4>
+                                    <a href="#" class="actors__all">Смотреть весь список {{ mixins.icon('right') }}</a>
+                                </div>
+                                <div class="actors__list">
+                                    {% for actor in actors %}
+                                        <div class="actors__item">
+                                            <div class="actors__img">
+                                                <img src="{{ actor.img }}" alt="">
+                                            </div>
+                                            <div class="actors__about">
+                                                <div class="actors__name">{{ actor.name }}</div>
+                                                <div class="actors__role">...{{ actor.role }}</div>
+                                            </div>
                                         </div>
-                                        <div class="actors__about">
-                                            <div class="actors__name">{{ actor.name }}</div>
-                                            <div class="actors__role">...{{ actor.role }}</div>
-                                        </div>
-                                    </div>
-                                {% endfor %}
+                                    {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="film__main">
                         {# story #}
-                        <div class="story">
+                        <div class="story js-wrap">
+                            <div class="story__head">
+                                <div class="headline js-wrap-btn">Сюжет</div>
+                            </div>
                             <div class="story__topper">
-                                <h4 class="h4">Сюжет</h4>
                                 <div class="awards">
                                     <div class="awards__item">
                                         <img src="img/oscar.png" class="awards__img" alt="">
@@ -306,11 +404,12 @@ movies:
                                         </div>
                                     </div>
                                 </div>
+                                <h4 class="h4">Сюжет</h4>
                             </div>
-                            <article class="story__article">
+                            <div class="story__article js-wrap-cont">
                                 <p>Молодой и перспективный барабанщик стремится любым способом взобраться на вершину музыкального олимпа. И его мечта, кажется, совсем скоро станет явью. Он попадает в ведущий оркестр страны и будет учиться у знаменитого дирижера и настоящего профессионала своего дела.</p>
                                 <p>Однако жестокие методы нового наставника навсегда меняют жизнь талантливого парня. А его желание отточить мастерство до совершенства быстро перерастает в одержимость.</p>
-                            </article>
+                            </div>
                         </div>
                         {# rating #}
                         <div class="film__rating">
@@ -374,11 +473,12 @@ movies:
                     </div>
                     {# facts #}
                     <div class="facts">
-                        <h4 class="h4 h4_white">Интересные факты</h4>
+
                         <div class="facts__slider js-facts">
                             <div class="facts__slide">
-                                <div class="facts__img" style="background-image: url(img/fact1.jpg);"></div>
+                                <div class="facts__img"></div>
                                 <div class="facts__in">
+                                    <h4 class="h4 h4_white">Интересные факты</h4>
                                     <div class="facts__text">
                                         <p>Режиссер фильма Дэмьен Шазелл включил в фильм
                                             немало автобиографических деталей.
@@ -389,8 +489,9 @@ movies:
                                 </div>
                             </div>
                             <div class="facts__slide">
-                                <div class="facts__img" style="background-image: url(img/fact1.jpg);"></div>
+                                <div class="facts__img"></div>
                                 <div class="facts__in">
+                                    <h4 class="h4 h4_white">Интересные факты</h4>
                                     <div class="facts__text">
                                         <p>Режиссер фильма Дэмьен Шазелл включил в фильм
                                             немало автобиографических деталей.
