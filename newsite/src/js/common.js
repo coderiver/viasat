@@ -144,8 +144,36 @@ $(document).ready(function() {
         var sl = $('.js-quotes');
         if (sl.length) {
             sl.slick({
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [{
+                    breakpoint: 766,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        dots: true
+                    }
+                }]
+            });
+        };
+    }());
+
+    // quotes slider
+    (function () {
+        var sl = $('.js-posters');
+        if (sl.length) {
+            sl.slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: false,
+                responsive: [{
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                        dots: true
+                    }
+                }]
             });
         };
     }());

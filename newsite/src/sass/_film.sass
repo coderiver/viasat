@@ -732,7 +732,7 @@
 		&:after
 			content: ""
 			position: absolute
-			top: 5px
+			top: 9px
 			right: 0
 			width: 16px
 			height: 10px
@@ -752,6 +752,7 @@
 			padding-left: 150px
 		+r(768)
 			padding-left: 0
+			display: none
 	.trailer__video
 		position: relative
 		padding-bottom: 50%
@@ -762,6 +763,11 @@
 			right: 0
 			bottom: 0
 .quotes
+	margin-bottom: 20px
+	.headline
+		cursor: default
+		&:after
+			display: none
 	.quotes__slider
 		.slick-prev
 			position: absolute
@@ -779,6 +785,8 @@
 				top: 0
 				left: 0
 				background: url("../img/arr-left-white.svg") center no-repeat
+			+r(900)
+				left: 10px
 		.slick-next
 			position: absolute
 			top: 25%
@@ -795,16 +803,35 @@
 				top: 0
 				left: 0
 				background: url("../img/arr-right-white.svg") center no-repeat
+			+r(900)
+				right: 10px
 	.quotes__slide
 		+clr
 	.quotes__cell
 		position: relative
-		float: left
-		width: 50%
-		padding-bottom: 35%
-		&:nth-child(3)
-			.quotes__content
-				padding: 45px 45px 45px 100px
+		min-height: 800px
+		+r(767)
+			min-height: 600px
+	.quotes__img
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		height: 50%
+		overflow: hidden
+		img
+			display: block
+			min-width: 100%
+			min-height: 100%
+	.quotes__img + .quotes__content
+		top: 50%
+		padding: 50px 50px 50px 100px
+		+r(900)
+			padding: 40px 20px 40px 60px
+	.quotes__content + .quotes__img
+		top: 50%
+		+r(767)
+			top: 0
 	.quotes__bg
 		position: absolute
 		top: 0
@@ -816,18 +843,27 @@
 	.quotes__content
 		position: absolute
 		top: 0
-		bottom: 0
-		right: 0
 		left: 0
-		padding: 45px 100px 45px 45px
+		right: 0
+		height: 50%
+		padding: 50px 100px 50px 50px
 		z-index: 2
 		.quote
 			border-top: none
 			color: #fff
 			text-align: left
+			z-index: 2
+		+r(900)
+			padding: 40px 60px 40px 20px
+		+r(767)
+			top: 50%
 .posters
 	margin-bottom: 40px
 	padding-right: 40px
+	.headline
+		cursor: default
+		&:after
+			display: none
 	.posters__list
 		padding-left: 277px
 		+clr
@@ -849,6 +885,7 @@
 		img
 			display: block
 			width: 100%
+			height: auto
 	.poster__size
 		margin-bottom: 8px
 		font-size: 14px
@@ -862,6 +899,9 @@
 			margin-right: 10px
 .rewards
 	+clr
+	.rewards__in
+		+r(768)
+			display: none
 	.rewards__left
 		float: left
 		width: 70%
@@ -872,12 +912,17 @@
 		+r(1024)
 			padding-left: 150px
 		+r(768)
-			padding-left: 20px
+			padding: 0 20px
+			float: none
+			width: 100%
 	.rewards__list
 		font-size: 0
 	.rewards__right
 		float: right
 		width: 30%
+		+r(768)
+			float: none
+			width: 100%
 	.rewards__more
 		padding: 45px 60px
 		min-height: 500px
@@ -908,6 +953,9 @@
 	width: 33.3%
 	padding: 0 1%
 	font-size: 14px
+	+r(568)
+		width: 100%
+		text-align: center
 	.reward__img
 		min-height: 115px
 		margin-bottom: 20px
@@ -920,6 +968,8 @@
 		left: 0
 		color: #919191
 		font-weight: 500
+		+r(568)
+			top: 182px
 	.reward__name
 		margin-bottom: 30px
 		color: #353535
@@ -940,6 +990,9 @@
 				height: 4px
 				border-radius: 50%
 				background: #353535
+		+r(568)
+			text-align: left
+			padding-left: 40%
 .comments
 	+clr
 	.comments__in
@@ -947,14 +1000,28 @@
 		width: 67.5%
 		padding-right: 5%
 		background: #fff url("../img/comments.png") 0 100px no-repeat
+		+r(768)
+			float: none
+			width: 100%
+			padding: 20px
+			margin-bottom: 20px
+			background-size: 40px
 	.comments__aside
 		float: right
 		width: 30%
 		margin-left: 2.5%
+		+r(768)
+			float: none
+			width: 100%
+			margin-left: 0
+			margin-bottom: 20px
 	.comments__wrap
 		padding-left: 277px
 		+r(1024)
 			padding-left: 150px
+		+r(768)
+			display: none
+			padding-left: 30px
 	.comments__form
 		margin-bottom: 20px
 		& > p
@@ -974,6 +1041,11 @@
 			border-color: #353535
 	.comments__list
 		padding-bottom: 30px
+		+r(568)
+			margin-left: -20px
+	.headline
+		+r(768)
+			margin-bottom: 0
 .comment
 	position: relative
 	+clr
