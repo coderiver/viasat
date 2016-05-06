@@ -2949,6 +2949,9 @@ select {
     overflow: hidden;
     padding-top: 25px;
     padding-right: 25px; }
+    @media only screen and (max-width: 900px) {
+      .film .film__main {
+        padding-right: 0; } }
   .film .film__rating {
     padding-bottom: 20px; }
     @media only screen and (max-width: 900px) {
@@ -2957,6 +2960,10 @@ select {
   .film.film_premiere .film__right {
     margin-top: -230px;
     margin-bottom: -230px; }
+    @media only screen and (max-width: 1280px) {
+      .film.film_premiere .film__right {
+        margin-top: 0;
+        margin-bottom: 0; } }
 
 .like-block {
   *zoom: 1;
@@ -3167,6 +3174,12 @@ select {
   padding: 20px 28px;
   background: #f8b636;
   margin-left: -1px; }
+  @media only screen and (max-width: 768px) {
+    .premiere {
+      margin-left: 0; } }
+  @media only screen and (max-width: 480px) {
+    .premiere {
+      padding: 20px 10px; } }
   .premiere .premiere__channel {
     font-size: 16px;
     color: #222121;
@@ -3180,6 +3193,9 @@ select {
       display: inline-block;
       vertical-align: middle;
       margin: 0 20px 0 85px; }
+      @media only screen and (max-width: 1280px) {
+        .premiere .premiere__time .date {
+          margin: 0 20px 0 40px; } }
   .premiere .premiere__title {
     display: inline-block;
     vertical-align: middle;
@@ -3191,6 +3207,10 @@ select {
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px 0 10px; }
+    @media only screen and (max-width: 480px) {
+      .premiere .premiere__repeat .premiere__title {
+        display: block;
+        margin-bottom: 10px; } }
 
 .date {
   position: relative;
@@ -3219,7 +3239,9 @@ select {
     border-radius: 3px;
     background: #fff;
     font-size: 23px;
-    color: #734fa1; }
+    color: #face79; }
+    .remind .remind__btn:hover {
+      color: #734fa1; }
   .remind .remind__hint {
     position: absolute;
     top: 0;
@@ -3330,7 +3352,8 @@ select {
   .actors .actors__head {
     display: none; }
     .actors .actors__head .headline {
-      margin-left: 0; }
+      margin-left: 0;
+      margin-right: 0; }
     @media only screen and (max-width: 768px) {
       .actors .actors__head {
         display: block; } }
@@ -3538,6 +3561,9 @@ select {
     position: absolute;
     top: 20px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     padding-top: 0; }
     .facts .slick-dots li.slick-active button:before {
       opacity: 1;
@@ -3762,6 +3788,9 @@ select {
     @media only screen and (max-width: 900px) {
       .quotes .quotes__img + .quotes__content {
         padding: 40px 20px 40px 60px; } }
+    @media only screen and (max-width: 568px) {
+      .quotes .quotes__img + .quotes__content {
+        padding: 40px 10px; } }
   .quotes .quotes__content + .quotes__img {
     top: 50%; }
     @media only screen and (max-width: 767px) {
@@ -3796,6 +3825,9 @@ select {
     @media only screen and (max-width: 767px) {
       .quotes .quotes__content {
         top: 50%; } }
+    @media only screen and (max-width: 568px) {
+      .quotes .quotes__content {
+        padding: 40px 10px; } }
 
 .posters {
   margin-bottom: 40px;
