@@ -1,1 +1,118 @@
-
+.header_promo
+	height: auto
+	padding: 20px 0
+	+r(480)
+		padding: 0
+		.center
+			padding: 0 10px
+.header__channels
+	position: relative
+	font-size: 0
+	margin: 0 -2%
+	padding-top: 12px
+	z-index: 2
+	li
+		display: inline-block
+		vertical-align: middle
+		width: 16.6%
+		padding: 0 2%
+		a
+			display: block
+			img
+				display: block
+				width: 100%
+		+r(768)
+			width: 33.3%
+			padding: 0 5%
+			margin-bottom: 10px
+		+r(480)
+			padding: 0 2%
+.topper_promo
+	.topper__head
+		margin-bottom: 15px
+	.topper__left
+		float: left
+		.h1
+			float: none
+			width: 100%
+	.socials
+		width: auto
+	.topper__min
+		text-align: center
+		margin-bottom: 45px
+.subtitle
+	font-size: 24px
+	font-weight: 300
+	color: #fff
+.carousel
+	.carousel__title
+		margin-bottom: 40px
+		text-align: center
+		font-size: 22px
+		color: #8d99ae
+	.carousel__img
+		margin-bottom: 50px
+		border-radius: 5px
+		overflow: hidden
+		font-size: 0
+		transition: all 300ms
+		img
+			max-width: 100%
+	.carousel__in
+		text-align: center
+	.carousel__info
+		display: inline-block
+		padding: 0 18px
+		text-align: right
+		border-right: 1px solid #313942
+		color: #8b98a5
+		font-weight: bold
+		font-size: 14px
+	.carousel__time
+		font-size: 20px
+	.slick-list
+		padding: 100px 0!important
+	.slick-center
+		position: relative
+		z-index: 5
+		.carousel__img
+			transform: scale(1.2)
+			box-shadow: 0 0 92px rgba(88, 151, 251, 0.55), 0 0 70px rgba(33, 111, 165, 0.35)
+	.prev-slide
+		.carousel__img
+			transform: matrix3d(1, 0, 0, -0.001, -0.0006, 0.8, 0, 0, 0, 0, 1, 0, 20, 0, 0, 1)
+	.next-slide
+		.carousel__img
+			transform: matrix3d(-1, 0, 0, -0.001, -0.0006, 0.8, 0, 0, 0, 0, 1, 0, -20, 0, 0, 1)
+	.slick-prev
+		position: absolute
+		top: 50%
+		left: 10px
+		width: 40px
+		height: 40px
+		margin-top: -80px
+		z-index: 2
+		border: 1px solid #fff
+		border-radius: 50%
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			background: url("../img/arr-left-white.svg") center no-repeat
+	.slick-next
+		position: absolute
+		top: 50%
+		right: 10px
+		width: 40px
+		height: 40px
+		margin-top: -80px
+		z-index: 2
+		border: 1px solid #fff
+		border-radius: 50%
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			background: url("../img/arr-right-white.svg") center no-repeat

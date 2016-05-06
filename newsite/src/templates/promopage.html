@@ -1,5 +1,210 @@
 ---
 title: Promopage
+cards:
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img1.jpg'
+  channel: 'TV1000 Premium HD'
+  title: 'Восхождение Юпитер'
+  time: '20:00'
+  date: '7 мая'
+  color: violet
+  genre: 'Комедия'
+  country: 'США, 2014'
+- img: img/img2.jpg
+  channel: 'TV1000 Comedy HD'
+  title: 'Безумный Макс: Дорога ярости'
+  time: '19:00'
+  date: '26 апреля'
+  color: orange
+  genre: 'Комедия, Драма, Семейный'
+  country: 'Великобритания, 2011'
+- img: 'img/img3.jpg'
+  channel: 'TV1000 Action HD'
+  title: 'Дедушка легкого поведения'
+  time: '19:00'
+  date: '28 апреля'
+  color: red
+  genre: 'Комедия'
+  country: 'США, 2014'
 ---
 
+{% extends "./layouts/_layout-promo.html" %}
 
+{% block content %}
+    {# topper #}
+    <div class="topper topper_promo" style="background-image: url(img/promo-topper.jpg);">
+        <div class="topper__in">
+            <div class="center">
+                <div class="topper__head">
+                    <div class="topper__left">
+                        <h1 class="h1">Каналы TV1000</h1>
+                        <div class="subtitle">Только лучшее кино</div>
+                    </div>
+                    <ul class="socials">
+                        <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                        <li><a href="#">{{ mixins.icon('vk') }}</a></li>
+                        <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+                    </ul>
+                </div>
+                <div class="topper__min">
+                    <a href="#" class="btn btn_blue">Подключайтесь!</a>
+                </div>
+                <div class="carousel">
+                    <div class="carousel__title">Премьеры на каналах:</div>
+                    <div class="carousel__slider js-carousel">
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel__slide">
+                            <div class="carousel__img">
+                                <img src="img/carousel1.jpg" alt="">
+                            </div>
+                            <div class="carousel__in">
+                                <div class="carousel__info">
+                                    <div class="carousel__name">Игра престолов</div>
+                                    <div class="carousel__time">21:00</div>
+                                    <div class="carousel__date">29 апреля</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# premieres #}
+    <div class="section section_premiere">
+        <div class="center">
+            <div class="title">Премьеры на VIASAT</div>
+            <div class="slider">
+                <div class="slider__in js-slider">
+                    {% for card in cards %}
+                        <div class="slider__item card card_white card_time">
+                            <div class="card__poster">
+                                <img src="{{ card.img }}" alt="">
+                            </div>
+                            <div class="card__in">
+                                <div class="card__channel">
+                                    <span class="channel">{{ mixins.icon('star') }}</span> {{ card.channel }}
+                                </div>
+                                <div class="card__title">{{ card.title }}</div>
+                                <div class="card__time">{{ card.time }}</div>
+                                <div class="card__date">{{ card.date }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {# live soon #}
+    <div class="section">
+        <div class="center">
+            <div class="title">Скоро в эфире</div>
+            <div class="slider">
+                <div class="slider__in js-slider">
+                    {% for card in cards %}
+                        <div class="slider__item card">
+                            <div class="card__poster">
+                                <img src="{{ card.img }}" alt="">
+                            </div>
+                            <div class="card__in">
+                                <div class="card__channel">
+                                    <span class="channel channel_{{ card.color }}">{{ mixins.icon('star') }}</span> {{ card.channel }}
+                                </div>
+                                <div class="card__title">{{ card.title }}</div>
+                                <div class="card__about">
+                                    <p>{{ card.genre }}</p>
+                                    <p>{{ card.country }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="more">
+                <a href="#" class="btn">Вся телепрограмма</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
