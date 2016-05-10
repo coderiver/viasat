@@ -35,6 +35,8 @@
 		.h1
 			float: none
 			width: 100%
+		+r(600)
+			float: none
 	.socials
 		width: auto
 	.topper__min
@@ -45,18 +47,29 @@
 	font-weight: 300
 	color: #fff
 .carousel
+	+r(568)
+		margin: 0 -15px
+	.carousel__slider
+		opacity: 0
+		visibility: hidden
+		transition: opacity 200ms
+		&.loaded
+			visibility: visible
+			opacity: 1
 	.carousel__title
 		margin-bottom: 40px
 		text-align: center
 		font-size: 22px
 		color: #8d99ae
+		+r(568)
+			margin-bottom: 20px
 	.carousel__img
 		margin-bottom: 50px
 		border-radius: 5px
 		overflow: hidden
 		font-size: 0
-
-		transition: all 300ms
+		transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -20, 0, 0, 1)
+		transition: transform 400ms
 		img
 			max-width: 100%
 	.carousel__in
@@ -69,22 +82,38 @@
 		color: #8b98a5
 		font-weight: bold
 		font-size: 14px
+		+r(568)
+			font-size: 12px
 	.carousel__time
 		font-size: 20px
+		+r(568)
+			font-size: 16px
 	.slick-list
 		padding: 100px 0!important
+		+r(768)
+			padding: 75px 0!important
+		+r(480)
+			padding: 75px 50px!important
+	.slick-slide
+		opacity: 0
+		transition: opacity 400ms
 	.slick-center
 		position: relative
+		opacity: 1
 		z-index: 5
 		.carousel__img
-			transform: scale(1.2)
+			transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, -20, 0, 0, 1)
 			box-shadow: 0 0 92px rgba(88, 151, 251, 0.55), 0 0 70px rgba(33, 111, 165, 0.35)
+			+r(480)
+				transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 	.prev-slide
+		opacity: 1
 		.carousel__img
 			transform: matrix3d(1, 0, 0, -0.001, -0.0006, 0.8, 0, 0, 0, 0, 1, 0, 20, 0, 0, 1)
 	.next-slide
+		opacity: 1
 		.carousel__img
-			transform: matrix3d(-1, 0, 0, -0.001, -0.0006, 0.8, 0, 0, 0, 0, 1, 0, -20, 0, 0, 1)
+			transform: matrix3d(1, 0, 0, 0.001, -0.0006, 0.8, 0, 0, 0, 0, 1, 0, -20, 0, 0, 1)
 	.slick-prev
 		position: absolute
 		top: 50%
@@ -101,6 +130,8 @@
 			top: 0
 			left: 0
 			background: url("../img/arr-left-white.svg") center no-repeat
+		+r(568)
+			display: none!important
 	.slick-next
 		position: absolute
 		top: 50%
@@ -117,17 +148,28 @@
 			top: 0
 			left: 0
 			background: url("../img/arr-right-white.svg") center no-repeat
+		+r(568)
+			display: none!important
+
 .programs
 	position: relative
 	.programs__in
-		padding: 60px 0 90px
+		padding: 60px 50px 90px
 		border-top: 3px solid #368cbd
+		+r(1024)
+			padding: 60px 30px
+		+r(768)
+			padding: 40px 30px
+		+r(568)
+			padding: 40px 15px
 	.programs__title
 		text-align: center
 		margin-bottom: 50px
 		font-size: 34px
 		font-weight: normal
 		color: #8b98a5
+		+r(768)
+			margin-bottom: 30px
 	.programs__list
 		font-size: 0
 .program
@@ -145,6 +187,15 @@
 			border-color: #fff
 		.program__title
 			color: #fff
+	+r(768)
+		width: 50%
+		&:nth-child(3n+1)
+			border-left: 1px solid #f1f1f1
+		&:nth-child(2n+1)
+			border-left: none
+	+r(600)
+		width: 100%
+		border-left: none
 	&.program_blue
 		&:hover
 			.program__title
@@ -159,6 +210,11 @@
 		font-size: 20px
 		color: #8b98a5
 		transition: color 200ms, background 200ms
+		+r(768)
+			padding: 30px 25px
+		+r(568)
+			padding: 20px 10px
+			height: auto
 	.program__img
 		position: relative
 		font-size: 0
@@ -171,10 +227,15 @@
 		left: 35px
 		height: 44px
 		width: auto
+		+r(768)
+			bottom: 20px
+			left: 20px
 	.program__about
 		padding: 20px 35px
 		font-size: 16px
 		color: #8b98a5
+		+r(600)
+			padding: 20px 0
 .go
 	display: inline-block
 	vertical-align: middle
@@ -193,6 +254,8 @@
 	position: relative
 	padding: 50px 0 0
 	+cover
+	.benefits__in
+		overflow: hidden
 	.benefits__title
 		font-size: 34px
 		text-align: center
@@ -201,6 +264,7 @@
 	.benefits__list
 		font-size: 0
 		text-align: center
+		margin-left: -1px
 	.benefits__item
 		display: inline-block
 		vertical-align: top
@@ -210,6 +274,18 @@
 		margin-bottom: 60px
 		&.wide
 			width: 25%
+		+r(768)
+			width: 25%
+			padding: 0 10px
+			&.wide
+				width: 33.3%
+		+r(600)
+			width: 33.3%
+		+r(480)
+			width: 50%
+			border-left: none
+			&.wide
+				width: 50%
 	.benefits__view
 		min-height: 90px
 		color: #fff
@@ -242,15 +318,28 @@
 		display: inline-block
 		vertical-align: middle
 		text-align: center
+		img
+			max-width: 100%
+		+r(600)
+			width: 50%
+			margin-bottom: 30px
+
 .follow
 	position: relative
 	.follow__in
-		padding: 40px 0
+		padding: 40px 50px
 		background: url("../img/follow.jpg") top right no-repeat
+		+r(1024)
+			padding: 40px 30px
+		+r(768)
+			background: none
 	.follow__title
 		margin-bottom: 30px
 		color: #353535
 		font-size: 30px
+		+r(480)
+			font-size: 20px
+			margin-bottom: 20px
 	.follow__form
 		input
 			display: inline-block
@@ -264,6 +353,9 @@
 			font-size: 20px
 			+placeholder
 				color: #c1c1c5
+			+r(680)
+				width: 100%
+				margin-bottom: 20px
 		button
 			height: 42px
 			padding: 0 40px
@@ -273,7 +365,9 @@
 			transition: background 200ms
 			&:hover
 				background: darken(#f8b636, 5%)
-				
+			+r(360)
+				width: 100%
+
 .partners
 	position: relative
 	background: #1b1f27
@@ -285,10 +379,14 @@
 		border-top: 1px solid #23272f
 		&:first-child
 			border-top: none
+		+r(768)
+			padding: 30px 0
 	.partners__title
 		font-size: 30px
 		color: #fff
 		margin-bottom: 70px
+		+r(768)
+			margin-bottom: 40px
 	.partners__list
 		font-size: 0
 	.partners__item
@@ -306,3 +404,7 @@
 				+gray-zero
 			&.white
 				opacity: 1
+		+r(900)
+			margin: 0 40px
+		+r(768)
+			margin: 0 20px 20px
