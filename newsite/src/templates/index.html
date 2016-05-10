@@ -215,7 +215,7 @@ cards:
             <div class="slider">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
-                        <div class="slider__item card card_white card_time">
+                        <a href="#" class="slider__item card card_white card_time">
                             <div class="card__poster">
                                 <img src="{{ card.img }}" alt="">
                             </div>
@@ -227,7 +227,7 @@ cards:
                                 <div class="card__time">{{ card.time }}</div>
                                 <div class="card__date">{{ card.date }}</div>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
             </div>
@@ -240,7 +240,7 @@ cards:
             <div class="slider">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
-                        <div class="slider__item card">
+                        <a href="#" class="slider__item card">
                             <div class="card__poster">
                                 <img src="{{ card.img }}" alt="">
                             </div>
@@ -254,7 +254,7 @@ cards:
                                     <p>{{ card.country }}</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
             </div>

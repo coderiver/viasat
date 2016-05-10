@@ -183,41 +183,46 @@ $(document).ready(function() {
         var sl = $('.js-carousel');
         if (sl.length) {
 
-            sl.on('init', function (event, slick) {
-                let centerSlide = $(this).find('.slick-center');
-                let slideBeforeCenter = centerSlide.prev();
-                let slideAfterCenter = centerSlide.next();
-
-                slideBeforeCenter.addClass('prev-slide');
-                slideAfterCenter.addClass('next-slide');
+            $('.js-carousel').owlCarousel({
+               center: true,
+               loop: true
             });
 
-            sl.slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                //infinite: false,
-                centerMode: true
-            });
-
-            sl.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-                let centerSlide = $(this).find('.slick-center');
-
-                if(currentSlide < nextSlide){
-                    $('.prev-slide').removeClass('prev-slide');
-                    centerSlide.addClass('prev-slide');
-                    centerSlide.prev().removeClass('prev-slide');
-                    centerSlide.next().removeClass('next-slide');
-                    centerSlide.next().next().addClass('next-slide');
-                }
-                else {
-                    $('.next-slide').removeClass('next-slide');
-                    centerSlide.addClass('next-slide');
-                    centerSlide.prev().removeClass('prev-slide');
-                    centerSlide.prev().prev().addClass('prev-slide');
-                    centerSlide.next().removeClass('next-slide');
-                }
-
-            });
+            // sl.on('init', function (event, slick) {
+            //     let centerSlide = $(this).find('.slick-center');
+            //     let slideBeforeCenter = centerSlide.prev();
+            //     let slideAfterCenter = centerSlide.next();
+            //
+            //     slideBeforeCenter.addClass('prev-slide');
+            //     slideAfterCenter.addClass('next-slide');
+            // });
+            //
+            // sl.slick({
+            //     slidesToShow: 3,
+            //     slidesToScroll: 1,
+            //     //infinite: false,
+            //     centerMode: true
+            // });
+            //
+            // sl.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            //     let centerSlide = $(this).find('.slick-center');
+            //
+            //     if(currentSlide < nextSlide){
+            //         $('.prev-slide').removeClass('prev-slide');
+            //         centerSlide.addClass('prev-slide');
+            //         centerSlide.prev().removeClass('prev-slide');
+            //         centerSlide.next().removeClass('next-slide');
+            //         centerSlide.next().next().addClass('next-slide');
+            //     }
+            //     else {
+            //         $('.next-slide').removeClass('next-slide');
+            //         centerSlide.addClass('next-slide');
+            //         centerSlide.prev().removeClass('prev-slide');
+            //         centerSlide.prev().prev().addClass('prev-slide');
+            //         centerSlide.next().removeClass('next-slide');
+            //     }
+            //
+            // });
         };
     }());
     
