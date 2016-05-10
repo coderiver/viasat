@@ -116,3 +116,192 @@
 			top: 0
 			left: 0
 			background: url("../img/arr-right-white.svg") center no-repeat
+.programs
+	position: relative
+	.programs__in
+		padding: 60px 0 90px
+		border-top: 3px solid #368cbd
+	.programs__title
+		text-align: center
+		margin-bottom: 50px
+		font-size: 34px
+		font-weight: normal
+		color: #8b98a5
+	.programs__list
+		font-size: 0
+.program
+	display: inline-block
+	vertical-align: top
+	width: 33.3%
+	margin-bottom: 50px
+	text-decoration: none
+	border-left: 1px solid #f1f1f1
+	&:nth-child(3n+1)
+		border-left: none
+	&:hover
+		.go
+			color: #fff
+			border-color: #fff
+		.program__title
+			color: #fff
+	&.program_blue
+		&:hover
+			.program__title
+				background: $blue
+	&.program_violet
+		&:hover
+			.program__title
+				background: $violet
+	.program__title
+		height: 105px
+		padding: 30px 35px
+		font-size: 20px
+		color: #8b98a5
+		transition: color 200ms, background 200ms
+	.program__img
+		position: relative
+		font-size: 0
+	.program__poster
+		display: block
+		width: 100%
+	.program__channel-image
+		position: absolute
+		bottom: 35px
+		left: 35px
+		height: 44px
+		width: auto
+	.program__about
+		padding: 20px 35px
+		font-size: 16px
+		color: #8b98a5
+.go
+	display: inline-block
+	vertical-align: middle
+	margin-left: 10px
+	width: 30px
+	height: 30px
+	line-height: 28px
+	border-radius: 50%
+	border: 2px solid #8e9aa7
+	text-align: center
+	color: #8e9aa7
+	font-size: 14px
+	transition: color 200ms, border-color 200ms
+
+.benefits
+	position: relative
+	padding: 50px 0 0
+	+cover
+	.benefits__title
+		font-size: 34px
+		text-align: center
+		color: #fff
+		margin-bottom: 50px
+	.benefits__list
+		font-size: 0
+		text-align: center
+	.benefits__item
+		display: inline-block
+		vertical-align: top
+		padding: 0 30px
+		width: 20%
+		border-left: 1px solid #539dc9
+		margin-bottom: 60px
+		&.wide
+			width: 25%
+	.benefits__view
+		min-height: 90px
+		color: #fff
+		font-size: 30px
+		span
+			font-weight: 300
+			font-size: 60px
+		.icon-ukraine
+			font-size: 70px
+		.icon-mute, .icon-rounds, .icon-premiere, .icon-hd
+			font-size: 58px
+		.icon-sound
+			font-size: 48px
+	.benefits__text
+		font-size: 18px
+		color: #212d34
+	.benefits__exclusive
+		position: relative
+		padding: 50px 0
+		background: rgba(#000, 0.1)
+	.benefits__subtitle
+		margin-bottom: 80px
+		color: #fff
+		font-size: 24px
+		text-align: center
+.exclusive
+	font-size: 0
+	.exclusive__item
+		width: 25%
+		display: inline-block
+		vertical-align: middle
+		text-align: center
+.follow
+	position: relative
+	.follow__in
+		padding: 40px 0
+		background: url("../img/follow.jpg") top right no-repeat
+	.follow__title
+		margin-bottom: 30px
+		color: #353535
+		font-size: 30px
+	.follow__form
+		input
+			display: inline-block
+			vertical-align: middle
+			width: 410px
+			height: 42px
+			margin-right: 25px
+			background: #efeff1
+			border-radius: 5px
+			padding: 0 20px
+			font-size: 20px
+			+placeholder
+				color: #c1c1c5
+		button
+			height: 42px
+			padding: 0 40px
+			border-radius: 5px
+			background: #f8b636
+			color: #fff
+			transition: background 200ms
+			&:hover
+				background: darken(#f8b636, 5%)
+				
+.partners
+	position: relative
+	background: #1b1f27
+	text-align: center
+	.more
+		padding-bottom: 70px
+	.partners__section
+		padding: 65px 0
+		border-top: 1px solid #23272f
+		&:first-child
+			border-top: none
+	.partners__title
+		font-size: 30px
+		color: #fff
+		margin-bottom: 70px
+	.partners__list
+		font-size: 0
+	.partners__item
+		display: inline-block
+		vertical-align: middle
+		margin: 0 70px
+		&.white
+			opacity: 0.5
+			transition: opacity 200ms
+		img
+			+gray
+			transition: all 200ms
+		&:hover
+			img
+				+gray-zero
+			&.white
+				opacity: 1
