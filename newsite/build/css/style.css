@@ -432,7 +432,7 @@ select {
     display: block;
     height: 60px;
     padding: 20px 30px;
-    background: #f5f5f5 url("/img/subscr.png") right bottom no-repeat;
+    background: #f5f5f5 url("../img/subscr.png") right bottom no-repeat;
     font-size: 16px;
     font-weight: 700;
     color: #353535; }
@@ -440,7 +440,7 @@ select {
     display: block;
     height: 60px;
     padding: 20px 30px;
-    background: #fff url("/img/feedback.png") right bottom no-repeat;
+    background: #fff url("../img/feedback.png") right bottom no-repeat;
     font-size: 16px;
     font-weight: 700;
     color: #353535; }
@@ -563,7 +563,7 @@ select {
     .promo .slick-prev {
       left: 10px; } }
   .promo .slick-prev:before {
-    background: url("/img/arr-left-white.svg") center no-repeat; }
+    background: url("../img/arr-left-white.svg") center no-repeat; }
   @media only screen and (max-width: 1024px) {
     .promo .slick-next {
       right: 0; } }
@@ -571,7 +571,7 @@ select {
     .promo .slick-next {
       right: 10px; } }
   .promo .slick-next:before {
-    background: url("/img/arr-right-white.svg") center no-repeat; }
+    background: url("../img/arr-right-white.svg") center no-repeat; }
   .promo .slick-dots {
     position: absolute;
     left: 50%;
@@ -586,7 +586,7 @@ select {
 
 .search {
   padding: 25px 0;
-  background: url(/img/bg-search.jpg) no-repeat 50% 50%;
+  background: url(../img/bg-search.jpg) no-repeat 50% 50%;
   background-size: cover;
   color: #FFF; }
   @media only screen and (max-width: 1024px) {
@@ -715,11 +715,11 @@ select {
     font-size: 20px; }
 
 .blog .slick-prev:before {
-  background: url("/img/arr-left-white.svg") center no-repeat;
+  background: url("../img/arr-left-white.svg") center no-repeat;
   border: 2px solid #dadada; }
 
 .blog .slick-next:before {
-  background: url("/img/arr-right-white.svg") center no-repeat;
+  background: url("../img/arr-right-white.svg") center no-repeat;
   border: 2px solid #dadada; }
 
 .more {
@@ -1217,7 +1217,7 @@ select {
     height: 30px;
     border-radius: 50%;
     border: 2px solid #dadada;
-    background: url("/img/arr-left-white.svg") center no-repeat; }
+    background: url("../img/arr-left-white.svg") center no-repeat; }
 
 .n-channels .slick-next {
   right: -40px; }
@@ -1235,7 +1235,7 @@ select {
     height: 30px;
     border-radius: 50%;
     border: 2px solid #dadada;
-    background: url("/img/arr-right-white.svg") center no-repeat; }
+    background: url("../img/arr-right-white.svg") center no-repeat; }
 
 .section_premiere {
   padding: 40px 0 80px;
@@ -1270,7 +1270,7 @@ select {
       height: 30px;
       border-radius: 50%;
       border: 2px solid #dadada;
-      background: url("/img/arr-left-white.svg") center no-repeat; }
+      background: url("../img/arr-left-white.svg") center no-repeat; }
   .slider .slick-next {
     right: -80px; }
     @media only screen and (max-width: 1024px) {
@@ -1284,7 +1284,7 @@ select {
       height: 30px;
       border-radius: 50%;
       border: 2px solid #dadada;
-      background: url("/img/arr-right-white.svg") center no-repeat; }
+      background: url("../img/arr-right-white.svg") center no-repeat; }
   .slider .card:nth-child(3n) .card__in {
     border-width: 0; }
   @media only screen and (max-width: 1024px) {
@@ -1736,7 +1736,7 @@ select {
     width: 158px;
     height: 34px;
     margin: 20px 25px 0 0;
-    background: url(/img/logo.png) no-repeat 0 0;
+    background: url(../img/logo.png) no-repeat 0 0;
     background-size: cover;
     z-index: 4; }
     @media only screen and (max-width: 1024px) {
@@ -4045,7 +4045,7 @@ select {
     float: left;
     width: 67.5%;
     padding-right: 5%;
-    background: #fff url("/img/comments.png") 0 100px no-repeat; }
+    background: #fff url("../img/comments.png") 0 100px no-repeat; }
     @media only screen and (max-width: 768px) {
       .comments .comments__in {
         float: none;
@@ -4155,7 +4155,7 @@ select {
       position: absolute;
       top: 0;
       left: 0;
-      background: url("/img/arr-left-white.svg") center no-repeat; }
+      background: url("../img/arr-left-white.svg") center no-repeat; }
     @media only screen and (max-width: 1024px) {
       .tvshows .slick-prev {
         left: -10px; } }
@@ -4176,7 +4176,7 @@ select {
       position: absolute;
       top: 0;
       left: 0;
-      background: url("/img/arr-right-white.svg") center no-repeat; }
+      background: url("../img/arr-right-white.svg") center no-repeat; }
     @media only screen and (max-width: 1024px) {
       .tvshows .slick-next {
         right: -10px; } }
@@ -4410,7 +4410,7 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("/img/arr-left-white.svg") center no-repeat; }
+    background: url("../img/arr-left-white.svg") center no-repeat; }
   @media only screen and (max-width: 568px) {
     .carousel .slick-prev {
       display: none !important; } }
@@ -4430,7 +4430,7 @@ select {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("/img/arr-right-white.svg") center no-repeat; }
+    background: url("../img/arr-right-white.svg") center no-repeat; }
   @media only screen and (max-width: 568px) {
     .carousel .slick-next {
       display: none !important; } }
@@ -4628,7 +4628,7 @@ select {
   position: relative; }
   .follow .follow__in {
     padding: 40px 50px;
-    background: url("/img/follow.jpg") top right no-repeat; }
+    background: url("../img/follow.jpg") top right no-repeat; }
     @media only screen and (max-width: 1024px) {
       .follow .follow__in {
         padding: 40px 30px; } }
