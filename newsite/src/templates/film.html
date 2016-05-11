@@ -577,16 +577,16 @@ movies:
                         </div>
                     </div>
                     {# posters #}
-                    <div class="posters">
+                    <div class="n-posters">
                         <div class="headline">Постеры</div>
-                        <div class="posters__list js-posters">
+                        <div class="n-posters__list js-posters">
                             {% for poster in posters %}
-                                <div class="poster">
-                                    <div class="poster__img">
+                                <div class="n-poster">
+                                    <div class="n-poster__img">
                                         <img src="{{ poster.img }}" width="184" height="265" alt="">
                                     </div>
-                                    <div class="poster__size">{{ poster.dimensions }} px</div>
-                                    <a href="#" class="poster__download">{{ mixins.icon('download') }} {{ poster.size }}</a>
+                                    <div class="n-poster__size">{{ poster.dimensions }} px</div>
+                                    <a href="#" class="n-poster__download">{{ mixins.icon('download') }} {{ poster.size }}</a>
                                 </div>
                             {% endfor %}
                         </div>
@@ -702,10 +702,10 @@ movies:
             {# section #}
             <div class="section section_channels">
                 <div class="center">
-                    <div class="channels">
-                        <div class="channels__row js-channels">
+                    <div class="n-channels">
+                        <div class="n-channels__row js-channels">
                             {% for channel in channels %}
-                                <div class="channels__item"><a href="#" class="channels__link"><img href="#" src="{{ channel.img }}" class="channels__logo"></a></div>
+                                <div class="n-channels__item"><a href="#" class="n-channels__link"><img href="#" src="{{ channel.img }}" class="n-channels__logo"></a></div>
                             {% endfor %}
                         </div>
                     </div>

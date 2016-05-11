@@ -1,7 +1,13 @@
 // main page styles
-
 .promo
 	overflow: hidden
+	&__list
+		opacity: 0
+		transition: opacity 200ms
+		visibility: hidden
+		&.loaded
+			opacity: 1
+			visibility: visible
 	&__item
 		height: 520px
 		background-size: cover
@@ -91,14 +97,14 @@
 		+r(768)
 			left: 10px
 		&:before
-			background: url("../img/arr-left-white.svg") center no-repeat
+			background: url("/img/arr-left-white.svg") center no-repeat
 	.slick-next
 		+r(1024)
 			right: 0
 		+r(768)
 			right: 10px
 		&:before
-			background: url("../img/arr-right-white.svg") center no-repeat
+			background: url("/img/arr-right-white.svg") center no-repeat
 	.slick-dots
 		position: absolute
 		left: 50%
@@ -110,7 +116,7 @@
 
 .search
 	padding: 25px 0
-	background: url(../img/bg-search.jpg) no-repeat 50% 50%
+	background: url(/img/bg-search.jpg) no-repeat 50% 50%
 	background-size: cover
 	color: #FFF
 	+r(1024)
@@ -225,10 +231,10 @@
 		&:before
 			font-size: 20px
 	.slick-prev:before
-		background: url("../img/arr-left-white.svg") center no-repeat
+		background: url("/img/arr-left-white.svg") center no-repeat
 		border: 2px solid #dadada
 	.slick-next:before
-		background: url("../img/arr-right-white.svg") center no-repeat
+		background: url("/img/arr-right-white.svg") center no-repeat
 		border: 2px solid #dadada
 
 .more
@@ -585,7 +591,7 @@
 		font-weight: 300
 		font-style: italic
 
-.channels
+.n-channels
 	&__row
 		margin: 0 -15px
 		+r(1024)
@@ -626,7 +632,7 @@
 			height: 30px
 			border-radius: 50%
 			border: 2px solid #dadada
-			background: url("../img/arr-left-white.svg") center no-repeat
+			background: url("/img/arr-left-white.svg") center no-repeat
 	.slick-next
 		right: -40px
 		+r(1160)
@@ -641,7 +647,7 @@
 			height: 30px
 			border-radius: 50%
 			border: 2px solid #dadada
-			background: url("../img/arr-right-white.svg") center no-repeat
+			background: url("/img/arr-right-white.svg") center no-repeat
 
 // card
 .section_premiere
@@ -672,7 +678,7 @@
 			height: 30px
 			border-radius: 50%
 			border: 2px solid #dadada
-			background: url("../img/arr-left-white.svg") center no-repeat
+			background: url("/img/arr-left-white.svg") center no-repeat
 	.slick-next
 		right: -80px
 		+r(1024)
@@ -685,7 +691,7 @@
 			height: 30px
 			border-radius: 50%
 			border: 2px solid #dadada
-			background: url("../img/arr-right-white.svg") center no-repeat
+			background: url("/img/arr-right-white.svg") center no-repeat
 	.card:nth-child(3n)
 		.card__in
 			border-width: 0
@@ -715,6 +721,7 @@
 		.h1
 			float: left
 			width: 50%
+			text-shadow: 0 1px 1px rgba(72, 54, 110, 0.75)
 			+r(600)
 				float: none
 				width: 100%

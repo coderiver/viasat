@@ -39,175 +39,186 @@ $(document).ready(function() {
         });
     }());
 
-    // promo
-    (function () {
-        var sl = $('.js-promo');
-        if (sl.length) {
-            sl.slick({
-                dots: true
+    //slider init
+    var slider = {
+
+        initSlider: function(selector, opts) {
+            var $slider = $(selector);
+
+            if (!$slider.length) {
+                return ;
+            }
+
+            $slider.on('init', function() {
+                setTimeout(function(){
+                    $slider.addClass('loaded');
+                }, 200);
             });
-        };
-    }());
+            $slider.slick(opts);
+        }
+
+    };
+
+    // promo
+    slider.initSlider('.js-promo', {
+        dots: true
+    });
 
     // premiers
-    (function () {
-        var sl = $('.js-blog');
-        if (sl.length) {
-            sl.slick({
-                slidesToShow: 5,
-                responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        dots: true
-                    }
-                },{
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: true
-                    }
-                }]
-            });
-        };
-    }());
-
-    // default slider
-    (function () {
-        var sl = $('.js-slider');
-        if (sl.length) {
-            sl.slick({
+    slider.initSlider('.js-blog', {
+        slidesToShow: 5,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
                 slidesToShow: 3,
                 slidesToScroll: 3,
-                responsive: [{
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },{
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }]
-            });
-        };
-    }());
-
-    // watch at channel slider
-    (function () {
-        var sl = $('.js-tvshow');
-        if (sl.length) {
-            sl.slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                responsive: [{
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },{
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },{
-                    breakpoint: 601,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }]
-            });
-        };
-    }());
-
-    // channels slider
-    (function () {
-        var sl = $('.js-channels');
-        if (sl.length) {
-            sl.slick({
-                slidesToShow: 6,
-                slidesToScroll: 6,
-                dots: true,
-                responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3
-                    }
-                },{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }]
-            });
-        };
-    }());
-
-    // facts slider
-    (function () {
-        var sl = $('.js-facts');
-        if (sl.length) {
-            sl.slick({
+                dots: true
+            }
+        },{
+            breakpoint: 767,
+            settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                responsive: [{
-                    breakpoint: 640,
-                    settings: {
-                        arrows: false,
-                        dots: true
-                    }
-                }]
-            });
-        };
-    }());
+                dots: true
+            }
+        }]
+    });
 
-    // quotes slider
-    (function () {
-        var sl = $('.js-quotes');
-        if (sl.length) {
-            sl.slick({
+    // default slider
+    slider.initSlider('.js-slider', {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+            breakpoint: 1025,
+            settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
-                responsive: [{
-                    breakpoint: 766,
-                    settings: {
-                        slidesToShow: 1,
-                        arrows: false,
-                        dots: true
-                    }
-                }]
-            });
-        };
-    }());
+                slidesToScroll: 2
+            }
+        },{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
+    // watch at channel slider
+    slider.initSlider('.js-tvshow', {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 1025,
+            settings: {
+                slidesToShow: 3
+            }
+        },{
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2
+            }
+        },{
+            breakpoint: 601,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+
+    // channels slider
+    slider.initSlider('.js-channels', {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        dots: true,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }]
+    });
+
+    // facts slider
+    slider.initSlider('.js-facts', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 640,
+            settings: {
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
 
     // quotes slider
-    (function () {
-        var sl = $('.js-posters');
-        if (sl.length) {
-            sl.slick({
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                infinite: false,
-                responsive: [{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        arrows: false,
-                        dots: true
-                    }
-                }]
-            });
-        };
-    }());
+    slider.initSlider('.js-quotes', {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 766,
+            settings: {
+                slidesToShow: 1,
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+
+    // posters slider
+    slider.initSlider('.js-posters', {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+                dots: true
+            }
+        }]
+    });
+
+    // js-slick
+    slider.initSlider('.js-slick', {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 
     // carousel at promo page
+
     (function () {
         var sl = $('.js-carousel');
         if (sl.length) {
