@@ -1,31 +1,28 @@
 $(document).ready(function() {
 
     // menu
-    (function () {
-        var btn  = $('.js-menu-btn'),
-            menu = $('.js-menu');
-        btn.on('click', function () {
-            btn.toggleClass('is-active');
-            menu.toggleClass('is-active');
-        });
-    }());
+
+    $('.js-menu-btn').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('.js-menu').toggleClass('is-active');
+    });
 
     //slider init
     var slider = {
 
         initSlider: function(selector, opts) {
-            var $slider = $(selector);
+            var slider = $(selector);
 
-            if (!$slider.length) {
+            if (!slider.length) {
                 return ;
             }
 
-            $slider.on('init', function() {
+            slider.on('init', function() {
                 setTimeout(function(){
-                    $slider.addClass('loaded');
+                    slider.addClass('loaded');
                 }, 200);
             });
-            $slider.slick(opts);
+            slider.slick(opts);
         }
 
     };
@@ -50,6 +47,7 @@ $(document).ready(function() {
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                arrows: false,
                 dots: true
             }
         }]
@@ -190,58 +188,57 @@ $(document).ready(function() {
 
     // carousel at promo page
 
-    (function () {
-        var sl = $('.js-carousel');
-        if (sl.length) {
+    if ($('.js-carousel').length) {
 
-            sl.on('init', function (event, slick) {
-                sl.addClass('loaded');
-                let centerSlide = $(this).find('.slick-center');
-                let slideBeforeCenter = centerSlide.prev();
-                let slideAfterCenter = centerSlide.next();
+        var promoSlider = $('.js-carousel');
 
-                slideBeforeCenter.addClass('prev-slide');
-                slideAfterCenter.addClass('next-slide');
-            });
+        promoSlider.on('init', function (event, slick) {
+            promoSlider.addClass('loaded');
+            var centerSlide = $(this).find('.slick-center');
+            var slideBeforeCenter = centerSlide.prev();
+            var slideAfterCenter = centerSlide.next();
 
-            sl.slick({
-                speed: 400,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                initialSlide: 2,
-                infinite: false,
-                centerMode: true,
-                responsive: [
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1
-                        }
+            slideBeforeCenter.addClass('prev-slide');
+            slideAfterCenter.addClass('next-slide');
+        });
+
+        promoSlider.slick({
+            speed: 400,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            initialSlide: 2,
+            infinite: false,
+            centerMode: true,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
                     }
-                ]
-            });
-
-            sl.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-                let centerSlide = $(this).find('.slick-center');
-                if(currentSlide < nextSlide){
-                    $('.prev-slide').removeClass('prev-slide');
-                    centerSlide.addClass('prev-slide');
-                    centerSlide.prev().removeClass('prev-slide');
-                    centerSlide.next().removeClass('next-slide');
-                    centerSlide.next().next().addClass('next-slide');
                 }
-                else {
-                    $('.next-slide').removeClass('next-slide');
-                    centerSlide.addClass('next-slide');
-                    centerSlide.prev().removeClass('prev-slide');
-                    centerSlide.prev().prev().addClass('prev-slide');
-                    centerSlide.next().removeClass('next-slide');
-                }
+            ]
+        });
 
-            });
-        };
-    }());
-    
+        promoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var centerSlide = $(this).find('.slick-center');
+            if(currentSlide < nextSlide){
+                $('.prev-slide').removeClass('prev-slide');
+                centerSlide.addClass('prev-slide');
+                centerSlide.prev().removeClass('prev-slide');
+                centerSlide.next().removeClass('next-slide');
+                centerSlide.next().next().addClass('next-slide');
+            }
+            else {
+                $('.next-slide').removeClass('next-slide');
+                centerSlide.addClass('next-slide');
+                centerSlide.prev().removeClass('prev-slide');
+                centerSlide.prev().prev().addClass('prev-slide');
+                centerSlide.next().removeClass('next-slide');
+            }
+
+        });
+    }
+
     // scrolltop btn
 
     $(document).on('scroll', function () {
