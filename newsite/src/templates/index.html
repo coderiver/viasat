@@ -223,10 +223,16 @@ cards:
                                 <div class="card__channel">
                                     <span class="n-channel">{{ mixins.icon('star') }}</span> {{ card.channel }}
                                 </div>
-                                <div class="card__title">{{ card.title }}</div>
-                                <div class="card__genre">Боевик</div>
-                                <div class="card__time">{{ card.time }}</div>
-                                <div class="card__date">{{ card.date }}</div>
+                                <div class="card__row">
+                                    <div class="card__left">
+                                        <div class="card__title">{{ card.title }}</div>
+                                        <div class="card__genre">Боевик</div>
+                                    </div>
+                                    <div class="card__right">
+                                        <div class="card__time">{{ card.time }}</div>
+                                        <div class="card__date">{{ card.date }}</div>
+                                    </div>
+                                </div>
                             </div>
                         </a>
                     {% endfor %}

@@ -2255,7 +2255,7 @@ select {
       display: block;
       width: 100%; }
   .card .card__in {
-    padding: 15px 35px 0;
+    padding: 15px 25px 0;
     border-right: 1px solid rgba(230, 230, 230, 0.5); }
     @media only screen and (max-width: 1024px) {
       .card .card__in {
@@ -2269,6 +2269,19 @@ select {
     color: #fff; }
     .card .card__channel .channel {
       margin-right: 15px; }
+  .card .card__row {
+    *zoom: 1; }
+    .card .card__row:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .card .card__left {
+    float: left;
+    width: 70%; }
+  .card .card__right {
+    float: right;
+    width: 30%;
+    text-align: center; }
   .card .card__title {
     font-size: 16px;
     font-weight: bold; }
