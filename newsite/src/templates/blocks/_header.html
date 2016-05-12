@@ -28,24 +28,17 @@
                         <div class="menu__premieres">
                             <div class="menu__premieres-head">Премьеры на Viasat</div>
                             <div class="menu__premieres-row">
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Бессонная ночь</div></a></div>
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Харнас - убежище для диких животных</div></a></div>
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Бессонная ночь</div></a></div>
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Харнас - убежище для диких животных</div></a></div>
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Бессонная ночь</div></a></div>
-                                <div class="menu__premieres-col"><a href="#" class="menu__premieres-link">
-                                        <div class="menu__premieres-preview"><img src="img/pic1.jpg" class="menu__premieres-pic"></div>
-                                        <div class="menu__premieres-title">Харнас - убежище для диких животных</div></a></div>
+                                {% for i in range(0, 6)  %}
+                                    <div class="menu__premieres-col">
+                                        <a href="#" class="menu__premieres-link">
+                                            <div class="menu__premieres-preview">
+                                                <img src="img/pic1.jpg" class="menu__premieres-pic">
+                                            </div>
+                                            <div class="menu__premieres-title">Бессонная ночь</div>
+                                            <div class="menu__premieres-channel">TV Premium HD</div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>

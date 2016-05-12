@@ -161,6 +161,7 @@ $(document).ready(function() {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 961,
@@ -174,6 +175,39 @@ $(document).ready(function() {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    // js-slick
+    slider.initSlider('.js-interesting', {
+        dots: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 961,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false
                 }
             },
             {

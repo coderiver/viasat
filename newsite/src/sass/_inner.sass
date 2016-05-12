@@ -396,6 +396,76 @@
 			bottom: -30px
 			left: 0
 			right: 0
+		.slick-prev,
+		.slick-next
+			width: 30px
+			height: 30px
+			border-radius: 50%
+			color: $cl
+		.slick-prev
+			left: -32px
+			+r(1160)
+				left: -30px
+			+r(768)
+				left: 0
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-gray.svg") center no-repeat
+			&:after
+				content: ""
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-white.svg") center no-repeat
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
+		.slick-next
+			right: -32px
+			+r(1160)
+				right: -30px
+			+r(768)
+				right: 0
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-gray.svg") center no-repeat
+			&:after
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-white.svg") center no-repeat
+				z-index: 3
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
 		+r(960)
 			padding: 24px 0 37px
 			.slick-slide
