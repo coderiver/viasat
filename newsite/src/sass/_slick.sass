@@ -82,6 +82,8 @@
 	width: 30px
 	height: 30px
 	color: #fff
+	border-radius: 50%
+	transition: background 200ms
 	z-index: 2
 	&:before
 		content: ""
@@ -91,6 +93,16 @@
 		right: 0
 		bottom: 0
 		border-radius: 50%
+		transition: opacity 200ms
+	&:after
+		content: ""
+		transition: opacity 200ms
+		opacity: 0
+	&:hover
+		&:before
+			opacity: 0
+		&:after
+			opacity: 1
 .slick-prev
 	left: 20px
 	+r(1270)
