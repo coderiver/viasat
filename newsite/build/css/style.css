@@ -1868,6 +1868,8 @@ select {
       padding: 10px 20px; } }
   .menu__link:hover {
     background: #EEE; }
+    .menu__link:hover .menu__title {
+      text-decoration: underline; }
     @media only screen and (max-width: 1024px) {
       .menu__link:hover {
         background: transparent; } }
@@ -2092,7 +2094,7 @@ select {
     width: 122px;
     height: 26px;
     margin-bottom: 19px;
-    background: url(/img/logo.png) no-repeat 0 0;
+    background: url(../img/logo.png) no-repeat 0 0;
     background-size: cover; }
   .footer__copyright {
     font-size: 12px;
