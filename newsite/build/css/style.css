@@ -1458,6 +1458,14 @@ select {
         color: #fff; }
       .s .s__field input::placeholder {
         color: #fff; }
+      .s .s__field input:focus::-webkit-input-placeholder {
+        font-size: 0; }
+      .s .s__field input:focus::-moz-placeholder {
+        font-size: 0; }
+      .s .s__field input:focus:-ms-input-placeholder {
+        font-size: 0; }
+      .s .s__field input:focus::placeholder {
+        font-size: 0; }
       @media only screen and (max-width: 500px) {
         .s .s__field input {
           width: 100%; } }
@@ -2281,8 +2289,7 @@ select {
         border: none; } }
   .card .card__channel {
     margin-bottom: 20px;
-    font-size: 12px;
-    color: #fff; }
+    font-size: 12px; }
     .card .card__channel .channel {
       margin-right: 15px; }
   .card .card__row {
