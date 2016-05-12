@@ -54,8 +54,8 @@
       <file leaf-file-name="filmoteka.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/filmoteka.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+            <state relative-caret-position="379">
+              <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -358,12 +358,12 @@
       <workItem from="1462698374036" duration="5000" />
       <workItem from="1462864575556" duration="20295000" />
       <workItem from="1462949476282" duration="8966000" />
-      <workItem from="1463038081485" duration="16127000" />
+      <workItem from="1463038081485" duration="16410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182070000" />
+    <option name="totallyTimeSpent" value="182353000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -772,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/filmoteka.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
+        <state relative-caret-position="379">
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding />
         </state>
       </provider>
