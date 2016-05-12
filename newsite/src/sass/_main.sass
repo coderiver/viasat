@@ -259,19 +259,12 @@
 
 .label
 	position: absolute
-	top: 15px
+	bottom: 0
 	left: 0
+	right: 0
 	padding: 10px 20px 10px 10px
 	font-size: 12px
-	overflow: hidden
-	&__cover
-		position: absolute
-		top: 0
-		left: -10px
-		right: 5px
-		bottom: 0
-		transform: skew(-15deg)
-		opacity: .6
+	background: rgba(#000, 0.5)
 	&__title
 		position: relative
 		z-index: 2
@@ -367,8 +360,24 @@
 		+r(768)
 			font-size: 14px
 	&__grid-col
+		&.col-50
+			.movie__poster
+				height: 372px
+		&.col-25
+			.movie
+				margin-bottom: 30px
 		+r(1024)
 			width: 50%
+			.movie
+				margin-bottom: 30px
+				.movie__poster
+					height: auto
+					img
+						position: relative
+						top: auto
+						left: auto
+						transform: translate(0, 0)
+						width: 100%
 		+r(768)
 			width: 100%
 		&:first-child
