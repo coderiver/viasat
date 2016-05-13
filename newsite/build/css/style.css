@@ -345,12 +345,18 @@ a.btn {
 select {
   width: 100%; }
 
-.reset {
-  color: #353535;
-  -webkit-transition: color 200ms;
-  transition: color 200ms; }
-  .reset:hover {
-    color: #000; }
+.reset, .apply {
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: #fff;
+  background: #6d57a5;
+  -webkit-transition: background 200ms;
+  transition: background 200ms; }
+  .reset:hover, .apply:hover {
+    background: #624e94; }
+
+.apply {
+  margin-bottom: 5px; }
 
 .n-title {
   margin-bottom: 30px;

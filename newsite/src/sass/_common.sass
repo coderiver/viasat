@@ -185,11 +185,16 @@ a.btn
 
 select
 	width: 100%
-.reset
-	color: #353535
-	transition: color 200ms
+.reset, .apply
+	padding: 5px 15px
+	border-radius: 3px
+	color: #fff
+	background: $violet
+	transition: background 200ms
 	&:hover
-		color: #000
+		background: darken($violet, 5%)
+.apply
+	margin-bottom: 5px
 
 
 // heading
