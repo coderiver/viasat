@@ -47,27 +47,10 @@
 		font-weight: 500
 	.movie__date
 		font-size: 12px
-	&.movie_orange
-		.movie__in
-			background: $orange
-			color: #fff
-		.movie__channel
-			background: rgba($orange, 0.5)
-	&.movie_red
-		.movie__in
-			background: $red
-			color: #fff
-		.movie__channel
-			background: rgba($red, 0.5)
-	&.movie_violet
-		.movie__in
-			background: $violet
-			color: #fff
-		.movie__channel
-			background: rgba($violet, 0.5)
-	&.movie_green
-		.movie__in
-			background: $green
-			color: #fff
-		.movie__channel
-			background: rgba($green, 0.5)
+	@for $i from 1 through length($channels)
+		&.movie_#{nth($channels, $i)}
+			.movie__in
+				background: nth($colors, $i)
+				color: #fff
+			.movie__channel
+				background: rgba(nth($colors, $i), 0.5)

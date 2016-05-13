@@ -326,7 +326,6 @@ select {
   margin-bottom: 30px;
   font-family: "GothamPro-Medium", Roboto, Arial, sans-serif;
   font-size: 36px;
-  font-weight: 700;
   text-align: center; }
   .n-title.title_white {
     color: #fff; }
@@ -534,44 +533,78 @@ select {
     border-right: 2px solid; }
   .promo .slick-prev,
   .promo .slick-next {
-    width: 50px;
-    height: 100px;
-    margin-top: -50px; }
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #353535; }
+  .promo .slick-prev {
+    left: 40px; }
+    @media only screen and (max-width: 1160px) {
+      .promo .slick-prev {
+        left: 30px; } }
     @media only screen and (max-width: 768px) {
-      .promo .slick-prev,
-      .promo .slick-next {
-        width: 20px;
-        height: 40px; } }
-    .promo .slick-prev:before,
-    .promo .slick-next:before {
+      .promo .slick-prev {
+        left: 0; } }
+    .promo .slick-prev:before {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: -15px 0 0 -15px;
+      top: 0;
+      left: 0;
       width: 30px;
       height: 30px;
-      border: 2px solid #dadada;
-      border-radius: 50%; }
-      @media only screen and (max-width: 768px) {
-        .promo .slick-prev:before,
-        .promo .slick-next:before {
-          font-size: 24px; } }
-  @media only screen and (max-width: 1024px) {
-    .promo .slick-prev {
-      left: 0; } }
-  @media only screen and (max-width: 768px) {
-    .promo .slick-prev {
-      left: 10px; } }
-  .promo .slick-prev:before {
-    background: url("../img/arr-left-white.svg") center no-repeat; }
-  @media only screen and (max-width: 1024px) {
-    .promo .slick-next {
-      right: 0; } }
-  @media only screen and (max-width: 768px) {
-    .promo .slick-next {
-      right: 10px; } }
-  .promo .slick-next:before {
-    background: url("../img/arr-right-white.svg") center no-repeat; }
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: url("../img/arr-left-white.svg") center no-repeat; }
+    .promo .slick-prev:after {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: url("../img/arr-left.svg") center no-repeat; }
+    .promo .slick-prev:hover {
+      background: #fff; }
+      .promo .slick-prev:hover:before {
+        opacity: 0; }
+      .promo .slick-prev:hover:after {
+        opacity: 1; }
+  .promo .slick-next {
+    right: 40px; }
+    @media only screen and (max-width: 1160px) {
+      .promo .slick-next {
+        right: 30px; } }
+    @media only screen and (max-width: 768px) {
+      .promo .slick-next {
+        right: 0; } }
+    .promo .slick-next:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: url("../img/arr-right-white.svg") center no-repeat; }
+    .promo .slick-next:after {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: url("../img/arr-right.svg") center no-repeat;
+      z-index: 3; }
+    .promo .slick-next:hover {
+      background: #fff; }
+      .promo .slick-next:hover:before {
+        opacity: 0; }
+      .promo .slick-next:hover:after {
+        opacity: 1; }
   .promo .slick-dots {
     position: absolute;
     left: 50%;
@@ -705,22 +738,80 @@ select {
 
 .blog .slick-prev,
 .blog .slick-next {
-  margin-top: -15px;
-  -webkit-transform: translateY(-130%);
-  -ms-transform: translateY(-130%);
-  transform: translateY(-130%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   color: #353535; }
-  .blog .slick-prev:before,
+
+.blog .slick-prev {
+  left: -40px; }
+  @media only screen and (max-width: 1160px) {
+    .blog .slick-prev {
+      left: -30px; } }
+  @media only screen and (max-width: 768px) {
+    .blog .slick-prev {
+      left: 0; } }
+  .blog .slick-prev:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    background: url("../img/arr-left-gray.svg") center no-repeat; }
+  .blog .slick-prev:after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    background: url("../img/arr-left-white.svg") center no-repeat; }
+  .blog .slick-prev:hover {
+    background: #dadada; }
+    .blog .slick-prev:hover:before {
+      opacity: 0; }
+    .blog .slick-prev:hover:after {
+      opacity: 1; }
+
+.blog .slick-next {
+  right: -40px; }
+  @media only screen and (max-width: 1160px) {
+    .blog .slick-next {
+      right: -30px; } }
+  @media only screen and (max-width: 768px) {
+    .blog .slick-next {
+      right: 0; } }
   .blog .slick-next:before {
-    font-size: 20px; }
-
-.blog .slick-prev:before {
-  background: url("../img/arr-left-white.svg") center no-repeat;
-  border: 2px solid #dadada; }
-
-.blog .slick-next:before {
-  background: url("../img/arr-right-white.svg") center no-repeat;
-  border: 2px solid #dadada; }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    background: url("../img/arr-right-gray.svg") center no-repeat; }
+  .blog .slick-next:after {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #dadada;
+    background: url("../img/arr-right-white.svg") center no-repeat;
+    z-index: 3; }
+  .blog .slick-next:hover {
+    background: #dadada; }
+    .blog .slick-next:hover:before {
+      opacity: 0; }
+    .blog .slick-next:hover:after {
+      opacity: 1; }
 
 .more {
   text-align: center; }
@@ -2085,7 +2176,8 @@ select {
     height: 32px;
     margin-bottom: 28px;
     text-align: center;
-    font-size: 0; }
+    font-size: 0;
+    text-align: left; }
     .menu__channels-link:before {
       content: "";
       display: inline-block;
@@ -4360,26 +4452,56 @@ select {
     font-weight: 500; }
   .movie .movie__date {
     font-size: 12px; }
-  .movie.movie_orange .movie__in {
+  .movie.movie_explore .movie__in {
+    background: #ab0621;
+    color: #fff; }
+  .movie.movie_explore .movie__channel {
+    background: rgba(171, 6, 33, 0.5); }
+  .movie.movie_action .movie__in {
+    background: #ab0621;
+    color: #fff; }
+  .movie.movie_action .movie__channel {
+    background: rgba(171, 6, 33, 0.5); }
+  .movie.movie_premium .movie__in {
+    background: #523796;
+    color: #fff; }
+  .movie.movie_premium .movie__channel {
+    background: rgba(82, 55, 150, 0.5); }
+  .movie.movie_megahit .movie__in {
+    background: #3581bb;
+    color: #fff; }
+  .movie.movie_megahit .movie__channel {
+    background: rgba(53, 129, 187, 0.5); }
+  .movie.movie_nature .movie__in {
+    background: #72811a;
+    color: #fff; }
+  .movie.movie_nature .movie__channel {
+    background: rgba(114, 129, 26, 0.5); }
+  .movie.movie_russ .movie__in {
+    background: #00b3de;
+    color: #fff; }
+  .movie.movie_russ .movie__channel {
+    background: rgba(0, 179, 222, 0.5); }
+  .movie.movie_tv1000 .movie__in {
+    background: #164b71;
+    color: #fff; }
+  .movie.movie_tv1000 .movie__channel {
+    background: rgba(22, 75, 113, 0.5); }
+  .movie.movie_sport .movie__in {
+    background: #1c3d6c;
+    color: #fff; }
+  .movie.movie_sport .movie__channel {
+    background: rgba(28, 61, 108, 0.5); }
+  .movie.movie_history .movie__in {
+    background: #2f71b4;
+    color: #fff; }
+  .movie.movie_history .movie__channel {
+    background: rgba(47, 113, 180, 0.5); }
+  .movie.movie_comedy .movie__in {
     background: #d46b28;
     color: #fff; }
-  .movie.movie_orange .movie__channel {
+  .movie.movie_comedy .movie__channel {
     background: rgba(212, 107, 40, 0.5); }
-  .movie.movie_red .movie__in {
-    background: #b11a1b;
-    color: #fff; }
-  .movie.movie_red .movie__channel {
-    background: rgba(177, 26, 27, 0.5); }
-  .movie.movie_violet .movie__in {
-    background: #6d57a5;
-    color: #fff; }
-  .movie.movie_violet .movie__channel {
-    background: rgba(109, 87, 165, 0.5); }
-  .movie.movie_green .movie__in {
-    background: #637824;
-    color: #fff; }
-  .movie.movie_green .movie__channel {
-    background: rgba(99, 120, 36, 0.5); }
 
 .header_promo {
   height: auto;
