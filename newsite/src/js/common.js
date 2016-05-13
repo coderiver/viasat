@@ -296,6 +296,12 @@ $(document).ready(function() {
         $('.js-select').select2({
             minimumResultsForSearch: -1
         });
+        
+        $('.js-filters-reset').on('click', function () {
+           var form = $(this).closest('.js-filters-form');
+
+            $('.js-select').select2('val', '');
+        });
 
         $(document).on("select2:open", ".js-select", function () {
             $('.select2-results').perfectScrollbar();
