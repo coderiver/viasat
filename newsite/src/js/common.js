@@ -129,12 +129,11 @@ $(document).ready(function() {
 
     // quotes slider
     slider.initSlider('.js-quotes', {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [{
             breakpoint: 766,
             settings: {
-                slidesToShow: 1,
                 arrows: false,
                 dots: true
             }
