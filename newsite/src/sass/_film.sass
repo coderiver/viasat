@@ -962,10 +962,12 @@
 	text-align: center
 	.n-poster__img
 		margin-bottom: 15px
+		height: 265px
+		overflow: hidden
 		img
-			display: block
-			width: 100%
-			height: auto
+			display: inline-block
+			width: auto
+			height: 100%
 	.n-poster__size
 		margin-bottom: 8px
 		font-size: 14px
@@ -979,38 +981,15 @@
 			margin-right: 10px
 .rewards
 	+clr
+	margin-bottom: 30px
 	.rewards__in
-		+r(768)
-			display: none
-	.rewards__left
-		float: left
-		width: 70%
 		padding-left: 277px
-		.headline
-			margin-left: 0
-			margin-bottom: 50px
 		+r(1024)
 			padding-left: 150px
 		+r(768)
-			padding: 0 20px
-			float: none
-			width: 100%
+			display: none
 	.rewards__list
 		font-size: 0
-	.rewards__right
-		float: right
-		width: 30%
-		+r(768)
-			float: none
-			width: 100%
-	.rewards__more
-		padding: 45px 60px
-		min-height: 500px
-		+cover
-		color: #fff
-		+r(1024)
-			padding: 35px 40px
-			min-height: 400px
 	.rewards__all
 		margin-bottom: 90px
 		a
@@ -1036,6 +1015,10 @@
 	+r(568)
 		width: 100%
 		text-align: center
+	.reward__in
+		position: relative
+		max-width: 150px
+		margin: 0 auto
 	.reward__img
 		min-height: 115px
 		margin-bottom: 20px

@@ -1335,7 +1335,7 @@ select {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  top: 10px;
+  top: 20px;
   color: #353535; }
 
 .n-channels .slick-prev {
@@ -4273,11 +4273,13 @@ select {
   padding: 0 1%;
   text-align: center; }
   .n-poster .n-poster__img {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    height: 265px;
+    overflow: hidden; }
     .n-poster .n-poster__img img {
-      display: block;
-      width: 100%;
-      height: auto; }
+      display: inline-block;
+      width: auto;
+      height: 100%; }
   .n-poster .n-poster__size {
     margin-bottom: 8px;
     font-size: 14px;
@@ -4291,49 +4293,22 @@ select {
       margin-right: 10px; }
 
 .rewards {
-  *zoom: 1; }
+  *zoom: 1;
+  margin-bottom: 30px; }
   .rewards:after {
     content: " ";
     display: table;
     clear: both; }
-  @media only screen and (max-width: 768px) {
-    .rewards .rewards__in {
-      display: none; } }
-  .rewards .rewards__left {
-    float: left;
-    width: 70%;
+  .rewards .rewards__in {
     padding-left: 277px; }
-    .rewards .rewards__left .headline {
-      margin-left: 0;
-      margin-bottom: 50px; }
     @media only screen and (max-width: 1024px) {
-      .rewards .rewards__left {
+      .rewards .rewards__in {
         padding-left: 150px; } }
     @media only screen and (max-width: 768px) {
-      .rewards .rewards__left {
-        padding: 0 20px;
-        float: none;
-        width: 100%; } }
+      .rewards .rewards__in {
+        display: none; } }
   .rewards .rewards__list {
     font-size: 0; }
-  .rewards .rewards__right {
-    float: right;
-    width: 30%; }
-    @media only screen and (max-width: 768px) {
-      .rewards .rewards__right {
-        float: none;
-        width: 100%; } }
-  .rewards .rewards__more {
-    padding: 45px 60px;
-    min-height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff; }
-    @media only screen and (max-width: 1024px) {
-      .rewards .rewards__more {
-        padding: 35px 40px;
-        min-height: 400px; } }
   .rewards .rewards__all {
     margin-bottom: 90px; }
     .rewards .rewards__all a {
@@ -4360,6 +4335,10 @@ select {
     .reward {
       width: 100%;
       text-align: center; } }
+  .reward .reward__in {
+    position: relative;
+    max-width: 150px;
+    margin: 0 auto; }
   .reward .reward__img {
     min-height: 115px;
     margin-bottom: 20px;
