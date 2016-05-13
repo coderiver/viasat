@@ -325,7 +325,7 @@ $(document).ready(function() {
        var target = $(this);
 
         if(target){
-            var lines = target.data('lines') || 1;
+            var lines = target.data('lines') || 2;
 
             target.ellipsis({
                 lines: lines,

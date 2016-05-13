@@ -237,6 +237,7 @@ a {
 
 .ellip-line {
   display: inline-block;
+  vertical-align: middle;
   text-overflow: ellipsis;
   white-space: nowrap;
   word-wrap: normal;
@@ -281,12 +282,26 @@ a {
   margin-right: 15px;
   font-size: 16px;
   color: #fff; }
-  .n-channel.n-channel_violet {
-    color: #6d57a5; }
-  .n-channel.n-channel_orange {
+  .n-channel.n-channel_explore {
+    color: #ab0621; }
+  .n-channel.n-channel_action {
+    color: #ab0621; }
+  .n-channel.n-channel_premium {
+    color: #523796; }
+  .n-channel.n-channel_megahit {
+    color: #3581bb; }
+  .n-channel.n-channel_nature {
+    color: #72811a; }
+  .n-channel.n-channel_russ {
+    color: #00b3de; }
+  .n-channel.n-channel_tv1000 {
+    color: #164b71; }
+  .n-channel.n-channel_sport {
+    color: #1c3d6c; }
+  .n-channel.n-channel_history {
+    color: #2f71b4; }
+  .n-channel.n-channel_comedy {
     color: #d46b28; }
-  .n-channel.n-channel_red {
-    color: #b11a1b; }
 
 .btn {
   height: 55px;
@@ -2434,11 +2449,13 @@ select {
     font-style: italic; }
   .card.card_white {
     color: #fff; }
+  .card.card_backface {
+    box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(234, 239, 241, 0.8), 0px -56px 0px -37px #f4f6f7; }
   .card.card_time .card__poster {
     padding: 0; }
   .card.card_time .card__title {
     font-size: 14px; }
-  .card.card_violet .card__poster:before {
+  .card.card_explore .card__poster:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2447,8 +2464,8 @@ select {
     height: 0px;
     border-style: solid;
     border-width: 0 52px 35px 0;
-    border-color: transparent #6d57a5 transparent transparent; }
-  .card.card_red .card__poster:before {
+    border-color: transparent #ab0621 transparent transparent; }
+  .card.card_action .card__poster:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2457,8 +2474,78 @@ select {
     height: 0px;
     border-style: solid;
     border-width: 0 52px 35px 0;
-    border-color: transparent #b11a1b transparent transparent; }
-  .card.card_orange .card__poster:before {
+    border-color: transparent #ab0621 transparent transparent; }
+  .card.card_premium .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #523796 transparent transparent; }
+  .card.card_megahit .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #3581bb transparent transparent; }
+  .card.card_nature .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #72811a transparent transparent; }
+  .card.card_russ .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #00b3de transparent transparent; }
+  .card.card_tv1000 .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #164b71 transparent transparent; }
+  .card.card_sport .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #1c3d6c transparent transparent; }
+  .card.card_history .card__poster:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 52px 35px 0;
+    border-color: transparent #2f71b4 transparent transparent; }
+  .card.card_comedy .card__poster:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2468,8 +2555,6 @@ select {
     border-style: solid;
     border-width: 0 52px 35px 0;
     border-color: transparent #d46b28 transparent transparent; }
-  .card.card_backface {
-    box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(234, 239, 241, 0.8), 0px -56px 0px -37px #f4f6f7; }
 
 .select2-container {
   box-sizing: border-box;

@@ -50,31 +50,39 @@
 		font-style: italic
 	&.card_white
 		color: #fff
+	&.card_backface
+		box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(#eaeff1, 0.8), 0px -56px 0px -37px #f4f6f7
 	&.card_time
 		.card__poster
 			padding: 0
 		.card__title
 			font-size: 14px
-	&.card_violet
-		.card__poster:before
-			content: ""
-			position: absolute
-			top: 0
-			right: 13px
-			+arr(52, 35, $violet, tr)
-	&.card_red
-		.card__poster:before
-			content: ""
-			position: absolute
-			top: 0
-			right: 13px
-			+arr(52, 35, $red, tr)
-	&.card_orange
-		.card__poster:before
-			content: ""
-			position: absolute
-			top: 0
-			right: 13px
-			+arr(52, 35, $orange, tr)
-	&.card_backface
-		box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(#eaeff1, 0.8), 0px -56px 0px -37px #f4f6f7
+	@for $i from 1 through length($channels)
+		&.card_#{nth($channels, $i)}
+			.card__poster:before
+				content: ""
+				position: absolute
+				top: 0
+				right: 13px
+				+arr(52, 35, nth($colors, $i), tr)
+	//&.card_violet
+	//	.card__poster:before
+	//		content: ""
+	//		position: absolute
+	//		top: 0
+	//		right: 13px
+	//		+arr(52, 35, $violet, tr)
+	//&.card_red
+	//	.card__poster:before
+	//		content: ""
+	//		position: absolute
+	//		top: 0
+	//		right: 13px
+	//		+arr(52, 35, $red, tr)
+	//&.card_orange
+	//	.card__poster:before
+	//		content: ""
+	//		position: absolute
+	//		top: 0
+	//		right: 13px
+	//		+arr(52, 35, $orange, tr)

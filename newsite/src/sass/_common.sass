@@ -103,6 +103,7 @@ a
 
 .ellip-line
 	display: inline-block
+	vertical-align: middle
 	text-overflow: ellipsis
 	white-space: nowrap
 	word-wrap: normal
@@ -142,12 +143,9 @@ a
 	margin-right: 15px
 	font-size: 16px
 	color: #fff
-	&.n-channel_violet
-		color: $violet
-	&.n-channel_orange
-		color: $orange
-	&.n-channel_red
-		color: $red
+	@for $i from 1 through length($channels)
+		&.n-channel_#{nth($channels, $i)}
+			color: #{nth($colors, $i)}
 
 .btn
 	height: 55px
