@@ -231,6 +231,21 @@ a {
     .center {
       padding: 0 15px; } }
 
+.ellip {
+  display: block;
+  height: 100%; }
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%; }
+
+.ellip, .ellip-line {
+  position: relative;
+  overflow: hidden; }
+
 .row {
   margin: 0 -15px;
   *zoom: 1; }
@@ -956,7 +971,7 @@ select {
       font-size: 14px; } }
 
 .premieres__grid-col.col-50 .movie__poster {
-  height: 372px; }
+  height: 430px; }
 
 .premieres__grid-col.col-25 .movie {
   margin-bottom: 30px; }
@@ -4404,7 +4419,7 @@ select {
   color: #353535; }
   .movie .movie__poster {
     position: relative;
-    height: 140px;
+    height: 200px;
     overflow: hidden; }
     .movie .movie__poster img {
       position: absolute;
@@ -4417,7 +4432,10 @@ select {
       width: auto;
       min-height: 100%; }
   .movie .movie__in {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     *zoom: 1;
     background: #fff; }
     .movie .movie__in:after {

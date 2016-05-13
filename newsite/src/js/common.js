@@ -319,4 +319,23 @@ $(document).ready(function() {
         content.slideToggle();
     });
 
+    // text ellipsis
+
+    $('.js-ellip').each(function () {
+       var target = $(this);
+
+        if(target){
+            var lines = target.data('lines') || 1;
+
+            target.ellipsis({
+                lines: lines,
+                responsive: true
+            });
+        }
+
+
+    });
+
+
+
 });
