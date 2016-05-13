@@ -1487,6 +1487,7 @@ select {
       border-width: 0; } }
 
 .section_channels {
+  padding: 40px 0 20px;
   background: #f2f2f3; }
 
 .out {
@@ -4300,15 +4301,30 @@ select {
     display: table;
     clear: both; }
   .rewards .rewards__in {
+    position: relative;
+    *zoom: 1;
     padding-left: 277px; }
+    .rewards .rewards__in:after {
+      content: " ";
+      display: table;
+      clear: both; }
     @media only screen and (max-width: 1024px) {
       .rewards .rewards__in {
         padding-left: 150px; } }
     @media only screen and (max-width: 768px) {
       .rewards .rewards__in {
-        display: none; } }
+        display: none;
+        padding-left: 0; } }
   .rewards .rewards__list {
-    font-size: 0; }
+    font-size: 0;
+    float: left;
+    width: 75%; }
+    @media only screen and (max-width: 1024px) {
+      .rewards .rewards__list {
+        float: none;
+        width: 100%;
+        clear: both;
+        margin-bottom: 30px; } }
   .rewards .rewards__all {
     margin-bottom: 90px; }
     .rewards .rewards__all a {
@@ -4323,6 +4339,19 @@ select {
       color: #fff;
       font-weight: 500;
       border-bottom: 2px solid #fff; }
+  .rewards .reward__more {
+    display: inline-block;
+    color: #353535;
+    -webkit-transition: color 200ms;
+    transition: color 200ms; }
+    .rewards .reward__more svg {
+      vertical-align: middle; }
+    .rewards .reward__more:hover {
+      color: #000; }
+    @media only screen and (max-width: 1024px) {
+      .rewards .reward__more {
+        float: right;
+        margin-right: 20px; } }
 
 .reward {
   position: relative;

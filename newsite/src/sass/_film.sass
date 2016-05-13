@@ -983,13 +983,23 @@
 	+clr
 	margin-bottom: 30px
 	.rewards__in
+		position: relative
+		+clr
 		padding-left: 277px
 		+r(1024)
 			padding-left: 150px
 		+r(768)
 			display: none
+			padding-left: 0
 	.rewards__list
 		font-size: 0
+		float: left
+		width: 75%
+		+r(1024)
+			float: none
+			width: 100%
+			clear: both
+			margin-bottom: 30px
 	.rewards__all
 		margin-bottom: 90px
 		a
@@ -1004,6 +1014,17 @@
 			color: #fff
 			font-weight: 500
 			border-bottom: 2px solid #fff
+	.reward__more
+		display: inline-block
+		color: #353535
+		transition: color 200ms
+		svg
+			vertical-align: middle
+		&:hover
+			color: #000
+		+r(1024)
+			float: right
+			margin-right: 20px
 
 .reward
 	position: relative
