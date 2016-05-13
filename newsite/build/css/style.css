@@ -3650,7 +3650,7 @@ select {
   position: relative;
   z-index: 2; }
   .watch .watch__btn {
-    height: 70px;
+    height: 86px;
     text-align: center;
     font-size: 0;
     text-align: left;
@@ -3690,22 +3690,23 @@ select {
         padding-left: 20px; } }
   .watch .watch__list {
     position: absolute;
-    top: 70px;
+    top: 86px;
     left: 0;
     right: 0;
     padding: 20px 0;
     background: #ffc34f;
     display: none; }
-    .watch .watch__list li {
-      padding-left: 100px;
-      margin-top: 10px; }
-      .watch .watch__list li:first-child {
-        margin-top: 0; }
     .watch .watch__list a {
+      display: block;
       color: #222121;
+      -webkit-transition: background 200ms;
+      transition: background 200ms;
+      padding: 5px 0 5px 100px;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase; }
+      .watch .watch__list a:hover {
+        background: #fff; }
 
 .actors {
   position: relative;
