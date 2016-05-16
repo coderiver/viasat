@@ -2410,7 +2410,8 @@ select {
   color: #000; }
   .card .card__poster {
     position: relative;
-    padding: 0 13px; }
+    overflow: hidden;
+    margin: 0 13px; }
     .card .card__poster img {
       display: block;
       width: 100%; }
@@ -2463,130 +2464,132 @@ select {
     font-style: italic; }
   .card.card_white {
     color: #fff; }
+    .card.card_white .card__flag {
+      display: none; }
   .card.card_backface {
     box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(234, 239, 241, 0.8), 0px -56px 0px -37px #f4f6f7; }
   .card.card_time .card__poster {
     padding: 0; }
   .card.card_time .card__title {
     font-size: 14px; }
-  .card.card_explore .card__poster:before {
-    content: "";
+  .card.card_explore .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #ab0621 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #ab0621; }
   .card.card_explore .card__channel .n-channel {
     color: #ab0621; }
-  .card.card_action .card__poster:before {
-    content: "";
+  .card.card_action .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #ab0621 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #ab0621; }
   .card.card_action .card__channel .n-channel {
     color: #ab0621; }
-  .card.card_premium .card__poster:before {
-    content: "";
+  .card.card_premium .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #523796 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #523796; }
   .card.card_premium .card__channel .n-channel {
     color: #523796; }
-  .card.card_megahit .card__poster:before {
-    content: "";
+  .card.card_megahit .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #3581bb transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #3581bb; }
   .card.card_megahit .card__channel .n-channel {
     color: #3581bb; }
-  .card.card_nature .card__poster:before {
-    content: "";
+  .card.card_nature .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #72811a transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #72811a; }
   .card.card_nature .card__channel .n-channel {
     color: #72811a; }
-  .card.card_russ .card__poster:before {
-    content: "";
+  .card.card_russ .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #00b3de transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #00b3de; }
   .card.card_russ .card__channel .n-channel {
     color: #00b3de; }
-  .card.card_tv1000 .card__poster:before {
-    content: "";
+  .card.card_tv1000 .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #164b71 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #164b71; }
   .card.card_tv1000 .card__channel .n-channel {
     color: #164b71; }
-  .card.card_sport .card__poster:before {
-    content: "";
+  .card.card_sport .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #1c3d6c transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #1c3d6c; }
   .card.card_sport .card__channel .n-channel {
     color: #1c3d6c; }
-  .card.card_history .card__poster:before {
-    content: "";
+  .card.card_history .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #2f71b4 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #2f71b4; }
   .card.card_history .card__channel .n-channel {
     color: #2f71b4; }
-  .card.card_comedy .card__poster:before {
-    content: "";
+  .card.card_comedy .card__flag {
     position: absolute;
-    top: 0;
-    right: 13px;
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 52px 35px 0;
-    border-color: transparent #d46b28 transparent transparent; }
+    top: -30px;
+    right: -25px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    background: #d46b28; }
   .card.card_comedy .card__channel .n-channel {
     color: #d46b28; }
 
