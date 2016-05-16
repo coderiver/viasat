@@ -97,17 +97,17 @@
 		margin: 0 -10px
 	.film__col
 		padding: 0 10px
-		.film__rating, .awards
+		.film__rating, .n-awards
 			display: none
 		+r(900)
 			float: left
 			width: 50%
-			.film__rating, .awards
+			.film__rating, .n-awards
 				display: block
 			.film__rating
 				border-top: 1px solid #e7e5e5
 				padding-top: 10px
-			.awards
+			.n-awards
 				padding-top: 20px
 	.film__poster
 		img
@@ -216,6 +216,27 @@
 				&.active
 					&:after
 						opacity: 1
+			+r(1024)
+				&:nth-child(8), &:nth-child(9), &:nth-child(10)
+					&:after
+						top: 0
+						left: 0
+						width: 17px
+						height: 17px
+			+r(900)
+				&:nth-child(8), &:nth-child(9), &:nth-child(10)
+					&:after
+						top: 1px
+						left: 1px
+						width: 28px
+						height: 28px
+			+r(768)
+				&:nth-child(8), &:nth-child(9), &:nth-child(10)
+					&:after
+						top: 1px
+						left: 1px
+						width: 17px
+						height: 17px
 	.rating__value
 		float: right
 		font-size: 20px
@@ -592,7 +613,7 @@
 		.h4
 			float: left
 			padding-top: 10px
-		.awards
+		.n-awards
 			float: right
 			+r(1280)
 				float: none
@@ -613,9 +634,9 @@
 		+r(768)
 			display: none
 
-.awards
+.n-awards
 	font-size: 0
-	.awards__item
+	.n-awards__item
 		position: relative
 		display: inline-block
 		vertical-align: middle
@@ -651,13 +672,13 @@
 			padding-left: 0
 			&:first-child
 				padding-left: 0
-	.awards__img
+	.n-awards__img
 		display: inline-block
 		vertical-align: middle
 		margin-right: 10px
 		+r(480)
 			margin-right: 2px
-	.awards__counter
+	.n-awards__counter
 		display: inline-block
 		vertical-align: middle
 		margin-right: 10px
@@ -670,7 +691,7 @@
 			margin-right: 0
 			span
 				font-size: 15px
-	.award__title
+	.n-awards__title
 		display: inline-block
 		vertical-align: middle
 		font-size: 13px
@@ -1140,20 +1161,23 @@
 	.comments__form
 		margin-bottom: 20px
 		& > p
-			margin-bottom: 10px
+			margin-bottom: 20px
 			color: #919191
 			font-size: 14px
 	.comments__input
+		margin-bottom: 10px
 		width: 100%
-		resize: none
-		padding: 5px 10px
-		height: 100px
-		border: 1px solid transparent
+		border-radius: 3px
+		padding: 7px 10px
+		border: 1px solid #919191
 		transition: border 200ms
 		+placeholder
 			color: rgba(#919191, 0.6)
-		&:focus
-			border-color: #353535
+	textarea.comments__input
+		resize: none
+		height: 100px
+	.comments__bottom
+		text-align: right
 	.comments__list
 		padding-bottom: 30px
 		+r(568)
