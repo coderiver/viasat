@@ -202,20 +202,9 @@ movies:
                                     <button class="dislike">{{ mixins.icon('like') }} <span></span></button>
                                 </div>
                                 <div class="rating rating_small">
-                                    <div class="rating__item">
-                                        <ul class="rating__stars">
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star">{{ mixins.icon('star-full') }}</li>
-                                        </ul>
-                                        <div class="rating__value">9.1</div>
+                                    <div class="rating__item js-rating">
+                                        <div class="js-rating-select"></div>
+                                        <div class="rating__value js-rating-value">0.0</div>
                                     </div>
                                 </div>
                             </div>
@@ -429,8 +418,8 @@ movies:
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star">{{ mixins.icon('star-full') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star">{{ mixins.icon('star-empty') }}</li>
                                     </ul>
                                     <div class="rating__value">9.1</div>
                                 </div>

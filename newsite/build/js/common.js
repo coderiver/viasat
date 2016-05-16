@@ -7,6 +7,33 @@ $(document).ready(function() {
         $('.js-menu').toggleClass('is-active');
     });
 
+    // rating
+
+    if($('.js-rating').length){
+        var mobile;
+        $(window).width() < 480 ? mobile = true : mobile = false;
+
+        $('.js-rating-select').rateYo({
+            starWidth: mobile ? '12px':'18px',
+            maxValue: 10,
+            numStars: 10,
+            normalFill: '#d9d9d9',
+            ratedFill: '#f8b636',
+            onChange: function (rating, rateYoInstance) {
+                var valueContainer = $(this).closest('.js-rating').find('.js-rating-value');
+                valueContainer.text(rating);
+            }
+        });
+        $(window).resize(function () {
+           if($(window).width() < 480){
+               $(".js-rating-select").rateYo("option", "starWidth", "12px");
+           }
+            else {
+               $(".js-rating-select").rateYo("option", "starWidth", "18px");
+           }
+        });
+    }
+
     //slider init
     var slider = {
 
