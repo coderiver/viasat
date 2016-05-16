@@ -552,6 +552,12 @@ $(document).ready(function() {
             centerMode: true,
             responsive: [
                 {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false
+                    }
+                },
+                {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1

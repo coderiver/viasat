@@ -6,7 +6,7 @@ cards:
   title: 'Восхождение Юпитер'
   time: '20:00'
   date: '7 мая'
-  color: violet
+  color: premium
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: img/img2.jpg
@@ -14,7 +14,7 @@ cards:
   title: 'Безумный Макс: Дорога ярости'
   time: '19:00'
   date: '26 апреля'
-  color: orange
+  color: comedy
   genre: 'Комедия'
   country: 'США, 2014'
 - img: 'img/img3.jpg'
@@ -22,7 +22,7 @@ cards:
   title: 'Дедушка легкого поведения'
   time: '19:00'
   date: '28 апреля'
-  color: red
+  color: action
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: 'img/img1.jpg'
@@ -30,7 +30,7 @@ cards:
   title: 'Восхождение Юпитер'
   time: '20:00'
   date: '7 мая'
-  color: violet
+  color: premium
   genre: 'Комедия'
   country: 'США, 2014'
 - img: img/img2.jpg
@@ -38,7 +38,7 @@ cards:
   title: 'Безумный Макс: Дорога ярости'
   time: '19:00'
   date: '26 апреля'
-  color: orange
+  color: comedy
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: 'img/img3.jpg'
@@ -46,7 +46,7 @@ cards:
   title: 'Дедушка легкого поведения'
   time: '19:00'
   date: '28 апреля'
-  color: red
+  color: action
   genre: 'Комедия'
   country: 'США, 2014'
 programs:
@@ -106,7 +106,7 @@ programs:
                     </div>
                 </div>
                 <div class="topper__min">
-                    <a href="#" class="btn btn_blue">Подключайтесь!</a>
+                    <a href="#" class="btn btn_blue btn_small">Подключайтесь!</a>
                 </div>
                 <div class="carousel">
                     <div class="carousel__title">Премьеры на каналах:</div>
@@ -242,11 +242,11 @@ programs:
                     </div>
                     <div class="benefits__item wide">
                         <div class="benefits__view">{{ mixins.icon('hd') }}</div>
-                        <div class="benefits__text">Изображение SD и Full HD</div>
+                        <div class="benefits__text">Изображение высокого качества</div>
                     </div>
                     <div class="benefits__item wide">
                         <div class="benefits__view">{{ mixins.icon('sound') }}</div>
-                        <div class="benefits__text">Звук DOLBY 5.1</div>
+                        <div class="benefits__text">Объемный звук Dolby Digital 5.1</div>
                     </div>
                 </div>
             </div>
@@ -277,7 +277,7 @@ programs:
             <div class="follow__title">Подпишитесь на анонсы</div>
             <div class="follow__form">
                 <form action="#">
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Ваш e-mail">
                     <button type="submit">Подписаться</button>
                 </form>
             </div>
@@ -286,11 +286,11 @@ programs:
     {# premieres #}
     <div class="section section_premiere">
         <div class="center">
-            <div class="n-title">Интересное на этой неделе</div>
+            <div class="n-title">Премьеры на VIASAT</div>
             <div class="slider">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
-                        <div class="slider__item card card_white card_time">
+                        <a href="#" class="slider__item card card_white card_time">
                             <div class="card__poster">
                                 <img src="{{ card.img }}" alt="">
                             </div>
@@ -298,11 +298,18 @@ programs:
                                 <div class="card__channel">
                                     <span class="n-channel">{{ mixins.icon('star') }}</span> {{ card.channel }}
                                 </div>
-                                <div class="card__title">{{ card.title }}</div>
-                                <div class="card__time">{{ card.time }}</div>
-                                <div class="card__date">{{ card.date }}</div>
+                                <div class="card__row">
+                                    <div class="card__left">
+                                        <div class="card__title">{{ card.title }}</div>
+                                        <div class="card__genre">Боевик</div>
+                                    </div>
+                                    <div class="card__right">
+                                        <div class="card__time">{{ card.time }}</div>
+                                        <div class="card__date">{{ card.date }}</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
             </div>
@@ -312,10 +319,10 @@ programs:
     <div class="section">
         <div class="center">
             <div class="n-title">Сейчас на канале</div>
-            <div class="slider">
+            <div class="slider slider_dark">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
-                        <div class="slider__item card">
+                        <div class="slider__item card card_{{ card.color }}">
                             <div class="card__poster">
                                 <img src="{{ card.img }}" alt="">
                             </div>
