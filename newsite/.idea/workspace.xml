@@ -31,11 +31,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="podborka.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="podborka.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/podborka.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
-              <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+              <caret line="109" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="podborka-single.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/podborka-single.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmoteka.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/filmoteka.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="66" column="22" selection-start-line="2" selection-start-column="0" selection-end-line="66" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -116,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/templates/film.html" />
         <option value="$PROJECT_DIR$/src/templates/film-premiere.html" />
         <option value="$PROJECT_DIR$/src/templates/podborka.html" />
+        <option value="$PROJECT_DIR$/src/templates/podborka-single.html" />
       </list>
     </option>
   </component>
@@ -352,12 +373,12 @@
       <workItem from="1463038081485" duration="16410000" />
       <workItem from="1463070616393" duration="481000" />
       <workItem from="1463125958125" duration="17795000" />
-      <workItem from="1463384221473" duration="11931000" />
+      <workItem from="1463384221473" duration="13163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212560000" />
+    <option name="totallyTimeSpent" value="213792000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,13 +449,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite-svg/sprite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-885">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulp/tasks/sprite-svg/_sprite-svg.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/filmoteka.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -789,7 +795,23 @@
     <entry file="file://$PROJECT_DIR$/src/templates/podborka.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
-          <caret line="109" column="67" selection-start-line="109" selection-start-column="67" selection-end-line="109" selection-end-column="67" />
+          <caret line="109" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/filmoteka.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="66" column="22" selection-start-line="2" selection-start-column="0" selection-end-line="66" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/podborka-single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="124" column="64" selection-start-line="124" selection-start-column="64" selection-end-line="124" selection-end-column="64" />
           <folding />
         </state>
       </provider>
