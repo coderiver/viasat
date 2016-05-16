@@ -3413,7 +3413,7 @@ select {
           top: 1px;
           left: 1px;
           color: #734fa0;
-          opacity: 0;
+          display: none;
           width: 28px;
           height: 28px;
           background: url("../img/star-full.svg");
@@ -3421,7 +3421,7 @@ select {
           background-size: cover;
           background-position: 50% 50%; }
         .rating .rating__stars .star:nth-child(8).active:after, .rating .rating__stars .star:nth-child(9).active:after, .rating .rating__stars .star:nth-child(10).active:after {
-          opacity: 1; }
+          display: block; }
       @media only screen and (max-width: 1024px) {
         .rating .rating__stars .star:nth-child(8):after, .rating .rating__stars .star:nth-child(9):after, .rating .rating__stars .star:nth-child(10):after {
           top: 0;

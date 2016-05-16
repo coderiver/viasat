@@ -107,12 +107,13 @@ movies:
                             <h1 class="h1">Одержимость</h1>
                             <div class="subtitle">Whiplash</div>
                         </div>
-
-                        <ul class="socials">
-                            <li><a href="#">{{ mixins.icon('fb') }}</a></li>
-                            <li><a href="#">{{ mixins.icon('vk') }}</a></li>
-                            <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
-                        </ul>
+                        <div class="topper__right">
+                            <ul class="socials">
+                                <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                                <li><a href="#">{{ mixins.icon('vk') }}</a></li>
+                                <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="film-main">
                         <div class="film-main__about">
@@ -201,20 +202,9 @@ movies:
                                     <button class="dislike">{{ mixins.icon('like') }} <span></span></button>
                                 </div>
                                 <div class="rating rating_small">
-                                    <div class="rating__item">
-                                        <ul class="rating__stars">
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                            <li class="star">{{ mixins.icon('star-full') }}</li>
-                                        </ul>
-                                        <div class="rating__value">9.1</div>
+                                    <div class="rating__item js-rating">
+                                        <div class="js-rating-select"></div>
+                                        <div class="rating__value js-rating-value">0.0</div>
                                     </div>
                                 </div>
                             </div>
@@ -233,9 +223,9 @@ movies:
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star">{{ mixins.icon('star-empty') }}</li>
                                             </ul>
                                             <div class="rating__value">9.1</div>
                                         </div>
@@ -251,9 +241,9 @@ movies:
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star">{{ mixins.icon('star-empty') }}</li>
                                             </ul>
                                             <div class="rating__value">9.1</div>
                                         </div>
@@ -269,9 +259,9 @@ movies:
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
                                                 <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                                <li class="star">{{ mixins.icon('star-full') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                                <li class="star">{{ mixins.icon('star-empty') }}</li>
                                             </ul>
                                             <div class="rating__value">95%</div>
                                         </div>
@@ -375,8 +365,6 @@ movies:
                             <a href="#" class="feedback-link">Подпишитесь на анонсы</a>
                             <a href="#" class="subscribe-link">Свяжитесь с нами</a>
                         </div>
-                        {# add channels #}
-                        <a href="#" class="connect-channels">Подключить каналы</a>
                         {# watch at #}
                         <div class="watch js-watch">
                             <div class="watch__btn js-watch-btn"><span>СМОТРЕТЬ НА</span></div>
@@ -457,9 +445,9 @@ movies:
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star">{{ mixins.icon('star-full') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star">{{ mixins.icon('star-empty') }}</li>
                                     </ul>
                                     <div class="rating__value">9.1</div>
                                 </div>
@@ -475,11 +463,11 @@ movies:
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star">{{ mixins.icon('star-full') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star">{{ mixins.icon('star-empty') }}</li>
                                     </ul>
-                                    <div class="rating__value">9.1</div>
+                                    <div class="rating__value">8</div>
                                 </div>
                             </div>
                             <div class="rating">
@@ -493,9 +481,9 @@ movies:
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
                                         <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star active">{{ mixins.icon('star-full') }}</li>
-                                        <li class="star">{{ mixins.icon('star-full') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star active">{{ mixins.icon('star-empty') }}</li>
+                                        <li class="star">{{ mixins.icon('star-empty') }}</li>
                                     </ul>
                                     <div class="rating__value">95%</div>
                                 </div>
