@@ -878,21 +878,24 @@
 	+cover
 	.topper__head
 		+clr
+	.topper__left
+		float: left
+		width: 50%
 		.h1
-			float: left
-			width: 50%
 			text-shadow: 0 1px 1px rgba(72, 54, 110, 0.75)
-			+r(600)
-				float: none
-				width: 100%
+		+r(600)
+			float: none
+			width: 100%
+	.topper__right
+		float: right
+		width: 50%
 		.socials
-			float: right
-			width: 50%
 			text-align: right
 			margin-top: 10px
-			+r(600)
-				float: none
-				width: 100%
+		+r(600)
+			float: none
+			width: 100%
+			.socials
 				text-align: left
 	.topper__bottom
 		position: relative

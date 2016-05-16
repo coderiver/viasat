@@ -97,11 +97,13 @@ programs:
                         <h1 class="h1">Каналы TV1000</h1>
                         <div class="subtitle">Только лучшее кино</div>
                     </div>
-                    <ul class="socials">
-                        <li><a href="#">{{ mixins.icon('fb') }}</a></li>
-                        <li><a href="#">{{ mixins.icon('vk') }}</a></li>
-                        <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
-                    </ul>
+                    <div class="topper__right">
+                        <ul class="socials">
+                            <li><a href="#">{{ mixins.icon('fb') }}</a></li>
+                            <li><a href="#">{{ mixins.icon('vk') }}</a></li>
+                            <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="topper__min">
                     <a href="#" class="btn btn_blue">Подключайтесь!</a>
@@ -284,7 +286,7 @@ programs:
     {# premieres #}
     <div class="section section_premiere">
         <div class="center">
-            <div class="title">Интересное на этой неделе</div>
+            <div class="n-title">Интересное на этой неделе</div>
             <div class="slider">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
@@ -309,7 +311,7 @@ programs:
     {# live soon #}
     <div class="section">
         <div class="center">
-            <div class="title">Сейчас на канале</div>
+            <div class="n-title">Сейчас на канале</div>
             <div class="slider">
                 <div class="slider__in js-slider">
                     {% for card in cards %}
