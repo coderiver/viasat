@@ -1171,8 +1171,7 @@ select {
     text-transform: uppercase; }
   .banner__text {
     max-width: 210px;
-    margin-bottom: 20px;
-    font-weight: 700; }
+    margin-bottom: 20px; }
   .banner__btn {
     min-width: 205px;
     height: 55px;
@@ -3395,6 +3394,8 @@ select {
   .rating .rating__stars {
     float: left;
     font-size: 0; }
+    .rating .rating__stars .star:nth-child(8), .rating .rating__stars .star:nth-child(9), .rating .rating__stars .star:nth-child(10) {
+      color: #734fa0; }
   .rating .rating__value {
     float: right;
     font-size: 20px;
@@ -3465,7 +3466,7 @@ select {
 .star {
   display: inline-block;
   vertical-align: middle;
-  font-size: 28px;
+  font-size: 30px;
   color: #d9d9d9; }
   .star.active {
     color: #f8b636; }

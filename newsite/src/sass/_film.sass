@@ -194,6 +194,9 @@
 	.rating__stars
 		float: left
 		font-size: 0
+		.star
+			&:nth-child(8), &:nth-child(9), &:nth-child(10)
+				color: #734fa0
 	.rating__value
 		float: right
 		font-size: 20px
@@ -264,7 +267,7 @@
 .star
 	display: inline-block
 	vertical-align: middle
-	font-size: 28px
+	font-size: 30px
 	color: #d9d9d9
 	&.active
 		color: #f8b636
