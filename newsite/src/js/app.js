@@ -4,4 +4,5 @@
 //=include lib/slick.min.js
 //=include lib/jquery.ellipsis.js
 //=include lib/jquery.rateyo.min.js
+//=include main.js
 //=include common.js

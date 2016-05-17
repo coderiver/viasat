@@ -2021,9 +2021,6 @@ select {
       font-size: 18px; }
   .header__menu {
     float: left; }
-    @media only screen and (max-width: 1270px) {
-      .header__menu {
-        float: right; } }
     @media only screen and (max-width: 1024px) {
       .header__menu {
         position: absolute;
@@ -2049,6 +2046,41 @@ select {
     @media only screen and (max-width: 1270px) {
       .header__time {
         display: none; } }
+
+.n-search {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  margin-top: 26px;
+  z-index: 9; }
+  .n-search .n-search__btn {
+    font-size: 18px; }
+  .n-search .n-search__form {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: 0;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 300ms;
+    transition: opacity 300ms;
+    z-index: 1; }
+    .n-search .n-search__form.is-visible {
+      opacity: 1;
+      visibility: visible; }
+    .n-search .n-search__form input[type="text"] {
+      height: 30px;
+      padding: 0 25px 0 10px;
+      font-size: 16px;
+      border-radius: 3px;
+      border: 1px solid #353535; }
+    .n-search .n-search__form button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: transparent;
+      font-size: 18px; }
 
 .menu__list {
   font-size: 0; }
@@ -5050,97 +5082,97 @@ select {
     .carousel .slick-next:hover:after {
       opacity: 1; }
 
-.programs {
+.n-programs {
   position: relative; }
-  .programs .programs__in {
+  .n-programs .n-programs__in {
     padding: 60px 50px 30px;
     border-top: 3px solid #368cbd; }
     @media only screen and (max-width: 1024px) {
-      .programs .programs__in {
+      .n-programs .n-programs__in {
         padding: 60px 30px; } }
     @media only screen and (max-width: 768px) {
-      .programs .programs__in {
+      .n-programs .n-programs__in {
         padding: 40px 30px; } }
     @media only screen and (max-width: 568px) {
-      .programs .programs__in {
+      .n-programs .n-programs__in {
         padding: 40px 15px; } }
-  .programs .programs__title {
+  .n-programs .n-programs__title {
     text-align: center;
     margin-bottom: 50px;
     font-size: 34px;
     font-weight: normal;
     color: #8b98a5; }
     @media only screen and (max-width: 768px) {
-      .programs .programs__title {
+      .n-programs .n-programs__title {
         margin-bottom: 30px; } }
-  .programs .programs__list {
+  .n-programs .n-programs__list {
     font-size: 0; }
 
-.program {
+.n-program {
   display: inline-block;
   vertical-align: top;
   width: 33.3%;
   margin-bottom: 20px;
   text-decoration: none;
   border-left: 1px solid #f1f1f1; }
-  .program:nth-child(3n+1) {
+  .n-program:nth-child(3n+1) {
     border-left: none; }
-  .program:hover .go {
+  .n-program:hover .go {
     color: #fff;
     border-color: #fff; }
-  .program:hover .program__title {
+  .n-program:hover .n-program__title {
     color: #fff; }
   @media only screen and (max-width: 768px) {
-    .program {
+    .n-program {
       width: 50%; }
-      .program:nth-child(3n+1) {
+      .n-program:nth-child(3n+1) {
         border-left: 1px solid #f1f1f1; }
-      .program:nth-child(2n+1) {
+      .n-program:nth-child(2n+1) {
         border-left: none; } }
   @media only screen and (max-width: 600px) {
-    .program {
+    .n-program {
       width: 100%;
       border-left: none; } }
-  .program.program_blue:hover .program__title {
+  .n-program.n-program_blue:hover .n-program__title {
     background: #00acd3; }
-  .program.program_violet:hover .program__title {
+  .n-program.n-program_violet:hover .n-program__title {
     background: #6d57a5; }
-  .program .program__title {
+  .n-program .n-program__title {
     padding: 20px 35px;
     font-size: 20px;
     color: #8b98a5;
     -webkit-transition: color 200ms, background 200ms;
     transition: color 200ms, background 200ms; }
     @media only screen and (max-width: 768px) {
-      .program .program__title {
+      .n-program .n-program__title {
         padding: 30px 25px; } }
     @media only screen and (max-width: 568px) {
-      .program .program__title {
+      .n-program .n-program__title {
         padding: 20px 10px;
         height: auto; } }
-  .program .program__img {
+  .n-program .n-program__img {
     position: relative;
     font-size: 0; }
-  .program .program__poster {
+  .n-program .n-program__poster {
     display: block;
     width: 100%; }
-  .program .program__channel-image {
+  .n-program .n-program__channel-image {
     position: absolute;
     bottom: 35px;
     left: 35px;
     height: 44px;
     width: auto; }
     @media only screen and (max-width: 768px) {
-      .program .program__channel-image {
+      .n-program .n-program__channel-image {
         bottom: 20px;
         left: 20px; } }
-  .program .program__about {
+  .n-program .n-program__about {
     min-height: 220px;
     padding: 20px 35px;
     font-size: 16px;
     color: #8b98a5; }
     @media only screen and (max-width: 600px) {
-      .program .program__about {
+      .n-program .n-program__about {
         padding: 20px 0; } }
 
 .go {

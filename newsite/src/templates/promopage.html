@@ -189,18 +189,18 @@ programs:
         </div>
     </div>
     {# our channels #}
-    <div class="programs">
-        <div class="center programs__in">
-            <h2 class="programs__title">Наши каналы</h2>
-            <div class="programs__list">
+    <div class="n-programs">
+        <div class="center n-programs__in">
+            <h2 class="n-programs__title">Наши каналы</h2>
+            <div class="n-programs__list">
                 {% for program in programs %}
-                    <a href="#" class="program program_{{ program.color }}">
-                        <div class="program__title">{{ program.channel }} <span class="go">{{ mixins.icon('arr-right') }}</span></div>
-                        <div class="program__img">
-                            <img class="program__poster" src="{{ program.img }}" alt="">
-                            <img class="program__channel-image" src="{{ program.image }}" alt="">
+                    <a href="#" class="n-program n-program_{{ program.color }}">
+                        <div class="n-program__title">{{ program.channel }} <span class="go">{{ mixins.icon('arr-right') }}</span></div>
+                        <div class="n-program__img">
+                            <img class="n-program__poster" src="{{ program.img }}" alt="">
+                            <img class="n-program__channel-image" src="{{ program.image }}" alt="">
                         </div>
-                        <div class="program__about">{{ program.text }}</div>
+                        <div class="n-program__about">{{ program.text }}</div>
                     </a>
                 {% endfor %}
             </div>

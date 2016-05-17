@@ -70,8 +70,6 @@
 			font-size: 18px
 	&__menu
 		float: left
-		+r(1270)
-			float: right
 		+r(1024)
 			position: absolute
 			top: 60px
@@ -93,6 +91,39 @@
 		margin-top: 17px
 		+r(1270)
 			display: none
+.n-search
+	position: relative
+	float: right
+	margin-right: 15px
+	margin-top: 26px
+	z-index: 9
+	.n-search__btn
+		font-size: 18px
+	.n-search__form
+		position: absolute
+		top: -5px
+		right: -5px
+		bottom: 0
+		border-radius: 3px
+		visibility: hidden
+		opacity: 0
+		transition: opacity 300ms
+		z-index: 1
+		&.is-visible
+			opacity: 1
+			visibility: visible
+		input[type="text"]
+			height: 30px
+			padding: 0 25px 0 10px
+			font-size: 16px
+			border-radius: 3px
+			border: 1px solid #353535
+		button
+			position: absolute
+			top: 5px
+			right: 5px
+			background: transparent
+			font-size: 18px
 
 .menu
 	&__list
