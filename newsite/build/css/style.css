@@ -5149,7 +5149,7 @@ select {
   margin-left: 10px;
   width: 30px;
   height: 30px;
-  line-height: 28px;
+  padding-top: 6px;
   border-radius: 50%;
   border: 2px solid #8e9aa7;
   text-align: center;
