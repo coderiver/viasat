@@ -5080,7 +5080,7 @@ select {
   display: inline-block;
   vertical-align: top;
   width: 33.3%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-decoration: none;
   border-left: 1px solid #f1f1f1; }
   .program:nth-child(3n+1) {
@@ -5106,8 +5106,7 @@ select {
   .program.program_violet:hover .program__title {
     background: #6d57a5; }
   .program .program__title {
-    height: 105px;
-    padding: 30px 35px;
+    padding: 20px 35px;
     font-size: 20px;
     color: #8b98a5;
     -webkit-transition: color 200ms, background 200ms;
@@ -5136,6 +5135,7 @@ select {
         bottom: 20px;
         left: 20px; } }
   .program .program__about {
+    min-height: 220px;
     padding: 20px 35px;
     font-size: 16px;
     color: #8b98a5; }
