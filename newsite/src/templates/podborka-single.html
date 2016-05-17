@@ -71,7 +71,7 @@ cards:
 
 {% block content %}
     <div class="out">
-        <div class="topper" style="background-image: url(img/topper3.jpg)">
+        <div class="topper topper_big" style="background-image: url(img/topper3.jpg)">
             <div class="topper__in">
                 <div class="center">
                     {# nav #}
@@ -84,35 +84,8 @@ cards:
                     </nav>
                     <div class="topper__head">
                         <div class="topper__left">
-                            <h1 class="h1">Подборка</h1>
+                            <h1 class="h1">Фильмы для всей семьи</h1>
                         </div>
-                        <div class="topper__right">
-                            <ul class="socials">
-                                <li><a href="#">{{ mixins.icon('fb') }}</a></li>
-                                <li><a href="#">{{ mixins.icon('vk') }}</a></li>
-                                <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="s">
-                        <form>
-                            <label class="s__field">
-                                <input type="text" role="search" placeholder="Марсианин">
-                            </label>
-                            <button class="s__submit" type="submit">{{ mixins.icon('search') }}</button>
-                        </form>
-                    </div>
-                    <div class="topper__bottom">
-                        <nav class="nav">
-                            <ul>
-                                <li><a href="#">Все подборки</a></li>
-                                <li><a href="#">По жанрам</a></li>
-                                <li><a href="#">Популярные</a></li>
-                                <li><a href="#">По режиссерам</a></li>
-                                <li><a href="#">По стране</a></li>
-                                <li><a href="#">По актерам</a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -121,8 +94,7 @@ cards:
         <div class="main">
             <div class="center">
 
-                <div class="catalog">
-                    <h3 class="h3">Какая-то там подборка фильмов</h3>
+                <div class="catalog catalog_top">
                     <div class="catalog__in">
                         {% for card in cards %}
                             <a href="#" class="card card_{{ card.color }}">
@@ -130,9 +102,6 @@ cards:
                                     <img src="{{ card.img }}" alt="">
                                 </div>
                                 <div class="card__in">
-                                    <div class="card__channel">
-                                        <span class="n-channel n-channel_{{ card.color }}">{{ mixins.icon('star') }}</span> {{ card.channel }}
-                                    </div>
                                     <div class="card__title">{{ card.title }}</div>
                                     <div class="card__about">
                                         <p>{{ card.genre }}</p>
@@ -142,9 +111,9 @@ cards:
                             </a>
                         {% endfor %}
                     </div>
-                    <div class="more">
-                        <a href="#" class="btn btn_small btn_white">Показать еще</a>
-                    </div>
+                </div>
+                <div class="more">
+                    <a href="#" class="btn btn_small btn_transparent">Показать еще</a>
                 </div>
             </div>
         </div>

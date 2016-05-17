@@ -335,6 +335,13 @@ a {
     .btn.btn_blue:hover {
       background: #2f99d4;
       border-color: #2f99d4; }
+  .btn.btn_transparent {
+    background: transparent;
+    border-color: #979292;
+    color: #979292; }
+    .btn.btn_transparent:hover {
+      background: #979292;
+      color: #fff; }
 
 a.btn {
   text-decoration: none;
@@ -1505,6 +1512,8 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
+  .topper.topper_big {
+    min-height: 300px; }
   .topper .topper__head {
     *zoom: 1; }
     .topper .topper__head:after {
@@ -1694,6 +1703,9 @@ select {
 .catalog {
   padding: 40px 60px;
   background: #fff; }
+  .catalog.catalog_top {
+    padding: 40px;
+    margin-top: -100px; }
   .catalog .catalog__in {
     font-size: 0; }
     .catalog .catalog__in .card {
