@@ -41,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="podborka-single.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="podborka-single.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/podborka-single.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="115" column="68" selection-start-line="115" selection-start-column="68" selection-end-line="115" selection-end-column="68" />
+              <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -133,10 +133,10 @@
         <option value="$PROJECT_DIR$/src/templates/filmoteka.html" />
         <option value="$PROJECT_DIR$/src/templates/podborka.html" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
-        <option value="$PROJECT_DIR$/src/templates/podborka-single.html" />
         <option value="$PROJECT_DIR$/src/sass/_common.sass" />
         <option value="$PROJECT_DIR$/src/sass/_promopage.sass" />
         <option value="$PROJECT_DIR$/src/templates/promopage.html" />
+        <option value="$PROJECT_DIR$/src/templates/podborka-single.html" />
       </list>
     </option>
   </component>
@@ -374,12 +374,12 @@
       <workItem from="1463070616393" duration="481000" />
       <workItem from="1463125958125" duration="17795000" />
       <workItem from="1463384221473" duration="19421000" />
-      <workItem from="1463469353810" duration="1480000" />
+      <workItem from="1463469353810" duration="1913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221530000" />
+    <option name="totallyTimeSpent" value="221963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -763,14 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/podborka-single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="115" column="68" selection-start-line="115" selection-start-column="68" selection-end-line="115" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -791,6 +783,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="350" column="50" selection-start-line="350" selection-start-column="50" selection-end-line="350" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/podborka-single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="115" column="26" selection-start-line="115" selection-start-column="26" selection-end-line="115" selection-end-column="26" />
           <folding />
         </state>
       </provider>
