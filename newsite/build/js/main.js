@@ -11,7 +11,7 @@ $(document).ready(function() {
         $(this).parent().find('input[type=text]').focus();
         event.stopPropagation();
     });
-    $('.js-search-form').on('click', function() {
+    $('.js-search-form').on('click', function(event) {
         event.stopPropagation();
     });
 
