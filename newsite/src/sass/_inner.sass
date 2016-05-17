@@ -43,9 +43,109 @@
 		+center
 	.clr
 		+clr
-	.container
-		position: relative
-		z-index: 1
+	.btn
+		display: inline-block
+		max-width: 100%
+		height: 42px
+		padding: 11px 30px
+		border: 2px solid #fff
+		border-radius: 3px
+		text-align: center
+		text-transform: uppercase
+		font-weight: 500
+		text-decoration: none
+		color: #fff
+		font-size: 1.4rem
+		transition: color 300ms, background 300ms
+		span
+			display: inline-block
+			vertical-align: middle
+		i
+			margin-right: 13px
+		&:hover
+			color: $dark
+			background: #fff
+		+r(568)
+			padding: 11px 20px
+		&.btn_more
+			border-color: #adafb1
+			color: $dark
+			&:hover
+				background: #adafb1
+				color: #fff
+		&.btn_blue
+			border-color: #247bd7
+			color: #247bd7
+			&:hover
+				background: #247bd7
+				color: #fff
+		&.btn_purple
+			border-color: #9b1d4f
+			color: #9b1d4f
+			&:hover
+				background: #9b1d4f
+				color: #fff
+		&.btn_action
+			border-color: #ab0621
+			color: #ab0621
+			&:hover
+				background: #ab0621
+				color: #fff
+		&.btn_comedy
+			border-color: #e66d20
+			color: #e66d20
+			&:hover
+				background: #e66d20
+				color: #fff
+		&.btn_megahit
+			border-color: #004681
+			color: #004681
+			&:hover
+				background: #004681
+				color: #fff
+		&.btn_premium
+			border-color: #352361
+			color: #352361
+			&:hover
+				background: #352361
+				color: #fff
+		&.btn_nature
+			border-color: #618005
+			color: #618005
+			&:hover
+				background: #618005
+				color: #618005
+		&.btn_full
+			height: 55px
+			padding: 15px 30px
+			background: #fff
+			color: $dark
+			&:hover
+				background: transparent
+				color: #fff
+			&.btn_purple
+				background: #9b1d4f
+				color: #fff
+				&:hover
+					background: #cf2669
+					border-color: #cf2669
+				&.btn_small
+					height: 42px
+					padding: 11px 30px
+			&.btn_blue
+				border-color: #247bd7
+				background: #247bd7
+				color: #fff
+				&:hover
+					background: #fff
+					color: #247bd7
+			&.btn_black
+				border-color: #000
+				background: #000
+				color: #fff
+				&:hover
+					background: #fff
+					color: #000
 	.tag
 		display: inline-block
 		vertical-align: middle
@@ -1360,6 +1460,16 @@
 			&:hover
 				background: #fff
 				color: $dark
+		.n-watch
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			height: 73px
+			.n-watch__btn
+				height: 73px
+			.n-watch__list
+				top: 73px
 	.schedule
 		.schedule__title
 			margin-bottom: 15px

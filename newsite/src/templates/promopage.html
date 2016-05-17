@@ -94,11 +94,11 @@ programs:
             <div class="center">
                 <div class="topper__head">
                     <div class="topper__left">
-                        <h1 class="h1">Каналы TV1000</h1>
+                        <h1 class="n-h1">Каналы TV1000</h1>
                         <div class="subtitle">Только лучшее кино</div>
                     </div>
                     <div class="topper__right">
-                        <ul class="socials">
+                        <ul class="n-socials">
                             <li><a href="#">{{ mixins.icon('fb') }}</a></li>
                             <li><a href="#">{{ mixins.icon('vk') }}</a></li>
                             <li><a href="#">{{ mixins.icon('instagram') }}</a></li>
@@ -106,83 +106,25 @@ programs:
                     </div>
                 </div>
                 <div class="topper__min">
-                    <a href="#" class="btn btn_blue btn_small">Подключайтесь!</a>
+                    <a href="#" class="n-btn n-btn_blue n-btn_small">Подключайтесь!</a>
                 </div>
-                <div class="carousel">
-                    <div class="carousel__title">Премьеры на каналах:</div>
-                    <div class="carousel__slider js-carousel">
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
+                <div class="n-carousel">
+                    <div class="n-carousel__title">Премьеры на каналах:</div>
+                    <div class="n-carousel__slider js-carousel">
+                        {% for i in range(0,6) %}
+                            <div class="n-carousel__slide">
+                                <div class="n-carousel__img">
+                                    <img src="img/carousel1.jpg" alt="">
+                                </div>
+                                <div class="n-carousel__in">
+                                    <div class="n-carousel__info">
+                                        <div class="n-carousel__name">Игра престолов</div>
+                                        <div class="n-carousel__time">21:00</div>
+                                        <div class="n-carousel__date">29 апреля</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel__slide">
-                            <div class="carousel__img">
-                                <img src="img/carousel1.jpg" alt="">
-                            </div>
-                            <div class="carousel__in">
-                                <div class="carousel__info">
-                                    <div class="carousel__name">Игра престолов</div>
-                                    <div class="carousel__time">21:00</div>
-                                    <div class="carousel__date">29 апреля</div>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -341,7 +283,7 @@ programs:
                 </div>
             </div>
             <div class="more">
-                <a href="#" class="btn">Вся телепрограмма</a>
+                <a href="#" class="n-btn">Вся телепрограмма</a>
             </div>
         </div>
     </div>
@@ -374,7 +316,7 @@ programs:
             </div>
         </div>
         <div class="more">
-            <a href="#" class="btn btn_blue">Другие операторы</a>
+            <a href="#" class="n-btn n-btn_blue">Другие операторы</a>
         </div>
     </div>
 {% endblock %}

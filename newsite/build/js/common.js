@@ -347,7 +347,7 @@ $(document).ready(function() {
     
     $('.js-watch-btn').on('click', function () {
         $(this).toggleClass('open');
-        $(this).closest('.js-watch').find('.watch__list').slideToggle();
+        $(this).closest('.js-watch').find('.js-watch-list').slideToggle();
     });
 
     // hide content on mobile
@@ -371,9 +371,6 @@ $(document).ready(function() {
             });
         }
 
-
     });
-
-
 
 });
