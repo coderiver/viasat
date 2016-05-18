@@ -1,5 +1,5 @@
 // styles for all inner pages from old design
-.old
+.old, .overlay
 	position: relative
 	font-family: 'Roboto', sans-serif
 	font-size: 1.4rem
@@ -2385,28 +2385,28 @@
 				font-size: 1.2rem
 				color: #7f7f7f
 
-			&:before
-				display: none
-				content: ""
-				position: absolute
-				bottom: 0
-				right: 0
-				width: 25px
-				height: 25px
-			&:after
-				display: none
-				content: "\e600"
-				position: absolute
-				bottom: 5px
-				right: 5px
-				font-family: 'icomoon'
-				color: #fff
-				font-size: 14px
-				-webkit-font-smoothing: antialiased
-				-moz-osx-font-smoothing: grayscale
-			&.is-favourite
-				&:before, &:after
-					display: block
+			//&:before
+			//	display: none
+			//	content: ""
+			//	position: absolute
+			//	bottom: 0
+			//	right: 0
+			//	width: 25px
+			//	height: 25px
+			//&:after
+			//	display: none
+			//	content: "\e600"
+			//	position: absolute
+			//	bottom: 5px
+			//	right: 5px
+			//	font-family: 'icomoon'
+			//	color: #fff
+			//	font-size: 14px
+			//	-webkit-font-smoothing: antialiased
+			//	-moz-osx-font-smoothing: grayscale
+			//&.is-favourite
+			//	&:before, &:after
+			//		display: block
 			&.is-finished
 				background: #efefef
 	.premium
@@ -2543,7 +2543,7 @@
 		height: 40px
 		border-radius: 3px
 		background: #d70000
-		padding: 5px 68px 5px 20px
+		padding: 5px 20px 5px 20px
 		color: #fff
 		text-transform: uppercase
 		font-size: 1.4rem
@@ -2554,6 +2554,7 @@
 			top: 10px
 			right: 10px
 			font-size: 18px
+			display: none
 		&:hover
 			background: darken(#d70000, 5%)
 // popups

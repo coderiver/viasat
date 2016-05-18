@@ -5465,7 +5465,7 @@ select {
     .slider_dark .slick-next:hover:after {
       opacity: 1; }
 
-.old {
+.old, .overlay {
   position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
@@ -5475,29 +5475,29 @@ select {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   z-index: 1; }
-  .old .center {
+  .old .center, .overlay .center {
     position: relative;
     max-width: 1150px;
     margin: 0 auto;
     padding: 0;
     *zoom: 1; }
-    .old .center:after {
+    .old .center:after, .overlay .center:after {
       content: " ";
       display: table;
       clear: both; }
     @media only screen and (max-width: 1150px) {
-      .old .center {
+      .old .center, .overlay .center {
         padding: 0 20px; } }
     @media only screen and (max-width: 768px) {
-      .old .center {
+      .old .center, .overlay .center {
         padding: 0 10px; } }
-  .old .clr {
+  .old .clr, .overlay .clr {
     *zoom: 1; }
-    .old .clr:after {
+    .old .clr:after, .overlay .clr:after {
       content: " ";
       display: table;
       clear: both; }
-  .old .btn {
+  .old .btn, .overlay .btn {
     display: inline-block;
     max-width: 100%;
     height: 42px;
@@ -5512,148 +5512,148 @@ select {
     font-size: 1.4rem;
     -webkit-transition: color 300ms, background 300ms;
     transition: color 300ms, background 300ms; }
-    .old .btn span {
+    .old .btn span, .overlay .btn span {
       display: inline-block;
       vertical-align: middle; }
-    .old .btn i {
+    .old .btn i, .overlay .btn i {
       margin-right: 13px; }
-    .old .btn:hover {
+    .old .btn:hover, .overlay .btn:hover {
       color: #353535;
       background: #fff; }
     @media only screen and (max-width: 568px) {
-      .old .btn {
+      .old .btn, .overlay .btn {
         padding: 11px 20px; } }
-    .old .btn.btn_more {
+    .old .btn.btn_more, .overlay .btn.btn_more {
       border-color: #adafb1;
       color: #353535; }
-      .old .btn.btn_more:hover {
+      .old .btn.btn_more:hover, .overlay .btn.btn_more:hover {
         background: #adafb1;
         color: #fff; }
-    .old .btn.btn_blue {
+    .old .btn.btn_blue, .overlay .btn.btn_blue {
       border-color: #247bd7;
       color: #247bd7; }
-      .old .btn.btn_blue:hover {
+      .old .btn.btn_blue:hover, .overlay .btn.btn_blue:hover {
         background: #247bd7;
         color: #fff; }
-    .old .btn.btn_purple {
+    .old .btn.btn_purple, .overlay .btn.btn_purple {
       border-color: #9b1d4f;
       color: #9b1d4f; }
-      .old .btn.btn_purple:hover {
+      .old .btn.btn_purple:hover, .overlay .btn.btn_purple:hover {
         background: #9b1d4f;
         color: #fff; }
-    .old .btn.btn_action {
+    .old .btn.btn_action, .overlay .btn.btn_action {
       border-color: #ab0621;
       color: #ab0621; }
-      .old .btn.btn_action:hover {
+      .old .btn.btn_action:hover, .overlay .btn.btn_action:hover {
         background: #ab0621;
         color: #fff; }
-    .old .btn.btn_comedy {
+    .old .btn.btn_comedy, .overlay .btn.btn_comedy {
       border-color: #e66d20;
       color: #e66d20; }
-      .old .btn.btn_comedy:hover {
+      .old .btn.btn_comedy:hover, .overlay .btn.btn_comedy:hover {
         background: #e66d20;
         color: #fff; }
-    .old .btn.btn_megahit {
+    .old .btn.btn_megahit, .overlay .btn.btn_megahit {
       border-color: #004681;
       color: #004681; }
-      .old .btn.btn_megahit:hover {
+      .old .btn.btn_megahit:hover, .overlay .btn.btn_megahit:hover {
         background: #004681;
         color: #fff; }
-    .old .btn.btn_premium {
+    .old .btn.btn_premium, .overlay .btn.btn_premium {
       border-color: #352361;
       color: #352361; }
-      .old .btn.btn_premium:hover {
+      .old .btn.btn_premium:hover, .overlay .btn.btn_premium:hover {
         background: #352361;
         color: #fff; }
-    .old .btn.btn_nature {
+    .old .btn.btn_nature, .overlay .btn.btn_nature {
       border-color: #618005;
       color: #618005; }
-      .old .btn.btn_nature:hover {
+      .old .btn.btn_nature:hover, .overlay .btn.btn_nature:hover {
         background: #618005;
         color: #618005; }
-    .old .btn.btn_full {
+    .old .btn.btn_full, .overlay .btn.btn_full {
       height: 55px;
       padding: 15px 30px;
       background: #fff;
       color: #353535; }
-      .old .btn.btn_full:hover {
+      .old .btn.btn_full:hover, .overlay .btn.btn_full:hover {
         background: transparent;
         color: #fff; }
-      .old .btn.btn_full.btn_purple {
+      .old .btn.btn_full.btn_purple, .overlay .btn.btn_full.btn_purple {
         background: #9b1d4f;
         color: #fff; }
-        .old .btn.btn_full.btn_purple:hover {
+        .old .btn.btn_full.btn_purple:hover, .overlay .btn.btn_full.btn_purple:hover {
           background: #cf2669;
           border-color: #cf2669; }
-        .old .btn.btn_full.btn_purple.btn_small {
+        .old .btn.btn_full.btn_purple.btn_small, .overlay .btn.btn_full.btn_purple.btn_small {
           height: 42px;
           padding: 11px 30px; }
-      .old .btn.btn_full.btn_blue {
+      .old .btn.btn_full.btn_blue, .overlay .btn.btn_full.btn_blue {
         border-color: #247bd7;
         background: #247bd7;
         color: #fff; }
-        .old .btn.btn_full.btn_blue:hover {
+        .old .btn.btn_full.btn_blue:hover, .overlay .btn.btn_full.btn_blue:hover {
           background: #fff;
           color: #247bd7; }
-      .old .btn.btn_full.btn_black {
+      .old .btn.btn_full.btn_black, .overlay .btn.btn_full.btn_black {
         border-color: #000;
         background: #000;
         color: #fff; }
-        .old .btn.btn_full.btn_black:hover {
+        .old .btn.btn_full.btn_black:hover, .overlay .btn.btn_full.btn_black:hover {
           background: #fff;
           color: #000; }
-  .old .tag {
+  .old .tag, .overlay .tag {
     display: inline-block;
     vertical-align: middle;
     padding: 3px 10px;
     background: #9b1d4f;
     color: #fff;
     font-size: 1.3rem; }
-  .old .h1 {
+  .old .h1, .overlay .h1 {
     margin-bottom: 20px;
     font-size: 3.6rem;
     font-weight: 900;
     color: #353535; }
-    .old .h1.h1_white {
+    .old .h1.h1_white, .overlay .h1.h1_white {
       color: #fff; }
-    .old .h1 span {
+    .old .h1 span, .overlay .h1 span {
       font-weight: 300; }
-  .old .h2 {
+  .old .h2, .overlay .h2 {
     font-size: 3rem;
     font-weight: bold;
     color: #353535; }
-    .old .h2.h2_white {
+    .old .h2.h2_white, .overlay .h2.h2_white {
       color: #fff; }
-  .old h3, .old .h3 {
+  .old h3, .old .h3, .overlay h3, .overlay .h3 {
     margin-bottom: 10px;
     font-size: 2.4rem;
     font-weight: bold;
     color: #353535; }
-    .old h3.h3_white, .old .h3.h3_white {
+    .old h3.h3_white, .old .h3.h3_white, .overlay h3.h3_white, .overlay .h3.h3_white {
       color: #fff; }
-  .old h4, .old .h4 {
+  .old h4, .old .h4, .overlay h4, .overlay .h4 {
     margin-bottom: 15px;
     font-size: 2rem;
     font-weight: bold;
     color: #353535; }
-  .old .h6 {
+  .old .h6, .overlay .h6 {
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
     color: #000;
     text-transform: uppercase; }
-  .old .divide {
+  .old .divide, .overlay .divide {
     height: 1px;
     background: #d1d1d1;
     margin: 22px 0; }
-  .old .title {
+  .old .title, .overlay .title {
     position: absolute;
     top: 42px;
     left: -32px;
     height: 62px;
     background: #fff;
     z-index: 3; }
-    .old .title:after {
+    .old .title:after, .overlay .title:after {
       content: "";
       position: absolute;
       top: 0;
@@ -5663,7 +5663,7 @@ select {
       border-style: solid;
       border-width: 62px 0 0 62px;
       border-color: transparent transparent transparent #fff; }
-    .old .title:before {
+    .old .title:before, .overlay .title:before {
       content: "";
       position: absolute;
       top: 100%;
@@ -5674,23 +5674,23 @@ select {
       border-width: 0 32px 32px 0;
       border-color: transparent #acb4bf transparent transparent; }
     @media only screen and (max-width: 480px) {
-      .old .title {
+      .old .title, .overlay .title {
         top: 30px;
         left: -10px;
         height: 40px; }
-        .old .title:after {
+        .old .title:after, .overlay .title:after {
           width: 0px;
           height: 0px;
           border-style: solid;
           border-width: 40px 0 0 40px;
           border-color: transparent transparent transparent #fff; }
-        .old .title:before {
+        .old .title:before, .overlay .title:before {
           width: 0px;
           height: 0px;
           border-style: solid;
           border-width: 0 10px 10px 0;
           border-color: transparent #acb4bf transparent transparent; } }
-    .old .title .title__shadow {
+    .old .title .title__shadow, .overlay .title .title__shadow {
       position: absolute;
       top: 55px;
       height: 13px;
@@ -5702,11 +5702,11 @@ select {
       -ms-transform: rotate(-3deg);
       transform: rotate(-3deg); }
       @media only screen and (max-width: 480px) {
-        .old .title .title__shadow {
+        .old .title .title__shadow, .overlay .title .title__shadow {
           top: 34px;
           height: 10px;
           right: -28px; } }
-    .old .title span {
+    .old .title span, .overlay .title span {
       display: block;
       height: 62px;
       background: #fff;
@@ -5715,22 +5715,22 @@ select {
       text-transform: uppercase;
       color: #000; }
       @media only screen and (max-width: 1150px) {
-        .old .title span {
+        .old .title span, .overlay .title span {
           font-size: 3rem;
           padding: 10px 42px 10px 59px; } }
       @media only screen and (max-width: 568px) {
-        .old .title span {
+        .old .title span, .overlay .title span {
           font-size: 2rem;
           padding: 16px 42px 16px 59px; } }
       @media only screen and (max-width: 480px) {
-        .old .title span {
+        .old .title span, .overlay .title span {
           height: 40px;
           padding: 7px 42px; } }
-    .old .title.title_small {
+    .old .title.title_small, .overlay .title.title_small {
       height: 32px;
       top: -32px;
       left: -20px; }
-      .old .title.title_small:after {
+      .old .title.title_small:after, .overlay .title.title_small:after {
         content: "";
         position: absolute;
         top: 0;
@@ -5740,7 +5740,7 @@ select {
         border-style: solid;
         border-width: 32px 0 0 32px;
         border-color: transparent transparent transparent #fff; }
-      .old .title.title_small:before {
+      .old .title.title_small:before, .overlay .title.title_small:before {
         content: "";
         position: absolute;
         top: 100%;
@@ -5750,148 +5750,148 @@ select {
         border-style: solid;
         border-width: 0 20px 20px 0;
         border-color: transparent #898e78 transparent transparent; }
-      .old .title.title_small span {
+      .old .title.title_small span, .overlay .title.title_small span {
         height: 32px;
         font-weight: bold;
         font-size: 1.4rem; }
       @media only screen and (max-width: 568px) {
-        .old .title.title_small span {
+        .old .title.title_small span, .overlay .title.title_small span {
           padding: 8px 42px 8px 59px; } }
-  .old .breadcrumbs {
+  .old .breadcrumbs, .overlay .breadcrumbs {
     margin-bottom: 15px;
     text-align: left; }
-    .old .breadcrumbs.breadcrumbs_top {
+    .old .breadcrumbs.breadcrumbs_top, .overlay .breadcrumbs.breadcrumbs_top {
       margin-top: 15px;
       margin-bottom: 10px; }
-    .old .breadcrumbs ul {
+    .old .breadcrumbs ul, .overlay .breadcrumbs ul {
       font-size: 0; }
-      .old .breadcrumbs ul li {
+      .old .breadcrumbs ul li, .overlay .breadcrumbs ul li {
         position: relative;
         display: inline-block;
         vertical-align: middle;
         margin-left: 13px; }
-        .old .breadcrumbs ul li:before {
+        .old .breadcrumbs ul li:before, .overlay .breadcrumbs ul li:before {
           content: "/";
           position: absolute;
           top: 0px;
           left: -8px;
           color: #979797;
           font-size: 1.3rem; }
-        .old .breadcrumbs ul li:first-child {
+        .old .breadcrumbs ul li:first-child, .overlay .breadcrumbs ul li:first-child {
           margin-left: 0; }
-          .old .breadcrumbs ul li:first-child:before {
+          .old .breadcrumbs ul li:first-child:before, .overlay .breadcrumbs ul li:first-child:before {
             display: none; }
-        .old .breadcrumbs ul li:last-child a {
+        .old .breadcrumbs ul li:last-child a, .overlay .breadcrumbs ul li:last-child a {
           text-decoration: none; }
-        .old .breadcrumbs ul li a {
+        .old .breadcrumbs ul li a, .overlay .breadcrumbs ul li a {
           color: #979797;
           font-size: 1.3rem;
           text-decoration: underline; }
-          .old .breadcrumbs ul li a:hover {
+          .old .breadcrumbs ul li a:hover, .overlay .breadcrumbs ul li a:hover {
             text-decoration: none; }
-  .old .row {
+  .old .row, .overlay .row {
     *zoom: 1;
     margin-left: -2%; }
-    .old .row:after {
+    .old .row:after, .overlay .row:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .row > div, .old .row > a {
+    .old .row > div, .old .row > a, .overlay .row > div, .overlay .row > a {
       margin-left: 2%; }
     @media only screen and (max-width: 479px) {
-      .old .row {
+      .old .row, .overlay .row {
         margin-left: 0; }
-        .old .row > div, .old .row > a {
+        .old .row > div, .old .row > a, .overlay .row > div, .overlay .row > a {
           margin-left: 0; } }
-  .old .col2 {
+  .old .col2, .overlay .col2 {
     float: left;
     width: 48%; }
     @media only screen and (max-width: 767px) {
-      .old .col2 {
+      .old .col2, .overlay .col2 {
         margin-bottom: 2%; } }
     @media only screen and (max-width: 479px) {
-      .old .col2 {
+      .old .col2, .overlay .col2 {
         width: 100%; } }
     @media only screen and (max-width: 360px) {
-      .old .col2 {
+      .old .col2, .overlay .col2 {
         margin-bottom: 10px; } }
-  .old .col4 {
+  .old .col4, .overlay .col4 {
     float: left;
     width: 23%; }
     @media only screen and (max-width: 767px) {
-      .old .col4 {
+      .old .col4, .overlay .col4 {
         width: 48%;
         margin-bottom: 2%; }
-        .old .col4.wide {
+        .old .col4.wide, .overlay .col4.wide {
           width: 98%;
           margin-bottom: 0; } }
     @media only screen and (max-width: 479px) {
-      .old .col4 {
+      .old .col4, .overlay .col4 {
         width: 100%; }
-        .old .col4.wide {
+        .old .col4.wide, .overlay .col4.wide {
           width: 100%; } }
     @media only screen and (max-width: 360px) {
-      .old .col4 {
+      .old .col4, .overlay .col4 {
         margin-bottom: 10px; } }
-  .old .main {
+  .old .main, .overlay .main {
     float: left;
     width: 65.7%;
     padding-top: 20px;
     padding-bottom: 70px; }
     @media only screen and (max-width: 960px) {
-      .old .main {
+      .old .main, .overlay .main {
         width: 100%;
         padding-bottom: 20px; } }
-  .old .sidebar {
+  .old .sidebar, .overlay .sidebar {
     float: right;
     width: 31.7%;
     padding-top: 40px; }
-    .old .sidebar.sidebar_low {
+    .old .sidebar.sidebar_low, .overlay .sidebar.sidebar_low {
       padding-top: 140px; }
-    .old .sidebar .info {
+    .old .sidebar .info, .overlay .sidebar .info {
       text-align: center; }
     @media only screen and (max-width: 960px) {
-      .old .sidebar {
+      .old .sidebar, .overlay .sidebar {
         width: 100%;
         padding-top: 0;
         margin-bottom: 20px; }
-        .old .sidebar.sidebar_low {
+        .old .sidebar.sidebar_low, .overlay .sidebar.sidebar_low {
           padding-top: 0; } }
-  .old .banner img {
+  .old .banner img, .overlay .banner img {
     width: 100%; }
   @media only screen and (max-width: 960px) {
-    .old .banner {
+    .old .banner, .overlay .banner {
       float: right;
       width: 45%; } }
   @media only screen and (max-width: 480px) {
-    .old .banner {
+    .old .banner, .overlay .banner {
       width: 100%; } }
-  .old .channels .channels__item {
+  .old .channels .channels__item, .overlay .channels .channels__item {
     position: relative;
     margin-top: 30px;
     background: #FFF;
     padding: 340px 30px 50px; }
-    .old .channels .channels__item:first-child {
+    .old .channels .channels__item:first-child, .overlay .channels .channels__item:first-child {
       margin-top: 0; }
     @media only screen and (max-width: 1150px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 340px 15px 50px; } }
     @media only screen and (max-width: 768px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 340px 15px 15px; } }
     @media only screen and (max-width: 568px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 300px 15px 15px; } }
     @media only screen and (max-width: 479px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 300px 15px 0; } }
     @media only screen and (max-width: 414px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 215px 15px 0; } }
     @media only screen and (max-width: 320px) {
-      .old .channels .channels__item {
+      .old .channels .channels__item, .overlay .channels .channels__item {
         padding: 180px 15px 0; } }
-    .old .channels .channels__item .channels__films, .old .channels .channels__item .channels__discovery, .old .channels .channels__item .channels__sport {
+    .old .channels .channels__item .channels__films, .old .channels .channels__item .channels__discovery, .old .channels .channels__item .channels__sport, .overlay .channels .channels__item .channels__films, .overlay .channels .channels__item .channels__discovery, .overlay .channels .channels__item .channels__sport {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -5899,13 +5899,13 @@ select {
       left: 0;
       font-size: 0;
       background: #605f6c; }
-      .old .channels .channels__item .channels__films img, .old .channels .channels__item .channels__discovery img, .old .channels .channels__item .channels__sport img {
+      .old .channels .channels__item .channels__films img, .old .channels .channels__item .channels__discovery img, .old .channels .channels__item .channels__sport img, .overlay .channels .channels__item .channels__films img, .overlay .channels .channels__item .channels__discovery img, .overlay .channels .channels__item .channels__sport img {
         position: relative;
         width: 100%;
         z-index: 1; }
-      .old .channels .channels__item .channels__films .channels__fon, .old .channels .channels__item .channels__discovery .channels__fon, .old .channels .channels__item .channels__sport .channels__fon {
+      .old .channels .channels__item .channels__films .channels__fon, .old .channels .channels__item .channels__discovery .channels__fon, .old .channels .channels__item .channels__sport .channels__fon, .overlay .channels .channels__item .channels__films .channels__fon, .overlay .channels .channels__item .channels__discovery .channels__fon, .overlay .channels .channels__item .channels__sport .channels__fon {
         position: relative; }
-      .old .channels .channels__item .channels__films .channels__bg, .old .channels .channels__item .channels__discovery .channels__bg, .old .channels .channels__item .channels__sport .channels__bg {
+      .old .channels .channels__item .channels__films .channels__bg, .old .channels .channels__item .channels__discovery .channels__bg, .old .channels .channels__item .channels__sport .channels__bg, .overlay .channels .channels__item .channels__films .channels__bg, .overlay .channels .channels__item .channels__discovery .channels__bg, .overlay .channels .channels__item .channels__sport .channels__bg {
         position: absolute;
         bottom: 0;
         height: 100px;
@@ -5915,40 +5915,40 @@ select {
         background-image: -webkit-linear-gradient(rgba(96, 95, 108, 0), #605f6c);
         background-image: linear-gradient(rgba(96, 95, 108, 0), #605f6c);
         z-index: 2; }
-    .old .channels .channels__item .channels__discovery {
+    .old .channels .channels__item .channels__discovery, .overlay .channels .channels__item .channels__discovery {
       background: #a19d3f; }
-      .old .channels .channels__item .channels__discovery .channels__bg {
+      .old .channels .channels__item .channels__discovery .channels__bg, .overlay .channels .channels__item .channels__discovery .channels__bg {
         background-color: rgba(161, 157, 63, 0);
         background-image: -webkit-linear-gradient(rgba(161, 157, 63, 0), #a19d3f);
         background-image: linear-gradient(rgba(161, 157, 63, 0), #a19d3f); }
-    .old .channels .channels__item .channels__sport {
+    .old .channels .channels__item .channels__sport, .overlay .channels .channels__item .channels__sport {
       background: #000; }
-      .old .channels .channels__item .channels__sport .channels__bg {
+      .old .channels .channels__item .channels__sport .channels__bg, .overlay .channels .channels__item .channels__sport .channels__bg {
         background-color: transparent;
         background-image: -webkit-linear-gradient(transparent, black);
         background-image: linear-gradient(transparent, black); }
-  .old .channels .channels__list {
+  .old .channels .channels__list, .overlay .channels .channels__list {
     position: relative;
     margin-left: -4%;
     margin-bottom: -4%;
     *zoom: 1;
     z-index: 2; }
-    .old .channels .channels__list:after {
+    .old .channels .channels__list:after, .overlay .channels .channels__list:after {
       content: " ";
       display: table;
       clear: both; }
     @media only screen and (max-width: 1150px) {
-      .old .channels .channels__list {
+      .old .channels .channels__list, .overlay .channels .channels__list {
         margin-left: -2%;
         margin-bottom: -2%; } }
     @media only screen and (max-width: 960px) {
-      .old .channels .channels__list {
+      .old .channels .channels__list, .overlay .channels .channels__list {
         font-size: 0; } }
     @media only screen and (max-width: 479px) {
-      .old .channels .channels__list {
+      .old .channels .channels__list, .overlay .channels .channels__list {
         margin-left: 0;
         margin-bottom: 0; } }
-  .old .channels .channels__block {
+  .old .channels .channels__block, .overlay .channels .channels__block {
     float: left;
     width: 46%;
     height: 0;
@@ -5957,52 +5957,52 @@ select {
     padding-bottom: 39%;
     background: #fff; }
     @media only screen and (max-width: 1150px) {
-      .old .channels .channels__block {
+      .old .channels .channels__block, .overlay .channels .channels__block {
         width: 48%;
         margin-left: 2%;
         margin-bottom: 2%; } }
     @media only screen and (max-width: 960px) {
-      .old .channels .channels__block {
+      .old .channels .channels__block, .overlay .channels .channels__block {
         float: none;
         display: inline-block;
         vertical-align: top;
         height: auto;
         padding-bottom: 0; } }
     @media only screen and (max-width: 479px) {
-      .old .channels .channels__block {
+      .old .channels .channels__block, .overlay .channels .channels__block {
         width: 100%;
         margin-left: 0;
         margin-bottom: 15px; } }
-  .old .channels .channels__in {
+  .old .channels .channels__in, .overlay .channels .channels__in {
     padding: 30px; }
-    .old .channels .channels__in > img {
+    .old .channels .channels__in > img, .overlay .channels .channels__in > img {
       display: inline-block;
       max-width: 100%;
       margin-bottom: 15px; }
-    .old .channels .channels__in p {
+    .old .channels .channels__in p, .overlay .channels .channels__in p {
       margin-bottom: 15px;
       font-size: 1.4rem;
       color: #353535; }
     @media only screen and (max-width: 1150px) {
-      .old .channels .channels__in {
+      .old .channels .channels__in, .overlay .channels .channels__in {
         padding: 15px; }
-        .old .channels .channels__in > img {
+        .old .channels .channels__in > img, .overlay .channels .channels__in > img {
           margin-bottom: 10px; }
-        .old .channels .channels__in p {
+        .old .channels .channels__in p, .overlay .channels .channels__in p {
           margin-bottom: 10px; } }
-  .old .channels .channels__more {
+  .old .channels .channels__more, .overlay .channels .channels__more {
     text-align: right; }
-    .old .channels .channels__more a {
+    .old .channels .channels__more a, .overlay .channels .channels__more a {
       color: #000;
       font-size: 1.4rem;
       font-weight: 500;
       text-decoration: none; }
-      .old .channels .channels__more a:hover {
+      .old .channels .channels__more a:hover, .overlay .channels .channels__more a:hover {
         text-decoration: underline; }
-  .old .widget {
+  .old .widget, .overlay .widget {
     padding: 24px 33px 37px;
     background: #efefef; }
-    .old .widget .slick-dots {
+    .old .widget .slick-dots, .overlay .widget .slick-dots {
       text-align: center;
       position: absolute;
       margin: 0;
@@ -6010,20 +6010,21 @@ select {
       left: 0;
       right: 0; }
     .old .widget .slick-prev,
-    .old .widget .slick-next {
+    .old .widget .slick-next, .overlay .widget .slick-prev,
+    .overlay .widget .slick-next {
       width: 30px;
       height: 30px;
       border-radius: 50%;
       color: #353535; }
-    .old .widget .slick-prev {
+    .old .widget .slick-prev, .overlay .widget .slick-prev {
       left: -32px; }
       @media only screen and (max-width: 1160px) {
-        .old .widget .slick-prev {
+        .old .widget .slick-prev, .overlay .widget .slick-prev {
           left: -30px; } }
       @media only screen and (max-width: 768px) {
-        .old .widget .slick-prev {
+        .old .widget .slick-prev, .overlay .widget .slick-prev {
           left: 0; } }
-      .old .widget .slick-prev:before {
+      .old .widget .slick-prev:before, .overlay .widget .slick-prev:before {
         position: absolute;
         top: 0;
         left: 0;
@@ -6032,7 +6033,7 @@ select {
         border-radius: 50%;
         border: 2px solid #dadada;
         background: url("../img/arr-left-gray.svg") center no-repeat; }
-      .old .widget .slick-prev:after {
+      .old .widget .slick-prev:after, .overlay .widget .slick-prev:after {
         content: "";
         opacity: 0;
         position: absolute;
@@ -6043,21 +6044,21 @@ select {
         border-radius: 50%;
         border: 2px solid #dadada;
         background: url("../img/arr-left-white.svg") center no-repeat; }
-      .old .widget .slick-prev:hover {
+      .old .widget .slick-prev:hover, .overlay .widget .slick-prev:hover {
         background: #dadada; }
-        .old .widget .slick-prev:hover:before {
+        .old .widget .slick-prev:hover:before, .overlay .widget .slick-prev:hover:before {
           opacity: 0; }
-        .old .widget .slick-prev:hover:after {
+        .old .widget .slick-prev:hover:after, .overlay .widget .slick-prev:hover:after {
           opacity: 1; }
-    .old .widget .slick-next {
+    .old .widget .slick-next, .overlay .widget .slick-next {
       right: -32px; }
       @media only screen and (max-width: 1160px) {
-        .old .widget .slick-next {
+        .old .widget .slick-next, .overlay .widget .slick-next {
           right: -30px; } }
       @media only screen and (max-width: 768px) {
-        .old .widget .slick-next {
+        .old .widget .slick-next, .overlay .widget .slick-next {
           right: 0; } }
-      .old .widget .slick-next:before {
+      .old .widget .slick-next:before, .overlay .widget .slick-next:before {
         position: absolute;
         top: 0;
         left: 0;
@@ -6066,7 +6067,7 @@ select {
         border-radius: 50%;
         border: 2px solid #dadada;
         background: url("../img/arr-right-gray.svg") center no-repeat; }
-      .old .widget .slick-next:after {
+      .old .widget .slick-next:after, .overlay .widget .slick-next:after {
         opacity: 0;
         position: absolute;
         top: 0;
@@ -6077,20 +6078,20 @@ select {
         border: 2px solid #dadada;
         background: url("../img/arr-right-white.svg") center no-repeat;
         z-index: 3; }
-      .old .widget .slick-next:hover {
+      .old .widget .slick-next:hover, .overlay .widget .slick-next:hover {
         background: #dadada; }
-        .old .widget .slick-next:hover:before {
+        .old .widget .slick-next:hover:before, .overlay .widget .slick-next:hover:before {
           opacity: 0; }
-        .old .widget .slick-next:hover:after {
+        .old .widget .slick-next:hover:after, .overlay .widget .slick-next:hover:after {
           opacity: 1; }
     @media only screen and (max-width: 960px) {
-      .old .widget {
+      .old .widget, .overlay .widget {
         padding: 24px 0 37px; }
-        .old .widget .slick-slide {
+        .old .widget .slick-slide, .overlay .widget .slick-slide {
           padding: 0 16px; }
-        .old .widget .poster__content {
+        .old .widget .poster__content, .overlay .widget .poster__content {
           padding: 10px; } }
-  .old .subscr, .old .feedback {
+  .old .subscr, .old .feedback, .overlay .subscr, .overlay .feedback {
     display: block;
     height: 55px;
     margin-bottom: 20px;
@@ -6101,102 +6102,102 @@ select {
     color: #353535;
     text-decoration: none;
     font-weight: bold; }
-  .old .feedback {
+  .old .feedback, .overlay .feedback {
     background: #fff url(../img/feedback.png) 90% 100% no-repeat; }
-  .old .fb-widget {
+  .old .fb-widget, .overlay .fb-widget {
     margin-bottom: 20px; }
-    .old .fb-widget > img {
+    .old .fb-widget > img, .overlay .fb-widget > img {
       display: block;
       width: 100%; }
     @media only screen and (max-width: 960px) {
-      .old .fb-widget {
+      .old .fb-widget, .overlay .fb-widget {
         width: 45%;
         float: left; } }
     @media only screen and (max-width: 480px) {
-      .old .fb-widget {
+      .old .fb-widget, .overlay .fb-widget {
         width: 100%; } }
-  .old .error {
+  .old .error, .overlay .error {
     padding: 125px 10px 185px;
     text-align: center; }
     @media only screen and (max-width: 768px) {
-      .old .error {
+      .old .error, .overlay .error {
         padding: 100px 10px 150px; } }
     @media only screen and (max-width: 600px) {
-      .old .error {
+      .old .error, .overlay .error {
         padding: 80px 10px 120px; } }
     @media only screen and (max-width: 480px) {
-      .old .error {
+      .old .error, .overlay .error {
         padding: 50px 10px; } }
-    .old .error__img {
+    .old .error__img, .overlay .error__img {
       margin-bottom: 60px;
       font-size: 0; }
-      .old .error__img img {
+      .old .error__img img, .overlay .error__img img {
         max-width: 100%; }
-    .old .error__content {
+    .old .error__content, .overlay .error__content {
       max-width: 520px;
       margin: 0 auto; }
-      .old .error__content p {
+      .old .error__content p, .overlay .error__content p {
         margin-bottom: 25px;
         font: 1.6rem Arial, sans-serif; }
-    .old .error__title {
+    .old .error__title, .overlay .error__title {
       margin-bottom: 10px;
       font: bold 2.4rem Arial, sans-serif; }
-    .old .error .error__links a, .old .error .error__links span {
+    .old .error .error__links a, .old .error .error__links span, .overlay .error .error__links a, .overlay .error .error__links span {
       display: inline-block;
       vertical-align: middle; }
       @media only screen and (max-width: 480px) {
-        .old .error .error__links a, .old .error .error__links span {
+        .old .error .error__links a, .old .error .error__links span, .overlay .error .error__links a, .overlay .error .error__links span {
           display: block;
           margin: 0 auto 20px; } }
-    .old .error .error__links span {
+    .old .error .error__links span, .overlay .error .error__links span {
       margin: 0 20px;
       font-size: 1.4rem;
       font-weight: 500; }
-  .old .recommends {
+  .old .recommends, .overlay .recommends {
     background: #504f58;
     padding: 28px 0 48px;
     overflow: hidden; }
-    .old .recommends > .center {
+    .old .recommends > .center, .overlay .recommends > .center {
       padding: 0 28px; }
       @media only screen and (max-width: 768px) {
-        .old .recommends > .center {
+        .old .recommends > .center, .overlay .recommends > .center {
           padding: 0 15px; } }
       @media only screen and (max-width: 640px) {
-        .old .recommends > .center {
+        .old .recommends > .center, .overlay .recommends > .center {
           padding: 0 10px; } }
-    .old .recommends.recommends_action {
+    .old .recommends.recommends_action, .overlay .recommends.recommends_action {
       background: #ab0621; }
-    .old .recommends.recommends_comedy {
+    .old .recommends.recommends_comedy, .overlay .recommends.recommends_comedy {
       background: #E66D20; }
-    .old .recommends.recommends_megahit {
+    .old .recommends.recommends_megahit, .overlay .recommends.recommends_megahit {
       background: #004681; }
-    .old .recommends.recommends_premium {
+    .old .recommends.recommends_premium, .overlay .recommends.recommends_premium {
       background: #352361; }
-    .old .recommends.recommends_nature {
+    .old .recommends.recommends_nature, .overlay .recommends.recommends_nature {
       background: #618005; }
-    .old .recommends .recommends__title {
+    .old .recommends .recommends__title, .overlay .recommends .recommends__title {
       margin-bottom: 20px;
       padding-left: 10px;
       font-size: 2.4rem;
       color: #fff;
       text-transform: uppercase;
       font-weight: 300; }
-      .old .recommends .recommends__title span {
+      .old .recommends .recommends__title span, .overlay .recommends .recommends__title span {
         font-weight: 500; }
       @media only screen and (max-width: 768px) {
-        .old .recommends .recommends__title {
+        .old .recommends .recommends__title, .overlay .recommends .recommends__title {
           padding-left: 0; } }
       @media only screen and (max-width: 480px) {
-        .old .recommends .recommends__title {
+        .old .recommends .recommends__title, .overlay .recommends .recommends__title {
           text-align: center; } }
-    .old .recommends .slick-list {
+    .old .recommends .slick-list, .overlay .recommends .slick-list {
       margin: 0 -11px; }
-    .old .recommends .poster {
+    .old .recommends .poster, .overlay .recommends .poster {
       width: 266px;
       margin: 0 auto; }
-      .old .recommends .poster > img {
+      .old .recommends .poster > img, .overlay .recommends .poster > img {
         min-height: 145px; }
-  .old .blog-top {
+  .old .blog-top, .overlay .blog-top {
     height: 180px;
     padding-top: 16px;
     text-align: center;
@@ -6207,18 +6208,18 @@ select {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 300; }
-    .old .blog-top .h1 {
+    .old .blog-top .h1, .overlay .blog-top .h1 {
       text-transform: uppercase;
       margin-bottom: 0; }
-    .old .blog-top .breadcrumbs ul li:before {
+    .old .blog-top .breadcrumbs ul li:before, .overlay .blog-top .breadcrumbs ul li:before {
       color: #fff; }
-    .old .blog-top .breadcrumbs ul li a {
+    .old .blog-top .breadcrumbs ul li a, .overlay .blog-top .breadcrumbs ul li a {
       color: #fff; }
-  .old .blog {
+  .old .blog, .overlay .blog {
     padding-top: 20px; }
-    .old .blog .blog__more {
+    .old .blog .blog__more, .overlay .blog .blog__more {
       text-align: center; }
-  .old .blog-category {
+  .old .blog-category, .overlay .blog-category {
     margin-top: 30px;
     padding: 9px 0;
     border: 1px solid #9e9e9e;
@@ -6226,126 +6227,126 @@ select {
     font-size: 3.6rem;
     text-transform: uppercase; }
     @media only screen and (max-width: 768px) {
-      .old .blog-category {
+      .old .blog-category, .overlay .blog-category {
         font-size: 3rem; } }
     @media only screen and (max-width: 480px) {
-      .old .blog-category {
+      .old .blog-category, .overlay .blog-category {
         font-size: 2.4rem; } }
-  .old .post {
+  .old .post, .overlay .post {
     *zoom: 1;
     margin-bottom: 30px; }
-    .old .post:after {
+    .old .post:after, .overlay .post:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .post .btn.btn_full.btn_purple:hover {
+    .old .post .btn.btn_full.btn_purple:hover, .overlay .post .btn.btn_full.btn_purple:hover {
       background: #353535;
       border-color: #353535; }
-    .old .post .post__info {
+    .old .post .post__info, .overlay .post .post__info {
       float: left;
       width: 90px;
       text-align: center;
       padding-right: 12px; }
       @media only screen and (max-width: 480px) {
-        .old .post .post__info {
+        .old .post .post__info, .overlay .post .post__info {
           float: none;
           width: 100%;
           *zoom: 1;
           padding-right: 0;
           margin-bottom: 8px; }
-          .old .post .post__info:after {
+          .old .post .post__info:after, .overlay .post .post__info:after {
             content: " ";
             display: table;
             clear: both; }
-          .old .post .post__info .socials {
+          .old .post .post__info .socials, .overlay .post .post__info .socials {
             font-size: 0; }
-            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter {
+            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter {
               display: inline-block;
               vertical-align: middle;
               width: 30%;
               margin-left: 5%; }
-            .old .post .post__info .socials .fb-counter {
+            .old .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .fb-counter {
               margin-left: 0; } }
-    .old .post .post__date {
+    .old .post .post__date, .overlay .post .post__date {
       font-size: 1.4rem;
       padding-bottom: 5px;
       color: #353535;
       border-bottom: 1px solid #d7d7d7;
       margin-bottom: 12px; }
-      .old .post .post__date p {
+      .old .post .post__date p, .overlay .post .post__date p {
         font-size: 4.8rem;
         font-weight: 900;
         line-height: 1; }
       @media only screen and (max-width: 480px) {
-        .old .post .post__date {
+        .old .post .post__date, .overlay .post .post__date {
           margin: 0 auto 12px; }
-          .old .post .post__date p {
+          .old .post .post__date p, .overlay .post .post__date p {
             font-size: 4rem; } }
-    .old .post .post__in {
+    .old .post .post__in, .overlay .post .post__in {
       padding: 20px 30px 30px; }
-      .old .post .post__in > p {
+      .old .post .post__in > p, .overlay .post .post__in > p {
         margin-bottom: 25px; }
       @media only screen and (max-width: 480px) {
-        .old .post .post__in {
+        .old .post .post__in, .overlay .post .post__in {
           padding: 15px; }
-          .old .post .post__in > .h3 {
+          .old .post .post__in > .h3, .overlay .post .post__in > .h3 {
             font-size: 2rem; } }
-    .old .post .post__content {
+    .old .post .post__content, .overlay .post .post__content {
       overflow: hidden;
       background: #FFF; }
-      .old .post .post__content > img {
+      .old .post .post__content > img, .overlay .post .post__content > img {
         width: 100%;
         display: block; }
       @media only screen and (max-width: 480px) {
-        .old .post .post__content {
+        .old .post .post__content, .overlay .post .post__content {
           overflow: visible; } }
-    .old .post .post__details {
+    .old .post .post__details, .overlay .post .post__details {
       *zoom: 1;
       margin-bottom: 18px; }
-      .old .post .post__details:after {
+      .old .post .post__details:after, .overlay .post .post__details:after {
         content: " ";
         display: table;
         clear: both; }
-    .old .post .post__left {
+    .old .post .post__left, .overlay .post .post__left {
       float: left; }
-    .old .post .post__right {
+    .old .post .post__right, .overlay .post .post__right {
       float: right;
       text-align: right;
       height: 25px;
       line-height: 25px; }
-    .old .post .post__views, .old .post .post__comments {
+    .old .post .post__views, .old .post .post__comments, .overlay .post .post__views, .overlay .post .post__comments {
       display: inline-block;
       vertical-align: middle;
       font-size: 1.2rem;
       color: #9e9e9e;
       margin-left: 12px; }
-  .old .disqus {
+  .old .disqus, .overlay .disqus {
     margin: 0 -30px;
     border-top: 1px solid #d7d7d7;
     padding-top: 35px; }
-    .old .disqus img {
+    .old .disqus img, .overlay .disqus img {
       width: 100%; }
     @media only screen and (max-width: 768px) {
-      .old .disqus {
+      .old .disqus, .overlay .disqus {
         margin: 0; } }
-  .old .category {
+  .old .category, .overlay .category {
     height: 25px;
     border: 1px solid #9e9e9e;
     padding: 3px 12px;
     font-size: 1.3rem;
     color: #9e9e9e; }
-  .old .share {
+  .old .share, .overlay .share {
     color: #c0c0c0;
     text-decoration: none;
     font-size: 1.8rem; }
-  .old .categories {
+  .old .categories, .overlay .categories {
     margin-bottom: 35px; }
-    .old .categories .categories__item {
+    .old .categories .categories__item, .overlay .categories .categories__item {
       padding: 13px 10px;
       border-bottom: 1px solid #d7d7d7; }
-      .old .categories .categories__item:first-child {
+      .old .categories .categories__item:first-child, .overlay .categories .categories__item:first-child {
         border-top: 1px solid #D7D7D7; }
-    .old .categories .categories__link {
+    .old .categories .categories__link, .overlay .categories .categories__link {
       display: block;
       *zoom: 1;
       font-weight: 500;
@@ -6353,29 +6354,29 @@ select {
       color: #353535;
       -webkit-transition: color 300ms;
       transition: color 300ms; }
-      .old .categories .categories__link:after {
+      .old .categories .categories__link:after, .overlay .categories .categories__link:after {
         content: " ";
         display: table;
         clear: both; }
-      .old .categories .categories__link:hover {
+      .old .categories .categories__link:hover, .overlay .categories .categories__link:hover {
         color: #000; }
-    .old .categories .categories__title {
+    .old .categories .categories__title, .overlay .categories .categories__title {
       float: left; }
-    .old .categories .categories__counter {
+    .old .categories .categories__counter, .overlay .categories .categories__counter {
       float: right; }
-  .old .article {
+  .old .article, .overlay .article {
     line-height: 1.5;
     font-weight: 400; }
-    .old .article p {
+    .old .article p, .overlay .article p {
       margin-bottom: 30px; }
-      .old .article p strong {
+      .old .article p strong, .overlay .article p strong {
         font-weight: bold; }
-      .old .article p i {
+      .old .article p i, .overlay .article p i {
         font-style: italic; }
       @media only screen and (max-width: 960px) {
-        .old .article p {
+        .old .article p, .overlay .article p {
           margin-bottom: 20px; } }
-    .old .article blockquote {
+    .old .article blockquote, .overlay .article blockquote {
       display: block;
       margin-bottom: 30px;
       margin-left: 75px;
@@ -6386,46 +6387,46 @@ select {
       font-weight: 300;
       font-style: italic; }
       @media only screen and (max-width: 1024px) {
-        .old .article blockquote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-left: 40px; } }
       @media only screen and (max-width: 960px) {
-        .old .article blockquote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-bottom: 20px; } }
       @media only screen and (max-width: 480px) {
-        .old .article blockquote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-left: 10px;
           padding-left: 10px;
           font-size: 1.8rem; } }
-    .old .article img {
+    .old .article img, .overlay .article img {
       display: block;
       margin: 0 -30px 30px; }
       @media only screen and (max-width: 960px) {
-        .old .article img {
+        .old .article img, .overlay .article img {
           width: 100%;
           margin: 0 0 20px; } }
-  .old .select {
+  .old .select, .overlay .select {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     font-size: 14px;
     color: #848484; }
-    .old .select.is-active {
+    .old .select.is-active, .overlay .select.is-active {
       display: inline-block; }
     @media only screen and (max-width: 960px) {
-      .old .select {
+      .old .select, .overlay .select {
         display: block;
         width: 100%;
         padding: 0 10px;
         border: 1px solid #f1f1f1;
         border-radius: 3px; } }
-    .old .select select {
+    .old .select select, .overlay .select select {
       opacity: 0;
       visibility: hidden;
       position: absolute;
       top: 0;
       left: 0; }
-    .old .select .select__text {
+    .old .select .select__text, .overlay .select .select__text {
       position: relative;
       display: block;
       padding: 0 15px 0 0;
@@ -6439,7 +6440,7 @@ select {
       overflow: hidden;
       text-overflow: ellipsis;
       z-index: 2; }
-      .old .select .select__text:before {
+      .old .select .select__text:before, .overlay .select .select__text:before {
         content: "";
         position: absolute;
         top: 16px;
@@ -6449,7 +6450,7 @@ select {
         border-style: solid;
         border-width: 4px 3.5px 0 3.5px;
         border-color: #353535 transparent transparent transparent; }
-    .old .select .select__list {
+    .old .select .select__list, .overlay .select .select__list {
       position: absolute;
       display: none;
       left: 50%;
@@ -6465,38 +6466,38 @@ select {
       background-color: #FAFBFC;
       border: 1px solid #CBD3D6;
       border-radius: 5px; }
-      .old .select .select__list li {
+      .old .select .select__list li, .overlay .select .select__list li {
         padding: 5px 11px;
         cursor: pointer;
         line-height: 1; }
       @media only screen and (max-width: 960px) {
-        .old .select .select__list {
+        .old .select .select__list, .overlay .select .select__list {
           left: 0;
           right: 0;
           width: auto;
           -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
           transform: translateX(0); } }
-  .old .filmbase {
+  .old .filmbase, .overlay .filmbase {
     padding-bottom: 70px; }
-    .old .filmbase .poster {
+    .old .filmbase .poster, .overlay .filmbase .poster {
       margin-bottom: 20px; }
       @media only screen and (max-width: 1150px) {
-        .old .filmbase .poster {
+        .old .filmbase .poster, .overlay .filmbase .poster {
           height: auto; } }
-    .old .filmbase .filmbase__more {
+    .old .filmbase .filmbase__more, .overlay .filmbase .filmbase__more {
       text-align: center; }
-  .old .filters {
+  .old .filters, .overlay .filters {
     *zoom: 1;
     padding-bottom: 15px;
     border-bottom: 1px solid #d7d7d7;
     margin-bottom: 20px; }
-    .old .filters:after {
+    .old .filters:after, .overlay .filters:after {
       content: " ";
       display: table;
       clear: both; }
     @media only screen and (max-width: 960px) {
-      .old .filters .filters__wrap {
+      .old .filters .filters__wrap, .overlay .filters .filters__wrap {
         position: fixed;
         top: 0;
         left: 0;
@@ -6512,15 +6513,15 @@ select {
         -webkit-transition: -webkit-transform 300ms;
         transition: transform 300ms;
         z-index: 99; }
-        .old .filters .filters__wrap.is-open {
+        .old .filters .filters__wrap.is-open, .overlay .filters .filters__wrap.is-open {
           -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
           transform: translateX(0); } }
     @media only screen and (max-width: 480px) {
-      .old .filters .filters__wrap {
+      .old .filters .filters__wrap, .overlay .filters .filters__wrap {
         width: 250px;
         padding: 20px; } }
-    .old .filters .filters__mob {
+    .old .filters .filters__mob, .overlay .filters .filters__mob {
       display: none;
       height: 35px;
       padding: 8px 10px;
@@ -6532,54 +6533,54 @@ select {
       font-weight: 500;
       font-size: 1.4rem; }
       @media only screen and (max-width: 960px) {
-        .old .filters .filters__mob {
+        .old .filters .filters__mob, .overlay .filters .filters__mob {
           display: inline-block; } }
-    .old .filters .filters__item {
+    .old .filters .filters__item, .overlay .filters .filters__item {
       float: left;
       border-left: 1px solid #dadada;
       padding-left: 27px;
       padding-right: 20px; }
-      .old .filters .filters__item:first-child {
+      .old .filters .filters__item:first-child, .overlay .filters .filters__item:first-child {
         border-left: none;
         padding-left: 0; }
       @media only screen and (max-width: 960px) {
-        .old .filters .filters__item {
+        .old .filters .filters__item, .overlay .filters .filters__item {
           float: none;
           border: none;
           padding-right: 0;
           padding-left: 0;
           margin-bottom: 30px; } }
-    .old .filters .filters__title {
+    .old .filters .filters__title, .overlay .filters .filters__title {
       display: inline-block;
       vertical-align: middle;
       font-size: 1.4rem;
       color: #353535;
       margin-right: 11px; }
       @media only screen and (max-width: 960px) {
-        .old .filters .filters__title {
+        .old .filters .filters__title, .overlay .filters .filters__title {
           display: block;
           margin-bottom: 20px; } }
-    .old .filters .filters__right {
+    .old .filters .filters__right, .overlay .filters .filters__right {
       float: right; }
-      .old .filters .filters__right .filters__title {
+      .old .filters .filters__right .filters__title, .overlay .filters .filters__right .filters__title {
         display: none; }
       @media only screen and (max-width: 960px) {
-        .old .filters .filters__right {
+        .old .filters .filters__right, .overlay .filters .filters__right {
           float: none; }
-          .old .filters .filters__right .filters__title {
+          .old .filters .filters__right .filters__title, .overlay .filters .filters__right .filters__title {
             display: block; } }
-  .old .search {
+  .old .search, .overlay .search {
     position: relative;
     height: 35px;
     line-height: 35px;
     z-index: 2; }
-    .old .search > img {
+    .old .search > img, .overlay .search > img {
       position: relative;
       vertical-align: middle;
       margin-right: 5px;
       cursor: pointer;
       z-index: 2; }
-    .old .search .search__form {
+    .old .search .search__form, .overlay .search .search__form {
       position: absolute;
       top: 0;
       right: 0;
@@ -6591,27 +6592,27 @@ select {
       -webkit-transition: opacity 300ms;
       transition: opacity 300ms;
       z-index: 1; }
-      .old .search .search__form.is-visible {
+      .old .search .search__form.is-visible, .overlay .search .search__form.is-visible {
         visibility: visible;
         opacity: 1;
         z-index: 2; }
-      .old .search .search__form input {
+      .old .search .search__form input, .overlay .search .search__form input {
         height: 25px;
         padding: 0 25px 0 10px;
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem; }
-      .old .search .search__form button {
+      .old .search .search__form button, .overlay .search .search__form button {
         position: absolute;
         top: 9px;
         right: 5px;
         background: transparent; }
     @media only screen and (max-width: 960px) {
-      .old .search {
+      .old .search, .overlay .search {
         border: 1px solid #f1f1f1;
         border-radius: 3px; }
-        .old .search > img {
+        .old .search > img, .overlay .search > img {
           display: none; }
-        .old .search .search__form {
+        .old .search .search__form, .overlay .search .search__form {
           position: relative;
           top: auto;
           bottom: auto;
@@ -6619,75 +6620,75 @@ select {
           height: 33px;
           visibility: visible;
           opacity: 1; }
-          .old .search .search__form button {
+          .old .search .search__form button, .overlay .search .search__form button {
             top: 7px; } }
-  .old .poster {
+  .old .poster, .overlay .poster {
     position: relative;
     display: block;
     height: 210px;
     background: #fff; }
     @media only screen and (max-width: 1150px) {
-      .old .poster {
+      .old .poster, .overlay .poster {
         height: auto; } }
-    .old .poster.poster_premium .poster__content {
+    .old .poster.poster_premium .poster__content, .overlay .poster.poster_premium .poster__content {
       background: #352361; }
-    .old .poster.poster_premium .poster__title, .old .poster.poster_premium .poster__time, .old .poster.poster_premium .poster__date {
+    .old .poster.poster_premium .poster__title, .old .poster.poster_premium .poster__time, .old .poster.poster_premium .poster__date, .overlay .poster.poster_premium .poster__title, .overlay .poster.poster_premium .poster__time, .overlay .poster.poster_premium .poster__date {
       color: #fff; }
-    .old .poster.poster_megahit .poster__content {
+    .old .poster.poster_megahit .poster__content, .overlay .poster.poster_megahit .poster__content {
       background: #005196; }
-    .old .poster.poster_megahit .poster__title, .old .poster.poster_megahit .poster__time, .old .poster.poster_megahit .poster__date {
+    .old .poster.poster_megahit .poster__title, .old .poster.poster_megahit .poster__time, .old .poster.poster_megahit .poster__date, .overlay .poster.poster_megahit .poster__title, .overlay .poster.poster_megahit .poster__time, .overlay .poster.poster_megahit .poster__date {
       color: #fff; }
-    .old .poster.poster_comedy .poster__content {
+    .old .poster.poster_comedy .poster__content, .overlay .poster.poster_comedy .poster__content {
       background: #d46b28; }
-    .old .poster.poster_comedy .poster__title, .old .poster.poster_comedy .poster__time, .old .poster.poster_comedy .poster__date {
+    .old .poster.poster_comedy .poster__title, .old .poster.poster_comedy .poster__time, .old .poster.poster_comedy .poster__date, .overlay .poster.poster_comedy .poster__title, .overlay .poster.poster_comedy .poster__time, .overlay .poster.poster_comedy .poster__date {
       color: #fff; }
-    .old .poster.poster_action .poster__content {
+    .old .poster.poster_action .poster__content, .overlay .poster.poster_action .poster__content {
       background: #8a0912; }
-    .old .poster.poster_action .poster__title, .old .poster.poster_action .poster__time, .old .poster.poster_action .poster__date {
+    .old .poster.poster_action .poster__title, .old .poster.poster_action .poster__time, .old .poster.poster_action .poster__date, .overlay .poster.poster_action .poster__title, .overlay .poster.poster_action .poster__time, .overlay .poster.poster_action .poster__date {
       color: #fff; }
-    .old .poster.poster_rus .poster__content {
+    .old .poster.poster_rus .poster__content, .overlay .poster.poster_rus .poster__content {
       background: #005475; }
-    .old .poster.poster_rus .poster__title, .old .poster.poster_rus .poster__time, .old .poster.poster_rus .poster__date {
+    .old .poster.poster_rus .poster__title, .old .poster.poster_rus .poster__time, .old .poster.poster_rus .poster__date, .overlay .poster.poster_rus .poster__title, .overlay .poster.poster_rus .poster__time, .overlay .poster.poster_rus .poster__date {
       color: #fff; }
-    .old .poster.poster_explore .poster__content {
+    .old .poster.poster_explore .poster__content, .overlay .poster.poster_explore .poster__content {
       background: #a8070e; }
-    .old .poster.poster_explore .poster__title, .old .poster.poster_explore .poster__time, .old .poster.poster_explore .poster__date {
+    .old .poster.poster_explore .poster__title, .old .poster.poster_explore .poster__time, .old .poster.poster_explore .poster__date, .overlay .poster.poster_explore .poster__title, .overlay .poster.poster_explore .poster__time, .overlay .poster.poster_explore .poster__date {
       color: #fff; }
-    .old .poster.poster_history .poster__content {
+    .old .poster.poster_history .poster__content, .overlay .poster.poster_history .poster__content {
       background: #1a539e; }
-    .old .poster.poster_history .poster__title, .old .poster.poster_history .poster__time, .old .poster.poster_history .poster__date {
+    .old .poster.poster_history .poster__title, .old .poster.poster_history .poster__time, .old .poster.poster_history .poster__date, .overlay .poster.poster_history .poster__title, .overlay .poster.poster_history .poster__time, .overlay .poster.poster_history .poster__date {
       color: #fff; }
-    .old .poster.poster_nature .poster__content {
+    .old .poster.poster_nature .poster__content, .overlay .poster.poster_nature .poster__content {
       background: #637824; }
-    .old .poster.poster_nature .poster__title, .old .poster.poster_nature .poster__time, .old .poster.poster_nature .poster__date {
+    .old .poster.poster_nature .poster__title, .old .poster.poster_nature .poster__time, .old .poster.poster_nature .poster__date, .overlay .poster.poster_nature .poster__title, .overlay .poster.poster_nature .poster__time, .overlay .poster.poster_nature .poster__date {
       color: #fff; }
-    .old .poster.poster_sport .poster__content {
+    .old .poster.poster_sport .poster__content, .overlay .poster.poster_sport .poster__content {
       background: #005475; }
-    .old .poster.poster_sport .poster__title, .old .poster.poster_sport .poster__time, .old .poster.poster_sport .poster__date {
+    .old .poster.poster_sport .poster__title, .old .poster.poster_sport .poster__time, .old .poster.poster_sport .poster__date, .overlay .poster.poster_sport .poster__title, .overlay .poster.poster_sport .poster__time, .overlay .poster.poster_sport .poster__date {
       color: #fff; }
-    .m-films .old .poster, .m-discovery .old .poster, .m-sport .old .poster {
+    .m-films .old .poster, .m-discovery .old .poster, .m-sport .old .poster, .m-films .overlay .poster, .m-discovery .overlay .poster, .m-sport .overlay .poster {
       height: 230px; }
-      .m-films .old .poster .poster__content, .m-discovery .old .poster .poster__content, .m-sport .old .poster .poster__content {
+      .m-films .old .poster .poster__content, .m-discovery .old .poster .poster__content, .m-sport .old .poster .poster__content, .m-films .overlay .poster .poster__content, .m-discovery .overlay .poster .poster__content, .m-sport .overlay .poster .poster__content {
         height: 89px; }
       @media only screen and (max-width: 1150px) {
-        .m-films .old .poster, .m-discovery .old .poster, .m-sport .old .poster {
+        .m-films .old .poster, .m-discovery .old .poster, .m-sport .old .poster, .m-films .overlay .poster, .m-discovery .overlay .poster, .m-sport .overlay .poster {
           height: auto; }
-          .m-films .old .poster .poster__content, .m-discovery .old .poster .poster__content, .m-sport .old .poster .poster__content {
+          .m-films .old .poster .poster__content, .m-discovery .old .poster .poster__content, .m-sport .old .poster .poster__content, .m-films .overlay .poster .poster__content, .m-discovery .overlay .poster .poster__content, .m-sport .overlay .poster .poster__content {
             position: relative;
             height: auto; } }
-    .filmbase .old .poster {
+    .filmbase .old .poster, .filmbase .overlay .poster {
       height: 245px; }
-      .filmbase .old .poster .poster__content {
+      .filmbase .old .poster .poster__content, .filmbase .overlay .poster .poster__content {
         height: 104px; }
-      .filmbase .old .poster .poster__title {
+      .filmbase .old .poster .poster__title, .filmbase .overlay .poster .poster__title {
         width: 100%;
         float: none;
         margin-bottom: 5px; }
-    .old .poster > img {
+    .old .poster > img, .overlay .poster > img {
       display: block;
       width: 100%;
       max-height: 100%; }
-    .old .poster .poster__content {
+    .old .poster .poster__content, .overlay .poster .poster__content {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -6696,39 +6697,39 @@ select {
       *zoom: 1;
       background: #fff;
       padding: 12px 18px; }
-      .old .poster .poster__content:after {
+      .old .poster .poster__content:after, .overlay .poster .poster__content:after {
         content: " ";
         display: table;
         clear: both; }
       @media only screen and (max-width: 1150px) {
-        .old .poster .poster__content {
+        .old .poster .poster__content, .overlay .poster .poster__content {
           position: relative;
           height: auto; } }
-    .old .poster .poster__title {
+    .old .poster .poster__title, .overlay .poster .poster__title {
       float: left;
       width: 73%;
       font-size: 1.6rem;
       color: #353535;
       font-weight: 500; }
-    .old .poster .poster__about {
+    .old .poster .poster__about, .overlay .poster .poster__about {
       font-size: 1.3rem;
       color: #7f7f7f;
       font-style: italic; }
-    .old .poster .poster__info {
+    .old .poster .poster__info, .overlay .poster .poster__info {
       float: right;
       width: 25%; }
       @media only screen and (max-width: 479px) {
-        .old .poster .poster__info {
+        .old .poster .poster__info, .overlay .poster .poster__info {
           text-align: right; } }
-    .old .poster .poster__time {
+    .old .poster .poster__time, .overlay .poster .poster__time {
       font-size: 1.8rem;
       font-weight: 500;
       color: #000; }
-    .old .poster .poster__date {
+    .old .poster .poster__date, .overlay .poster .poster__date {
       font-size: 1.2rem;
       color: #000;
       white-space: nowrap; }
-  .old .channel {
+  .old .channel, .overlay .channel {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -6742,32 +6743,32 @@ select {
     font-size: 1.2rem;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
-    .old .channel.channel_premium {
+    .old .channel.channel_premium, .overlay .channel.channel_premium {
       background: rgba(53, 35, 97, 0.6); }
-    .old .channel.channel_megahit {
+    .old .channel.channel_megahit, .overlay .channel.channel_megahit {
       background: rgba(0, 81, 150, 0.6); }
-    .old .channel.channel_comedy {
+    .old .channel.channel_comedy, .overlay .channel.channel_comedy {
       background: rgba(212, 107, 40, 0.6); }
-    .old .channel.channel_action {
+    .old .channel.channel_action, .overlay .channel.channel_action {
       background: rgba(138, 9, 18, 0.6); }
-    .old .channel.channel_rus {
+    .old .channel.channel_rus, .overlay .channel.channel_rus {
       background: rgba(0, 84, 117, 0.6); }
-    .old .channel.channel_explore {
+    .old .channel.channel_explore, .overlay .channel.channel_explore {
       background: rgba(168, 7, 14, 0.6); }
-    .old .channel.channel_history {
+    .old .channel.channel_history, .overlay .channel.channel_history {
       background: rgba(26, 83, 158, 0.6); }
-    .old .channel.channel_nature {
+    .old .channel.channel_nature, .overlay .channel.channel_nature {
       background: rgba(99, 120, 36, 0.6); }
-    .old .channel.channel_sport {
+    .old .channel.channel_sport, .overlay .channel.channel_sport {
       background: rgba(0, 84, 117, 0.6); }
-  .old .sortby {
+  .old .sortby, .overlay .sortby {
     display: inline-block;
     vertical-align: middle;
     font-size: 0; }
-    .old .sortby li {
+    .old .sortby li, .overlay .sortby li {
       display: inline-block;
       margin: 0 5px; }
-      .old .sortby li a {
+      .old .sortby li a, .overlay .sortby li a {
         display: inline-block;
         height: 35px;
         border-radius: 3px;
@@ -6776,24 +6777,24 @@ select {
         font-size: 1.4rem;
         text-decoration: none;
         font-weight: bold; }
-        .old .sortby li a:hover, .old .sortby li a.is-active {
+        .old .sortby li a:hover, .old .sortby li a.is-active, .overlay .sortby li a:hover, .overlay .sortby li a.is-active {
           background: #fff;
           color: #317bd3; }
     @media only screen and (max-width: 960px) {
-      .old .sortby li {
+      .old .sortby li, .overlay .sortby li {
         display: block;
         margin: 0 0 5px; }
-        .old .sortby li a {
+        .old .sortby li a, .overlay .sortby li a {
           padding: 8px 10px;
           border: 1px solid #f1f1f1; } }
-  .old .program .breadcrumbs ul li:before {
+  .old .program .breadcrumbs ul li:before, .overlay .program .breadcrumbs ul li:before {
     color: #fff; }
-  .old .program .breadcrumbs ul li a {
+  .old .program .breadcrumbs ul li a, .overlay .program .breadcrumbs ul li a {
     color: #fff; }
-  .old .program .program__topper {
+  .old .program .program__topper, .overlay .program .program__topper {
     position: relative;
     padding-top: 20px; }
-    .old .program .program__topper:before {
+    .old .program .program__topper:before, .overlay .program .program__topper:before {
       content: "";
       position: absolute;
       top: -80px;
@@ -6803,7 +6804,7 @@ select {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 50%; }
-    .old .program .program__topper:after {
+    .old .program .program__topper:after, .overlay .program .program__topper:after {
       content: "";
       position: absolute;
       top: 80%;
@@ -6814,67 +6815,67 @@ select {
       background-size: cover;
       background-position: 50% 50%; }
     @media only screen and (max-width: 767px) {
-      .old .program .program__topper:before, .old .program .program__topper:after {
+      .old .program .program__topper:before, .old .program .program__topper:after, .overlay .program .program__topper:before, .overlay .program .program__topper:after {
         display: none; } }
-    .old .program .program__topper .breadcrumbs_white ul li:before {
+    .old .program .program__topper .breadcrumbs_white ul li:before, .overlay .program .program__topper .breadcrumbs_white ul li:before {
       opacity: 0.5; }
-    .old .program .program__topper .breadcrumbs_white ul li a {
+    .old .program .program__topper .breadcrumbs_white ul li a, .overlay .program .program__topper .breadcrumbs_white ul li a {
       color: rgba(255, 255, 255, 0.5); }
-  .old .program .program__top {
+  .old .program .program__top, .overlay .program .program__top {
     position: relative; }
-  .old .program .program__prev, .old .program .program__next {
+  .old .program .program__prev, .old .program .program__next, .overlay .program .program__prev, .overlay .program .program__next {
     position: absolute;
     left: 15px;
     top: 50%;
     margin-top: -21px;
     font-size: 30px;
     color: #fff; }
-  .old .program .program__next {
+  .old .program .program__next, .overlay .program .program__next {
     left: auto;
     right: 15px; }
-  .old .program.program_action .program__topper {
+  .old .program.program_action .program__topper, .overlay .program.program_action .program__topper {
     background: #ab0621; }
-    .old .program.program_action .program__topper:before {
+    .old .program.program_action .program__topper:before, .overlay .program.program_action .program__topper:before {
       background: url(../img/stripes1.png); }
-    .old .program.program_action .program__topper:after {
+    .old .program.program_action .program__topper:after, .overlay .program.program_action .program__topper:after {
       background: url(../img/stripes2.png); }
-  .old .program.program_comedy .program__topper {
+  .old .program.program_comedy .program__topper, .overlay .program.program_comedy .program__topper {
     background: #e66d20; }
-    .old .program.program_comedy .program__topper:before {
+    .old .program.program_comedy .program__topper:before, .overlay .program.program_comedy .program__topper:before {
       background: url(../img/stripes3.png); }
-    .old .program.program_comedy .program__topper:after {
+    .old .program.program_comedy .program__topper:after, .overlay .program.program_comedy .program__topper:after {
       background: url(../img/stripes4.png); }
-  .old .program.program_megahit .program__topper {
+  .old .program.program_megahit .program__topper, .overlay .program.program_megahit .program__topper {
     background: #004681; }
-    .old .program.program_megahit .program__topper:before {
+    .old .program.program_megahit .program__topper:before, .overlay .program.program_megahit .program__topper:before {
       background: url(../img/stripes5.png); }
-    .old .program.program_megahit .program__topper:after {
+    .old .program.program_megahit .program__topper:after, .overlay .program.program_megahit .program__topper:after {
       background: url(../img/stripes6.png); }
-  .old .program.program_premium .program__topper {
+  .old .program.program_premium .program__topper, .overlay .program.program_premium .program__topper {
     background: #352361; }
-    .old .program.program_premium .program__topper:before {
+    .old .program.program_premium .program__topper:before, .overlay .program.program_premium .program__topper:before {
       top: -50px;
       right: 15%;
       width: 521px;
       height: 181px;
       background: url(../img/stripes7.png); }
-    .old .program.program_premium .program__topper:after {
+    .old .program.program_premium .program__topper:after, .overlay .program.program_premium .program__topper:after {
       background-image: url(../img/stripes8.png); }
-  .old .program.program_nature .program__topper {
+  .old .program.program_nature .program__topper, .overlay .program.program_nature .program__topper {
     background: #618005; }
-    .old .program.program_nature .program__topper:before {
+    .old .program.program_nature .program__topper:before, .overlay .program.program_nature .program__topper:before {
       background-image: url(../img/stripes9.png); }
-    .old .program.program_nature .program__topper:after {
+    .old .program.program_nature .program__topper:after, .overlay .program.program_nature .program__topper:after {
       background: url(../img/stripes10.png); }
-  .old .preview {
+  .old .preview, .overlay .preview {
     position: relative;
     height: 424px; }
     @media only screen and (max-width: 960px) {
-      .old .preview {
+      .old .preview, .overlay .preview {
         height: auto; }
-        .old .preview.center {
+        .old .preview.center, .overlay .preview.center {
           padding: 0; } }
-    .old .preview .preview__poster {
+    .old .preview .preview__poster, .overlay .preview .preview__poster {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -6885,7 +6886,7 @@ select {
       background-position: 50% 50%;
       z-index: 1; }
       @media only screen and (max-width: 960px) {
-        .old .preview .preview__poster {
+        .old .preview .preview__poster, .overlay .preview .preview__poster {
           position: relative;
           top: auto;
           bottom: auto;
@@ -6893,9 +6894,9 @@ select {
           right: auto;
           height: 400px; } }
       @media only screen and (max-width: 568px) {
-        .old .preview .preview__poster {
+        .old .preview .preview__poster, .overlay .preview .preview__poster {
           height: 300px; } }
-    .old .preview .preview__bottom {
+    .old .preview .preview__bottom, .overlay .preview .preview__bottom {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -6905,108 +6906,108 @@ select {
       padding: 15px 30px;
       background: rgba(0, 0, 0, 0.5);
       z-index: 999; }
-      .old .preview .preview__bottom:after {
+      .old .preview .preview__bottom:after, .overlay .preview .preview__bottom:after {
         content: " ";
         display: table;
         clear: both; }
       @media only screen and (max-width: 960px) {
-        .old .preview .preview__bottom {
+        .old .preview .preview__bottom, .overlay .preview .preview__bottom {
           bottom: auto;
           right: 0;
           top: 295px; } }
       @media only screen and (max-width: 568px) {
-        .old .preview .preview__bottom {
+        .old .preview .preview__bottom, .overlay .preview .preview__bottom {
           top: 195px;
           padding: 10px; } }
-    .old .preview .preview__right {
+    .old .preview .preview__right, .overlay .preview .preview__right {
       float: right;
       width: 100px;
       text-align: center; }
-      .old .preview .preview__right p {
+      .old .preview .preview__right p, .overlay .preview .preview__right p {
         font-weight: 900;
         font-size: 3.2rem;
         color: #fff; }
-      .old .preview .preview__right span {
+      .old .preview .preview__right span, .overlay .preview .preview__right span {
         font-size: 1.8rem;
         font-weight: 300;
         color: #fff; }
       @media only screen and (max-width: 568px) {
-        .old .preview .preview__right {
+        .old .preview .preview__right, .overlay .preview .preview__right {
           width: 70px; }
-          .old .preview .preview__right p {
+          .old .preview .preview__right p, .overlay .preview .preview__right p {
             font-size: 2.8rem; }
-          .old .preview .preview__right span {
+          .old .preview .preview__right span, .overlay .preview .preview__right span {
             font-size: 1.4rem; } }
-    .old .preview .preview__left {
+    .old .preview .preview__left, .overlay .preview .preview__left {
       overflow: hidden;
       color: #fff; }
       @media only screen and (max-width: 1150px) {
-        .old .preview .preview__left .h2 {
+        .old .preview .preview__left .h2, .overlay .preview .preview__left .h2 {
           font-size: 2.4rem; } }
       @media only screen and (max-width: 568px) {
-        .old .preview .preview__left .h2 {
+        .old .preview .preview__left .h2, .overlay .preview .preview__left .h2 {
           line-height: 1.1; } }
-    .old .preview .info {
+    .old .preview .info, .overlay .preview .info {
       position: absolute;
       top: 32px;
       right: 32px;
       bottom: 32px;
       width: 333px; }
       @media only screen and (max-width: 960px) {
-        .old .preview .info {
+        .old .preview .info, .overlay .preview .info {
           position: relative;
           top: auto;
           right: auto;
           bottom: auto;
           width: 100%; } }
       @media only screen and (max-width: 568px) {
-        .old .preview .info {
+        .old .preview .info, .overlay .preview .info {
           padding: 15px 15px 146px; } }
-  .old .info {
+  .old .info, .overlay .info {
     position: relative;
     padding: 18px 32px 146px;
     background: #fff;
     z-index: 3; }
-    .old .info.info_premium .info__more a {
+    .old .info.info_premium .info__more a, .overlay .info.info_premium .info__more a {
       color: #352361; }
-    .old .info.info_premium .info__add {
+    .old .info.info_premium .info__add, .overlay .info.info_premium .info__add {
       background: #352361; }
-      .old .info.info_premium .info__add:hover {
+      .old .info.info_premium .info__add:hover, .overlay .info.info_premium .info__add:hover {
         background: #2b1c4e; }
-    .old .info.info_nature .info__more a {
+    .old .info.info_nature .info__more a, .overlay .info.info_nature .info__more a {
       color: #618005; }
-    .old .info.info_nature .info__add {
+    .old .info.info_nature .info__add, .overlay .info.info_nature .info__add {
       background: #a6b525; }
-      .old .info.info_nature .info__add:hover {
+      .old .info.info_nature .info__add:hover, .overlay .info.info_nature .info__add:hover {
         background: #93a021; }
-    .old .info.info_megahit .info__more a {
+    .old .info.info_megahit .info__more a, .overlay .info.info_megahit .info__more a {
       color: #004681; }
-    .old .info.info_megahit .info__add {
+    .old .info.info_megahit .info__add, .overlay .info.info_megahit .info__add {
       background: #004681; }
-      .old .info.info_megahit .info__add:hover {
+      .old .info.info_megahit .info__add:hover, .overlay .info.info_megahit .info__add:hover {
         background: #003868; }
-    .old .info.info_comedy .info__more a {
+    .old .info.info_comedy .info__more a, .overlay .info.info_comedy .info__more a {
       color: #e66d20; }
-    .old .info.info_comedy .info__add {
+    .old .info.info_comedy .info__add, .overlay .info.info_comedy .info__add {
       background: #e66d20; }
-      .old .info.info_comedy .info__add:hover {
+      .old .info.info_comedy .info__add:hover, .overlay .info.info_comedy .info__add:hover {
         background: #d56118; }
-    .old .info img {
+    .old .info img, .overlay .info img {
       margin-bottom: 7px; }
-    .old .info p {
+    .old .info p, .overlay .info p {
       line-height: 1.3;
       margin-bottom: 15px; }
-    .old .info .info__more {
+    .old .info .info__more, .overlay .info .info__more {
       text-align: center; }
-      .old .info .info__more a {
+      .old .info .info__more a, .overlay .info .info__more a {
         text-transform: uppercase;
         color: #d00829;
         font-weight: 500;
         text-decoration: none; }
       @media only screen and (max-width: 960px) {
-        .old .info .info__more {
+        .old .info .info__more, .overlay .info .info__more {
           margin-bottom: 20px; } }
-    .old .info .info__add, .old .info .info__view {
+    .old .info .info__add, .old .info .info__view, .overlay .info .info__add, .overlay .info .info__view {
       position: absolute;
       bottom: 73px;
       left: 0;
@@ -7020,54 +7021,54 @@ select {
       background: #d00829;
       -webkit-transition: background 300ms;
       transition: background 300ms; }
-      .old .info .info__add:hover, .old .info .info__view:hover {
+      .old .info .info__add:hover, .old .info .info__view:hover, .overlay .info .info__add:hover, .overlay .info .info__view:hover {
         background: #b70724; }
-    .old .info .info__view {
+    .old .info .info__view, .overlay .info .info__view {
       bottom: 0;
       background: #000;
       -webkit-transition: all 300ms;
       transition: all 300ms; }
-      .old .info .info__view:hover {
+      .old .info .info__view:hover, .overlay .info .info__view:hover {
         background: #fff;
         color: #353535; }
-    .old .info .n-watch {
+    .old .info .n-watch, .overlay .info .n-watch {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       height: 73px; }
-      .old .info .n-watch .n-watch__btn {
+      .old .info .n-watch .n-watch__btn, .overlay .info .n-watch .n-watch__btn {
         height: 73px; }
-      .old .info .n-watch .n-watch__list {
+      .old .info .n-watch .n-watch__list, .overlay .info .n-watch .n-watch__list {
         top: 73px; }
-  .old .schedule .schedule__title {
+  .old .schedule .schedule__title, .overlay .schedule .schedule__title {
     margin-bottom: 15px;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 2.4rem; }
     @media only screen and (max-width: 767px) {
-      .old .schedule .schedule__title {
+      .old .schedule .schedule__title, .overlay .schedule .schedule__title {
         margin-bottom: 30px; } }
-  .old .schedule .schedule__list {
+  .old .schedule .schedule__list, .overlay .schedule .schedule__list {
     position: relative;
     top: -10px; }
-  .old .schedule .schedule__item {
+  .old .schedule .schedule__item, .overlay .schedule .schedule__item {
     *zoom: 1;
     margin-bottom: 10px;
     height: 150px; }
-    .old .schedule .schedule__item:after {
+    .old .schedule .schedule__item:after, .overlay .schedule .schedule__item:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .schedule .schedule__item:first-child {
+    .old .schedule .schedule__item:first-child, .overlay .schedule .schedule__item:first-child {
       height: 290px; }
-      .old .schedule .schedule__item:first-child .schedule__link {
+      .old .schedule .schedule__item:first-child .schedule__link, .overlay .schedule .schedule__item:first-child .schedule__link {
         margin-top: -20px;
         height: 310px; }
-      .old .schedule .schedule__item:first-child .schedule__content {
+      .old .schedule .schedule__item:first-child .schedule__content, .overlay .schedule .schedule__item:first-child .schedule__content {
         padding-top: 20px;
         height: 290px; }
-        .old .schedule .schedule__item:first-child .schedule__content:before {
+        .old .schedule .schedule__item:first-child .schedule__content:before, .overlay .schedule .schedule__item:first-child .schedule__content:before {
           content: "";
           position: absolute;
           top: -20px;
@@ -7078,36 +7079,36 @@ select {
           border-width: 0 0 20px 20px;
           border-color: transparent transparent #a9a9a9 transparent; }
     @media only screen and (max-width: 767px) {
-      .old .schedule .schedule__item {
+      .old .schedule .schedule__item, .overlay .schedule .schedule__item {
         height: auto; }
-        .old .schedule .schedule__item:first-child {
+        .old .schedule .schedule__item:first-child, .overlay .schedule .schedule__item:first-child {
           height: auto; }
-          .old .schedule .schedule__item:first-child .schedule__link {
+          .old .schedule .schedule__item:first-child .schedule__link, .overlay .schedule .schedule__item:first-child .schedule__link {
             margin-top: 0;
             height: auto; }
-          .old .schedule .schedule__item:first-child .schedule__content {
+          .old .schedule .schedule__item:first-child .schedule__content, .overlay .schedule .schedule__item:first-child .schedule__content {
             height: auto; }
-            .old .schedule .schedule__item:first-child .schedule__content:before {
+            .old .schedule .schedule__item:first-child .schedule__content:before, .overlay .schedule .schedule__item:first-child .schedule__content:before {
               display: none; } }
-  .old .schedule .schedule__link {
+  .old .schedule .schedule__link, .overlay .schedule .schedule__link {
     position: relative;
     float: right;
     width: 41%;
     height: 150px;
     min-height: 100%;
     overflow: hidden; }
-    .old .schedule .schedule__link:hover .schedule__overlay {
+    .old .schedule .schedule__link:hover .schedule__overlay, .overlay .schedule .schedule__link:hover .schedule__overlay {
       opacity: 1; }
-    .old .schedule .schedule__link img {
+    .old .schedule .schedule__link img, .overlay .schedule .schedule__link img {
       display: block;
       width: 100%; }
     @media only screen and (max-width: 767px) {
-      .old .schedule .schedule__link {
+      .old .schedule .schedule__link, .overlay .schedule .schedule__link {
         float: none;
         width: 100%;
         height: auto;
         overflow: visible; } }
-  .old .schedule .schedule__overlay {
+  .old .schedule .schedule__overlay, .overlay .schedule .schedule__overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7119,16 +7120,16 @@ select {
     opacity: 0;
     -webkit-transition: opacity 300ms;
     transition: opacity 300ms; }
-    .old .schedule .schedule__overlay:before {
+    .old .schedule .schedule__overlay:before, .overlay .schedule .schedule__overlay:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
       width: 0;
       height: 100%; }
-    .old .schedule .schedule__overlay span {
+    .old .schedule .schedule__overlay span, .overlay .schedule .schedule__overlay span {
       display: inline-block;
       vertical-align: middle; }
-  .old .schedule .schedule__content {
+  .old .schedule .schedule__content, .overlay .schedule .schedule__content {
     position: relative;
     float: left;
     width: 59%;
@@ -7136,60 +7137,60 @@ select {
     padding: 25px 30px;
     background: #FFF; }
     @media only screen and (max-width: 767px) {
-      .old .schedule .schedule__content {
+      .old .schedule .schedule__content, .overlay .schedule .schedule__content {
         float: none;
         width: 100%; } }
     @media only screen and (max-width: 600px) {
-      .old .schedule .schedule__content {
+      .old .schedule .schedule__content, .overlay .schedule .schedule__content {
         padding: 20px; } }
     @media only screen and (max-width: 480px) {
-      .old .schedule .schedule__content {
+      .old .schedule .schedule__content, .overlay .schedule .schedule__content {
         padding: 15px; } }
-  .old .schedule .schedule__descr {
+  .old .schedule .schedule__descr, .overlay .schedule .schedule__descr {
     line-height: 1.3;
     height: 144px;
     overflow: hidden; }
-  .old .schedule .schedule__topper {
+  .old .schedule .schedule__topper, .overlay .schedule .schedule__topper {
     *zoom: 1;
     margin-bottom: 10px; }
-    .old .schedule .schedule__topper:after {
+    .old .schedule .schedule__topper:after, .overlay .schedule .schedule__topper:after {
       content: " ";
       display: table;
       clear: both; }
-  .old .schedule .schedule__left {
+  .old .schedule .schedule__left, .overlay .schedule .schedule__left {
     float: left;
     width: 75%; }
-    .old .schedule .schedule__left .h3 {
+    .old .schedule .schedule__left .h3, .overlay .schedule .schedule__left .h3 {
       font-weight: 500;
       line-height: 1; }
     @media only screen and (max-width: 480px) {
-      .old .schedule .schedule__left {
+      .old .schedule .schedule__left, .overlay .schedule .schedule__left {
         width: 65%; } }
-  .old .schedule .schedule__right {
+  .old .schedule .schedule__right, .overlay .schedule .schedule__right {
     float: right;
     width: 25%;
     text-align: center; }
     @media only screen and (max-width: 480px) {
-      .old .schedule .schedule__right {
+      .old .schedule .schedule__right, .overlay .schedule .schedule__right {
         width: 35%; } }
-  .old .schedule .schedule__timing {
+  .old .schedule .schedule__timing, .overlay .schedule .schedule__timing {
     position: relative;
     padding-top: 10px;
     padding-left: 32px;
     font-size: 1.2rem; }
-    .old .schedule .schedule__timing .icon-time {
+    .old .schedule .schedule__timing .icon-time, .overlay .schedule .schedule__timing .icon-time {
       position: absolute;
       top: 12px;
       left: 0;
       font-size: 26px;
       color: #b2b2b2; }
-  .old .schedule .schedule__time {
+  .old .schedule .schedule__time, .overlay .schedule .schedule__time {
     font-size: 2.4rem;
     font-weight: 900; }
   @media only screen and (max-width: 960px) {
-    .old .schedule .schedule__more {
+    .old .schedule .schedule__more, .overlay .schedule .schedule__more {
       text-align: center; } }
-  .old .live {
+  .old .live, .overlay .live {
     height: 38px;
     padding: 11px 0;
     border-radius: 3px;
@@ -7197,44 +7198,44 @@ select {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2rem; }
-  .old .socials {
+  .old .socials, .overlay .socials {
     *zoom: 1; }
-    .old .socials:after {
+    .old .socials:after, .overlay .socials:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .socials.socials_wide .socials__links {
+    .old .socials.socials_wide .socials__links, .overlay .socials.socials_wide .socials__links {
       width: 100%; }
-      .old .socials.socials_wide .socials__links ul li {
+      .old .socials.socials_wide .socials__links ul li, .overlay .socials.socials_wide .socials__links ul li {
         width: 33.33%; }
-        .old .socials.socials_wide .socials__links ul li a {
+        .old .socials.socials_wide .socials__links ul li a, .overlay .socials.socials_wide .socials__links ul li a {
           width: 100%; }
       @media only screen and (max-width: 1150px) {
-        .old .socials.socials_wide .socials__links ul {
+        .old .socials.socials_wide .socials__links ul, .overlay .socials.socials_wide .socials__links ul {
           display: block; } }
-    .old .socials.socials_wide .socials__likes {
+    .old .socials.socials_wide .socials__likes, .overlay .socials.socials_wide .socials__likes {
       width: 100%; }
-      .old .socials.socials_wide .socials__likes ul li {
+      .old .socials.socials_wide .socials__likes ul li, .overlay .socials.socials_wide .socials__likes ul li {
         width: 47.5%;
         margin-left: 5%; }
-        .old .socials.socials_wide .socials__likes ul li:first-child {
+        .old .socials.socials_wide .socials__likes ul li:first-child, .overlay .socials.socials_wide .socials__likes ul li:first-child {
           margin-left: 0; }
-        .old .socials.socials_wide .socials__likes ul li a {
+        .old .socials.socials_wide .socials__likes ul li a, .overlay .socials.socials_wide .socials__likes ul li a {
           width: 100%;
           border-radius: 3px; }
       @media only screen and (max-width: 1150px) {
-        .old .socials.socials_wide .socials__likes ul {
+        .old .socials.socials_wide .socials__likes ul, .overlay .socials.socials_wide .socials__likes ul {
           display: block; } }
-    .old .socials .socials__links {
+    .old .socials .socials__links, .overlay .socials .socials__links {
       float: left; }
-      .old .socials .socials__links ul {
+      .old .socials .socials__links ul, .overlay .socials .socials__links ul {
         border-radius: 3px;
         overflow: hidden;
         font-size: 0; }
-        .old .socials .socials__links ul li {
+        .old .socials .socials__links ul li, .overlay .socials .socials__links ul li {
           display: inline-block;
           vertical-align: middle; }
-          .old .socials .socials__links ul li a {
+          .old .socials .socials__links ul li a, .overlay .socials .socials__links ul li a {
             display: block;
             width: 58px;
             height: 43px;
@@ -7244,45 +7245,45 @@ select {
             -webkit-transition: color 300ms;
             transition: color 300ms;
             color: #3a5ba0; }
-            .old .socials .socials__links ul li a:before {
+            .old .socials .socials__links ul li a:before, .overlay .socials .socials__links ul li a:before {
               content: "";
               display: inline-block;
               vertical-align: middle;
               width: 0;
               height: 100%; }
-            .old .socials .socials__links ul li a:hover {
+            .old .socials .socials__links ul li a:hover, .overlay .socials .socials__links ul li a:hover {
               color: #33508d; }
       @media only screen and (max-width: 1150px) {
-        .old .socials .socials__links {
+        .old .socials .socials__links, .overlay .socials .socials__links {
           float: none;
           width: 100%;
           margin-bottom: 10px; }
-          .old .socials .socials__links ul {
+          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
             display: inline-block; } }
       @media only screen and (max-width: 960px) {
-        .old .socials .socials__links {
+        .old .socials .socials__links, .overlay .socials .socials__links {
           float: left;
           overflow: hidden;
           width: auto; }
-          .old .socials .socials__links ul {
+          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
             display: block; } }
       @media only screen and (max-width: 479px) {
-        .old .socials .socials__links {
+        .old .socials .socials__links, .overlay .socials .socials__links {
           float: none;
           width: 100%;
           text-align: center; }
-          .old .socials .socials__links ul {
+          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
             display: inline-block; } }
-    .old .socials .socials__likes {
+    .old .socials .socials__likes, .overlay .socials .socials__likes {
       float: right; }
-      .old .socials .socials__likes ul {
+      .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
         border-radius: 3px;
         overflow: hidden;
         font-size: 0; }
-        .old .socials .socials__likes ul li {
+        .old .socials .socials__likes ul li, .overlay .socials .socials__likes ul li {
           display: inline-block;
           vertical-align: middle; }
-          .old .socials .socials__likes ul li a {
+          .old .socials .socials__likes ul li a, .overlay .socials .socials__likes ul li a {
             display: block;
             width: 80px;
             height: 43px;
@@ -7292,77 +7293,77 @@ select {
             font-size: 0;
             -webkit-transition: background 300ms;
             transition: background 300ms; }
-            .old .socials .socials__likes ul li a:before {
+            .old .socials .socials__likes ul li a:before, .overlay .socials .socials__likes ul li a:before {
               content: "";
               display: inline-block;
               vertical-align: middle;
               width: 0;
               height: 100%; }
-            .old .socials .socials__likes ul li a:hover {
+            .old .socials .socials__likes ul li a:hover, .overlay .socials .socials__likes ul li a:hover {
               background: #cccccc; }
-            .old .socials .socials__likes ul li a i {
+            .old .socials .socials__likes ul li a i, .overlay .socials .socials__likes ul li a i {
               font-size: 1.6rem; }
-            .old .socials .socials__likes ul li a span {
+            .old .socials .socials__likes ul li a span, .overlay .socials .socials__likes ul li a span {
               display: inline-block;
               vertical-align: middle;
               font-size: 1.2rem;
               margin-left: 5px; }
       @media only screen and (max-width: 1150px) {
-        .old .socials .socials__likes {
+        .old .socials .socials__likes, .overlay .socials .socials__likes {
           float: none;
           width: 100%; }
-          .old .socials .socials__likes ul {
+          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
             display: inline-block; } }
       @media only screen and (max-width: 960px) {
-        .old .socials .socials__likes {
+        .old .socials .socials__likes, .overlay .socials .socials__likes {
           float: right;
           width: auto; }
-          .old .socials .socials__likes ul {
+          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
             display: block; } }
       @media only screen and (max-width: 479px) {
-        .old .socials .socials__likes {
+        .old .socials .socials__likes, .overlay .socials .socials__likes {
           float: none;
           width: 100%;
           text-align: center; }
-          .old .socials .socials__likes ul {
+          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
             display: inline-block; } }
-  .old .benefits img {
+  .old .benefits img, .overlay .benefits img {
     display: block;
     width: 100%; }
-  .old .movie .breadcrumbs_white ul li:before {
+  .old .movie .breadcrumbs_white ul li:before, .overlay .movie .breadcrumbs_white ul li:before {
     opacity: 0.5; }
-  .old .movie .breadcrumbs_white ul li a {
+  .old .movie .breadcrumbs_white ul li a, .overlay .movie .breadcrumbs_white ul li a {
     color: rgba(255, 255, 255, 0.5); }
-  .old .movie .main, .old .movie .sidebar {
+  .old .movie .main, .old .movie .sidebar, .overlay .movie .main, .overlay .movie .sidebar {
     padding-top: 0; }
-  .old .movie.movie_premium .movie__topper {
+  .old .movie.movie_premium .movie__topper, .overlay .movie.movie_premium .movie__topper {
     background: #352361; }
-  .old .movie.movie_action .movie__topper {
+  .old .movie.movie_action .movie__topper, .overlay .movie.movie_action .movie__topper {
     background: #ab0621; }
-  .old .movie.movie_comedy .movie__topper {
+  .old .movie.movie_comedy .movie__topper, .overlay .movie.movie_comedy .movie__topper {
     background: #e66d20; }
-  .old .movie.movie_megahit .movie__topper {
+  .old .movie.movie_megahit .movie__topper, .overlay .movie.movie_megahit .movie__topper {
     background: #004681; }
-  .old .movie.movie_nature .movie__topper {
+  .old .movie.movie_nature .movie__topper, .overlay .movie.movie_nature .movie__topper {
     background: #618005; }
-  .old .movie .movie__topper {
+  .old .movie .movie__topper, .overlay .movie .movie__topper {
     padding-top: 15px; }
-  .old .item {
+  .old .item, .overlay .item {
     position: relative; }
-    .old .item .item__content {
+    .old .item .item__content, .overlay .item .item__content {
       padding: 23px 30px 100px;
       background: #FFF; }
       @media only screen and (max-width: 600px) {
-        .old .item .item__content {
+        .old .item .item__content, .overlay .item .item__content {
           padding: 15px 15px 50px; } }
-    .old .item .item__info {
+    .old .item .item__info, .overlay .item .item__info {
       *zoom: 1; }
-      .old .item .item__info:after {
+      .old .item .item__info:after, .overlay .item .item__info:after {
         content: " ";
         display: table;
         clear: both; }
       @media only screen and (max-width: 480px) {
-        .old .item .item__info {
+        .old .item .item__info, .overlay .item .item__info {
           display: -webkit-flex;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -7372,14 +7373,14 @@ select {
           -webkit-box-direction: normal;
           -ms-flex-direction: column;
           flex-direction: column; } }
-    .old .item .item__tools {
+    .old .item .item__tools, .overlay .item .item__tools {
       float: right;
       width: 235px;
       margin-left: 30px; }
-      .old .item .item__tools .socials {
+      .old .item .item__tools .socials, .overlay .item .item__tools .socials {
         margin-bottom: 15px; }
       @media only screen and (max-width: 480px) {
-        .old .item .item__tools {
+        .old .item .item__tools, .overlay .item .item__tools {
           float: none;
           width: 100%;
           margin-left: 0;
@@ -7388,82 +7389,82 @@ select {
           -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
           order: 2; } }
-    .old .item .item__about {
+    .old .item .item__about, .overlay .item .item__about {
       overflow: hidden; }
       @media only screen and (max-width: 480px) {
-        .old .item .item__about {
+        .old .item .item__about, .overlay .item .item__about {
           overflow: visible;
           width: 100%;
           -webkit-order: 1;
           -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
           order: 1; } }
-    .old .item .item__watch {
+    .old .item .item__watch, .overlay .item .item__watch {
       margin-bottom: 30px;
       text-align: right; }
       @media only screen and (max-width: 480px) {
-        .old .item .item__watch {
+        .old .item .item__watch, .overlay .item .item__watch {
           *zoom: 1;
           text-align: left; }
-          .old .item .item__watch:after {
+          .old .item .item__watch:after, .overlay .item .item__watch:after {
             content: " ";
             display: table;
             clear: both; }
-          .old .item .item__watch .watch {
+          .old .item .item__watch .watch, .overlay .item .item__watch .watch {
             float: right; } }
-    .old .item .item__time {
+    .old .item .item__time, .overlay .item .item__time {
       display: inline-block;
       vertical-align: top;
       margin-right: 22px; }
-      .old .item .item__time span {
+      .old .item .item__time span, .overlay .item .item__time span {
         font-size: 3.2rem;
         color: #353535;
         line-height: 1;
         font-weight: bold; }
-      .old .item .item__time p {
+      .old .item .item__time p, .overlay .item .item__time p {
         font-size: 1.4rem; }
       @media only screen and (max-width: 480px) {
-        .old .item .item__time {
+        .old .item .item__time, .overlay .item .item__time {
           float: left; } }
-    .old .item .item__original {
+    .old .item .item__original, .overlay .item .item__original {
       margin-bottom: 30px;
       font-size: 1.8rem;
       color: #919191;
       font-weight: 500; }
-    .old .item .item__table {
+    .old .item .item__table, .overlay .item .item__table {
       width: 100%;
       display: table;
       margin-bottom: 30px; }
-    .old .item .item__row {
+    .old .item .item__row, .overlay .item .item__row {
       display: table-row; }
-    .old .item .item__col {
+    .old .item .item__col, .overlay .item .item__col {
       display: table-cell;
       padding-bottom: 5px; }
-    .old .item .item__descr {
+    .old .item .item__descr, .overlay .item .item__descr {
       margin-bottom: 30px; }
-      .old .item .item__descr p {
+      .old .item .item__descr p, .overlay .item .item__descr p {
         margin-bottom: 10px; }
-    .old .item .item__people p {
+    .old .item .item__people p, .overlay .item .item__people p {
       margin-bottom: 10px; }
     @media only screen and (max-width: 600px) {
-      .old .item .item__people {
+      .old .item .item__people, .overlay .item .item__people {
         font-size: 0;
         text-align: center; }
-        .old .item .item__people .col4 {
+        .old .item .item__people .col4, .overlay .item .item__people .col4 {
           float: none;
           display: inline-block;
           vertical-align: top;
           font-size: 1.4rem; } }
-  .old .gallery-preview {
+  .old .gallery-preview, .overlay .gallery-preview {
     margin-bottom: 30px; }
-    .old .gallery-preview p {
+    .old .gallery-preview p, .overlay .gallery-preview p {
       margin-bottom: 10px; }
-    .old .gallery-preview .gallery-preview__item {
+    .old .gallery-preview .gallery-preview__item, .overlay .gallery-preview .gallery-preview__item {
       position: relative; }
-      .old .gallery-preview .gallery-preview__item img {
+      .old .gallery-preview .gallery-preview__item img, .overlay .gallery-preview .gallery-preview__item img {
         width: 100%;
         display: block; }
-    .old .gallery-preview .gallery-preview__more {
+    .old .gallery-preview .gallery-preview__more, .overlay .gallery-preview .gallery-preview__more {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -7473,19 +7474,19 @@ select {
       background: rgba(0, 0, 0, 0.5);
       text-align: center;
       font-size: 0; }
-      .old .gallery-preview .gallery-preview__more:before {
+      .old .gallery-preview .gallery-preview__more:before, .overlay .gallery-preview .gallery-preview__more:before {
         content: "";
         display: inline-block;
         vertical-align: middle;
         width: 0;
         height: 100%; }
-      .old .gallery-preview .gallery-preview__more span {
+      .old .gallery-preview .gallery-preview__more span, .overlay .gallery-preview .gallery-preview__more span {
         display: inline-block;
         vertical-align: middle;
         font-size: 2.4rem;
         font-weight: bold;
         color: #fff; }
-  .old .watch {
+  .old .watch, .overlay .watch {
     display: inline-block;
     vertical-align: top;
     width: 50px;
@@ -7494,23 +7495,23 @@ select {
     background: #d70000;
     text-align: center;
     font-size: 0; }
-    .old .watch:before {
+    .old .watch:before, .overlay .watch:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
       width: 0;
       height: 100%; }
-    .old .watch i {
+    .old .watch i, .overlay .watch i {
       display: inline-block;
       vertical-align: middle;
       color: #fff;
       font-size: 24px; }
-  .old .trailer {
+  .old .trailer, .overlay .trailer {
     position: relative; }
-    .old .trailer img {
+    .old .trailer img, .overlay .trailer img {
       display: block;
       width: 100%; }
-    .old .trailer .trailer__in {
+    .old .trailer .trailer__in, .overlay .trailer .trailer__in {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -7519,21 +7520,21 @@ select {
       z-index: 2;
       text-align: center;
       font-size: 0; }
-      .old .trailer .trailer__in:before {
+      .old .trailer .trailer__in:before, .overlay .trailer .trailer__in:before {
         content: "";
         display: inline-block;
         vertical-align: middle;
         width: 0;
         height: 100%; }
-    .old .trailer .trailer__play {
+    .old .trailer .trailer__play, .overlay .trailer .trailer__play {
       display: inline-block;
       vertical-align: middle; }
-      .old .trailer .trailer__play p {
+      .old .trailer .trailer__play p, .overlay .trailer .trailer__play p {
         padding-top: 15px;
         font-size: 1.8rem;
         text-transform: uppercase;
         color: #fff; }
-  .old .play-btn {
+  .old .play-btn, .overlay .play-btn {
     position: relative;
     display: inline-block;
     width: 102px;
@@ -7541,41 +7542,41 @@ select {
     border-radius: 50%;
     border: 12px solid #fff;
     background: rgba(0, 0, 0, 0.3); }
-    .old .play-btn i {
+    .old .play-btn i, .overlay .play-btn i {
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-33%, -50%);
       -ms-transform: translate(-33%, -50%);
       transform: translate(-33%, -50%); }
-  .old .play {
+  .old .play, .overlay .play {
     width: 0px;
     height: 0px;
     border-style: solid;
     border-width: 19px 0 19px 36px;
     border-color: transparent transparent transparent #fff; }
-  .old .rating {
+  .old .rating, .overlay .rating {
     *zoom: 1; }
-    .old .rating:after {
+    .old .rating:after, .overlay .rating:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .rating .rating__item {
+    .old .rating .rating__item, .overlay .rating .rating__item {
       width: 50%;
       float: left; }
-    .old .rating .rating__link {
+    .old .rating .rating__link, .overlay .rating .rating__link {
       display: inline-block;
       vertical-align: middle;
       margin-right: 10px;
       font-size: 0; }
-    .old .rating .rating__mark {
+    .old .rating .rating__mark, .overlay .rating .rating__mark {
       display: inline-block;
       vertical-align: middle;
       font-size: 1.1rem;
       line-height: 1; }
-      .old .rating .rating__mark strong {
+      .old .rating .rating__mark strong, .overlay .rating .rating__mark strong {
         font-size: 1.8rem; }
-  .old .gallery-overlay {
+  .old .gallery-overlay, .overlay .gallery-overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -7584,25 +7585,25 @@ select {
     background: rgba(0, 0, 0, 0.9);
     z-index: 999; }
     @media only screen and (max-width: 800px) {
-      .old .gallery-overlay {
+      .old .gallery-overlay, .overlay .gallery-overlay {
         text-align: center;
         font-size: 0; }
-        .old .gallery-overlay:before {
+        .old .gallery-overlay:before, .overlay .gallery-overlay:before {
           content: "";
           display: inline-block;
           vertical-align: middle;
           width: 0;
           height: 100%; } }
-  .old .close {
+  .old .close, .overlay .close {
     position: absolute;
     top: 20px;
     right: 20px;
     background: transparent;
     z-index: 2; }
-    .old .close i {
+    .old .close i, .overlay .close i {
       color: #fff;
       font-size: 24px; }
-  .old .gallery {
+  .old .gallery, .overlay .gallery {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -7612,7 +7613,7 @@ select {
     text-align: center;
     z-index: 1; }
     @media only screen and (max-width: 800px) {
-      .old .gallery {
+      .old .gallery, .overlay .gallery {
         position: relative;
         top: auto;
         bottom: auto;
@@ -7622,27 +7623,27 @@ select {
         width: 100%;
         display: inline-block;
         vertical-align: middle; }
-        .old .gallery .slick-slide {
+        .old .gallery .slick-slide, .overlay .gallery .slick-slide {
           height: auto; }
-          .old .gallery .slick-slide img {
+          .old .gallery .slick-slide img, .overlay .gallery .slick-slide img {
             width: 100%;
             height: auto; } }
-  .old .gallery__view {
+  .old .gallery__view, .overlay .gallery__view {
     margin-bottom: 20px; }
-  .old .gallery__thumbnail {
+  .old .gallery__thumbnail, .overlay .gallery__thumbnail {
     display: inline-block;
     width: 800px;
     text-align: center; }
     @media only screen and (max-width: 800px) {
-      .old .gallery__thumbnail {
+      .old .gallery__thumbnail, .overlay .gallery__thumbnail {
         display: none; } }
-    .old .gallery__thumbnail .slick-slide {
+    .old .gallery__thumbnail .slick-slide, .overlay .gallery__thumbnail .slick-slide {
       position: relative;
       padding: 0 5px;
       height: 40px;
       width: 75px;
       cursor: pointer; }
-      .old .gallery__thumbnail .slick-slide.slick-current:before {
+      .old .gallery__thumbnail .slick-slide.slick-current:before, .overlay .gallery__thumbnail .slick-slide.slick-current:before {
         content: "";
         position: absolute;
         top: 0;
@@ -7651,50 +7652,50 @@ select {
         bottom: 0;
         border: 2px solid #fff;
         z-index: 2; }
-  .old .top {
+  .old .top, .overlay .top {
     padding-top: 20px;
     background: #e9e9e9; }
-    .old .top.top_dark {
+    .old .top.top_dark, .overlay .top.top_dark {
       background: #e2e2e2; }
-  .old .get .get__content {
+  .old .get .get__content, .overlay .get .get__content {
     position: relative; }
-  .old .get .get__btns {
+  .old .get .get__btns, .overlay .get .get__btns {
     position: absolute;
     top: 30px;
     left: 0;
     right: 0;
     text-align: right;
     z-index: 2; }
-    .old .get .get__btns button {
+    .old .get .get__btns button, .overlay .get .get__btns button {
       margin-bottom: 10px; }
       @media only screen and (max-width: 568px) {
-        .old .get .get__btns button {
+        .old .get .get__btns button, .overlay .get .get__btns button {
           height: 40px;
           padding: 5px 10px; } }
-  .old .map {
+  .old .map, .overlay .map {
     position: relative;
     height: 770px;
     z-index: 1; }
     @media only screen and (max-width: 960px) {
-      .old .map {
+      .old .map, .overlay .map {
         height: 600px; } }
-  .old #map-canvas {
+  .old #map-canvas, .overlay #map-canvas {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0; }
-  .old .prov {
+  .old .prov, .overlay .prov {
     text-align: left; }
-    .old .prov .prov__row {
+    .old .prov .prov__row, .overlay .prov .prov__row {
       position: relative;
       *zoom: 1;
       padding: 5px 0; }
-      .old .prov .prov__row:after {
+      .old .prov .prov__row:after, .overlay .prov .prov__row:after {
         content: " ";
         display: table;
         clear: both; }
-      .old .prov .prov__row:before {
+      .old .prov .prov__row:before, .overlay .prov .prov__row:before {
         content: "";
         position: absolute;
         top: 0;
@@ -7702,106 +7703,106 @@ select {
         width: 80%;
         height: 1px;
         background: #efefef; }
-      .old .prov .prov__row:first-child:before {
+      .old .prov .prov__row:first-child:before, .overlay .prov .prov__row:first-child:before {
         display: none; }
       @media only screen and (max-width: 480px) {
-        .old .prov .prov__row {
+        .old .prov .prov__row, .overlay .prov .prov__row {
           text-align: center; }
-          .old .prov .prov__row:before {
+          .old .prov .prov__row:before, .overlay .prov .prov__row:before {
             width: 100%; } }
-    .old .prov .prov__col {
+    .old .prov .prov__col, .overlay .prov .prov__col {
       float: left;
       width: 20%;
       min-height: 30px; }
       @media only screen and (max-width: 480px) {
-        .old .prov .prov__col {
+        .old .prov .prov__col, .overlay .prov .prov__col {
           float: none;
           width: 100%; } }
-    .old .prov .prov__col2 {
+    .old .prov .prov__col2, .overlay .prov .prov__col2 {
       float: left;
       width: 40%;
       min-height: 30px; }
       @media only screen and (max-width: 480px) {
-        .old .prov .prov__col2 {
+        .old .prov .prov__col2, .overlay .prov .prov__col2 {
           float: none;
           width: 100%; } }
-    .old .prov .prov__title {
+    .old .prov .prov__title, .overlay .prov .prov__title {
       padding: 5px 25px;
       background: #efefef;
       font-size: 1.6rem;
       font-weight: bold;
       color: #353535;
       text-transform: uppercase; }
-    .old .prov .prov__details {
+    .old .prov .prov__details, .overlay .prov .prov__details {
       background: #fff;
       padding: 5px 25px 30px;
       font-size: 1.3rem; }
-      .old .prov .prov__details a {
+      .old .prov .prov__details a, .overlay .prov .prov__details a {
         color: #247bd7;
         text-decoration: none; }
-        .old .prov .prov__details a:hover {
+        .old .prov .prov__details a:hover, .overlay .prov .prov__details a:hover {
           text-decoration: underline; }
-      .old .prov .prov__details ul li {
+      .old .prov .prov__details ul li, .overlay .prov .prov__details ul li {
         padding: 5px 8px;
         border-top: 1px solid #efefef; }
-        .old .prov .prov__details ul li:first-child {
+        .old .prov .prov__details ul li:first-child, .overlay .prov .prov__details ul li:first-child {
           border-top: none; }
-  .old .content {
+  .old .content, .overlay .content {
     background: #fff;
     padding: 30px;
     color: #353535;
     line-height: 1.3; }
     @media only screen and (max-width: 768px) {
-      .old .content {
+      .old .content, .overlay .content {
         padding: 20px; } }
     @media only screen and (max-width: 600px) {
-      .old .content {
+      .old .content, .overlay .content {
         padding: 15px; } }
-    .old .content h3 + i {
+    .old .content h3 + i, .overlay .content h3 + i {
       display: block;
       margin-bottom: 15px;
       font-size: 1.8rem;
       font-weight: 300; }
-    .old .content p {
+    .old .content p, .overlay .content p {
       margin-bottom: 15px; }
-    .old .content p + h4, .old .content p + h3 {
+    .old .content p + h4, .old .content p + h3, .overlay .content p + h4, .overlay .content p + h3 {
       margin: 30px 0 15px; }
-    .old .content div {
+    .old .content div, .overlay .content div {
       margin-bottom: 30px;
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2; }
       @media only screen and (max-width: 479px) {
-        .old .content div {
+        .old .content div, .overlay .content div {
           -webkit-column-count: 1;
           -moz-column-count: 1;
           column-count: 1; } }
-    .old .content a {
+    .old .content a, .overlay .content a {
       font-weight: 500;
       color: #2575cb; }
-    .old .content figure {
+    .old .content figure, .overlay .content figure {
       float: left;
       width: 45%;
       margin-right: 5%;
       margin-bottom: 30px; }
-      .old .content figure img {
+      .old .content figure img, .overlay .content figure img {
         display: block;
         width: 100%;
         margin-bottom: 10px; }
-      .old .content figure figcaption {
+      .old .content figure figcaption, .overlay .content figure figcaption {
         color: #b5b5b5;
         font-style: italic;
         font-weight: 300; }
       @media only screen and (max-width: 600px) {
-        .old .content figure {
+        .old .content figure, .overlay .content figure {
           width: 100%;
           margin-right: 0;
           margin-bottom: 20px; } }
-    .old .content img {
+    .old .content img, .overlay .content img {
       display: block;
       margin-bottom: 30px;
       width: 100%; }
-    .old .content blockquote {
+    .old .content blockquote, .overlay .content blockquote {
       position: relative;
       display: block;
       max-width: 520px;
@@ -7813,9 +7814,9 @@ select {
       font-size: 2.2rem;
       font-weight: 300;
       font-style: italic; }
-      .old .content blockquote p {
+      .old .content blockquote p, .overlay .content blockquote p {
         margin-bottom: 0; }
-      .old .content blockquote:before {
+      .old .content blockquote:before, .overlay .content blockquote:before {
         content: "";
         position: absolute;
         top: -11px;
@@ -7825,7 +7826,7 @@ select {
         height: 22px;
         background: #fff;
         z-index: 1; }
-      .old .content blockquote:after {
+      .old .content blockquote:after, .overlay .content blockquote:after {
         content: "";
         position: absolute;
         top: -11px;
@@ -7835,36 +7836,36 @@ select {
         height: 22px;
         background: url(../img/svg/quote.svg) 50% 0 no-repeat;
         z-index: 2; }
-    .old .content ol {
+    .old .content ol, .overlay .content ol {
       counter-reset: listli;
       margin-bottom: 15px; }
-      .old .content ol > li:before {
+      .old .content ol > li:before, .overlay .content ol > li:before {
         content: counter(listli) ". ";
         counter-increment: listli; }
-      .old .content ol > li {
+      .old .content ol > li, .overlay .content ol > li {
         margin-bottom: 5px; }
-        .old .content ol > li ul {
+        .old .content ol > li ul, .overlay .content ol > li ul {
           margin-bottom: 0;
           padding-left: 32px; }
-    .old .content ul {
+    .old .content ul, .overlay .content ul {
       padding-top: 5px;
       margin-bottom: 15px; }
-      .old .content ul li {
+      .old .content ul li, .overlay .content ul li {
         font-style: italic;
         margin-bottom: 5px; }
-        .old .content ul li:before {
+        .old .content ul li:before, .overlay .content ul li:before {
           display: inline-block;
           content: attr(mark);
           margin-right: 5px; }
-  .old .guide {
+  .old .guide, .overlay .guide {
     position: relative; }
-    .old .guide .guide__nav {
+    .old .guide .guide__nav, .overlay .guide .guide__nav {
       margin-bottom: 15px;
       text-align: center; }
-    .old .guide .guide__prev, .old .guide .guide__next, .old .guide .guide__week, .old .guide .guide__live {
+    .old .guide .guide__prev, .old .guide .guide__next, .old .guide .guide__week, .old .guide .guide__live, .overlay .guide .guide__prev, .overlay .guide .guide__next, .overlay .guide .guide__week, .overlay .guide .guide__live {
       display: inline-block;
       vertical-align: middle; }
-    .old .guide .guide__prev, .old .guide .guide__next {
+    .old .guide .guide__prev, .old .guide .guide__next, .overlay .guide .guide__prev, .overlay .guide .guide__next {
       width: 34px;
       height: 31px;
       margin-right: 30px;
@@ -7877,52 +7878,52 @@ select {
       text-align: left;
       -webkit-transition: background 300ms;
       transition: background 300ms; }
-      .old .guide .guide__prev:before, .old .guide .guide__next:before {
+      .old .guide .guide__prev:before, .old .guide .guide__next:before, .overlay .guide .guide__prev:before, .overlay .guide .guide__next:before {
         content: "";
         display: inline-block;
         vertical-align: middle;
         width: 0;
         height: 100%; }
-      .old .guide .guide__prev .icon-prev-small, .old .guide .guide__prev .icon-next-small, .old .guide .guide__next .icon-prev-small, .old .guide .guide__next .icon-next-small {
+      .old .guide .guide__prev .icon-prev-small, .old .guide .guide__prev .icon-next-small, .old .guide .guide__next .icon-prev-small, .old .guide .guide__next .icon-next-small, .overlay .guide .guide__prev .icon-prev-small, .overlay .guide .guide__prev .icon-next-small, .overlay .guide .guide__next .icon-prev-small, .overlay .guide .guide__next .icon-next-small {
         display: inline-block;
         vertical-align: middle;
         font-size: 16px;
         color: #acacac;
         -webkit-transition: color 300ms;
         transition: color 300ms; }
-      .old .guide .guide__prev:hover, .old .guide .guide__next:hover {
+      .old .guide .guide__prev:hover, .old .guide .guide__next:hover, .overlay .guide .guide__prev:hover, .overlay .guide .guide__next:hover {
         background: #fff; }
-        .old .guide .guide__prev:hover .icon-prev-small, .old .guide .guide__prev:hover .icon-next-small, .old .guide .guide__next:hover .icon-prev-small, .old .guide .guide__next:hover .icon-next-small {
+        .old .guide .guide__prev:hover .icon-prev-small, .old .guide .guide__prev:hover .icon-next-small, .old .guide .guide__next:hover .icon-prev-small, .old .guide .guide__next:hover .icon-next-small, .overlay .guide .guide__prev:hover .icon-prev-small, .overlay .guide .guide__prev:hover .icon-next-small, .overlay .guide .guide__next:hover .icon-prev-small, .overlay .guide .guide__next:hover .icon-next-small {
           color: #353535; }
-    .old .guide .guide__next {
+    .old .guide .guide__next, .overlay .guide .guide__next {
       margin-left: 30px;
       margin-right: 0;
       padding-left: 14px; }
-    .old .guide .guide__week {
+    .old .guide .guide__week, .overlay .guide .guide__week {
       border: 1px solid #d5d5d5;
       background: #efefef;
       border-radius: 3px;
       font-size: 0; }
       @media only screen and (max-width: 600px) {
-        .old .guide .guide__week {
+        .old .guide .guide__week, .overlay .guide .guide__week {
           display: none; } }
-      .old .guide .guide__week li {
+      .old .guide .guide__week li, .overlay .guide .guide__week li {
         display: inline-block;
         vertical-align: middle;
         background: #fff; }
-        .old .guide .guide__week li:first-child {
+        .old .guide .guide__week li:first-child, .overlay .guide .guide__week li:first-child {
           border-radius: 3px 0 0 3px; }
-          .old .guide .guide__week li:first-child a {
+          .old .guide .guide__week li:first-child a, .overlay .guide .guide__week li:first-child a {
             border-radius: 3px 0 0 3px; }
-            .old .guide .guide__week li:first-child a.is-inactive {
+            .old .guide .guide__week li:first-child a.is-inactive, .overlay .guide .guide__week li:first-child a.is-inactive {
               border-radius: 3px 0 0 3px; }
-        .old .guide .guide__week li:last-child {
+        .old .guide .guide__week li:last-child, .overlay .guide .guide__week li:last-child {
           border-radius: 0 3px 3px 0; }
-          .old .guide .guide__week li:last-child a {
+          .old .guide .guide__week li:last-child a, .overlay .guide .guide__week li:last-child a {
             border-radius: 0 3px 3px 0; }
-            .old .guide .guide__week li:last-child a.is-inactive {
+            .old .guide .guide__week li:last-child a.is-inactive, .overlay .guide .guide__week li:last-child a.is-inactive {
               border-radius: 0 3px 3px 0; }
-        .old .guide .guide__week li a {
+        .old .guide .guide__week li a, .overlay .guide .guide__week li a {
           display: block;
           width: 36px;
           height: 31px;
@@ -7932,13 +7933,13 @@ select {
           color: #353535;
           text-decoration: none;
           background: #fff; }
-          .old .guide .guide__week li a.is-inactive {
+          .old .guide .guide__week li a.is-inactive, .overlay .guide .guide__week li a.is-inactive {
             background: #efefef;
             border-radius: 0; }
-          .old .guide .guide__week li a.is-current {
+          .old .guide .guide__week li a.is-current, .overlay .guide .guide__week li a.is-current {
             position: relative;
             box-shadow: 0 0 0 3px #ffa200; }
-    .old .guide .guide__live {
+    .old .guide .guide__live, .overlay .guide .guide__live {
       position: relative;
       height: 31px;
       border-radius: 3px;
@@ -7948,7 +7949,7 @@ select {
       font-weight: bold;
       text-decoration: none;
       color: #fff; }
-      .old .guide .guide__live:before {
+      .old .guide .guide__live:before, .overlay .guide .guide__live:before {
         content: "";
         position: absolute;
         top: 3px;
@@ -7957,17 +7958,17 @@ select {
         width: 19px;
         height: 24px;
         background-position: -24px 0px; }
-    .old .guide .guide__day {
+    .old .guide .guide__day, .overlay .guide .guide__day {
       text-align: center;
       background: #d2d2d2;
       padding: 7px 10px;
       font-size: 1.2rem;
       color: #353535;
       font-weight: bold; }
-    .old .guide .guide__program {
+    .old .guide .guide__program, .overlay .guide .guide__program {
       position: relative;
       overflow-x: auto; }
-    .old .guide .guide__channels {
+    .old .guide .guide__channels, .overlay .guide .guide__channels {
       position: absolute;
       top: 128px;
       left: 0;
@@ -7975,44 +7976,44 @@ select {
       background: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       z-index: 2; }
-      .old .guide .guide__channels li {
+      .old .guide .guide__channels li, .overlay .guide .guide__channels li {
         height: 75px;
         line-height: 75px;
         border-bottom: 1px solid #d5d5d5;
         padding-left: 31px;
         font-size: 0; }
-        .old .guide .guide__channels li:first-child {
+        .old .guide .guide__channels li:first-child, .overlay .guide .guide__channels li:first-child {
           border-top: none; }
-        .old .guide .guide__channels li img {
+        .old .guide .guide__channels li img, .overlay .guide .guide__channels li img {
           display: inline-block;
           vertical-align: middle;
           max-width: 100%; }
       @media only screen and (max-width: 600px) {
-        .old .guide .guide__channels {
+        .old .guide .guide__channels, .overlay .guide .guide__channels {
           top: 125px;
           width: 120px; }
-          .old .guide .guide__channels li {
+          .old .guide .guide__channels li, .overlay .guide .guide__channels li {
             padding: 0 10px; } }
-  .old .tvline {
+  .old .tvline, .overlay .tvline {
     position: relative;
     width: 7200px;
     overflow: hidden;
     z-index: 1; }
-    .old .tvline .tvline__time {
+    .old .tvline .tvline__time, .overlay .tvline .tvline__time {
       background: #3b3b3b;
       *zoom: 1; }
-      .old .tvline .tvline__time:after {
+      .old .tvline .tvline__time:after, .overlay .tvline .tvline__time:after {
         content: " ";
         display: table;
         clear: both; }
-    .old .tvline .tvline__hour {
+    .old .tvline .tvline__hour, .overlay .tvline .tvline__hour {
       position: relative;
       float: left;
       width: 300px;
       height: 50px;
       padding: 10px 0;
       border-left: 1px solid #a7a7a7; }
-      .old .tvline .tvline__hour:after {
+      .old .tvline .tvline__hour:after, .overlay .tvline .tvline__hour:after {
         content: "";
         position: absolute;
         top: 19px;
@@ -8020,25 +8021,25 @@ select {
         bottom: 19px;
         width: 1px;
         background: #a7a7a7; }
-      .old .tvline .tvline__hour span {
+      .old .tvline .tvline__hour span, .overlay .tvline .tvline__hour span {
         position: relative;
         background: #3b3b3b;
         font-size: 2.4rem;
         color: #d9d9d9;
         font-weight: 300;
         margin-left: -30px; }
-      .old .tvline .tvline__hour:first-child {
+      .old .tvline .tvline__hour:first-child, .overlay .tvline .tvline__hour:first-child {
         border-left: none; }
-        .old .tvline .tvline__hour:first-child span {
+        .old .tvline .tvline__hour:first-child span, .overlay .tvline .tvline__hour:first-child span {
           margin-left: 0; }
-  .old .timeline {
+  .old .timeline, .overlay .timeline {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 1px;
     background: #ffa200;
     z-index: 99; }
-    .old .timeline .timeline__value {
+    .old .timeline .timeline__value, .overlay .timeline .timeline__value {
       position: absolute;
       top: 13px;
       left: -26px;
@@ -8049,26 +8050,28 @@ select {
       color: #fff;
       text-align: center;
       font-size: 0; }
-      .old .timeline .timeline__value:before {
+      .old .timeline .timeline__value:before, .overlay .timeline .timeline__value:before {
         content: "";
         display: inline-block;
         vertical-align: middle;
         width: 0;
         height: 100%; }
-      .old .timeline .timeline__value span {
+      .old .timeline .timeline__value span, .overlay .timeline .timeline__value span {
         display: inline-block;
         vertical-align: middle;
         font-size: 1.2rem;
         margin: 0 1px; }
-        .old .timeline .timeline__value span.icon-time {
+        .old .timeline .timeline__value span.icon-time, .overlay .timeline .timeline__value span.icon-time {
           font-size: 10px; }
   .old .premium, .old .megahit, .old .comedy, .old .tv1000, .old .action, .old .rus, .old .explore, .old .history,
-  .old .nature, .old .history-hd, .old .nature-hd, .old .sport {
+  .old .nature, .old .history-hd, .old .nature-hd, .old .sport, .overlay .premium, .overlay .megahit, .overlay .comedy, .overlay .tv1000, .overlay .action, .overlay .rus, .overlay .explore, .overlay .history,
+  .overlay .nature, .overlay .history-hd, .overlay .nature-hd, .overlay .sport {
     overflow: hidden;
     font-size: 0;
     white-space: nowrap; }
     .old .premium li, .old .megahit li, .old .comedy li, .old .tv1000 li, .old .action li, .old .rus li, .old .explore li, .old .history li,
-    .old .nature li, .old .history-hd li, .old .nature-hd li, .old .sport li {
+    .old .nature li, .old .history-hd li, .old .nature-hd li, .old .sport li, .overlay .premium li, .overlay .megahit li, .overlay .comedy li, .overlay .tv1000 li, .overlay .action li, .overlay .rus li, .overlay .explore li, .overlay .history li,
+    .overlay .nature li, .overlay .history-hd li, .overlay .nature-hd li, .overlay .sport li {
       position: relative;
       display: inline-block;
       vertical-align: top;
@@ -8081,72 +8084,50 @@ select {
       white-space: normal;
       line-height: 1.2; }
       .old .premium li strong, .old .megahit li strong, .old .comedy li strong, .old .tv1000 li strong, .old .action li strong, .old .rus li strong, .old .explore li strong, .old .history li strong,
-      .old .nature li strong, .old .history-hd li strong, .old .nature-hd li strong, .old .sport li strong {
+      .old .nature li strong, .old .history-hd li strong, .old .nature-hd li strong, .old .sport li strong, .overlay .premium li strong, .overlay .megahit li strong, .overlay .comedy li strong, .overlay .tv1000 li strong, .overlay .action li strong, .overlay .rus li strong, .overlay .explore li strong, .overlay .history li strong,
+      .overlay .nature li strong, .overlay .history-hd li strong, .overlay .nature-hd li strong, .overlay .sport li strong {
         display: block;
         font-size: 1.3rem;
         color: #353535; }
       .old .premium li i, .old .megahit li i, .old .comedy li i, .old .tv1000 li i, .old .action li i, .old .rus li i, .old .explore li i, .old .history li i,
-      .old .nature li i, .old .history-hd li i, .old .nature-hd li i, .old .sport li i {
+      .old .nature li i, .old .history-hd li i, .old .nature-hd li i, .old .sport li i, .overlay .premium li i, .overlay .megahit li i, .overlay .comedy li i, .overlay .tv1000 li i, .overlay .action li i, .overlay .rus li i, .overlay .explore li i, .overlay .history li i,
+      .overlay .nature li i, .overlay .history-hd li i, .overlay .nature-hd li i, .overlay .sport li i {
         font-size: 1.2rem;
         color: #7f7f7f; }
-      .old .premium li:before, .old .megahit li:before, .old .comedy li:before, .old .tv1000 li:before, .old .action li:before, .old .rus li:before, .old .explore li:before, .old .history li:before,
-      .old .nature li:before, .old .history-hd li:before, .old .nature-hd li:before, .old .sport li:before {
-        display: none;
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 25px;
-        height: 25px; }
-      .old .premium li:after, .old .megahit li:after, .old .comedy li:after, .old .tv1000 li:after, .old .action li:after, .old .rus li:after, .old .explore li:after, .old .history li:after,
-      .old .nature li:after, .old .history-hd li:after, .old .nature-hd li:after, .old .sport li:after {
-        display: none;
-        content: "\e600";
-        position: absolute;
-        bottom: 5px;
-        right: 5px;
-        font-family: 'icomoon';
-        color: #fff;
-        font-size: 14px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale; }
-      .old .premium li.is-favourite:before, .old .premium li.is-favourite:after, .old .megahit li.is-favourite:before, .old .megahit li.is-favourite:after, .old .comedy li.is-favourite:before, .old .comedy li.is-favourite:after, .old .tv1000 li.is-favourite:before, .old .tv1000 li.is-favourite:after, .old .action li.is-favourite:before, .old .action li.is-favourite:after, .old .rus li.is-favourite:before, .old .rus li.is-favourite:after, .old .explore li.is-favourite:before, .old .explore li.is-favourite:after, .old .history li.is-favourite:before, .old .history li.is-favourite:after,
-      .old .nature li.is-favourite:before,
-      .old .nature li.is-favourite:after, .old .history-hd li.is-favourite:before, .old .history-hd li.is-favourite:after, .old .nature-hd li.is-favourite:before, .old .nature-hd li.is-favourite:after, .old .sport li.is-favourite:before, .old .sport li.is-favourite:after {
-        display: block; }
       .old .premium li.is-finished, .old .megahit li.is-finished, .old .comedy li.is-finished, .old .tv1000 li.is-finished, .old .action li.is-finished, .old .rus li.is-finished, .old .explore li.is-finished, .old .history li.is-finished,
-      .old .nature li.is-finished, .old .history-hd li.is-finished, .old .nature-hd li.is-finished, .old .sport li.is-finished {
+      .old .nature li.is-finished, .old .history-hd li.is-finished, .old .nature-hd li.is-finished, .old .sport li.is-finished, .overlay .premium li.is-finished, .overlay .megahit li.is-finished, .overlay .comedy li.is-finished, .overlay .tv1000 li.is-finished, .overlay .action li.is-finished, .overlay .rus li.is-finished, .overlay .explore li.is-finished, .overlay .history li.is-finished,
+      .overlay .nature li.is-finished, .overlay .history-hd li.is-finished, .overlay .nature-hd li.is-finished, .overlay .sport li.is-finished {
         background: #efefef; }
-  .old .premium li.is-favourite {
+  .old .premium li.is-favourite, .overlay .premium li.is-favourite {
     box-shadow: inset 0 0 0 3px #9281bc; }
-    .old .premium li.is-favourite:before {
+    .old .premium li.is-favourite:before, .overlay .premium li.is-favourite:before {
       background: #9281bc; }
-  .old .megahit li.is-favourite, .old .tv1000 li.is-favourite, .old .sport li.is-favourite {
+  .old .megahit li.is-favourite, .old .tv1000 li.is-favourite, .old .sport li.is-favourite, .overlay .megahit li.is-favourite, .overlay .tv1000 li.is-favourite, .overlay .sport li.is-favourite {
     box-shadow: inset 0 0 0 3px #4795d7; }
-    .old .megahit li.is-favourite:before, .old .tv1000 li.is-favourite:before, .old .sport li.is-favourite:before {
+    .old .megahit li.is-favourite:before, .old .tv1000 li.is-favourite:before, .old .sport li.is-favourite:before, .overlay .megahit li.is-favourite:before, .overlay .tv1000 li.is-favourite:before, .overlay .sport li.is-favourite:before {
       background: #4795d7; }
-  .old .comedy li.is-favourite {
+  .old .comedy li.is-favourite, .overlay .comedy li.is-favourite {
     box-shadow: inset 0 0 0 3px #ffa267; }
-    .old .comedy li.is-favourite:before {
+    .old .comedy li.is-favourite:before, .overlay .comedy li.is-favourite:before {
       background: #ffa267; }
-  .old .action li.is-favourite, .old .explore li.is-favourite {
+  .old .action li.is-favourite, .old .explore li.is-favourite, .overlay .action li.is-favourite, .overlay .explore li.is-favourite {
     box-shadow: inset 0 0 0 3px #dc465f; }
-    .old .action li.is-favourite:before, .old .explore li.is-favourite:before {
+    .old .action li.is-favourite:before, .old .explore li.is-favourite:before, .overlay .action li.is-favourite:before, .overlay .explore li.is-favourite:before {
       background: #dc465f; }
-  .old .rus li.is-favourite, .old .history li.is-favourite, .old .history-hd li.is-favourite {
+  .old .rus li.is-favourite, .old .history li.is-favourite, .old .history-hd li.is-favourite, .overlay .rus li.is-favourite, .overlay .history li.is-favourite, .overlay .history-hd li.is-favourite {
     box-shadow: inset 0 0 0 3px #41bce4; }
-    .old .rus li.is-favourite:before, .old .history li.is-favourite:before, .old .history-hd li.is-favourite:before {
+    .old .rus li.is-favourite:before, .old .history li.is-favourite:before, .old .history-hd li.is-favourite:before, .overlay .rus li.is-favourite:before, .overlay .history li.is-favourite:before, .overlay .history-hd li.is-favourite:before {
       background: #41bce4; }
-  .old .nature li.is-favourite, .old .nature-hd li.is-favourite {
+  .old .nature li.is-favourite, .old .nature-hd li.is-favourite, .overlay .nature li.is-favourite, .overlay .nature-hd li.is-favourite {
     box-shadow: inset 0 0 0 3px #bcc85c; }
-    .old .nature li.is-favourite:before, .old .nature-hd li.is-favourite:before {
+    .old .nature li.is-favourite:before, .old .nature-hd li.is-favourite:before, .overlay .nature li.is-favourite:before, .overlay .nature-hd li.is-favourite:before {
       background: #bcc85c; }
-  .old .tv-program {
+  .old .tv-program, .overlay .tv-program {
     position: relative;
     min-height: 240px;
     font-size: 1.4rem;
     background: #efefef; }
-    .old .tv-program .tv-program__poster {
+    .old .tv-program .tv-program__poster, .overlay .tv-program .tv-program__poster {
       position: absolute;
       top: 20px;
       left: 20px;
@@ -8155,11 +8136,11 @@ select {
       background: #d9d9d9 url(../img/holder.png) 50% 50% no-repeat;
       font-size: 0;
       z-index: 2; }
-      .old .tv-program .tv-program__poster img {
+      .old .tv-program .tv-program__poster img, .overlay .tv-program .tv-program__poster img {
         width: 100%;
         height: 100%; }
       @media only screen and (max-width: 480px) {
-        .old .tv-program .tv-program__poster {
+        .old .tv-program .tv-program__poster, .overlay .tv-program .tv-program__poster {
           position: relative;
           top: auto;
           left: auto;
@@ -8169,93 +8150,94 @@ select {
           height: auto;
           background: #fff;
           padding: 40px 0 20px 20px; }
-          .old .tv-program .tv-program__poster img {
+          .old .tv-program .tv-program__poster img, .overlay .tv-program .tv-program__poster img {
             height: auto; } }
-    .old .tv-program .tv-program__topper {
+    .old .tv-program .tv-program__topper, .overlay .tv-program .tv-program__topper {
       padding: 20px 20px 20px 184px;
       background: #fff;
       text-align: left; }
       @media only screen and (max-width: 480px) {
-        .old .tv-program .tv-program__topper {
+        .old .tv-program .tv-program__topper, .overlay .tv-program .tv-program__topper {
           display: table-cell;
           vertical-align: top;
           width: 70%;
           padding: 40px 20px 20px; } }
-    .old .tv-program .tv-program__header {
+    .old .tv-program .tv-program__header, .overlay .tv-program .tv-program__header {
       *zoom: 1; }
-      .old .tv-program .tv-program__header:after {
+      .old .tv-program .tv-program__header:after, .overlay .tv-program .tv-program__header:after {
         content: " ";
         display: table;
         clear: both; }
-    .old .tv-program .tv-program__left {
+    .old .tv-program .tv-program__left, .overlay .tv-program .tv-program__left {
       width: 70%;
       float: left; }
-    .old .tv-program .tv-program__right {
+    .old .tv-program .tv-program__right, .overlay .tv-program .tv-program__right {
       float: right;
       width: 30%;
       text-align: right; }
-    .old .tv-program .tv-program__title {
+    .old .tv-program .tv-program__title, .overlay .tv-program .tv-program__title {
       margin-bottom: 10px;
       font-weight: bold;
       font-size: 1.6rem;
       color: #353535; }
-    .old .tv-program .tv-program__source {
+    .old .tv-program .tv-program__source, .overlay .tv-program .tv-program__source {
       margin-bottom: 15px;
       font-size: 1.3rem;
       color: #7f7f7f; }
-    .old .tv-program .tv-program__time {
+    .old .tv-program .tv-program__time, .overlay .tv-program .tv-program__time {
       font-size: 2rem;
       font-weight: bold;
       line-height: 1;
       color: #353535; }
-      .old .tv-program .tv-program__time span {
+      .old .tv-program .tv-program__time span, .overlay .tv-program .tv-program__time span {
         font-size: 1.3rem;
         font-weight: normal; }
-    .old .tv-program .tv-program__info {
+    .old .tv-program .tv-program__info, .overlay .tv-program .tv-program__info {
       font-size: 1.3rem;
       color: #7f7f7f; }
-    .old .tv-program .tv-program__content {
+    .old .tv-program .tv-program__content, .overlay .tv-program .tv-program__content {
       padding: 20px 20px 20px 184px;
       background: #efefef;
       text-align: left;
       clear: both; }
       @media only screen and (max-width: 480px) {
-        .old .tv-program .tv-program__content {
+        .old .tv-program .tv-program__content, .overlay .tv-program .tv-program__content {
           padding: 20px; } }
-    .old .tv-program .tv-program__table {
+    .old .tv-program .tv-program__table, .overlay .tv-program .tv-program__table {
       width: 100%;
       font-size: 1.3rem;
       line-height: 1.2;
       color: #353535;
       margin-bottom: 10px; }
-      .old .tv-program .tv-program__table tr td {
+      .old .tv-program .tv-program__table tr td, .overlay .tv-program .tv-program__table tr td {
         padding-bottom: 5px; }
-        .old .tv-program .tv-program__table tr td:first-child {
+        .old .tv-program .tv-program__table tr td:first-child, .overlay .tv-program .tv-program__table tr td:first-child {
           width: 100px; }
       @media only screen and (max-width: 480px) {
-        .old .tv-program .tv-program__table tr td:first-child {
+        .old .tv-program .tv-program__table tr td:first-child, .overlay .tv-program .tv-program__table tr td:first-child {
           width: 30%; } }
-    .old .tv-program .tv-program__order {
+    .old .tv-program .tv-program__order, .overlay .tv-program .tv-program__order {
       text-align: right; }
-  .old .order {
+  .old .order, .overlay .order {
     position: relative;
     display: inline-block;
     height: 40px;
     border-radius: 3px;
     background: #d70000;
-    padding: 5px 68px 5px 20px;
+    padding: 5px 20px 5px 20px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: bold;
     -webkit-transition: background 300ms;
     transition: background 300ms; }
-    .old .order .icon-bell {
+    .old .order .icon-bell, .overlay .order .icon-bell {
       position: absolute;
       top: 10px;
       right: 10px;
-      font-size: 18px; }
-    .old .order:hover {
+      font-size: 18px;
+      display: none; }
+    .old .order:hover, .overlay .order:hover {
       background: #be0000; }
 
 .overlay {

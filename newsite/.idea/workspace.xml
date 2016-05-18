@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tvguide.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tvguide.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/tvguide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14384">
-              <caret line="1888" column="100" selection-start-line="1888" selection-start-column="100" selection-end-line="1888" selection-end-column="100" />
+            <state relative-caret-position="220">
+              <caret line="1880" column="33" selection-start-line="1880" selection-start-column="33" selection-end-line="1880" selection-end-column="33" />
               <folding>
                 <element signature="e#2627#2644#0#HTML" expanded="true" />
                 <element signature="e#6081#6102#0#HTML" expanded="true" />
@@ -371,9 +371,21 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="1571" column="30" selection-start-line="1571" selection-start-column="30" selection-end-line="1571" selection-end-column="30" />
+            <state relative-caret-position="194">
+              <caret line="2537" column="26" selection-start-line="2537" selection-start-column="26" selection-end-line="2537" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tvguide-popup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/blocks/_tvguide-popup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -413,9 +425,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulp/tasks/sprite-svg/_sprite-svg.scss" />
-        <option value="$PROJECT_DIR$/src/templates/blocks/_footer.html" />
-        <option value="$PROJECT_DIR$/src/sass/_jscrollpane.sass" />
         <option value="$PROJECT_DIR$/gulp/tasks/sass.js" />
         <option value="$PROJECT_DIR$/src/templates/transfer.html" />
         <option value="$PROJECT_DIR$/src/templates/layouts/_layout-promo.html" />
@@ -448,11 +457,9 @@
         <option value="$PROJECT_DIR$/src/templates/podborka-single.html" />
         <option value="$PROJECT_DIR$/src/sass/_common.sass" />
         <option value="$PROJECT_DIR$/src/templates/blocks/channel-popup.html" />
-        <option value="$PROJECT_DIR$/src/templates/layouts/_layout.html" />
         <option value="$PROJECT_DIR$/src/sass/_promopage.sass" />
         <option value="$PROJECT_DIR$/src/sass/_svgfont.scss" />
         <option value="$PROJECT_DIR$/src/sass/_header.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/templates/channel_premium.html" />
         <option value="$PROJECT_DIR$/src/templates/promopage.html" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
@@ -464,6 +471,11 @@
         <option value="$PROJECT_DIR$/src/js/lib/jquery.mousewheel.min.js" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/templates/tvguide.html" />
+        <option value="$PROJECT_DIR$/src/templates/tvguide-popups.html" />
+        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
+        <option value="$PROJECT_DIR$/src/templates/tvguide-popup.html" />
+        <option value="$PROJECT_DIR$/src/templates/layouts/_layout.html" />
+        <option value="$PROJECT_DIR$/src/templates/blocks/_tvguide-popup.html" />
       </list>
     </option>
   </component>
@@ -557,6 +569,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -575,6 +645,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/templates/blocks" />
       <recent name="$PROJECT_DIR$/src/templates/layouts" />
     </key>
   </component>
@@ -666,12 +737,12 @@
       <workItem from="1463125958125" duration="17795000" />
       <workItem from="1463384221473" duration="19421000" />
       <workItem from="1463469353810" duration="11701000" />
-      <workItem from="1463558254508" duration="8403000" />
+      <workItem from="1463558254508" duration="9118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240154000" />
+    <option name="totallyTimeSpent" value="240869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,10 +755,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20015885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20015885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5059571" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -742,20 +813,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/lib/slick.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/film-premiere.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="249" column="24" selection-start-line="249" selection-start-column="24" selection-end-line="278" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout-promo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -949,26 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_promopage.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5325">
           <caret line="355" column="7" selection-start-line="355" selection-start-column="7" selection-end-line="355" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/blocks/_channel-popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -985,14 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="1571" column="30" selection-start-line="1571" selection-start-column="30" selection-end-line="1571" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1116,10 +1149,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blocks/_channel-popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/tvguide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14384">
-          <caret line="1888" column="100" selection-start-line="1888" selection-start-column="100" selection-end-line="1888" selection-end-column="100" />
+        <state relative-caret-position="220">
+          <caret line="1880" column="33" selection-start-line="1880" selection-start-column="33" selection-end-line="1880" selection-end-column="33" />
           <folding>
             <element signature="e#2627#2644#0#HTML" expanded="true" />
             <element signature="e#6081#6102#0#HTML" expanded="true" />
@@ -1442,6 +1483,40 @@
             <element signature="e#117967#117988#0#HTML" expanded="true" />
             <element signature="e#118299#118320#0#HTML" expanded="true" />
             <element signature="e#118631#118652#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="2537" column="26" selection-start-line="2537" selection-start-column="26" selection-end-line="2537" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tvguide-popups.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="1897" column="14" selection-start-line="1897" selection-start-column="14" selection-end-line="1897" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blocks/_tvguide-popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
