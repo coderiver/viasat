@@ -81,7 +81,7 @@ $(document).ready(function() {
     });
 
     // default slider
-    slider.initSlider('.js-slider', {
+    slider.initSlider('.js-slider2', {
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [{
@@ -122,7 +122,7 @@ $(document).ready(function() {
     });
 
     // channels slider
-    slider.initSlider('.js-channels', {
+    slider.initSlider('.js-channels2', {
         slidesToShow: 6,
         slidesToScroll: 6,
         dots: true,
@@ -248,9 +248,9 @@ $(document).ready(function() {
 
     // carousel at promo page
 
-    if ($('.js-carousel').length) {
+    if ($('.js-promopage').length) {
 
-        var promoSlider = $('.js-carousel');
+        var promoSlider = $('.js-promopage');
 
         promoSlider.on('init', function (event, slick) {
             promoSlider.addClass('loaded');
@@ -324,8 +324,8 @@ $(document).ready(function() {
     
     // custom select with js-scrollpane
 
-    if($('.js-select').length){
-        $('.js-select').select2({
+    if($('.js-select2').length){
+        $('.js-select2').select2({
             minimumResultsForSearch: -1
         });
         
@@ -335,7 +335,7 @@ $(document).ready(function() {
             $('.js-select').select2('val', '');
         });
 
-        $(document).on("select2:open", ".js-select", function () {
+        $(document).on("select2:open", ".js-select2", function () {
             $('.select2-results').perfectScrollbar();
             setTimeout(function () {
                 $('.select2-results').perfectScrollbar('update');

@@ -110,7 +110,7 @@ programs:
                 </div>
                 <div class="n-carousel">
                     <div class="n-carousel__title">Премьеры на каналах:</div>
-                    <div class="n-carousel__slider js-carousel">
+                    <div class="n-carousel__slider js-promopage">
                         {% for i in range(0,6) %}
                             <div class="n-carousel__slide">
                                 <div class="n-carousel__img">
@@ -230,7 +230,7 @@ programs:
         <div class="center">
             <div class="n-title">Интересное на этой неделе</div>
             <div class="slider">
-                <div class="slider__in js-slider">
+                <div class="slider__in js-slider2">
                     {% for card in cards %}
                         <a href="#" class="slider__item card card_white card_time">
                             <div class="card__poster">
@@ -262,7 +262,7 @@ programs:
         <div class="center">
             <div class="n-title">Сейчас на канале</div>
             <div class="slider slider_dark">
-                <div class="slider__in js-slider">
+                <div class="slider__in js-slider2">
                     {% for card in cards %}
                         <div class="slider__item card card_{{ card.color }}">
                             <div class="card__poster">
