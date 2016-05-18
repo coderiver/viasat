@@ -7239,28 +7239,18 @@ select {
             height: 43px;
             text-align: center;
             font-size: 0;
-            color: #fff;
             font-size: 2.4rem;
             -webkit-transition: color 300ms;
-            transition: color 300ms; }
+            transition: color 300ms;
+            color: #3a5ba0; }
             .old .socials .socials__links ul li a:before {
               content: "";
               display: inline-block;
               vertical-align: middle;
               width: 0;
               height: 100%; }
-          .old .socials .socials__links ul li .socials__fb {
-            color: #3a5ba0; }
-            .old .socials .socials__links ul li .socials__fb:hover {
+            .old .socials .socials__links ul li a:hover {
               color: #33508d; }
-          .old .socials .socials__links ul li .socials__tw {
-            color: #2ca7e0; }
-            .old .socials .socials__links ul li .socials__tw:hover {
-              color: #1f9ad3; }
-          .old .socials .socials__links ul li .socials__gp {
-            color: #677CA7; }
-            .old .socials .socials__links ul li .socials__gp:hover {
-              color: #5a6f9b; }
       @media only screen and (max-width: 1150px) {
         .old .socials .socials__links {
           float: none;
@@ -8310,7 +8300,9 @@ select {
       background-size: cover;
       background-position: 50% 50%; }
       .overlay .popup .popup__topper .h3 {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        color: #fff; }
       .overlay .popup .popup__topper_subscribe:before {
         content: '';
         position: absolute;

@@ -64,8 +64,8 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="2567" column="8" selection-start-line="2567" selection-start-column="0" selection-end-line="2567" selection-end-column="8" />
+            <state relative-caret-position="314">
+              <caret line="1649" column="20" selection-start-line="1649" selection-start-column="22" selection-end-line="1660" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -400,12 +400,12 @@
       <workItem from="1463125958125" duration="17795000" />
       <workItem from="1463384221473" duration="19421000" />
       <workItem from="1463469353810" duration="11701000" />
-      <workItem from="1463558254508" duration="960000" />
+      <workItem from="1463558254508" duration="1460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232711000" />
+    <option name="totallyTimeSpent" value="233211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -820,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="2567" column="8" selection-start-line="2567" selection-start-column="0" selection-end-line="2567" selection-end-column="8" />
+        <state relative-caret-position="314">
+          <caret line="1649" column="20" selection-start-line="1649" selection-start-column="22" selection-end-line="1660" selection-end-column="54" />
           <folding />
         </state>
       </provider>
