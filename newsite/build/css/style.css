@@ -1630,7 +1630,8 @@ select {
     color: #fff; }
 
 .breadcrumbs {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-align: left; }
   .breadcrumbs ul {
     font-size: 0; }
     .breadcrumbs ul li {
@@ -5757,6 +5758,8 @@ select {
       @media only screen and (max-width: 568px) {
         .old .title.title_small span, .overlay .title.title_small span {
           padding: 8px 42px 8px 59px; } }
+  .old .topper, .overlay .topper {
+    padding: 0; }
   .old .breadcrumbs, .overlay .breadcrumbs {
     margin-bottom: 15px;
     text-align: left; }
@@ -6197,24 +6200,6 @@ select {
       margin: 0 auto; }
       .old .recommends .poster > img, .overlay .recommends .poster > img {
         min-height: 145px; }
-  .old .blog-top, .overlay .blog-top {
-    height: 180px;
-    padding-top: 16px;
-    text-align: center;
-    background: url(../img/bg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: 300; }
-    .old .blog-top .h1, .overlay .blog-top .h1 {
-      text-transform: uppercase;
-      margin-bottom: 0; }
-    .old .blog-top .breadcrumbs ul li:before, .overlay .blog-top .breadcrumbs ul li:before {
-      color: #fff; }
-    .old .blog-top .breadcrumbs ul li a, .overlay .blog-top .breadcrumbs ul li a {
-      color: #fff; }
   .old .blog, .overlay .blog {
     padding-top: 20px; }
     .old .blog .blog__more, .overlay .blog .blog__more {
@@ -8422,6 +8407,25 @@ select {
           font-weight: normal;
           color: #353535;
           padding-right: 20px; }
+
+.blog-top {
+  height: 180px;
+  padding-top: 16px;
+  text-align: center;
+  background: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300; }
+  .blog-top .h1 {
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .blog-top .breadcrumbs ul li:before {
+    color: #fff; }
+  .blog-top .breadcrumbs ul li a {
+    color: #fff; }
 
 .jq-ry-container {
   position: relative;

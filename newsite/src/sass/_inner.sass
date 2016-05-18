@@ -274,6 +274,8 @@
 			+r(568)
 				span
 					padding: 8px 42px 8px 59px
+	.topper
+		padding: 0
 	// breadcrumbs
 	.breadcrumbs
 		margin-bottom: 15px
@@ -674,25 +676,6 @@
 				min-height: 145px
 
 	// blog
-	.blog-top
-		height: 180px
-		padding-top: 16px
-		text-align: center
-		background: url(../img/bg2.jpg)
-		+cover
-		color: #fff
-		font-size: 1.4rem
-		font-weight: 300
-		.h1
-			text-transform: uppercase
-			margin-bottom: 0
-		.breadcrumbs
-			ul
-				li
-					&:before
-						color: #fff
-					a
-						color: #fff
 	.blog
 		padding-top: 20px
 		.blog__more
@@ -2709,3 +2692,22 @@
 					font-weight: normal
 					color: #353535
 					padding-right: 20px
+.blog-top
+	height: 180px
+	padding-top: 16px
+	text-align: center
+	background: url(../img/bg2.jpg)
+	+cover
+	color: #fff
+	font-size: 1.4rem
+	font-weight: 300
+	.h1
+		text-transform: uppercase
+		margin-bottom: 0
+	.breadcrumbs
+		ul
+			li
+				&:before
+					color: #fff
+				a
+					color: #fff
