@@ -7160,7 +7160,8 @@ select {
     float: left;
     width: 75%; }
     .old .schedule .schedule__left .h3 {
-      font-weight: 500; }
+      font-weight: 500;
+      line-height: 1; }
     @media only screen and (max-width: 480px) {
       .old .schedule .schedule__left {
         width: 65%; } }
