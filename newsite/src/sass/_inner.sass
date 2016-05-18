@@ -1,5 +1,6 @@
 // styles for all inner pages from old design
 .old
+	position: relative
 	font-family: 'Roboto', sans-serif
 	font-size: 1.4rem
 	line-height: 1.4
@@ -7,7 +8,7 @@
 	background: #e9e9e9
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-
+	z-index: 1
 
 	// blocks
 	=center
@@ -1641,20 +1642,20 @@
 						height: 43px
 						+vertical
 						color: #fff
-						font-size: 1.6rem
-						+tr(background 300ms)
+						font-size: 2.4rem
+						+tr(color 300ms)
 					.socials__fb
-						background: #3a5ba0
+						color: #3a5ba0
 						&:hover
-							background: darken(#3a5ba0, 5%)
+							color: darken(#3a5ba0, 5%)
 					.socials__tw
-						background: #2ca7e0
+						color: #2ca7e0
 						&:hover
-							background: darken(#2ca7e0, 5%)
+							color: darken(#2ca7e0, 5%)
 					.socials__gp
-						background: #e13719
+						color: #677CA7
 						&:hover
-							background: darken(#e13719, 5%)
+							color: darken(#677CA7, 5%)
 			+r(1150)
 				float: none
 				width: 100%
@@ -2570,6 +2571,7 @@
 	bottom: 0
 	right: 0
 	left: 0
+	padding: 50px 0
 	background: rgba(#000, 0.7)
 	z-index: 999
 	overflow-y: auto

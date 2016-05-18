@@ -117,7 +117,7 @@ movies:
                 <!-- main -->
                 <div class="main">
                     <div class="schedule">
-                        <div class="schedule__title">СМОТРИТЕ СЕГОДНЯ</div>
+                        <div class="schedule__title">смотрите на канале</div>
                         <ul class="schedule__list">
                             <li class="schedule__item">
                                 <a href="#" class="schedule__link">
@@ -286,6 +286,34 @@ movies:
                                     <img src="{{ movie.img }}" alt="">
                                 </div>
                                 <div class="movie__in">
+                                    <div class="movie__left">
+                                        <div class="movie__title js-ellip">{{ movie.title }}</div>
+                                        <div class="movie__genre">боевик</div>
+                                    </div>
+                                    <div class="movie__right">
+                                        <div class="movie__time">{{ movie.time }}</div>
+                                        <div class="movie__date">{{ movie.date }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {# tvshows #}
+        <div class="tvshows tvshows_gray">
+            <div class="center">
+                <div class="headtitle">ИНТЕРЕСНОЕ НА ЭТОЙ НЕДЕЛЕ</div>
+                <div class="tvshows__slider js-tvshow">
+                    {% for movie in movies %}
+                        <div class="tvshows__item">
+                            <a href="#" class="movie movie_{{ movie.color }}">
+                                <div class="movie__poster">
+                                    <img src="{{ movie.img }}" alt="">
+                                </div>
+                                <div class="movie__in">
+                                    <div class="movie__channel">{{ movie.channel }}</div>
                                     <div class="movie__left">
                                         <div class="movie__title js-ellip">{{ movie.title }}</div>
                                         <div class="movie__genre">боевик</div>

@@ -5466,13 +5466,15 @@ select {
       opacity: 1; }
 
 .old {
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
   line-height: 1.4;
   color: #000;
   background: #e9e9e9;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1; }
   .old .center {
     position: relative;
     max-width: 1150px;
@@ -7238,9 +7240,9 @@ select {
             text-align: center;
             font-size: 0;
             color: #fff;
-            font-size: 1.6rem;
-            -webkit-transition: background 300ms;
-            transition: background 300ms; }
+            font-size: 2.4rem;
+            -webkit-transition: color 300ms;
+            transition: color 300ms; }
             .old .socials .socials__links ul li a:before {
               content: "";
               display: inline-block;
@@ -7248,17 +7250,17 @@ select {
               width: 0;
               height: 100%; }
           .old .socials .socials__links ul li .socials__fb {
-            background: #3a5ba0; }
+            color: #3a5ba0; }
             .old .socials .socials__links ul li .socials__fb:hover {
-              background: #33508d; }
+              color: #33508d; }
           .old .socials .socials__links ul li .socials__tw {
-            background: #2ca7e0; }
+            color: #2ca7e0; }
             .old .socials .socials__links ul li .socials__tw:hover {
-              background: #1f9ad3; }
+              color: #1f9ad3; }
           .old .socials .socials__links ul li .socials__gp {
-            background: #e13719; }
+            color: #677CA7; }
             .old .socials .socials__links ul li .socials__gp:hover {
-              background: #ca3116; }
+              color: #5a6f9b; }
       @media only screen and (max-width: 1150px) {
         .old .socials .socials__links {
           float: none;
@@ -8271,6 +8273,7 @@ select {
   bottom: 0;
   right: 0;
   left: 0;
+  padding: 50px 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 999;
   overflow-y: auto;
