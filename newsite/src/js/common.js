@@ -1,3 +1,21 @@
+// text ellipsis
+
+function textEllip() {
+    $('.js-ellip').each(function () {
+        var target = $(this);
+
+        if(target){
+            var lines = target.data('lines') || 2;
+
+            target.ellipsis({
+                lines: lines,
+                responsive: true
+            });
+        }
+
+    });
+}
+
 $(document).ready(function() {
 
     // menu
@@ -293,23 +311,6 @@ $(document).ready(function() {
         content.slideToggle();
     });
 
-    // text ellipsis
-
-    function textEllip() {
-        $('.js-ellip').each(function () {
-            var target = $(this);
-
-            if(target){
-                var lines = target.data('lines') || 2;
-
-                target.ellipsis({
-                    lines: lines,
-                    responsive: true
-                });
-            }
-
-        });
-    }
     textEllip();
 
 });

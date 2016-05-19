@@ -7962,8 +7962,8 @@ select {
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       z-index: 2; }
       .old .guide .guide__channels li, .overlay .guide .guide__channels li {
-        height: 75px;
-        line-height: 75px;
+        height: 90px;
+        line-height: 90px;
         border-bottom: 1px solid #d5d5d5;
         padding-left: 31px;
         font-size: 0; }
@@ -8060,7 +8060,7 @@ select {
       position: relative;
       display: inline-block;
       vertical-align: top;
-      height: 75px;
+      height: 90px;
       overflow: hidden;
       border: 1px solid #d5d5d5;
       border-width: 0 1px 1px 0;
@@ -8068,6 +8068,13 @@ select {
       padding: 8px 10px;
       white-space: normal;
       line-height: 1.2; }
+      .old .premium li div, .old .megahit li div, .old .comedy li div, .old .tv1000 li div, .old .action li div, .old .rus li div, .old .explore li div, .old .history li div,
+      .old .nature li div, .old .history-hd li div, .old .nature-hd li div, .old .sport li div, .overlay .premium li div, .overlay .megahit li div, .overlay .comedy li div, .overlay .tv1000 li div, .overlay .action li div, .overlay .rus li div, .overlay .explore li div, .overlay .history li div,
+      .overlay .nature li div, .overlay .history-hd li div, .overlay .nature-hd li div, .overlay .sport li div {
+        display: inline;
+        text-transform: uppercase;
+        color: #6d57a5;
+        font-size: 1.3rem; }
       .old .premium li strong, .old .megahit li strong, .old .comedy li strong, .old .tv1000 li strong, .old .action li strong, .old .rus li strong, .old .explore li strong, .old .history li strong,
       .old .nature li strong, .old .history-hd li strong, .old .nature-hd li strong, .old .sport li strong, .overlay .premium li strong, .overlay .megahit li strong, .overlay .comedy li strong, .overlay .tv1000 li strong, .overlay .action li strong, .overlay .rus li strong, .overlay .explore li strong, .overlay .history li strong,
       .overlay .nature li strong, .overlay .history-hd li strong, .overlay .nature-hd li strong, .overlay .sport li strong {
