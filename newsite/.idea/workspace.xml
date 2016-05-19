@@ -31,24 +31,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="460">
               <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
+      <file leaf-file-name="blog_category.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/blog_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="277" column="22" selection-start-line="277" selection-start-column="22" selection-end-line="277" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
               <folding>
-                <element signature="e#935#8837#0#HTML" expanded="false" />
-                <element signature="e#11600#16036#0#HTML" expanded="false" />
+                <element signature="e#992#8894#0#HTML" expanded="false" />
+                <element signature="e#11657#16093#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -95,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/templates/transfer.html" />
         <option value="$PROJECT_DIR$/src/templates/layouts/_layout-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_footer-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_header-promo.html" />
@@ -146,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/templates/promopage.html" />
+        <option value="$PROJECT_DIR$/src/templates/blog_category.html" />
       </list>
     </option>
   </component>
@@ -351,12 +351,12 @@
       <workItem from="1463469353810" duration="11701000" />
       <workItem from="1463558254508" duration="9281000" />
       <workItem from="1463580753567" duration="2590000" />
-      <workItem from="1463641873315" duration="2621000" />
+      <workItem from="1463641873315" duration="3001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246243000" />
+    <option name="totallyTimeSpent" value="246623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -427,13 +427,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/templates/layouts/_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="105" selection-start-line="6" selection-start-column="105" selection-end-line="6" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_owl.sass" />
     <entry file="file://$PROJECT_DIR$/src/sass/lib/_mixins.sass">
       <provider selected="true" editor-type-id="text-editor">
@@ -760,10 +753,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="277" column="22" selection-start-line="277" selection-start-column="22" selection-end-line="277" selection-end-column="22" />
+        <state relative-caret-position="235">
+          <caret line="201" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="292" selection-end-column="14" />
           <folding>
             <element signature="e#935#8837#0#HTML" expanded="false" />
             <element signature="e#11600#16036#0#HTML" expanded="false" />
@@ -771,11 +772,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
+    <entry file="file://$PROJECT_DIR$/src/templates/blog_category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding>
+            <element signature="e#992#8894#0#HTML" expanded="false" />
+            <element signature="e#11657#16093#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
