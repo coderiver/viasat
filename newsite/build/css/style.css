@@ -136,6 +136,11 @@ html {
   height: 1em;
   fill: #fff; }
 
+.icon-odnoklassniki {
+  width: 1em;
+  height: 1em;
+  fill: initial; }
+
 .icon-premiere {
   width: 1.4em;
   height: 1em;
@@ -6232,6 +6237,15 @@ select {
       width: 90px;
       text-align: center;
       padding-right: 12px; }
+      .old .post .post__info .socials.fixed, .overlay .post .post__info .socials.fixed {
+        position: fixed;
+        top: 20px;
+        width: 78px; }
+      .old .post .post__info .socials.is-bottom, .overlay .post .post__info .socials.is-bottom {
+        position: absolute;
+        top: auto;
+        bottom: 42px;
+        width: 78px; }
       @media only screen and (max-width: 480px) {
         .old .post .post__info, .overlay .post .post__info {
           float: none;
@@ -6339,7 +6353,7 @@ select {
       position: absolute;
       bottom: 0;
       right: 2px; }
-  .old .tw-counter, .old .gp-counter, .overlay .tw-counter, .overlay .gp-counter {
+  .old .tw-counter, .old .gp-counter, .old .od-counter, .overlay .tw-counter, .overlay .gp-counter, .overlay .od-counter {
     position: relative;
     display: block;
     *zoom: 1;
@@ -6352,20 +6366,22 @@ select {
     background: #00abed;
     font-size: 1.1rem;
     font-weight: 900; }
-    .old .tw-counter:after, .old .gp-counter:after, .overlay .tw-counter:after, .overlay .gp-counter:after {
+    .old .tw-counter:after, .old .gp-counter:after, .old .od-counter:after, .overlay .tw-counter:after, .overlay .gp-counter:after, .overlay .od-counter:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .tw-counter span, .old .gp-counter span, .overlay .tw-counter span, .overlay .gp-counter span {
+    .old .tw-counter span, .old .gp-counter span, .old .od-counter span, .overlay .tw-counter span, .overlay .gp-counter span, .overlay .od-counter span {
       position: relative;
       top: 3px;
       float: right; }
-    .old .tw-counter i, .old .gp-counter i, .overlay .tw-counter i, .overlay .gp-counter i {
+    .old .tw-counter i, .old .gp-counter i, .old .od-counter i, .overlay .tw-counter i, .overlay .gp-counter i, .overlay .od-counter i {
       float: left;
       font-size: 1.4rem;
       color: #fff; }
   .old .gp-counter, .overlay .gp-counter {
     background: #eb5e4b; }
+  .old .od-counter, .overlay .od-counter {
+    background: #f58220; }
   .old .disqus, .overlay .disqus {
     margin: 0 -30px;
     border-top: 1px solid #d7d7d7;
