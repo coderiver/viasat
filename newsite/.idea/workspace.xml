@@ -21,11 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="2715" column="25" selection-start-line="2715" selection-start-column="25" selection-end-line="2715" selection-end-column="25" />
+            <state relative-caret-position="254">
+              <caret line="2699" column="10" selection-start-line="2699" selection-start-column="10" selection-end-line="2699" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -34,23 +44,11 @@
       <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
+            <state relative-caret-position="250">
               <caret line="277" column="22" selection-start-line="277" selection-start-column="22" selection-end-line="277" selection-end-column="22" />
               <folding>
                 <element signature="e#935#8837#0#HTML" expanded="false" />
                 <element signature="e#11600#16036#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allchannels.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/allchannels.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="256" column="22" selection-start-line="181" selection-start-column="16" selection-end-line="256" selection-end-column="22" />
-              <folding>
-                <element signature="e#10609#15045#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,8 +67,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2730">
-              <caret line="182" column="7" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
+            <state relative-caret-position="-188">
+              <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -128,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/sass/_svgfont.scss" />
         <option value="$PROJECT_DIR$/src/sass/_header.sass" />
         <option value="$PROJECT_DIR$/src/templates/channel_premium.html" />
-        <option value="$PROJECT_DIR$/src/templates/promopage.html" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
         <option value="$PROJECT_DIR$/src/templates/film-premiere.html" />
         <option value="$PROJECT_DIR$/src/templates/film.html" />
@@ -143,11 +140,12 @@
         <option value="$PROJECT_DIR$/src/templates/blocks/_tvguide-popup.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_header.html" />
         <option value="$PROJECT_DIR$/src/templates/allchannels.html" />
-        <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/templates/awards.html" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/templates/blog.html" />
         <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
+        <option value="$PROJECT_DIR$/src/js/common.js" />
+        <option value="$PROJECT_DIR$/src/templates/promopage.html" />
       </list>
     </option>
   </component>
@@ -353,12 +351,12 @@
       <workItem from="1463469353810" duration="11701000" />
       <workItem from="1463558254508" duration="9281000" />
       <workItem from="1463580753567" duration="2590000" />
-      <workItem from="1463641873315" duration="1624000" />
+      <workItem from="1463641873315" duration="2621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245246000" />
+    <option name="totallyTimeSpent" value="246243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -707,21 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="264" column="42" selection-start-line="264" selection-start-column="39" selection-end-line="264" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="182" column="7" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/awards.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -751,6 +734,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="2699" column="10" selection-start-line="2699" selection-start-column="10" selection-end-line="2699" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/allchannels.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -763,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
+        <state relative-caret-position="250">
           <caret line="277" column="22" selection-start-line="277" selection-start-column="22" selection-end-line="277" selection-end-column="22" />
           <folding>
             <element signature="e#935#8837#0#HTML" expanded="false" />
@@ -772,10 +771,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="2715" column="25" selection-start-line="2715" selection-start-column="25" selection-end-line="2715" selection-end-column="25" />
+        <state relative-caret-position="505">
+          <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
           <folding />
         </state>
       </provider>
