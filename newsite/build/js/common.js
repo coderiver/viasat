@@ -295,18 +295,21 @@ $(document).ready(function() {
 
     // text ellipsis
 
-    $('.js-ellip').each(function () {
-       var target = $(this);
+    function textEllip() {
+        $('.js-ellip').each(function () {
+            var target = $(this);
 
-        if(target){
-            var lines = target.data('lines') || 2;
+            if(target){
+                var lines = target.data('lines') || 2;
 
-            target.ellipsis({
-                lines: lines,
-                responsive: true
-            });
-        }
+                target.ellipsis({
+                    lines: lines,
+                    responsive: true
+                });
+            }
 
-    });
+        });
+    }
+    textEllip();
 
 });
