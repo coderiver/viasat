@@ -1137,9 +1137,13 @@ $(document).ready(function() {
 
         }
     }
-    stickySocials();
-    $(window).on('scroll', function () {
+    if($('.post').length){
         stickySocials();
+    }
+    $(window).on('scroll', function () {
+        if($('.post').length){
+            stickySocials();
+        }
     });
 
 });

@@ -6466,6 +6466,47 @@ select {
         .old .article img, .overlay .article img {
           width: 100%;
           margin: 0 0 20px; } }
+    .old .article ul, .overlay .article ul {
+      margin-bottom: 30px; }
+      .old .article ul li, .overlay .article ul li {
+        position: relative;
+        margin-bottom: 20px; }
+        .old .article ul li:before, .overlay .article ul li:before {
+          content: "";
+          display: inline-block;
+          vertical-align: baseline;
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+          background: url("../img/star-gray.svg") no-repeat;
+          background-size: 100%; }
+    .old .article cite, .overlay .article cite {
+      position: relative;
+      display: block;
+      padding-right: 30%;
+      min-height: 40px;
+      margin-bottom: 30px;
+      padding-left: 70px;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic; }
+      .old .article cite:before, .overlay .article cite:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 59px;
+        height: 40px;
+        background: url("../img/quotes.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%; }
+    .old .article cite[align="right"], .overlay .article cite[align="right"] {
+      padding-right: 70px;
+      padding-left: 30%; }
+      .old .article cite[align="right"]:before, .overlay .article cite[align="right"]:before {
+        left: auto;
+        right: 0; }
   .old .select, .overlay .select {
     position: relative;
     display: inline-block;
