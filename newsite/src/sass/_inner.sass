@@ -721,12 +721,13 @@
 				margin-bottom: 8px
 				.socials
 					font-size: 0
-					.fb-counter, .gp-counter, .tw-counter
+					text-align: left
+					.fb-counter, .gp-counter, .tw-counter, .od-counter
 						display: inline-block
 						vertical-align: middle
 						width: 30%
 						margin-left: 5%
-					.fb-counter
+					.fb-counter, .od-counter
 						margin-left: 0
 		.post__date
 			font-size: 1.4rem
@@ -913,7 +914,7 @@
 				&:before
 					content: ""
 					display: inline-block
-					vertical-align: baseline
+					vertical-align: middle
 					width: 16px
 					height: 16px
 					margin-right: 5px
@@ -925,21 +926,21 @@
 			padding-right: 30%
 			min-height: 40px
 			margin-bottom: 30px
-			padding-left: 70px
+			padding-left: 60px
 			font-size: 20px
 			font-weight: 300
 			font-style: italic
 			&:before
 				content: ""
 				position: absolute
-				top: -10px
+				top: -5px
 				left: 0
-				width: 59px
-				height: 40px
+				width: 42px
+				height: 30px
 				background: url("../img/quotes.png")
 				+cover
 		cite[align="right"]
-			padding-right: 70px
+			padding-right: 60px
 			padding-left: 30%
 			&:before
 				left: auto

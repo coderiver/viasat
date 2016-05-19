@@ -6258,13 +6258,14 @@ select {
             display: table;
             clear: both; }
           .old .post .post__info .socials, .overlay .post .post__info .socials {
-            font-size: 0; }
-            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter {
+            font-size: 0;
+            text-align: left; }
+            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .old .post .post__info .socials .od-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .od-counter {
               display: inline-block;
               vertical-align: middle;
               width: 30%;
               margin-left: 5%; }
-            .old .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .fb-counter {
+            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .od-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .od-counter {
               margin-left: 0; } }
     .old .post .post__date, .overlay .post .post__date {
       font-size: 1.4rem;
@@ -6474,7 +6475,7 @@ select {
         .old .article ul li:before, .overlay .article ul li:before {
           content: "";
           display: inline-block;
-          vertical-align: baseline;
+          vertical-align: middle;
           width: 16px;
           height: 16px;
           margin-right: 5px;
@@ -6486,23 +6487,23 @@ select {
       padding-right: 30%;
       min-height: 40px;
       margin-bottom: 30px;
-      padding-left: 70px;
+      padding-left: 60px;
       font-size: 20px;
       font-weight: 300;
       font-style: italic; }
       .old .article cite:before, .overlay .article cite:before {
         content: "";
         position: absolute;
-        top: -10px;
+        top: -5px;
         left: 0;
-        width: 59px;
-        height: 40px;
+        width: 42px;
+        height: 30px;
         background: url("../img/quotes.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%; }
     .old .article cite[align="right"], .overlay .article cite[align="right"] {
-      padding-right: 70px;
+      padding-right: 60px;
       padding-left: 30%; }
       .old .article cite[align="right"]:before, .overlay .article cite[align="right"]:before {
         left: auto;
