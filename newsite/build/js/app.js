@@ -684,6 +684,94 @@ $(document).ready(function() {
 
     // });
 
+    var tapeCounters = new Array();
+    $.each($('.btn_more_tape'), function () {
+        if ($(this).data('url')) {
+            $(this).click(function () {
+                var _cont = $(this).parent();
+                if (typeof(tapeCounters[$(this).data('url')]) == 'undefined') {
+                    tapeCounters[$(this).data('url')] = 1;
+                } else {
+                    tapeCounters[$(this).data('url')]++;
+                }
+                $.get($(this).data('url') + '?offsetPage=' + tapeCounters[$(this).data('url')], function (data) {
+                    if (data != '' && data != 'error') {
+                        $(data).insertBefore(_cont);
+                        if (data.indexOf('HIDE_BTN') != -1) {
+                            _cont.hide();
+                        }
+                    }
+                });
+            });
+        }
+    });
+
+    $.each($('.rate_btn'), function () {
+        $(this).click(function () {
+            if ($(this).data('url') && !$(this).attr('rated')) {
+                $.post($(this).data('url'),
+                    {
+                        'model': $(this).data('model'),
+                        'itemId': $(this).data('itemId'),
+                        'likeType': $(this).data('likeType'),
+                        '_csrf': $('meta[name="csrf-token"]').attr("content")
+                    },
+                    function (data) {
+                        if (data != '' && data.result && typeof(data.counters) != 'undefined') {
+                            for (var i in data.counters) {
+                                $('.rate_btn[data-like-type="' + i + '"]').attr('rated', true).find('span:first').html(data.counters[i]);
+                            }
+                        }
+                    }
+                );
+            }
+        });
+    });
+
+    $('#subscribe_form').submit(function(e){
+        e.preventDefault();
+        var _e = e;
+        $.post('/tv/subscribe/index', {
+            'Subscribe[email]': $('#subscribe-email-fld').val(),
+            '_csrf': $('meta[name="csrf-token"]').attr("content")
+        }, function(data){
+            if(data == 'OK') {
+                ga('send','event','button','click',$(_e.target).attr('ga_event'));
+
+                alert('На указанный E-mail отправлено письмо с подтверждением');
+                $('div.overlay[data-popup="subscribe-popup"]').fadeOut();
+            } else {
+                alert(data);
+            }
+        });
+    });
+
+    $('#contact_form').submit(function(e){
+        e.preventDefault();
+
+        $.post('/site/contact', {
+            'Contact[email]': $('#contact-email-fld').val(),
+            'Contact[text]': $('#contact-text-fld').val(),
+            'Contact[phone]': $('#contact-phone-fld').val(),
+            '_csrf': $('meta[name="csrf-token"]').attr("content")
+        }, function(data){
+            if(data == 'OK') {
+                ga('send','event','button','click','svasatsa_s_nami');
+
+                alert('Благодарим Вас за обращение. Мы ответим Вам как можно скорее.');
+                $('div.overlay[data-popup="contact-popup"]').fadeOut();
+            } else {
+                alert(data);
+            }
+        });
+    });
+
+
+    $('.trailer-play-btn').click(function(){
+        $('.trailer__play_btn').hide();
+        $('.trailer__container').html($('.trailer__play_code').html());
+    });
+
     function ellipse(){
         var p=$('.schedule__descr p');
         var divh=$('.schedule__descr').height();
