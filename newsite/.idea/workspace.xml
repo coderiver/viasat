@@ -21,17 +21,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4200">
-              <caret line="280" column="27" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
+            <state relative-caret-position="494">
+              <caret line="2715" column="25" selection-start-line="2715" selection-start-column="25" selection-end-line="2715" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="535">
@@ -146,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/templates/awards.html" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/templates/blog.html" />
+        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
       </list>
     </option>
   </component>
@@ -353,12 +353,12 @@
       <workItem from="1463469353810" duration="11701000" />
       <workItem from="1463558254508" duration="9281000" />
       <workItem from="1463580753567" duration="2590000" />
-      <workItem from="1463641873315" duration="1075000" />
+      <workItem from="1463641873315" duration="1624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244697000" />
+    <option name="totallyTimeSpent" value="245246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,6 +576,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2235">
           <caret line="149" column="3" selection-start-line="149" selection-start-column="3" selection-end-line="149" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,14 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4200">
-          <caret line="280" column="27" selection-start-line="280" selection-start-column="27" selection-end-line="280" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/allchannels.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -776,6 +769,14 @@
             <element signature="e#935#8837#0#HTML" expanded="false" />
             <element signature="e#11600#16036#0#HTML" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="2715" column="25" selection-start-line="2715" selection-start-column="25" selection-end-line="2715" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
