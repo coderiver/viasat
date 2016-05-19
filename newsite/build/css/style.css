@@ -6305,6 +6305,67 @@ select {
       font-size: 1.2rem;
       color: #9e9e9e;
       margin-left: 12px; }
+  .old .fb-counter, .overlay .fb-counter {
+    position: relative;
+    display: block;
+    *zoom: 1;
+    height: 32px;
+    margin-bottom: 8px;
+    padding: 7px 9px 7px 7px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    background: #4c68b3;
+    font-size: 1.1rem;
+    font-weight: 900; }
+    .old .fb-counter:after, .overlay .fb-counter:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .old .fb-counter span, .overlay .fb-counter span {
+      position: relative;
+      top: 3px;
+      float: right; }
+  .old .fb-q, .overlay .fb-q {
+    position: relative;
+    float: left;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    color: #4c68b3;
+    line-height: 1;
+    font-size: 1.4rem; }
+    .old .fb-q i, .overlay .fb-q i {
+      position: absolute;
+      bottom: 0;
+      right: 2px; }
+  .old .tw-counter, .old .gp-counter, .overlay .tw-counter, .overlay .gp-counter {
+    position: relative;
+    display: block;
+    *zoom: 1;
+    height: 32px;
+    padding: 7px 9px 7px 7px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    background: #00abed;
+    font-size: 1.1rem;
+    font-weight: 900; }
+    .old .tw-counter:after, .old .gp-counter:after, .overlay .tw-counter:after, .overlay .gp-counter:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .old .tw-counter span, .old .gp-counter span, .overlay .tw-counter span, .overlay .gp-counter span {
+      position: relative;
+      top: 3px;
+      float: right; }
+    .old .tw-counter i, .old .gp-counter i, .overlay .tw-counter i, .overlay .gp-counter i {
+      float: left;
+      font-size: 1.4rem;
+      color: #fff; }
+  .old .gp-counter, .overlay .gp-counter {
+    background: #eb5e4b; }
   .old .disqus, .overlay .disqus {
     margin: 0 -30px;
     border-top: 1px solid #d7d7d7;

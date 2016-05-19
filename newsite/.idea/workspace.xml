@@ -24,31 +24,20 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="2272" column="31" selection-start-line="2272" selection-start-column="31" selection-end-line="2272" selection-end-column="31" />
+            <state relative-caret-position="270">
+              <caret line="769" column="12" selection-start-line="769" selection-start-column="12" selection-end-line="769" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="promopage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
+      <file leaf-file-name="blog_post.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/blog_post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_category.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/blog_category.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+            <state relative-caret-position="280">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
-                <element signature="e#992#8894#0#HTML" expanded="false" />
-                <element signature="e#11657#16093#0#HTML" expanded="false" />
+                <element signature="e#7023#11459#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -60,18 +49,6 @@
             <state relative-caret-position="229">
               <caret line="483" column="7" selection-start-line="483" selection-start-column="7" selection-end-line="483" selection-end-column="7" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tvguide.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/tvguide.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="208" column="51" selection-start-line="208" selection-start-column="51" selection-end-line="208" selection-end-column="51" />
-              <folding>
-                <element signature="e#7261#7282#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -107,7 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/templates/layouts/_layout-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_footer-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_header-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/layouts/_head.html" />
@@ -157,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/templates/tvguide.html" />
+        <option value="$PROJECT_DIR$/src/templates/blog_post.html" />
         <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
       </list>
     </option>
@@ -249,46 +226,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,12 +340,12 @@
       <workItem from="1463469353810" duration="11701000" />
       <workItem from="1463558254508" duration="9281000" />
       <workItem from="1463580753567" duration="2590000" />
-      <workItem from="1463641873315" duration="5771000" />
+      <workItem from="1463641873315" duration="6265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249393000" />
+    <option name="totallyTimeSpent" value="249887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,7 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/_owl.sass" />
     <entry file="file://$PROJECT_DIR$/src/sass/lib/_mixins.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -776,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -791,17 +719,6 @@
           <folding>
             <element signature="e#935#8837#0#HTML" expanded="false" />
             <element signature="e#11600#16036#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/blog_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding>
-            <element signature="e#992#8894#0#HTML" expanded="false" />
-            <element signature="e#11657#16093#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,10 +759,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog_category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="293" selection-end-column="14" />
+          <folding>
+            <element signature="e#992#8894#0#HTML" expanded="false" />
+            <element signature="e#11657#16093#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/promopage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="266" column="34" selection-start-line="266" selection-start-column="34" selection-end-line="266" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#7023#11459#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="2272" column="31" selection-start-line="2272" selection-start-column="31" selection-end-line="2272" selection-end-column="31" />
+        <state relative-caret-position="270">
+          <caret line="769" column="12" selection-start-line="769" selection-start-column="12" selection-end-line="769" selection-end-column="12" />
           <folding />
         </state>
       </provider>
