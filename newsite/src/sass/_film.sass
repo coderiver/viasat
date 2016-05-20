@@ -133,7 +133,7 @@
 	.film__main
 		overflow: hidden
 		padding-top: 25px
-		padding-right: 25px
+		padding-right: 20px
 		+r(900)
 			padding-right: 0
 	.film__rating
@@ -216,6 +216,13 @@
 				&.active
 					&:after
 						display: block
+			+r(1200)
+				&:nth-child(8), &:nth-child(9), &:nth-child(10)
+					&:after
+						top: 0
+						left: 0
+						width: 25px
+						height: 25px
 			+r(1024)
 				&:nth-child(8), &:nth-child(9), &:nth-child(10)
 					&:after
@@ -239,11 +246,16 @@
 						height: 17px
 	.rating__value
 		float: right
-		font-size: 20px
+		font-size: 26px
 		font-weight: 900
 		color: #353535
+		+r(1200)
+			font-size: 20px
 		+r(600)
 			display: inline-block
+	+r(1200)
+		.star
+			font-size: 25px
 	+r(1024)
 		.star
 			font-size: 17px
@@ -331,13 +343,13 @@
 		+r(768)
 			display: none
 	.team__block
-		margin-top: 40px
+		margin-top: 25px
 		&:first-child
 			margin-top: 0
 	.team__row
 		+clr
 		font-size: 12px
-		margin-bottom: 10px
+		margin-bottom: 8px
 		+r(900)
 			font-size: 14px
 		+r(480)
@@ -352,7 +364,7 @@
 		color: #000
 .quote
 	position: relative
-	padding: 50px 25px
+	padding: 40px 25px
 	text-align: center
 	font-size: 16px
 	color: #727272
@@ -542,48 +554,105 @@
 	padding: 30px
 	+r(900)
 		padding: 20px
-	.actors__head
-		display: none
-		.headline
-			margin-left: 0
-			margin-right: 0
-		+r(768)
-			display: block
-	.actors__main
-		+r(768)
-			display: none
 	.actors__topper
 		+clr
 		margin-bottom: 30px
-		+r(768)
-			display: none
 	.h4
 		float: left
 		+r(1024)
 			float: none
 			width: 100%
-	.actors__all
-		float: right
-		display: inline-block
-		margin-top: 4px
-		color: rgba(#838382, 0.5)
-		transition: color 200ms
-		font-size: 14px
-		font-weight: 500
-		svg
-			vertical-align: middle
-			font-size: 13px
-			color: #353535
-		&:hover
-			color: #838382
-		+r(1024)
-			float: none
-			margin-bottom: 10px
+	.actors__list
+		padding: 0 5px
+		+r(900)
+			padding: 0 20px
+		.slick-prev,
+		.slick-next
+			width: 30px
+			height: 30px
+			top: 50%
+			margin-top: -15px
+			border-radius: 50%
+			color: $cl
+		.slick-prev
+			left: -25px
+			transition: opacity 200ms
+			&.slick-disabled
+				opacity: 0
+			+r(900)
+				left: -10px
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-gray.svg") center no-repeat
+			&:after
+				content: ""
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-white.svg") center no-repeat
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
+		.slick-next
+			right: 5px
+			transition: opacity 200ms
+			&.slick-disabled
+				opacity: 0
+			+r(900)
+				right: 5px
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-gray.svg") center no-repeat
+			&:after
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-white.svg") center no-repeat
+				z-index: 3
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
 	.actors__item
 		margin-top: 40px
 		+clr
 		&:first-child
 			margin-top: 0
+		+r(900)
+			width: 50%
+			float: left
+			margin-top: 0
+			margin-bottom: 20px
+		+r(480)
+			width: 100%
+			float: none
 	.actors__img
 		position: relative
 		float: left
@@ -599,6 +668,8 @@
 			transform: translate(-50%, -50%)
 			height: 100%
 			min-width: 100%
+		+r(1024)
+			margin-right: 10px
 	.actors__about
 		padding-top: 7px
 		overflow: hidden
@@ -630,6 +701,8 @@
 				width: 100%
 			+r(900)
 				display: none
+		+r(1280)
+			margin-bottom: 0
 		+r(900)
 			padding: 0 20px
 		+r(768)
@@ -646,6 +719,8 @@
 
 .n-awards
 	font-size: 0
+	+r(1280)
+		margin-bottom: 30px
 	.n-awards__item
 		position: relative
 		display: inline-block
@@ -715,6 +790,7 @@
 			max-width: 80px
 			text-align: center
 .rating-hint
+	margin-top: -20px
 	color: rgba(#403f3f, 0.6)
 	text-align: right
 	+r(480)

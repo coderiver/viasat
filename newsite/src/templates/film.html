@@ -10,6 +10,9 @@ actors:
 - img: 'img/actor3.jpg'
   name: 'Мелисса Беноист'
   role: 'Николь'
+- img: 'img/actor2.jpg'
+  name: 'Дж. К. Симмонс'
+  role: 'Теренс Флетчер'
 posters:
 - img: 'img/poster.jpg'
   dimensions: '800х1200'
@@ -182,7 +185,7 @@ movies:
                                         <div class="n-awards__counter">x<span>3</span></div>
                                         <div class="n-awards__title">
                                             <p>Премия</p>
-                                            <strong>“Золотой глобус”</strong>
+                                            <strong>“Оскар”</strong>
                                         </div>
                                     </div>
                                     <div class="n-awards__item">
@@ -297,11 +300,11 @@ movies:
                                         <div class="team__right">Дэмьен Шазелл</div>
                                     </div>
                                     <div class="team__row">
-                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__left">Композитор:</div>
                                         <div class="team__right">Дэмьен Шазелл</div>
                                     </div>
                                     <div class="team__row">
-                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__left">Художник:</div>
                                         <div class="team__right">
                                             <p>Джейсон Блум</p>
                                             <p>Хелен Блум</p>
@@ -311,16 +314,16 @@ movies:
                                 </div>
                                 <div class="team__block">
                                     <div class="team__row">
-                                        <div class="team__left">Оператор:</div>
+                                        <div class="team__left">Монтаж:</div>
                                         <div class="team__right">Дэмьен Шазелл</div>
                                     </div>
                                     <div class="team__row">
-                                        <div class="team__left">Оператор:</div>
-                                        <div class="team__right">Дэмьен Шазелл</div>
+                                        <div class="team__left">Бюджет:</div>
+                                        <div class="team__right">$3 300 000</div>
                                     </div>
                                     <div class="team__row">
-                                        <div class="team__left">Оператор:</div>
-                                        <div class="team__right">Дэмьен Шазелл</div>
+                                        <div class="team__left">Сборы в мире:</div>
+                                        <div class="team__right">$48 982 041</div>
                                     </div>
                                 </div>
                             </div>
@@ -347,27 +350,38 @@ movies:
                         </div>
 
                         {# actors #}
-                        <div class="actors js-wrap">
-                            <div class="actors__head">
-                                <div class="headline js-wrap-btn">В ролях</div>
-                            </div>
-                            <div class="actors__main js-wrap-cont">
+                        <div class="actors">
+                            <div class="actors__main">
                                 <div class="actors__topper">
                                     <h4 class="n-h4">В ролях:</h4>
-                                    <a href="#" class="actors__all">Смотреть весь список {{ mixins.icon('right') }}</a>
                                 </div>
-                                <div class="actors__list">
-                                    {% for actor in actors %}
-                                        <div class="actors__item">
-                                            <div class="actors__img">
-                                                <img src="{{ actor.img }}" alt="">
+                                <div class="actors__list js-sctors-slider">
+                                    <div class="actors__slide">
+                                        {% for actor in actors %}
+                                            <div class="actors__item">
+                                                <div class="actors__img">
+                                                    <img src="{{ actor.img }}" alt="">
+                                                </div>
+                                                <div class="actors__about">
+                                                    <div class="actors__name">{{ actor.name }}</div>
+                                                    <div class="actors__role">...{{ actor.role }}</div>
+                                                </div>
                                             </div>
-                                            <div class="actors__about">
-                                                <div class="actors__name">{{ actor.name }}</div>
-                                                <div class="actors__role">...{{ actor.role }}</div>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="actors__slide">
+                                        {% for actor in actors %}
+                                            <div class="actors__item">
+                                                <div class="actors__img">
+                                                    <img src="{{ actor.img }}" alt="">
+                                                </div>
+                                                <div class="actors__about">
+                                                    <div class="actors__name">{{ actor.name }}</div>
+                                                    <div class="actors__role">...{{ actor.role }}</div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    {% endfor %}
+                                        {% endfor %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -385,7 +399,7 @@ movies:
                                         <div class="n-awards__counter">x<span>3</span></div>
                                         <div class="n-awards__title">
                                             <p>Премия</p>
-                                            <strong>“Золотой глобус”</strong>
+                                            <strong>“Оскар”</strong>
                                         </div>
                                     </div>
                                     <div class="n-awards__item">

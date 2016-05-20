@@ -230,6 +230,13 @@ $(document).ready(function() {
     }
     rewardsSlider();
 
+    // actors slider
+    slider.initSlider('.js-sctors-slider', {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false
+    });
+
     // carousel at promo page
 
     if ($('.js-promopage').length) {
