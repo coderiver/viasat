@@ -521,7 +521,24 @@ select {
       opacity: 1;
       visibility: visible; }
   .promo__item {
-    font-size: 0; }
+    display: block;
+    font-size: 0;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%; }
+    @media only screen and (max-width: 1280px) {
+      .promo__item {
+        height: 450px; } }
+    @media only screen and (max-width: 1024px) {
+      .promo__item {
+        height: 400px; } }
+    @media only screen and (max-width: 900px) {
+      .promo__item {
+        height: 300px; } }
+    @media only screen and (max-width: 680px) {
+      .promo__item {
+        height: 200px; } }
     .promo__item img {
       display: block;
       width: 100%;
