@@ -567,12 +567,15 @@
 		display: inline-block
 		margin-top: 4px
 		color: rgba(#838382, 0.5)
+		transition: color 200ms
 		font-size: 14px
 		font-weight: 500
 		svg
 			vertical-align: middle
 			font-size: 13px
 			color: #353535
+		&:hover
+			color: #838382
 		+r(1024)
 			float: none
 			margin-bottom: 10px
@@ -1041,6 +1044,14 @@
 .rewards
 	+clr
 	margin-bottom: 30px
+	+r(768)
+		padding: 0 30px
+	.headline
+		cursor: default
+		&:after
+			display: none
+		+r(768)
+			margin-left: -10px
 	.rewards__in
 		position: relative
 		+clr
@@ -1048,15 +1059,83 @@
 		+r(1024)
 			padding-left: 150px
 		+r(768)
-			display: none
 			padding-left: 0
 	.rewards__list
 		font-size: 0
-		float: left
-		width: 75%
+		padding-right: 30px
+		.slick-prev,
+		.slick-next
+			width: 30px
+			height: 30px
+			top: 50%
+			margin-top: -15px
+			border-radius: 50%
+			color: $cl
+		.slick-prev
+			left: -30px
+			transition: opacity 200ms
+			&.slick-disabled
+				opacity: 0
+			+r(768)
+				left: -25px
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-gray.svg") center no-repeat
+			&:after
+				content: ""
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-left-white.svg") center no-repeat
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
+		.slick-next
+			right: 5px
+			transition: opacity 200ms
+			&.slick-disabled
+				opacity: 0
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-gray.svg") center no-repeat
+			&:after
+				opacity: 0
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				border: 2px solid #dadada
+				background: url("../img/arr-right-white.svg") center no-repeat
+				z-index: 3
+			&:hover
+				background: #dadada
+				&:before
+					opacity: 0
+				&:after
+					opacity: 1
 		+r(1024)
-			float: none
-			width: 100%
 			clear: both
 			margin-bottom: 30px
 	.rewards__all
@@ -1073,17 +1152,6 @@
 			color: #fff
 			font-weight: 500
 			border-bottom: 2px solid #fff
-	.reward__more
-		display: inline-block
-		color: #353535
-		transition: color 200ms
-		svg
-			vertical-align: middle
-		&:hover
-			color: #000
-		+r(1024)
-			float: right
-			margin-right: 20px
 
 .reward
 	position: relative
@@ -1099,6 +1167,8 @@
 		position: relative
 		max-width: 150px
 		margin: 0 auto
+		+r(480)
+			max-width: 100%
 	.reward__img
 		min-height: 115px
 		margin-bottom: 20px

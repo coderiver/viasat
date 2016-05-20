@@ -3915,12 +3915,16 @@ select {
     display: inline-block;
     margin-top: 4px;
     color: rgba(131, 131, 130, 0.5);
+    -webkit-transition: color 200ms;
+    transition: color 200ms;
     font-size: 14px;
     font-weight: 500; }
     .actors .actors__all svg {
       vertical-align: middle;
       font-size: 13px;
       color: #353535; }
+    .actors .actors__all:hover {
+      color: #838382; }
     @media only screen and (max-width: 1024px) {
       .actors .actors__all {
         float: none;
@@ -4460,6 +4464,16 @@ select {
     content: " ";
     display: table;
     clear: both; }
+  @media only screen and (max-width: 768px) {
+    .rewards {
+      padding: 0 30px; } }
+  .rewards .headline {
+    cursor: default; }
+    .rewards .headline:after {
+      display: none; }
+    @media only screen and (max-width: 768px) {
+      .rewards .headline {
+        margin-left: -10px; } }
   .rewards .rewards__in {
     position: relative;
     *zoom: 1;
@@ -4473,16 +4487,87 @@ select {
         padding-left: 150px; } }
     @media only screen and (max-width: 768px) {
       .rewards .rewards__in {
-        display: none;
         padding-left: 0; } }
   .rewards .rewards__list {
     font-size: 0;
-    float: left;
-    width: 75%; }
+    padding-right: 30px; }
+    .rewards .rewards__list .slick-prev,
+    .rewards .rewards__list .slick-next {
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      margin-top: -15px;
+      border-radius: 50%;
+      color: #353535; }
+    .rewards .rewards__list .slick-prev {
+      left: -30px;
+      -webkit-transition: opacity 200ms;
+      transition: opacity 200ms; }
+      .rewards .rewards__list .slick-prev.slick-disabled {
+        opacity: 0; }
+      @media only screen and (max-width: 768px) {
+        .rewards .rewards__list .slick-prev {
+          left: -25px; } }
+      .rewards .rewards__list .slick-prev:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        background: url("../img/arr-left-gray.svg") center no-repeat; }
+      .rewards .rewards__list .slick-prev:after {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        background: url("../img/arr-left-white.svg") center no-repeat; }
+      .rewards .rewards__list .slick-prev:hover {
+        background: #dadada; }
+        .rewards .rewards__list .slick-prev:hover:before {
+          opacity: 0; }
+        .rewards .rewards__list .slick-prev:hover:after {
+          opacity: 1; }
+    .rewards .rewards__list .slick-next {
+      right: 5px;
+      -webkit-transition: opacity 200ms;
+      transition: opacity 200ms; }
+      .rewards .rewards__list .slick-next.slick-disabled {
+        opacity: 0; }
+      .rewards .rewards__list .slick-next:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        background: url("../img/arr-right-gray.svg") center no-repeat; }
+      .rewards .rewards__list .slick-next:after {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #dadada;
+        background: url("../img/arr-right-white.svg") center no-repeat;
+        z-index: 3; }
+      .rewards .rewards__list .slick-next:hover {
+        background: #dadada; }
+        .rewards .rewards__list .slick-next:hover:before {
+          opacity: 0; }
+        .rewards .rewards__list .slick-next:hover:after {
+          opacity: 1; }
     @media only screen and (max-width: 1024px) {
       .rewards .rewards__list {
-        float: none;
-        width: 100%;
         clear: both;
         margin-bottom: 30px; } }
   .rewards .rewards__all {
@@ -4499,19 +4584,6 @@ select {
       color: #fff;
       font-weight: 500;
       border-bottom: 2px solid #fff; }
-  .rewards .reward__more {
-    display: inline-block;
-    color: #353535;
-    -webkit-transition: color 200ms;
-    transition: color 200ms; }
-    .rewards .reward__more svg {
-      vertical-align: middle; }
-    .rewards .reward__more:hover {
-      color: #000; }
-    @media only screen and (max-width: 1024px) {
-      .rewards .reward__more {
-        float: right;
-        margin-right: 20px; } }
 
 .reward {
   position: relative;
@@ -4528,6 +4600,9 @@ select {
     position: relative;
     max-width: 150px;
     margin: 0 auto; }
+    @media only screen and (max-width: 480px) {
+      .reward .reward__in {
+        max-width: 100%; } }
   .reward .reward__img {
     min-height: 115px;
     margin-bottom: 20px;

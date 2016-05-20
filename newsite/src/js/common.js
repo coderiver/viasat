@@ -199,6 +199,36 @@ $(document).ready(function() {
             }
         }]
     });
+    
+    // rewards slider
+    function rewardsSlider() {
+        $('.js-rewards-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            responsive: [{
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3
+                }
+            }, {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    dots: true
+                }
+            }, {
+                breakpoint: 481,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+                }
+            }]
+        });
+    }
+    rewardsSlider();
 
     // carousel at promo page
 
