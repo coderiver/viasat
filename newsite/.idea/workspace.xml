@@ -34,8 +34,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="267" column="63" selection-start-line="267" selection-start-column="63" selection-end-line="267" selection-end-column="63" />
+            <state relative-caret-position="340">
+              <caret line="236" column="37" selection-start-line="236" selection-start-column="37" selection-end-line="236" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="_main.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="837" column="24" selection-start-line="837" selection-start-column="24" selection-end-line="837" selection-end-column="24" />
+            <state relative-caret-position="179">
+              <caret line="204" column="12" selection-start-line="204" selection-start-column="6" selection-end-line="204" selection-end-column="12" />
               <folding>
                 <element signature="e#6156#9586#0" expanded="false" />
                 <element signature="e#9598#9817#0" expanded="false" />
@@ -57,7 +57,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="podborka.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_promopage.sass" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/_promopage.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="500" column="24" selection-start-line="500" selection-start-column="24" selection-end-line="500" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="podborka.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/podborka.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -67,12 +77,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_film.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_film.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_film.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5700">
-              <caret line="380" column="22" selection-start-line="376" selection-start-column="8" selection-end-line="380" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="431">
+              <caret line="538" column="28" selection-start-line="538" selection-start-column="28" selection-end-line="538" selection-end-column="28" />
+              <folding>
+                <marker date="1463732333000" expanded="true" signature="8314:9264" placeholder="..." />
+                <marker date="1463732333000" expanded="true" signature="8903:9264" placeholder="..." />
+                <marker date="1463732333000" expanded="true" signature="9224:9264" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,14 +139,12 @@
         <option value="$PROJECT_DIR$/src/templates/roles.html" />
         <option value="$PROJECT_DIR$/src/sass/_movie.sass" />
         <option value="$PROJECT_DIR$/src/sass/_card.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_film.sass" />
         <option value="$PROJECT_DIR$/src/sass/_svgfont.sass" />
         <option value="$PROJECT_DIR$/src/sass/style.sass" />
         <option value="$PROJECT_DIR$/src/templates/filmoteka.html" />
         <option value="$PROJECT_DIR$/src/templates/podborka-single.html" />
         <option value="$PROJECT_DIR$/src/sass/_common.sass" />
         <option value="$PROJECT_DIR$/src/templates/blocks/channel-popup.html" />
-        <option value="$PROJECT_DIR$/src/sass/_promopage.sass" />
         <option value="$PROJECT_DIR$/src/sass/_svgfont.scss" />
         <option value="$PROJECT_DIR$/src/sass/_header.sass" />
         <option value="$PROJECT_DIR$/src/templates/channel_premium.html" />
@@ -156,9 +168,11 @@
         <option value="$PROJECT_DIR$/src/templates/tvguide.html" />
         <option value="$PROJECT_DIR$/src/templates/blog_post.html" />
         <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
-        <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/templates/podborka.html" />
+        <option value="$PROJECT_DIR$/src/sass/_promopage.sass" />
+        <option value="$PROJECT_DIR$/src/js/common.js" />
+        <option value="$PROJECT_DIR$/src/sass/_film.sass" />
       </list>
     </option>
   </component>
@@ -405,12 +419,12 @@
       <workItem from="1463558254508" duration="9281000" />
       <workItem from="1463580753567" duration="2590000" />
       <workItem from="1463641873315" duration="12826000" />
-      <workItem from="1463729325739" duration="2317000" />
+      <workItem from="1463729325739" duration="2794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258765000" />
+    <option name="totallyTimeSpent" value="259242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,14 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_promopage.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5325">
-          <caret line="355" column="7" selection-start-line="355" selection-start-column="7" selection-end-line="355" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_svgfont.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -770,14 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_film.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5700">
-          <caret line="380" column="22" selection-start-line="376" selection-start-column="8" selection-end-line="380" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_common.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2235">
@@ -816,18 +814,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+    <entry file="file://$PROJECT_DIR$/src/templates/podborka.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="267" column="63" selection-start-line="267" selection-start-column="63" selection-end-line="267" selection-end-column="63" />
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="837" column="24" selection-start-line="837" selection-start-column="24" selection-end-line="837" selection-end-column="24" />
+        <state relative-caret-position="179">
+          <caret line="204" column="12" selection-start-line="204" selection-start-column="6" selection-end-line="204" selection-end-column="12" />
           <folding>
             <element signature="e#6156#9586#0" expanded="false" />
             <element signature="e#9598#9817#0" expanded="false" />
@@ -838,11 +836,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/podborka.html">
+    <entry file="file://$PROJECT_DIR$/src/sass/_promopage.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="221">
+          <caret line="500" column="24" selection-start-line="500" selection-start-column="24" selection-end-line="500" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="236" column="37" selection-start-line="236" selection-start-column="37" selection-end-line="236" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_film.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="538" column="28" selection-start-line="538" selection-start-column="28" selection-end-line="538" selection-end-column="28" />
+          <folding>
+            <marker date="1463732333000" expanded="true" signature="8314:9264" placeholder="..." />
+            <marker date="1463732333000" expanded="true" signature="8903:9264" placeholder="..." />
+            <marker date="1463732333000" expanded="true" signature="9224:9264" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

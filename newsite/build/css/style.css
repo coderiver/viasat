@@ -3845,6 +3845,10 @@ select {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
+    @media only screen and (max-width: 960px) {
+      .n-watch .n-watch__btn {
+        padding-left: 0;
+        text-align: center; } }
     @media only screen and (max-width: 768px) {
       .n-watch .n-watch__btn {
         padding-left: 20px; } }
@@ -3867,6 +3871,11 @@ select {
       text-transform: uppercase; }
       .n-watch .n-watch__list a:hover {
         background: #fff; }
+    @media only screen and (max-width: 960px) {
+      .n-watch .n-watch__list {
+        text-align: center; }
+        .n-watch .n-watch__list a {
+          padding: 5px; } }
 
 .actors {
   position: relative;
@@ -5414,10 +5423,10 @@ select {
   left: -40px; }
   @media only screen and (max-width: 1024px) {
     .slider_dark .slick-prev {
-      left: 0; } }
-  @media only screen and (max-width: 640px) {
+      left: -30px; } }
+  @media only screen and (max-width: 568px) {
     .slider_dark .slick-prev {
-      display: none; } }
+      left: -25px; } }
   .slider_dark .slick-prev:before {
     position: absolute;
     top: 0;
@@ -5449,10 +5458,10 @@ select {
   right: -40px; }
   @media only screen and (max-width: 1024px) {
     .slider_dark .slick-next {
-      right: 0; } }
-  @media only screen and (max-width: 640px) {
+      right: -30px; } }
+  @media only screen and (max-width: 568px) {
     .slider_dark .slick-next {
-      display: none; } }
+      right: -25px; } }
   .slider_dark .slick-next:before {
     position: absolute;
     top: 0;
