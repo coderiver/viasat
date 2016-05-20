@@ -1448,6 +1448,9 @@ select {
   @media only screen and (max-width: 1024px) {
     .slider {
       padding: 0 30px; } }
+  @media only screen and (max-width: 768px) {
+    .slider {
+      padding: 0 20px; } }
   .slider .slick-prev, .slider .slick-next {
     top: 35%;
     margin-top: -15px;
@@ -1458,6 +1461,9 @@ select {
     @media only screen and (max-width: 1024px) {
       .slider .slick-prev {
         left: -45px; } }
+    @media only screen and (max-width: 768px) {
+      .slider .slick-prev {
+        left: -30px; } }
     .slider .slick-prev:before {
       position: absolute;
       top: 0;
@@ -1483,6 +1489,9 @@ select {
     @media only screen and (max-width: 1024px) {
       .slider .slick-next {
         right: -45px; } }
+    @media only screen and (max-width: 768px) {
+      .slider .slick-next {
+        right: -30px; } }
     .slider .slick-next:before {
       position: absolute;
       top: 0;
