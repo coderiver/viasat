@@ -261,13 +261,23 @@ $(document).ready(function() {
 
     // scrolltop btn
 
-    $(document).on('scroll', function () {
-       if($(window).scrollTop() >= 500){
-           $('.js-scrolltop').addClass('visible');
-       }
+    function scrollTopBtn() {
+        var btn = $('.js-scrolltop');
+        var viewportHeight = $(window).outerHeight();
+
+        initPoint = $(document).height() - viewportHeight - 100;
+
+        if($(window).scrollTop() >= initPoint){
+            btn.addClass('visible');
+        }
         else {
-           $('.js-scrolltop').removeClass('visible');
-       }
+            btn.removeClass('visible');
+        }
+    }
+    scrollTopBtn();
+
+    $(document).on('scroll', function () {
+        scrollTopBtn();
     });
 
     $('.js-scrolltop').on('click', function () {
@@ -340,10 +350,18 @@ $(document).ready(function() {
 
 
         }
+        else {
+            $('.js-socials-post').removeClass('fixed is-bottom');
+        }
     }
     if($('.post').length){
         stickySocials();
     }
+    $(window).resize(function () {
+        if($('.post').length){
+            stickySocials();
+        }
+    });
     $(window).on('scroll', function () {
         if($('.post').length){
             stickySocials();

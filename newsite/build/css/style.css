@@ -6031,7 +6031,7 @@ select {
           left: -30px; } }
       @media only screen and (max-width: 768px) {
         .old .widget .slick-prev, .overlay .widget .slick-prev {
-          left: 0; } }
+          left: -15px; } }
       .old .widget .slick-prev:before, .overlay .widget .slick-prev:before {
         position: absolute;
         top: 0;
@@ -6065,7 +6065,7 @@ select {
           right: -30px; } }
       @media only screen and (max-width: 768px) {
         .old .widget .slick-next, .overlay .widget .slick-next {
-          right: 0; } }
+          right: -15px; } }
       .old .widget .slick-next:before, .overlay .widget .slick-next:before {
         position: absolute;
         top: 0;
@@ -6094,7 +6094,7 @@ select {
           opacity: 1; }
     @media only screen and (max-width: 960px) {
       .old .widget, .overlay .widget {
-        padding: 24px 0 37px; }
+        padding: 24px 20px 37px; }
         .old .widget .slick-slide, .overlay .widget .slick-slide {
           padding: 0 16px; }
         .old .widget .poster__content, .overlay .widget .poster__content {
@@ -6260,7 +6260,7 @@ select {
           .old .post .post__info .socials, .overlay .post .post__info .socials {
             font-size: 0;
             text-align: left; }
-            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .old .post .post__info .socials .od-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .od-counter {
+            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .old .post .post__info .socials .od-counter, .old .post .post__info .socials .vk-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .od-counter, .overlay .post .post__info .socials .vk-counter {
               display: inline-block;
               vertical-align: middle;
               width: 30%;
@@ -6354,7 +6354,7 @@ select {
       position: absolute;
       bottom: 0;
       right: 2px; }
-  .old .tw-counter, .old .gp-counter, .old .od-counter, .overlay .tw-counter, .overlay .gp-counter, .overlay .od-counter {
+  .old .tw-counter, .old .gp-counter, .old .od-counter, .old .vk-counter, .overlay .tw-counter, .overlay .gp-counter, .overlay .od-counter, .overlay .vk-counter {
     position: relative;
     display: block;
     *zoom: 1;
@@ -6367,15 +6367,15 @@ select {
     background: #00abed;
     font-size: 1.1rem;
     font-weight: 900; }
-    .old .tw-counter:after, .old .gp-counter:after, .old .od-counter:after, .overlay .tw-counter:after, .overlay .gp-counter:after, .overlay .od-counter:after {
+    .old .tw-counter:after, .old .gp-counter:after, .old .od-counter:after, .old .vk-counter:after, .overlay .tw-counter:after, .overlay .gp-counter:after, .overlay .od-counter:after, .overlay .vk-counter:after {
       content: " ";
       display: table;
       clear: both; }
-    .old .tw-counter span, .old .gp-counter span, .old .od-counter span, .overlay .tw-counter span, .overlay .gp-counter span, .overlay .od-counter span {
+    .old .tw-counter span, .old .gp-counter span, .old .od-counter span, .old .vk-counter span, .overlay .tw-counter span, .overlay .gp-counter span, .overlay .od-counter span, .overlay .vk-counter span {
       position: relative;
       top: 3px;
       float: right; }
-    .old .tw-counter i, .old .gp-counter i, .old .od-counter i, .overlay .tw-counter i, .overlay .gp-counter i, .overlay .od-counter i {
+    .old .tw-counter i, .old .gp-counter i, .old .od-counter i, .old .vk-counter i, .overlay .tw-counter i, .overlay .gp-counter i, .overlay .od-counter i, .overlay .vk-counter i {
       float: left;
       font-size: 1.4rem;
       color: #fff; }
@@ -6383,6 +6383,8 @@ select {
     background: #eb5e4b; }
   .old .od-counter, .overlay .od-counter {
     background: #f58220; }
+  .old .vk-counter, .overlay .vk-counter {
+    background: #4c68b3; }
   .old .disqus, .overlay .disqus {
     margin: 0 -30px;
     border-top: 1px solid #d7d7d7;
@@ -6502,12 +6504,27 @@ select {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%; }
+      @media only screen and (max-width: 767px) {
+        .old .article cite, .overlay .article cite {
+          font-size: 18px; } }
+      @media only screen and (max-width: 568px) {
+        .old .article cite, .overlay .article cite {
+          font-size: 16px;
+          padding-left: 40px;
+          padding-right: 0; }
+          .old .article cite:before, .overlay .article cite:before {
+            width: 30px;
+            height: 20px; } }
     .old .article cite[align="right"], .overlay .article cite[align="right"] {
       padding-right: 60px;
       padding-left: 30%; }
       .old .article cite[align="right"]:before, .overlay .article cite[align="right"]:before {
         left: auto;
         right: 0; }
+      @media only screen and (max-width: 568px) {
+        .old .article cite[align="right"], .overlay .article cite[align="right"] {
+          padding-left: 0;
+          padding-right: 40px; } }
   .old .select, .overlay .select {
     position: relative;
     display: inline-block;

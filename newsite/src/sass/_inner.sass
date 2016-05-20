@@ -510,7 +510,7 @@
 			+r(1160)
 				left: -30px
 			+r(768)
-				left: 0
+				left: -15px
 			&:before
 				position: absolute
 				top: 0
@@ -542,7 +542,7 @@
 			+r(1160)
 				right: -30px
 			+r(768)
-				right: 0
+				right: -15px
 			&:before
 				position: absolute
 				top: 0
@@ -570,7 +570,7 @@
 				&:after
 					opacity: 1
 		+r(960)
-			padding: 24px 0 37px
+			padding: 24px 20px 37px
 			.slick-slide
 				padding: 0 16px
 			.poster__content
@@ -722,7 +722,7 @@
 				.socials
 					font-size: 0
 					text-align: left
-					.fb-counter, .gp-counter, .tw-counter, .od-counter
+					.fb-counter, .gp-counter, .tw-counter, .od-counter, .vk-counter
 						display: inline-block
 						vertical-align: middle
 						width: 30%
@@ -805,7 +805,7 @@
 			position: absolute
 			bottom: 0
 			right: 2px
-	.tw-counter, .gp-counter, .od-counter
+	.tw-counter, .gp-counter, .od-counter, .vk-counter
 		position: relative
 		display: block
 		+clr
@@ -830,6 +830,8 @@
 		background: #eb5e4b
 	.od-counter
 		background: #f58220
+	.vk-counter
+		background: #4c68b3
 	.disqus
 		margin: 0 -30px
 		border-top: 1px solid #d7d7d7
@@ -939,12 +941,24 @@
 				height: 30px
 				background: url("../img/quotes.png")
 				+cover
+			+r(767)
+				font-size: 18px
+			+r(568)
+				font-size: 16px
+				padding-left: 40px
+				padding-right: 0
+				&:before
+					width: 30px
+					height: 20px
 		cite[align="right"]
 			padding-right: 60px
 			padding-left: 30%
 			&:before
 				left: auto
 				right: 0
+			+r(568)
+				padding-left: 0
+				padding-right: 40px
 	// select
 	.select
 		position: relative
