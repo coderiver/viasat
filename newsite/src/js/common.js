@@ -77,6 +77,7 @@ $(document).ready(function() {
         dots: true,
         autoplay: true,
         fade: true,
+        autoplaySpeed: 4000,
         speed: 500
     });
 

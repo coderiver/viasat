@@ -8049,7 +8049,7 @@ select {
       display: block;
       float: right;
       text-align: left;
-      width: 360px; }
+      width: 320px; }
       @media only screen and (max-width: 414px) {
         .old .get .get__btns .n-watch, .overlay .get .get__btns .n-watch {
           width: 100%; } }

@@ -365,7 +365,7 @@ $(document).ready(function() {
             var marker = new google.maps.Marker({
                 position: locations[i],
                 map: map,
-                icon: '../img/marker.png'
+                icon: 'img/marker.png'
             });
         };
     }
