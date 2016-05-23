@@ -690,7 +690,12 @@ movies:
                                 <input type="text" class="comments__input" placeholder="Ваше имя">
                                 <textarea class="comments__input" placeholder="Ваш комметарий..."></textarea>
                                 <div class="comments__bottom">
-                                    <button type="submit" class="n-btn n-btn_small">Отправить</button>
+                                    <div class="comments__captcha">
+                                        <img src="img/captcha.jpg" alt="">
+                                    </div>
+                                    <div class="comments__submit">
+                                        <button type="submit" class="comments__btn">Отправить</button>
+                                    </div>
                                 </div>
                             </form>
                             <div class="comments__list">
@@ -701,6 +706,11 @@ movies:
                                     <div class="comment__text">
                                         <p>Браво! Великолепный фильм, который учит идти к цели несмотря ни на что. Пусть тебя осыпают насмешками, придирками и укорами – ты все равно идешь вперед и добиваешься своего!</p>
                                     </div>
+                                    <ul class="comment__options">
+                                        <li><button>{{ mixins.icon('back') }}</button></li>
+                                        <li><button>{{ mixins.icon('edit') }}</button></li>
+                                        <li><button>{{ mixins.icon('trash') }}</button></li>
+                                    </ul>
                                 </div>
                                 <div class="comment">
                                     <div class="comment__user">
@@ -709,6 +719,11 @@ movies:
                                     <div class="comment__text">
                                         <p>Гениальнейшая актерская игра Дж. К. Симмонса и Майлза Теллера достойна аплодисментов. Они показали просто гигантский спектр эмоций. Обязательно рекомендую к просмотру.</p>
                                     </div>
+                                    <ul class="comment__options">
+                                        <li><button>{{ mixins.icon('back') }}</button></li>
+                                        <li><button>{{ mixins.icon('edit') }}</button></li>
+                                        <li><button>{{ mixins.icon('trash') }}</button></li>
+                                    </ul>
                                 </div>
                                 <div class="comment">
                                     <div class="comment__user">
@@ -717,8 +732,14 @@ movies:
                                     <div class="comment__text">
                                         <p>Очень сильная история о силе воли, крепости характера и стремлении к цели. Шикарный фильм с крутыми поворотами и потрясающей концовкой. По моему мнению, этот фильм – лучший из всех!</p>
                                     </div>
+                                    <ul class="comment__options">
+                                        <li><button>{{ mixins.icon('back') }}</button></li>
+                                        <li><button>{{ mixins.icon('edit') }}</button></li>
+                                        <li><button>{{ mixins.icon('trash') }}</button></li>
+                                    </ul>
                                 </div>
                             </div>
+                            <a href="#" class="comments__more">Показать все отзывы {{ mixins.icon('right') }}</a>
                         </div>
                     </div>
                     <div class="comments__aside">

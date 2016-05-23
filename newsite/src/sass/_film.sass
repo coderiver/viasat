@@ -1322,19 +1322,64 @@
 		width: 100%
 		border-radius: 3px
 		padding: 7px 10px
-		border: 1px solid #919191
+		border: 1px solid transparent
 		transition: border 200ms
 		+placeholder
 			color: rgba(#919191, 0.6)
+		&:focus
+			border-color: #919191
 	textarea.comments__input
 		resize: none
 		height: 100px
+		&:focus
+			border-color: #919191
 	.comments__bottom
-		text-align: right
+		+clr
+	.comments__captcha
+		float: left
+		img
+			display: block
+			max-width: 100%
+		+r(1280)
+			float: none
+	.comments__submit
+		float: right
+		padding-top: 10px
+		+r(1280)
+			float: none
+	.comments__btn
+		height: 42px
+		padding: 0 38px
+		vertical-align: middle
+		border: 2px solid rgba(#919191, 0.5)
+		border-radius: 3px
+		font-size: 14px
+		font-weight: 700
+		color: rgba(#919191, 0.5)
+		transition: background 200ms, color 200ms
+		&:hover
+			background: rgba(#919191, 0.5)
+			color: #fff
 	.comments__list
-		padding-bottom: 30px
 		+r(568)
 			margin-left: -20px
+	.comment__options
+		padding-top: 10px
+		text-align: right
+		li
+			display: inline-block
+			vertical-align: middle
+			margin-left: 10px
+			button
+				font-size: 16px
+				color: #888
+	.comments__more
+		display: inline-block
+		margin-bottom: 35px
+		color: #919191
+		font-size: 14px
+		svg
+			vertical-align: middle
 	.headline
 		+r(768)
 			margin-bottom: 0
