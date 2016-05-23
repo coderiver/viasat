@@ -1,3 +1,4 @@
+//=include lib/picturefill.min.js
 //=include lib/jquery.js
 //=include lib/jquery.mousewheel.min.js
 //=include lib/perfect-scrollbar.jquery.min.js

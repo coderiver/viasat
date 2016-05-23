@@ -75,6 +75,7 @@ $(document).ready(function() {
     // promo
     slider.initSlider('.js-promo', {
         dots: true
+        //autoplay: true
     });
 
     // premiers
