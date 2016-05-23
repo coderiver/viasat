@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="2122" column="31" selection-start-line="2122" selection-start-column="31" selection-end-line="2122" selection-end-column="31" />
+            <state relative-caret-position="209">
+              <caret line="2111" column="19" selection-start-line="2111" selection-start-column="19" selection-end-line="2111" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_head.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_head.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/layouts/_head.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -180,11 +180,11 @@
         <option value="$PROJECT_DIR$/src/templates/promopage.html" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
-        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/sass/_footer.sass" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/js/app.js" />
         <option value="$PROJECT_DIR$/src/templates/layouts/_head.html" />
+        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
       </list>
     </option>
   </component>
@@ -454,12 +454,12 @@
       <workItem from="1463580753567" duration="2590000" />
       <workItem from="1463641873315" duration="12826000" />
       <workItem from="1463729325739" duration="12420000" />
-      <workItem from="1463987608932" duration="17024000" />
+      <workItem from="1463987608932" duration="17317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285892000" />
+    <option name="totallyTimeSpent" value="286185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,14 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="2122" column="31" selection-start-line="2122" selection-start-column="31" selection-end-line="2122" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulp/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,6 +893,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="2111" column="19" selection-start-line="2111" selection-start-column="19" selection-end-line="2111" selection-end-column="19" />
           <folding />
         </state>
       </provider>

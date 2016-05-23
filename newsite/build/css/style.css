@@ -8062,7 +8062,7 @@ select {
     position: relative; }
   .old .get .get__btns, .overlay .get .get__btns {
     position: absolute;
-    top: 30px;
+    top: 45px;
     left: 0;
     right: 0;
     text-align: right;
