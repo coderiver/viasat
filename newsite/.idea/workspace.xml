@@ -24,9 +24,13 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="2660" column="12" selection-start-line="2660" selection-start-column="12" selection-end-line="2660" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="344">
+              <caret line="2127" column="29" selection-start-line="2127" selection-start-column="29" selection-end-line="2127" selection-end-column="29" />
+              <folding>
+                <marker date="1464016692000" expanded="true" signature="37999:38343" placeholder="..." />
+                <marker date="1464016692000" expanded="true" signature="38050:38337" placeholder="..." />
+                <marker date="1464016692000" expanded="true" signature="38155:38337" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -400,12 +404,12 @@
       <workItem from="1463580753567" duration="2590000" />
       <workItem from="1463641873315" duration="12826000" />
       <workItem from="1463729325739" duration="12420000" />
-      <workItem from="1463987608932" duration="14980000" />
+      <workItem from="1463987608932" duration="15273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283848000" />
+    <option name="totallyTimeSpent" value="284141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,10 +422,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18030183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18030183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5059571" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -838,9 +842,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="2660" column="12" selection-start-line="2660" selection-start-column="12" selection-end-line="2660" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="344">
+          <caret line="2127" column="29" selection-start-line="2127" selection-start-column="29" selection-end-line="2127" selection-end-column="29" />
+          <folding>
+            <marker date="1464016692000" expanded="true" signature="37999:38343" placeholder="..." />
+            <marker date="1464016692000" expanded="true" signature="38050:38337" placeholder="..." />
+            <marker date="1464016692000" expanded="true" signature="38155:38337" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

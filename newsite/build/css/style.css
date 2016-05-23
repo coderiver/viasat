@@ -8052,10 +8052,15 @@ select {
       display: block;
       float: right;
       text-align: left;
-      width: 320px; }
+      width: 280px; }
       @media only screen and (max-width: 414px) {
         .old .get .get__btns .n-watch, .overlay .get .get__btns .n-watch {
           width: 100%; } }
+      .old .get .get__btns .n-watch .n-watch__btn, .overlay .get .get__btns .n-watch .n-watch__btn {
+        border-radius: 4px;
+        height: 60px; }
+      .old .get .get__btns .n-watch .n-watch__list, .overlay .get .get__btns .n-watch .n-watch__list {
+        top: 60px; }
   .old .map, .overlay .map {
     position: relative;
     height: 770px;
