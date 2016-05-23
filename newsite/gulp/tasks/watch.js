@@ -8,6 +8,7 @@ gulp.task('watch', [
     'copy:watch',
     'sprite:svg:watch',
     'svgo:watch',
+    'html:watch',
     'nunjucks:watch',
     'js:watch'
 ]);
@@ -17,4 +18,4 @@ gulp.task('delete', function (cb) {
     rimraf('./'+config.dest.root, cb);
 });
 gulp.task('default', ['server', 'watch'], function() {});
-gulp.task('build', ['nunjucks', 'sprite', 'sprite:svg', 'copy','js','sass'], function() {});
+gulp.task('build', ['nunjucks', 'html', 'sprite', 'sprite:svg', 'copy','js','sass'], function() {});
