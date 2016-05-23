@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Подборка</title>
+    <title>Subscribe</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -187,131 +187,202 @@
         </div>
       </header>
       <!-- page content -->
-      <div class="out">
-        <div class="topper topper_big" style="background-image: url(img/topper3.jpg)">
-          <div class="topper__in">
+      <div class="container old">
+        <div class="get">
+          <div class="top">
             <div class="center">
-
+              <!-- breadcrumbs -->
               <nav class="breadcrumbs">
                 <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">Фильмотека</a></li>
-                  <li>Подборки фильмов</li>
+                  <li>
+                    <a href="#">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#">Подписка</a>
+                  </li>
                 </ul>
               </nav>
-              <div class="topper__head">
-                <div class="topper__left">
-                  <h1 class="n-h1">Фильмы для всей семьи</h1>
+              <h1 class="h1">Подключить каналы</h1>
+            </div>
+          </div>
+          <div class="get__content">
+            <div class="get__btns">
+              <div class="center">
+
+                <div class="n-watch js-watch">
+                  <div class="n-watch__btn js-watch-btn"><span>СМОТРЕТЬ НА</span></div>
+                  <ul class="n-watch__list js-watch-list">
+                    <li><a href="http://megogo.net/ru/tv/channels" class="n-watch__link">MEGOGO</a></li>
+                    <li><a href="http://oll.tv/iptv/tv1000" class="n-watch__link">OLL.TV</a></li>
+                    <li><a href="http://divan.tv/tv/" class="n-watch__link">Divan.TV</a></li>
+                    <li><a href="http://viasat.ua/ua/" class="n-watch__link">VIASAT</a></li>
+                    <li><a href="http://xtratv.com.ua/ru/" class="n-watch__link">Xtra TV</a></li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+            <div class="map">
+              <div id="map-canvas"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tvshows tvshows_gray">
+          <div class="center">
+            <div class="headtitle">ИНТЕРЕСНОЕ НА ЭТОЙ НЕДЕЛЕ</div>
+            <div class="tvshows__slider js-tvshow">
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_premium">
+                  <div class="movie__poster">
+                    <img src="img/img1.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Premium HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Восхождение Юпитер</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">20:00</div>
+                      <div class="movie__date">7 мая</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_comedy">
+                  <div class="movie__poster">
+                    <img src="img/img2.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Comedy HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Безумный Макс: Дорога ярости Дорога ярости</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">19:00</div>
+                      <div class="movie__date">26 апреля</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_action">
+                  <div class="movie__poster">
+                    <img src="img/img3.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Action HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Дедушка легкого поведения</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">19:00</div>
+                      <div class="movie__date">28 апреля</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_premium">
+                  <div class="movie__poster">
+                    <img src="img/img1.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Premium HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Восхождение Юпитер</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">20:00</div>
+                      <div class="movie__date">7 мая</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_comedy">
+                  <div class="movie__poster">
+                    <img src="img/img2.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Comedy HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Безумный Макс: Дорога ярости</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">19:00</div>
+                      <div class="movie__date">26 апреля</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="tvshows__item">
+                <a href="#" class="movie movie_action">
+                  <div class="movie__poster">
+                    <img src="img/img3.jpg" alt="">
+                  </div>
+                  <div class="movie__in">
+                    <div class="movie__channel">TV1000 Action HD</div>
+                    <div class="movie__left">
+                      <div class="movie__title js-ellip">Дедушка легкого поведения</div>
+                      <div class="movie__genre">боевик</div>
+                    </div>
+                    <div class="movie__right">
+                      <div class="movie__time">19:00</div>
+                      <div class="movie__date">28 апреля</div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="main">
+        <div class="section section_channels">
           <div class="center">
-
-            <div class="catalog catalog_top">
-              <div class="catalog__in">
-                <a href="#" class="card card_premium">
-                  <div class="card__poster">
-                    <img src="img/img1.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Восхождение Юпитер</div>
-                    <div class="card__about">
-                      <p>Комедия, Драма, Семейный</p>
-                      <p>Великобритания, 2011</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_comedy">
-                  <div class="card__poster">
-                    <img src="img/img2.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Безумный Макс: Дорога ярости</div>
-                    <div class="card__about">
-                      <p>Комедия</p>
-                      <p>США, 2014</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_action">
-                  <div class="card__poster">
-                    <img src="img/img3.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Дедушка легкого поведения</div>
-                    <div class="card__about">
-                      <p>Комедия, Драма, Семейный</p>
-                      <p>Великобритания, 2011</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_premium">
-                  <div class="card__poster">
-                    <img src="img/img1.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Восхождение Юпитер</div>
-                    <div class="card__about">
-                      <p>Комедия</p>
-                      <p>США, 2014</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_comedy">
-                  <div class="card__poster">
-                    <img src="img/img2.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Безумный Макс: Дорога ярости</div>
-                    <div class="card__about">
-                      <p>Комедия, Драма, Семейный</p>
-                      <p>Великобритания, 2011</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_action">
-                  <div class="card__poster">
-                    <img src="img/img3.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Дедушка легкого поведения</div>
-                    <div class="card__about">
-                      <p>Комедия</p>
-                      <p>США, 2014</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_action">
-                  <div class="card__poster">
-                    <img src="img/img3.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Дедушка легкого поведения</div>
-                    <div class="card__about">
-                      <p>Комедия, Драма, Семейный</p>
-                      <p>Великобритания, 2011</p>
-                    </div>
-                  </div>
-                </a>
-                <a href="#" class="card card_premium">
-                  <div class="card__poster">
-                    <img src="img/img1.jpg" alt="">
-                  </div>
-                  <div class="card__in">
-                    <div class="card__title">Восхождение Юпитер</div>
-                    <div class="card__about">
-                      <p>Комедия</p>
-                      <p>США, 2014</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="more">
-                <a href="#" class="n-btn n-btn_small n-btn_white">Показать еще</a>
+            <div class="n-channels">
+              <div class="n-channels__row js-channels2">
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel1.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel2.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel3.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel4.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel5.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel6.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel7.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel8.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel9.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel10.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel11.png" class="n-channels__logo"></a>
+                </div>
+                <div class="n-channels__item">
+                  <a href="#" class="n-channels__link"><img href="#" src="img/channel12.png" class="n-channels__logo"></a>
+                </div>
               </div>
             </div>
           </div>

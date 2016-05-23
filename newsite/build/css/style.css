@@ -8038,12 +8038,14 @@ select {
     right: 0;
     text-align: right;
     z-index: 2; }
-    .old .get .get__btns button, .overlay .get .get__btns button {
-      margin-bottom: 10px; }
-      @media only screen and (max-width: 568px) {
-        .old .get .get__btns button, .overlay .get .get__btns button {
-          height: 40px;
-          padding: 5px 10px; } }
+    .old .get .get__btns .n-watch, .overlay .get .get__btns .n-watch {
+      display: block;
+      float: right;
+      text-align: left;
+      width: 360px; }
+      @media only screen and (max-width: 414px) {
+        .old .get .get__btns .n-watch, .overlay .get .get__btns .n-watch {
+          width: 100%; } }
   .old .map, .overlay .map {
     position: relative;
     height: 770px;
