@@ -6530,7 +6530,8 @@ select {
     .old .post .post__in, .overlay .post .post__in {
       padding: 20px 0 30px; }
       .old .post .post__in > p, .overlay .post .post__in > p {
-        margin-bottom: 25px; }
+        margin-bottom: 25px;
+        padding: 0 5%; }
       .old .post .post__in > h3, .overlay .post .post__in > h3 {
         padding: 0 5%; }
       @media only screen and (max-width: 480px) {
@@ -6568,6 +6569,8 @@ select {
       font-size: 1.2rem;
       color: #9e9e9e;
       margin-left: 12px; }
+    .old .post .post__more, .overlay .post .post__more {
+      padding: 0 5%; }
   .old .fb-counter, .overlay .fb-counter {
     position: relative;
     display: block;
