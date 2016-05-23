@@ -6724,7 +6724,7 @@ select {
           margin-right: 5px;
           background: url("../img/star-gray.svg") no-repeat;
           background-size: 100%; }
-    .old .article cite, .overlay .article cite {
+    .old .article pre, .overlay .article pre {
       position: relative;
       display: block;
       padding-right: 30%;
@@ -6733,8 +6733,9 @@ select {
       padding-left: 60px;
       font-size: 20px;
       font-weight: 300;
+      white-space: normal;
       font-style: italic; }
-      .old .article cite:before, .overlay .article cite:before {
+      .old .article pre:before, .overlay .article pre:before {
         content: "";
         position: absolute;
         top: -5px;
@@ -6746,24 +6747,24 @@ select {
         background-size: cover;
         background-position: 50% 50%; }
       @media only screen and (max-width: 767px) {
-        .old .article cite, .overlay .article cite {
+        .old .article pre, .overlay .article pre {
           font-size: 18px; } }
       @media only screen and (max-width: 568px) {
-        .old .article cite, .overlay .article cite {
+        .old .article pre, .overlay .article pre {
           font-size: 16px;
           padding-left: 40px;
           padding-right: 0; }
-          .old .article cite:before, .overlay .article cite:before {
+          .old .article pre:before, .overlay .article pre:before {
             width: 30px;
             height: 20px; } }
-    .old .article cite[align="right"], .overlay .article cite[align="right"] {
+    .old .article pre[align="right"], .overlay .article pre[align="right"] {
       padding-right: 60px;
       padding-left: 30%; }
-      .old .article cite[align="right"]:before, .overlay .article cite[align="right"]:before {
+      .old .article pre[align="right"]:before, .overlay .article pre[align="right"]:before {
         left: auto;
         right: 0; }
       @media only screen and (max-width: 568px) {
-        .old .article cite[align="right"], .overlay .article cite[align="right"] {
+        .old .article pre[align="right"], .overlay .article pre[align="right"] {
           padding-left: 0;
           padding-right: 40px; } }
   .old .select, .overlay .select {
