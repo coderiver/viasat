@@ -4881,6 +4881,10 @@ select {
     overflow: hidden;
     color: #919191;
     font-size: 14px; }
+    .comment .comment__text strong {
+      display: block;
+      font-weight: normal;
+      margin-bottom: 20px; }
 
 .tvshows {
   position: relative;
