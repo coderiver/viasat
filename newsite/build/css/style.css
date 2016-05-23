@@ -6524,9 +6524,11 @@ select {
           .old .post .post__date p, .overlay .post .post__date p {
             font-size: 4rem; } }
     .old .post .post__in, .overlay .post .post__in {
-      padding: 20px 30px 30px; }
+      padding: 20px 0 30px; }
       .old .post .post__in > p, .overlay .post .post__in > p {
         margin-bottom: 25px; }
+      .old .post .post__in > h3, .overlay .post .post__in > h3 {
+        padding: 0 5%; }
       @media only screen and (max-width: 480px) {
         .old .post .post__in, .overlay .post .post__in {
           padding: 15px; }
@@ -6543,6 +6545,7 @@ select {
           overflow: visible; } }
     .old .post .post__details, .overlay .post .post__details {
       *zoom: 1;
+      padding: 0 30px;
       margin-bottom: 18px; }
       .old .post .post__details:after, .overlay .post .post__details:after {
         content: " ";
@@ -6671,6 +6674,8 @@ select {
     .old .categories .categories__counter, .overlay .categories .categories__counter {
       float: right; }
   .old .article, .overlay .article {
+    display: block;
+    padding: 0 5%;
     line-height: 1.5;
     font-weight: 400; }
     .old .article p, .overlay .article p {
@@ -6705,7 +6710,8 @@ select {
           font-size: 1.8rem; } }
     .old .article img, .overlay .article img {
       display: block;
-      margin: 0 -30px 30px; }
+      width: 112%;
+      margin: 0 -6% 30px; }
       @media only screen and (max-width: 960px) {
         .old .article img, .overlay .article img {
           width: 100%;
@@ -6731,6 +6737,9 @@ select {
       min-height: 40px;
       margin-bottom: 30px;
       padding-left: 60px;
+      font-family: Roboto, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       font-size: 20px;
       font-weight: 300;
       white-space: normal;
