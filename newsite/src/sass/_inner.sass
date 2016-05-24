@@ -2803,6 +2803,47 @@
 	overflow-y: auto
 	text-align: center
 	z-index: 1
+	.slick-prev,
+	.slick-next
+		position: absolute
+		top: 50%
+		margin-top: -7px
+		+hide-text
+		height: 14px
+		background: none
+		z-index: 2
+		&:focus
+			outline: none
+		&.slick-disabled
+			opacity: 0.2
+		&:before
+			height: 14px
+			line-height: 14px
+		&:hover
+			&:before
+				opacity: 1
+	.slick-prev
+		left: 14px
+		&:before
+			content: "\e60e"
+			display: inline-block
+			vertical-align: middle
+			font-size: 30px
+			font-family: 'icomoon'
+			color: #fff
+		+r(1024)
+			left: 5px
+	.slick-next
+		right: 14px
+		&:before
+			content: "\e60b"
+			display: inline-block
+			vertical-align: middle
+			font-family: 'icomoon'
+			font-size: 30px
+			color: #fff
+			+r(1024)
+				right: 5px
 	+r(1024)
 		padding: 55px 0
 	+r(800)
@@ -2822,6 +2863,16 @@
 				height: auto
 .gallery__view
 	margin-bottom: 20px
+	.slick-slide
+		text-align: center
+		img
+			display: inline-block
+			max-width: 100%
+			width: auto
+			height: 400px
+		+r(768)
+			img
+				height: auto
 .gallery__thumbnail
 	display: inline-block
 	width: 800px
