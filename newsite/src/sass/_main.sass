@@ -1112,7 +1112,7 @@
 	background: #fff
 	padding: 30px
 	.results__list
-		list-style-type: decimal
+		counter-reset: list
 	+r(768)
 		padding: 20px
 	+r(568)
@@ -1121,6 +1121,14 @@
 	position: relative
 	margin-top: 30px
 	+clr
+	padding-left: 20px
+	list-style-type: none
+	&:before
+		position: absolute
+		top: 25px
+		left: 0
+		counter-increment: list 1
+		content: counter(list)"."
 	&:first-child
 		margin-top: 0
 	a

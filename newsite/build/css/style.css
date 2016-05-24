@@ -1817,7 +1817,7 @@ select {
   background: #fff;
   padding: 30px; }
   .results .results__list {
-    list-style-type: decimal; }
+    counter-reset: list; }
   @media only screen and (max-width: 768px) {
     .results {
       padding: 20px; } }
@@ -1828,11 +1828,19 @@ select {
 .result {
   position: relative;
   margin-top: 30px;
-  *zoom: 1; }
+  *zoom: 1;
+  padding-left: 20px;
+  list-style-type: none; }
   .result:after {
     content: " ";
     display: table;
     clear: both; }
+  .result:before {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    counter-increment: list 1;
+    content: counter(list) "."; }
   .result:first-child {
     margin-top: 0; }
   .result a {
