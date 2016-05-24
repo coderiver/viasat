@@ -9,8 +9,16 @@
 			display: block
 			width: 100%
 	.card__in
+		position: relative
 		padding: 15px 25px 0
-		border-right: 1px solid rgba(#e6e6e6, .5)
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			height: 100px
+			width: 1px
+			background: rgba(#e6e6e6, .5)
 		+r(1024)
 			padding: 15px 15px 0
 		+r(768)

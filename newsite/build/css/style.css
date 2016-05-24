@@ -1527,13 +1527,14 @@ select {
       background: url("../img/arr-right.svg") center no-repeat; }
     .slider .slick-next:hover {
       background: #fff; }
-  .slider .card:nth-child(3n) .card__in {
-    border-width: 0; }
-  @media only screen and (max-width: 1024px) {
-    .slider .card:nth-child(3n) .card__in {
-      border-width: 1px; }
-    .slider .card:nth-child(2n) .card__in {
-      border-width: 0; } }
+  .slider .card:not(.slick-active) + .card.slick-active .card__in:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 1px;
+    background: rgba(230, 230, 230, 0.5); }
 
 .section_channels {
   padding: 40px 0 20px;
@@ -2524,8 +2525,16 @@ select {
       display: block;
       width: 100%; }
   .card .card__in {
-    padding: 15px 25px 0;
-    border-right: 1px solid rgba(230, 230, 230, 0.5); }
+    position: relative;
+    padding: 15px 25px 0; }
+    .card .card__in:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100px;
+      width: 1px;
+      background: rgba(230, 230, 230, 0.5); }
     @media only screen and (max-width: 1024px) {
       .card .card__in {
         padding: 15px 15px 0; } }
