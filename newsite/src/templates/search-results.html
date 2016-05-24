@@ -63,16 +63,16 @@ movies:
   genre: 'Комедия'
   country: 'США, 2014'
 results:
-- img: 'img/poster.jpg'
+- category: 'новости'
   title: 'Some title 1'
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dicta est fugit iste, iure laborum libero modi tempora veniam voluptas. A ab alias culpa maiores omnis sunt totam? Ab, voluptate!"
-- img: 'img/poster.jpg'
+- category: 'блог'
   title: 'Some title 2'
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa minima obcaecati possimus quisquam voluptatum. Ab accusamus dolores ea fuga nobis non, quae quis rem reprehenderit similique sint temporibus voluptatem voluptates?"
-- img: 'img/poster.jpg'
+- category: 'новости'
   title: 'Some title 3'
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolore doloribus eius explicabo ipsa maxime perspiciatis placeat quas quidem quisquam. Aut ea explicabo iusto obcaecati rem tempora. Architecto, consequuntur, eaque?"
-- img: 'img/poster.jpg'
+- category: 'блог'
   title: 'Some title 4'
   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis culpa deserunt dolorem doloremque eaque eos est et eveniet inventore, perspiciatis quidem repellendus? Consectetur expedita hic laborum magnam, nobis sequi?"
 ---
@@ -99,10 +99,8 @@ results:
                     <ul class="results__list">
                         {% for result in results %}
                             <li class="result">
-                                <div class="result__img">
-                                    <img src="{{ result.img }}" alt="">
-                                </div>
                                 <div class="result__info">
+                                    <div class="result__category">{{ result.category }}</div>
                                     <h3>{{ result.title }}</h3>
                                     <p>{{ result.text }}</p>
                                 </div>

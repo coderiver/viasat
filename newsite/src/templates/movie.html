@@ -109,7 +109,10 @@ movies:
                                                 <span>23:00</span>
                                                 <p>17 Сентября</p>
                                             </div>
-                                            <a href="#" class="watch"><i class="icon-bell"></i></a>
+                                            <div class="remind">
+                                                <button class="remind__btn">{{ mixins.icon('bell') }}</button>
+                                                <div class="remind__hint"><span>Напомнить о просмотре</span></div>
+                                            </div>
                                         </div>
                                         <!-- socials -->
                                         <div class="socials socials_wide">
@@ -282,6 +285,7 @@ movies:
                                 <div class="movie__in">
                                     <div class="movie__left">
                                         <div class="movie__title">{{ movie.title }}</div>
+                                        <div class="movie__genre">{{ movie.genre }}</div>
                                     </div>
                                     <div class="movie__right">
                                         <div class="movie__time">{{ movie.time }}</div>

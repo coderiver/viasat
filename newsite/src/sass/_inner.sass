@@ -1745,6 +1745,7 @@
 						display: block
 		.socials__links
 			float: left
+			text-align: center
 			ul
 				border-radius: 3px
 				overflow: hidden
@@ -1757,7 +1758,6 @@
 						width: 58px
 						height: 43px
 						+vertical
-						//color: #fff
 						font-size: 2.4rem
 						+tr(color 300ms)
 						color: #3a5ba0
@@ -1894,11 +1894,19 @@
 		.item__watch
 			margin-bottom: 30px
 			text-align: right
+			.remind
+				.remind__btn
+					background: red
+					color: #fff
+				.remind__hint
+					background: red
 			+r(480)
 				+clr
 				text-align: left
-				.watch
+				.remind
 					float: right
+
+
 		.item__time
 			display: inline-block
 			vertical-align: top
@@ -2793,12 +2801,12 @@
 	bottom: 0
 	right: 0
 	left: 0
-	padding: 15% 0
+	padding: 55px 0
 	overflow-y: auto
 	text-align: center
 	z-index: 1
 	+r(1024)
-		padding: 5% 0
+		padding: 55px 0
 	+r(800)
 		position: relative
 		top: auto

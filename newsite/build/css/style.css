@@ -7677,7 +7677,8 @@ select {
         .old .socials.socials_wide .socials__likes ul, .overlay .socials.socials_wide .socials__likes ul {
           display: block; } }
     .old .socials .socials__links, .overlay .socials .socials__links {
-      float: left; }
+      float: left;
+      text-align: center; }
       .old .socials .socials__links ul, .overlay .socials .socials__links ul {
         border-radius: 3px;
         overflow: hidden;
@@ -7852,6 +7853,11 @@ select {
     .old .item .item__watch, .overlay .item .item__watch {
       margin-bottom: 30px;
       text-align: right; }
+      .old .item .item__watch .remind .remind__btn, .overlay .item .item__watch .remind .remind__btn {
+        background: red;
+        color: #fff; }
+      .old .item .item__watch .remind .remind__hint, .overlay .item .item__watch .remind .remind__hint {
+        background: red; }
       @media only screen and (max-width: 480px) {
         .old .item .item__watch, .overlay .item .item__watch {
           *zoom: 1;
@@ -7860,7 +7866,7 @@ select {
             content: " ";
             display: table;
             clear: both; }
-          .old .item .item__watch .watch, .overlay .item .item__watch .watch {
+          .old .item .item__watch .remind, .overlay .item .item__watch .remind {
             float: right; } }
     .old .item .item__time, .overlay .item .item__time {
       display: inline-block;
@@ -8869,13 +8875,13 @@ select {
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 15% 0;
+  padding: 55px 0;
   overflow-y: auto;
   text-align: center;
   z-index: 1; }
   @media only screen and (max-width: 1024px) {
     .gallery {
-      padding: 5% 0; } }
+      padding: 55px 0; } }
   @media only screen and (max-width: 800px) {
     .gallery {
       position: relative;
