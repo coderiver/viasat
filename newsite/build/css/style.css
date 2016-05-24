@@ -7854,10 +7854,10 @@ select {
       margin-bottom: 30px;
       text-align: right; }
       .old .item .item__watch .remind .remind__btn, .overlay .item .item__watch .remind .remind__btn {
-        background: red;
+        background: #d70000;
         color: #fff; }
       .old .item .item__watch .remind .remind__hint, .overlay .item .item__watch .remind .remind__hint {
-        background: red; }
+        background: #d70000; }
       @media only screen and (max-width: 480px) {
         .old .item .item__watch, .overlay .item .item__watch {
           *zoom: 1;
