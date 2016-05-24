@@ -82,7 +82,7 @@ movies:
                             </li>
                         </ul>
                     </nav>
-                    <h1 class="h1 h1_white">Фильм на <span>TV1000 Premium HD</span></h1>
+                    <h1 class="h1 h1_white">Смотрите на <span>TV1000 Premium HD</span></h1>
                 </div>
             </div>
             <div class="container">
@@ -107,7 +107,7 @@ movies:
                                         <div class="item__watch">
                                             <div class="item__time">
                                                 <span>23:00</span>
-                                                <p>17 Сентября</p>
+                                                <p>17 сентября</p>
                                             </div>
                                             <div class="remind">
                                                 <button class="remind__btn">{{ mixins.icon('bell') }}</button>
@@ -171,7 +171,7 @@ movies:
                                     <p>В недалёком будущем раса инопланетян вторгается на Землю. Никакая армия в мире не может противостоять им. Майор Уильям Кейдж умирает в бою, но случается невозможное — он оказывается во временной петле. Раз за разом он попадает в один и тот же бой, сражается и умирает… снова и снова. И каждое повторяющееся сражение приближает его к разгадке того, как победить врага.</p>
                                 </div>
                                 <div class="gallery-preview">
-                                    <p><strong>Кадры из фильма</strong></p>
+                                    <p><strong>Кадры</strong></p>
                                     <div class="row">
                                         <a href="#" class="gallery-preview__item js-gallery col4" data-slide="0">
                                             <img src="img/img7.jpg" alt="">
@@ -284,8 +284,8 @@ movies:
                                 </div>
                                 <div class="movie__in">
                                     <div class="movie__left">
-                                        <div class="movie__title">{{ movie.title }}</div>
-                                        <div class="movie__genre">{{ movie.genre }}</div>
+                                        <div class="movie__title js-ellip">{{ movie.title }}</div>
+                                        <div class="movie__genre js-ellip">{{ movie.genre }}</div>
                                     </div>
                                     <div class="movie__right">
                                         <div class="movie__time">{{ movie.time }}</div>
@@ -313,7 +313,7 @@ movies:
                                     <div class="movie__channel">{{ movie.channel }}</div>
                                     <div class="movie__left">
                                         <div class="movie__title js-ellip">{{ movie.title }}</div>
-                                        <div class="movie__genre">боевик</div>
+                                        <div class="movie__genre js-ellip">боевик</div>
                                     </div>
                                     <div class="movie__right">
                                         <div class="movie__time">{{ movie.time }}</div>
