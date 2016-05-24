@@ -1111,6 +1111,8 @@
 .results
 	background: #fff
 	padding: 30px
+	.results__list
+		list-style-type: decimal
 	+r(768)
 		padding: 20px
 	+r(568)
@@ -1121,6 +1123,9 @@
 	+clr
 	&:first-child
 		margin-top: 0
+	a
+		display: block
+		color: $cl
 	.result__img
 		float: left
 		width: 150px

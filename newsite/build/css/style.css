@@ -1816,6 +1816,8 @@ select {
 .results {
   background: #fff;
   padding: 30px; }
+  .results .results__list {
+    list-style-type: decimal; }
   @media only screen and (max-width: 768px) {
     .results {
       padding: 20px; } }
@@ -1833,6 +1835,9 @@ select {
     clear: both; }
   .result:first-child {
     margin-top: 0; }
+  .result a {
+    display: block;
+    color: #353535; }
   .result .result__img {
     float: left;
     width: 150px;

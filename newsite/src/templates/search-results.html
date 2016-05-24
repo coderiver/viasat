@@ -94,19 +94,24 @@ results:
                         </li>
                     </ul>
                 </nav>
-                <h1 class="h1">Результаты поиска</h1>
+                <h1 class="h1">Результаты поиска <span>(найдено: 4)</span></h1>
                 <div class="results">
-                    <ul class="results__list">
+                    <ol class="results__list">
                         {% for result in results %}
                             <li class="result">
-                                <div class="result__info">
-                                    <div class="result__category">{{ result.category }}</div>
-                                    <h3>{{ result.title }}</h3>
-                                    <p>{{ result.text }}</p>
-                                </div>
+                                <a href="#">
+                                    <div class="result__info">
+                                        <div class="result__category">{{ result.category }}</div>
+                                        <h3>{{ result.title }}</h3>
+                                        <p>{{ result.text }}</p>
+                                    </div>
+                                </a>
                             </li>
                         {% endfor %}
-                    </ul>
+                    </ol>
+                    <div class="more">
+                        <a href="#" class="n-btn n-btn_small n-btn_white">Показать еще</a>
+                    </div>
                 </div>
             </div>
             <aside class="sidebar sidebar_low">
