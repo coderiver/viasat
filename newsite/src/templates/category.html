@@ -1,12 +1,25 @@
 ---
 title: Category
+channels:
+- img: img/channel1.png
+- img: img/channel2.png
+- img: img/channel3.png
+- img: img/channel4.png
+- img: img/channel5.png
+- img: img/channel6.png
+- img: img/channel7.png
+- img: img/channel8.png
+- img: img/channel9.png
+- img: img/channel10.png
+- img: img/channel11.png
+- img: img/channel12.png
 cards:
 - img: 'img/img1.jpg'
   channel: 'TV1000 Premium HD'
   title: 'Восхождение Юпитер'
   time: '20:00'
   date: '7 мая'
-  color: violet
+  color: premium
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: img/img2.jpg
@@ -14,7 +27,7 @@ cards:
   title: 'Безумный Макс: Дорога ярости'
   time: '19:00'
   date: '26 апреля'
-  color: orange
+  color: comedy
   genre: 'Комедия'
   country: 'США, 2014'
 - img: 'img/img3.jpg'
@@ -22,7 +35,7 @@ cards:
   title: 'Дедушка легкого поведения'
   time: '19:00'
   date: '28 апреля'
-  color: red
+  color: action
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: 'img/img1.jpg'
@@ -30,7 +43,7 @@ cards:
   title: 'Восхождение Юпитер'
   time: '20:00'
   date: '7 мая'
-  color: violet
+  color: premium
   genre: 'Комедия'
   country: 'США, 2014'
 - img: img/img2.jpg
@@ -38,7 +51,7 @@ cards:
   title: 'Безумный Макс: Дорога ярости'
   time: '19:00'
   date: '26 апреля'
-  color: orange
+  color: comedy
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: 'img/img3.jpg'
@@ -46,7 +59,7 @@ cards:
   title: 'Дедушка легкого поведения'
   time: '19:00'
   date: '28 апреля'
-  color: red
+  color: action
   genre: 'Комедия'
   country: 'США, 2014'
 - img: 'img/img3.jpg'
@@ -54,7 +67,7 @@ cards:
   title: 'Дедушка легкого поведения'
   time: '19:00'
   date: '28 апреля'
-  color: red
+  color: action
   genre: 'Комедия, Драма, Семейный'
   country: 'Великобритания, 2011'
 - img: 'img/img1.jpg'
@@ -62,7 +75,7 @@ cards:
   title: 'Восхождение Юпитер'
   time: '20:00'
   date: '7 мая'
-  color: violet
+  color: premium
   genre: 'Комедия'
   country: 'США, 2014'
 ---
@@ -205,6 +218,18 @@ cards:
                     <div class="more">
                         <a href="#" class="n-btn n-btn_small n-btn_white">Показать еще</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# section #}
+    <div class="section section_channels">
+        <div class="center">
+            <div class="n-channels">
+                <div class="n-channels__row js-channels2">
+                    {% for channel in channels %}
+                        <div class="n-channels__item"><a href="#" class="n-channels__link"><img href="#" src="{{ channel.img }}" class="n-channels__logo"></a></div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
