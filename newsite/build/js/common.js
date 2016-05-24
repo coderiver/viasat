@@ -42,6 +42,12 @@ $(document).ready(function() {
                 valueContainer.text(rating);
             }
         });
+
+        // set film rating on init
+        $('.js-rating-select').rateYo("option", "rating", 5.0);
+        $('.js-rating-value').text('5.0');
+
+
         $(window).resize(function () {
            if($(window).width() < 480){
                $(".js-rating-select").rateYo("option", "starWidth", "12px");
