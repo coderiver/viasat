@@ -1051,9 +1051,10 @@ $(document).ready(function() {
 
         promoSlider.slick({
             speed: 400,
+            arrows: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            initialSlide: 2,
+            initialSlide: 1,
             infinite: false,
             centerMode: true,
             responsive: [
