@@ -1108,4 +1108,34 @@
 	+r(768)
 		.filters__left
 			width: 120px
+.results
+	background: #fff
+	padding: 30px
+	+r(768)
+		padding: 20px
+	+r(568)
+		padding: 10px
+.result
+	position: relative
+	margin-top: 30px
+	+clr
+	&:first-child
+		margin-top: 0
+	.result__img
+		float: left
+		width: 150px
+		margin-right: 30px
+		img
+			display: block
+			width: 100%
+	.result__content
+		overflow: hidden
+	+r(768)
+		margin-top: 20px
+		.result__img
+			margin-right: 20px
+	+r(568)
+		.result__img
+			margin-right: 10px
+			width: 120px
 

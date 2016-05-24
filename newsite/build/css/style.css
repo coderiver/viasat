@@ -1813,6 +1813,45 @@ select {
     .filters .filters__left {
       width: 120px; } }
 
+.results {
+  background: #fff;
+  padding: 30px; }
+  @media only screen and (max-width: 768px) {
+    .results {
+      padding: 20px; } }
+  @media only screen and (max-width: 568px) {
+    .results {
+      padding: 10px; } }
+
+.result {
+  position: relative;
+  margin-top: 30px;
+  *zoom: 1; }
+  .result:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .result:first-child {
+    margin-top: 0; }
+  .result .result__img {
+    float: left;
+    width: 150px;
+    margin-right: 30px; }
+    .result .result__img img {
+      display: block;
+      width: 100%; }
+  .result .result__content {
+    overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .result {
+      margin-top: 20px; }
+      .result .result__img {
+        margin-right: 20px; } }
+  @media only screen and (max-width: 568px) {
+    .result .result__img {
+      margin-right: 10px;
+      width: 120px; } }
+
 .slick-slider {
   position: relative;
   display: block;
