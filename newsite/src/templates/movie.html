@@ -127,21 +127,19 @@ movies:
                                         <!-- rating -->
                                         <div class="rating">
                                             <div class="rating__item">
-                                                <a href="#" class="rating__link">
+                                                <div class="rating__link">
                                                     <img src="img/imdb.jpg" width="56" alt="">
-                                                </a>
+                                                </div>
                                                 <div class="rating__mark">
                                                     <strong>7.1</strong>
-                                                    <p>343689</p>
                                                 </div>
                                             </div>
                                             <div class="rating__item">
-                                                <a href="#" class="rating__link">
+                                                <div class="rating__link">
                                                     <img src="img/kinopoisk.png" width="56" alt="">
-                                                </a>
+                                                </div>
                                                 <div class="rating__mark">
                                                     <strong>6.9</strong>
-                                                    <p>343689</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,7 +158,7 @@ movies:
                                             </div>
                                             <div class="item__row">
                                                 <div class="item__col"><strong>Жанр:</strong></div>
-                                                <div class="item__col">Боевики, Фантастика</div>
+                                                <div class="item__col">боевики, фантастика</div>
                                             </div>
                                         </div>
                                     </div>
@@ -267,6 +265,32 @@ movies:
                             <img src="img/banner.jpg" alt="">
                         </div>
                     </aside>
+                </div>
+            </div>
+        </div>
+        {# tvshows #}
+        <div class="tvshows">
+            <div class="center">
+                <div class="headtitle">СМОТРИТЕ НА КАНАЛЕ <strong>TV1000 Premium HD</strong></div>
+                <div class="tvshows__slider js-tvshow">
+                    {% for movie in movies %}
+                        <div class="tvshows__item">
+                            <a href="#" class="movie">
+                                <div class="movie__poster">
+                                    <img src="{{ movie.img }}" alt="">
+                                </div>
+                                <div class="movie__in">
+                                    <div class="movie__left">
+                                        <div class="movie__title">{{ movie.title }}</div>
+                                    </div>
+                                    <div class="movie__right">
+                                        <div class="movie__time">{{ movie.time }}</div>
+                                        <div class="movie__date">{{ movie.date }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

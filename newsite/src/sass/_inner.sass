@@ -1722,7 +1722,10 @@
 				width: 100%
 				ul
 					li
-						width: 33.33%
+						display: inline-block
+						margin-left: 30px
+						&:first-child
+							margin-left: 0
 						a
 							width: 100%
 					+r(1150)
@@ -2790,9 +2793,12 @@
 	bottom: 0
 	right: 0
 	left: 0
-	padding-top: 15%
+	padding: 15% 0
+	overflow-y: auto
 	text-align: center
 	z-index: 1
+	+r(1024)
+		padding: 5% 0
 	+r(800)
 		position: relative
 		top: auto

@@ -3905,14 +3905,12 @@ select {
 
 .n-watch {
   position: relative;
-  text-align: left;
+  text-align: center;
   z-index: 2; }
   .n-watch .n-watch__btn {
     height: 86px;
     text-align: center;
     font-size: 0;
-    text-align: left;
-    padding-left: 100px;
     background: #f8b636; }
     .n-watch .n-watch__btn:before {
       content: "";
@@ -3963,7 +3961,7 @@ select {
       color: #222121;
       -webkit-transition: background 200ms;
       transition: background 200ms;
-      padding: 5px 0 5px 100px;
+      padding: 5px 0 5px 5px;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase; }
@@ -4426,25 +4424,25 @@ select {
         -ms-transform: rotate(180deg);
         transform: rotate(180deg); } }
 
-.trailer {
+.n-trailer {
   position: relative; }
   @media only screen and (max-width: 768px) {
-    .trailer {
+    .n-trailer {
       margin-bottom: 30px; } }
-  .trailer .trailer__in {
+  .n-trailer .n-trailer__in {
     position: relative;
     padding-left: 277px; }
     @media only screen and (max-width: 1024px) {
-      .trailer .trailer__in {
+      .n-trailer .n-trailer__in {
         padding-left: 150px; } }
     @media only screen and (max-width: 768px) {
-      .trailer .trailer__in {
+      .n-trailer .n-trailer__in {
         padding-left: 0;
         display: none; } }
-  .trailer .trailer__video {
+  .n-trailer .n-trailer__video {
     position: relative;
     padding-bottom: 50%; }
-    .trailer .trailer__video iframe {
+    .n-trailer .n-trailer__video iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -7656,7 +7654,10 @@ select {
     .old .socials.socials_wide .socials__links, .overlay .socials.socials_wide .socials__links {
       width: 100%; }
       .old .socials.socials_wide .socials__links ul li, .overlay .socials.socials_wide .socials__links ul li {
-        width: 33.33%; }
+        display: inline-block;
+        margin-left: 30px; }
+        .old .socials.socials_wide .socials__links ul li:first-child, .overlay .socials.socials_wide .socials__links ul li:first-child {
+          margin-left: 0; }
         .old .socials.socials_wide .socials__links ul li a, .overlay .socials.socials_wide .socials__links ul li a {
           width: 100%; }
       @media only screen and (max-width: 1150px) {
@@ -8868,9 +8869,13 @@ select {
   bottom: 0;
   right: 0;
   left: 0;
-  padding-top: 15%;
+  padding: 15% 0;
+  overflow-y: auto;
   text-align: center;
   z-index: 1; }
+  @media only screen and (max-width: 1024px) {
+    .gallery {
+      padding: 5% 0; } }
   @media only screen and (max-width: 800px) {
     .gallery {
       position: relative;
