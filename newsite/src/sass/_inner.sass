@@ -931,6 +931,20 @@
 					margin-right: 5px
 					background: url('../img/star-gray.svg') no-repeat
 					background-size: 100%
+		ol
+			list-style-type: none
+			counter-reset: list
+			li
+				position: relative
+				padding-left: 10px
+				margin-bottom: 10px
+				&:before
+					position: absolute
+					top: -7px
+					left: -10px
+					font-size: 20px
+					counter-increment: list 1
+					content: counter(list)"."
 		pre
 			position: relative
 			display: block
@@ -2022,10 +2036,11 @@
 		+arr(36, 38, #fff, r)
 	//rating
 	.rating
-		+clr
+		font-size: 0
 		.rating__item
 			width: 50%
-			float: left
+			display: inline-block
+			vertical-align: middle
 		.rating__link
 			display: inline-block
 			vertical-align: middle

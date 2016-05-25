@@ -6818,6 +6818,20 @@ select {
           margin-right: 5px;
           background: url("../img/star-gray.svg") no-repeat;
           background-size: 100%; }
+    .old .article ol, .overlay .article ol {
+      list-style-type: none;
+      counter-reset: list; }
+      .old .article ol li, .overlay .article ol li {
+        position: relative;
+        padding-left: 10px;
+        margin-bottom: 10px; }
+        .old .article ol li:before, .overlay .article ol li:before {
+          position: absolute;
+          top: -7px;
+          left: -10px;
+          font-size: 20px;
+          counter-increment: list 1;
+          content: counter(list) "."; }
     .old .article pre, .overlay .article pre {
       position: relative;
       display: block;
@@ -8025,14 +8039,11 @@ select {
     border-width: 19px 0 19px 36px;
     border-color: transparent transparent transparent #fff; }
   .old .rating, .overlay .rating {
-    *zoom: 1; }
-    .old .rating:after, .overlay .rating:after {
-      content: " ";
-      display: table;
-      clear: both; }
+    font-size: 0; }
     .old .rating .rating__item, .overlay .rating .rating__item {
       width: 50%;
-      float: left; }
+      display: inline-block;
+      vertical-align: middle; }
     .old .rating .rating__link, .overlay .rating .rating__link {
       display: inline-block;
       vertical-align: middle;
