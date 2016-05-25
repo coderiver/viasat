@@ -604,63 +604,6 @@ $(document).ready(function() {
         $(this).parent().fadeOut();
     });
 
-    // google map
-
-    function initialize() {
-        var mapOptions = {
-            center: { lat: 48.898442, lng: 31.929940},
-            zoom: 6,
-            scrollwheel: false
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-
-        // markers
-        var marker1 = new google.maps.LatLng(50.449936, 30.533377);
-        var marker2 = new google.maps.LatLng(51.500378, 31.297854);
-        var marker3 = new google.maps.LatLng(49.992040, 36.236208);
-        var marker4 = new google.maps.LatLng(49.585093, 34.554947);
-        var marker5 = new google.maps.LatLng(49.434208, 32.076301);
-        var marker6 = new google.maps.LatLng(48.503718, 32.269945);
-        var marker7 = new google.maps.LatLng(50.907518, 34.818304);
-        var marker8 = new google.maps.LatLng(48.575517, 39.326342);
-        var marker9 = new google.maps.LatLng(48.008638, 37.808171);
-        var marker10 = new google.maps.LatLng(48.454749, 35.049652);
-        var marker11 = new google.maps.LatLng(47.831637, 35.148529);
-        var marker12= new google.maps.LatLng(46.624188, 32.619411);
-        var marker13 = new google.maps.LatLng(46.962062, 32.006046);
-        var marker14 = new google.maps.LatLng(46.478735, 30.722914);
-        var marker15 = new google.maps.LatLng(50.252344, 28.655763);
-        var marker16 = new google.maps.LatLng(49.230071, 28.476674);
-        var marker17 = new google.maps.LatLng(48.283618, 25.934206);
-        var marker18 = new google.maps.LatLng(49.420755, 27.001663);
-        var marker19 = new google.maps.LatLng(48.918085, 24.726963);
-        var marker20 = new google.maps.LatLng(49.540471, 25.603803);
-        var marker21 = new google.maps.LatLng(49.826653, 24.002967);
-        var marker22 = new google.maps.LatLng(48.611100, 22.292231);
-
-        var locations = [marker1, marker2, marker3, marker4,
-            marker5, marker6, marker7, marker8, marker9, marker10,
-            marker11, marker12, marker13, marker14, marker15,
-            marker16, marker17, marker18, marker19, marker20, marker21, marker22];
-
-        var markers = [];
-
-        for(var i=0; i < locations.length; i++) {
-            var marker = new google.maps.Marker({
-                position: locations[i],
-                map: map,
-                icon: 'img/marker.png'
-            });
-        };
-    }
-
-    if ($('#map-canvas').length) {
-        google.maps.event.addDomListener(window, 'load', initialize);
-    };
-
-
-
     // lists
 
     var letters = "abcdefghijklmnoprstuvwxyz";
@@ -671,14 +614,6 @@ $(document).ready(function() {
         });
     });
 
-    // horizontal mousewheel scroll event
-    //  $('.js-tvguide').mousewheel(function(event, delta) {
-
-    //    this.scrollLeft -= (delta * 25);
-
-    //    event.preventDefault();
-
-    // });
 
     var tapeCounters = new Array();
     $.each($('.btn_more_tape'), function () {
@@ -816,39 +751,6 @@ $(document).ready(function() {
         $(this).toggleClass('is-active');
         $('.js-menu').toggleClass('is-active');
     });
-
-    // rating
-
-    if($('.js-rating').length){
-        var mobile;
-        $(window).width() < 480 ? mobile = true : mobile = false;
-
-        $('.js-rating-select').rateYo({
-            starWidth: mobile ? '12px':'18px',
-            maxValue: 10,
-            numStars: 10,
-            normalFill: '#d9d9d9',
-            ratedFill: '#f8b636',
-            onChange: function (rating, rateYoInstance) {
-                var valueContainer = $(this).closest('.js-rating').find('.js-rating-value');
-                valueContainer.text(rating);
-            }
-        });
-
-        // set film rating on init
-        $('.js-rating-select').rateYo("option", "rating", 5.0);
-        $('.js-rating-value').text('5.0');
-
-
-        $(window).resize(function () {
-           if($(window).width() < 480){
-               $(".js-rating-select").rateYo("option", "starWidth", "12px");
-           }
-            else {
-               $(".js-rating-select").rateYo("option", "starWidth", "18px");
-           }
-        });
-    }
 
     //slider init
     var slider = {
