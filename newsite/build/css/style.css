@@ -1255,6 +1255,8 @@ select {
   .selfpromo__btn {
     float: right;
     width: 200px; }
+    .selfpromo__btn .n-btn {
+      max-width: 100%; }
     @media only screen and (max-width: 1023px) {
       .selfpromo__btn {
         margin-left: 50px; } }

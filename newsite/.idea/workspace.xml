@@ -64,15 +64,13 @@
       <file leaf-file-name="_main.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="576" column="25" selection-start-line="576" selection-start-column="25" selection-end-line="576" selection-end-column="25" />
+            <state relative-caret-position="313">
+              <caret line="628" column="27" selection-start-line="628" selection-start-column="27" selection-end-line="628" selection-end-column="27" />
               <folding>
                 <element signature="e#6143#9573#0" expanded="false" />
-                <element signature="e#10639#11293#0" expanded="false" />
-                <element signature="e#11303#11677#0" expanded="false" />
-                <element signature="e#11690#12527#0" expanded="false" />
-                <marker date="1464163924000" expanded="true" signature="9665:9786" placeholder="..." />
-                <marker date="1464163924000" expanded="true" signature="9758:9786" placeholder="..." />
+                <element signature="e#10667#11321#0" expanded="false" />
+                <element signature="e#11331#11705#0" expanded="false" />
+                <element signature="e#11718#12555#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -373,12 +371,12 @@
       <workItem from="1463729325739" duration="12420000" />
       <workItem from="1463987608932" duration="17903000" />
       <workItem from="1464074912603" duration="14322000" />
-      <workItem from="1464160068810" duration="2947000" />
+      <workItem from="1464160068810" duration="3084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="304040000" />
+    <option name="totallyTimeSpent" value="304177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -809,15 +807,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="576" column="25" selection-start-line="576" selection-start-column="25" selection-end-line="576" selection-end-column="25" />
+        <state relative-caret-position="313">
+          <caret line="628" column="27" selection-start-line="628" selection-start-column="27" selection-end-line="628" selection-end-column="27" />
           <folding>
             <element signature="e#6143#9573#0" expanded="false" />
-            <element signature="e#10639#11293#0" expanded="false" />
-            <element signature="e#11303#11677#0" expanded="false" />
-            <element signature="e#11690#12527#0" expanded="false" />
-            <marker date="1464163924000" expanded="true" signature="9665:9786" placeholder="..." />
-            <marker date="1464163924000" expanded="true" signature="9758:9786" placeholder="..." />
+            <element signature="e#10667#11321#0" expanded="false" />
+            <element signature="e#11331#11705#0" expanded="false" />
+            <element signature="e#11718#12555#0" expanded="false" />
           </folding>
         </state>
       </provider>
