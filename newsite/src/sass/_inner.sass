@@ -2943,3 +2943,28 @@ article.content
 	img
 		width: auto!important
 		margin: 0!important
+.contact__form
+	background: #fff
+	padding: 0 30px 30px 30px
+	.row
+		[class*="col-"]
+			float: none
+			padding: 0
+	.btn
+		background: darkgray
+	.form-group
+		margin-bottom: 30px
+		&.required
+			.control-label:after
+				content: "*"
+				color: red
+	.control-label
+		display: inline-block
+		width: 20%
+		vertical-align: top
+	input
+		border: 1px solid #d6d7d8
+	p
+		&.help-block-error
+			color: red
+			font-size: 1.2rem

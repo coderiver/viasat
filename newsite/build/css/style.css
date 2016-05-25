@@ -9118,6 +9118,29 @@ article.content img {
   width: auto !important;
   margin: 0 !important; }
 
+.contact__form {
+  background: #fff;
+  padding: 0 30px 30px 30px; }
+  .contact__form .row [class*="col-"] {
+    float: none;
+    padding: 0; }
+  .contact__form .btn {
+    background: darkgray; }
+  .contact__form .form-group {
+    margin-bottom: 30px; }
+    .contact__form .form-group.required .control-label:after {
+      content: "*";
+      color: red; }
+  .contact__form .control-label {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top; }
+  .contact__form input {
+    border: 1px solid #d6d7d8; }
+  .contact__form p.help-block-error {
+    color: red;
+    font-size: 1.2rem; }
+
 .jq-ry-container {
   position: relative;
   padding: 0 5px;
