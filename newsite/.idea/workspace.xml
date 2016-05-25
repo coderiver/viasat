@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -77,15 +77,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="340">
+              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
               <folding>
-                <element signature="e#1106#1147#0#HTML" expanded="true" />
-                <element signature="e#4485#4963#0#HTML" expanded="false" />
-                <element signature="e#5009#5528#0#HTML" expanded="false" />
+                <element signature="e#1097#1138#0#HTML" expanded="true" />
+                <element signature="e#4476#4954#0#HTML" expanded="false" />
+                <element signature="e#5000#5519#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/src/templates/logos.html" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/templates/download.html" />
-        <option value="$PROJECT_DIR$/src/templates/contacts.html" />
         <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
+        <option value="$PROJECT_DIR$/src/templates/contacts.html" />
       </list>
     </option>
   </component>
@@ -389,12 +389,12 @@
       <workItem from="1463729325739" duration="12420000" />
       <workItem from="1463987608932" duration="17903000" />
       <workItem from="1464074912603" duration="14322000" />
-      <workItem from="1464160068810" duration="11694000" />
+      <workItem from="1464160068810" duration="11745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312787000" />
+    <option name="totallyTimeSpent" value="312838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -839,23 +839,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
-          <folding>
-            <element signature="e#1106#1147#0#HTML" expanded="true" />
-            <element signature="e#4485#4963#0#HTML" expanded="false" />
-            <element signature="e#5009#5528#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="2951" column="22" selection-start-line="2951" selection-start-column="22" selection-end-line="2951" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#1097#1138#0#HTML" expanded="true" />
+            <element signature="e#4476#4954#0#HTML" expanded="false" />
+            <element signature="e#5000#5519#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
