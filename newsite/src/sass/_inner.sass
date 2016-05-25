@@ -1729,114 +1729,6 @@
 		color: #fff
 		text-transform: uppercase
 		font-size: 1.2rem
-	.socials
-		+clr
-		&.socials_wide
-			.socials__links
-				width: 100%
-				ul
-					li
-						display: inline-block
-						margin-left: 30px
-						&:first-child
-							margin-left: 0
-						a
-							width: 100%
-					+r(1150)
-						display: block
-			.socials__likes
-				width: 100%
-				ul
-					li
-						width: 47.5%
-						margin-left: 5%
-						&:first-child
-							margin-left: 0
-						a
-							width: 100%
-							border-radius: 3px
-					+r(1150)
-						display: block
-		.socials__links
-			float: left
-			text-align: center
-			ul
-				border-radius: 3px
-				overflow: hidden
-				font-size: 0
-				li
-					display: inline-block
-					vertical-align: middle
-					a
-						display: block
-						width: 58px
-						height: 43px
-						+vertical
-						font-size: 2.4rem
-						+tr(color 300ms)
-						color: #3a5ba0
-						&:hover
-							color: darken(#3a5ba0, 5%)
-			+r(1150)
-				float: none
-				width: 100%
-				margin-bottom: 10px
-				ul
-					display: inline-block
-			+r(960)
-				float: left
-				overflow: hidden
-				width: auto
-				ul
-					display: block
-			+r(479)
-				float: none
-				width: 100%
-				text-align: center
-				ul
-					display: inline-block
-		.socials__likes
-			float: right
-			ul
-				border-radius: 3px
-				overflow: hidden
-				font-size: 0
-				li
-					display: inline-block
-					vertical-align: middle
-					a
-						display: block
-						width: 80px
-						height: 43px
-						background: #d9d9d9
-						color: #717171
-						+vertical
-						+tr(background 300ms)
-						&:hover
-							background: darken(#d9d9d9, 5%)
-						i
-							font-size: 1.6rem
-						span
-							display: inline-block
-							vertical-align: middle
-							font-size: 1.2rem
-							margin-left: 5px
-			+r(1150)
-				float: none
-				width: 100%
-				ul
-					display: inline-block
-			+r(960)
-				float: right
-				width: auto
-				ul
-					display: block
-			+r(479)
-				float: none
-				width: 100%
-				text-align: center
-				ul
-					display: inline-block
 
 	.benefits
 		img
@@ -2640,6 +2532,114 @@
 			display: none
 		&:hover
 			background: darken(#d70000, 5%)
+.socials
+	+clr
+	&.socials_wide
+		.socials__links
+			width: 100%
+			ul
+				li
+					display: inline-block
+					margin-left: 30px
+					&:first-child
+						margin-left: 0
+					a
+						width: 100%
+				+r(1150)
+					display: block
+		.socials__likes
+			width: 100%
+			ul
+				li
+					width: 47.5%
+					margin-left: 5%
+					&:first-child
+						margin-left: 0
+					a
+						width: 100%
+						border-radius: 3px
+				+r(1150)
+					display: block
+	.socials__links
+		float: left
+		text-align: center
+		ul
+			border-radius: 3px
+			overflow: hidden
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					display: block
+					width: 58px
+					height: 43px
+					+vertical
+					font-size: 2.4rem
+					+tr(color 300ms)
+					color: #3a5ba0
+					&:hover
+						color: darken(#3a5ba0, 5%)
+		+r(1150)
+			float: none
+			width: 100%
+			margin-bottom: 10px
+			ul
+				display: inline-block
+		+r(960)
+			float: left
+			overflow: hidden
+			width: auto
+			ul
+				display: block
+		+r(479)
+			float: none
+			width: 100%
+			text-align: center
+			ul
+				display: inline-block
+	.socials__likes
+		float: right
+		ul
+			border-radius: 3px
+			overflow: hidden
+			font-size: 0
+			li
+				display: inline-block
+				vertical-align: middle
+				a
+					display: block
+					width: 80px
+					height: 43px
+					background: #d9d9d9
+					color: #717171
+					+vertical
+					+tr(background 300ms)
+					&:hover
+						background: darken(#d9d9d9, 5%)
+					i
+						font-size: 1.6rem
+					span
+						display: inline-block
+						vertical-align: middle
+						font-size: 1.2rem
+						margin-left: 5px
+		+r(1150)
+			float: none
+			width: 100%
+			ul
+				display: inline-block
+		+r(960)
+			float: right
+			width: auto
+			ul
+				display: block
+		+r(479)
+			float: none
+			width: 100%
+			text-align: center
+			ul
+				display: inline-block
 // popups
 .overlay
 	position: fixed

@@ -3541,6 +3541,31 @@ select {
       clear: both; }
   .film .film__col {
     padding: 0 10px; }
+    .film .film__col .socials {
+      margin: 10px 0; }
+      .film .film__col .socials .socials__likes {
+        width: 100%;
+        float: none; }
+        .film .film__col .socials .socials__likes li {
+          width: 50%; }
+          .film .film__col .socials .socials__likes li a {
+            width: 100%; }
+            .film .film__col .socials .socials__likes li a .icon-like, .film .film__col .socials .socials__likes li a .icon-dislike {
+              font-family: 'icomoon';
+              speak: none;
+              display: inline-block;
+              vertical-align: middle;
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
+            .film .film__col .socials .socials__likes li a .icon-like:before {
+              content: "\e609"; }
+            .film .film__col .socials .socials__likes li a .icon-dislike:before {
+              content: "\e604"; }
     .film .film__col .film__rating, .film .film__col .n-awards {
       display: none; }
     @media only screen and (max-width: 900px) {
@@ -7741,139 +7766,6 @@ select {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.2rem; }
-  .old .socials, .overlay .socials {
-    *zoom: 1; }
-    .old .socials:after, .overlay .socials:after {
-      content: " ";
-      display: table;
-      clear: both; }
-    .old .socials.socials_wide .socials__links, .overlay .socials.socials_wide .socials__links {
-      width: 100%; }
-      .old .socials.socials_wide .socials__links ul li, .overlay .socials.socials_wide .socials__links ul li {
-        display: inline-block;
-        margin-left: 30px; }
-        .old .socials.socials_wide .socials__links ul li:first-child, .overlay .socials.socials_wide .socials__links ul li:first-child {
-          margin-left: 0; }
-        .old .socials.socials_wide .socials__links ul li a, .overlay .socials.socials_wide .socials__links ul li a {
-          width: 100%; }
-      @media only screen and (max-width: 1150px) {
-        .old .socials.socials_wide .socials__links ul, .overlay .socials.socials_wide .socials__links ul {
-          display: block; } }
-    .old .socials.socials_wide .socials__likes, .overlay .socials.socials_wide .socials__likes {
-      width: 100%; }
-      .old .socials.socials_wide .socials__likes ul li, .overlay .socials.socials_wide .socials__likes ul li {
-        width: 47.5%;
-        margin-left: 5%; }
-        .old .socials.socials_wide .socials__likes ul li:first-child, .overlay .socials.socials_wide .socials__likes ul li:first-child {
-          margin-left: 0; }
-        .old .socials.socials_wide .socials__likes ul li a, .overlay .socials.socials_wide .socials__likes ul li a {
-          width: 100%;
-          border-radius: 3px; }
-      @media only screen and (max-width: 1150px) {
-        .old .socials.socials_wide .socials__likes ul, .overlay .socials.socials_wide .socials__likes ul {
-          display: block; } }
-    .old .socials .socials__links, .overlay .socials .socials__links {
-      float: left;
-      text-align: center; }
-      .old .socials .socials__links ul, .overlay .socials .socials__links ul {
-        border-radius: 3px;
-        overflow: hidden;
-        font-size: 0; }
-        .old .socials .socials__links ul li, .overlay .socials .socials__links ul li {
-          display: inline-block;
-          vertical-align: middle; }
-          .old .socials .socials__links ul li a, .overlay .socials .socials__links ul li a {
-            display: block;
-            width: 58px;
-            height: 43px;
-            text-align: center;
-            font-size: 0;
-            font-size: 2.4rem;
-            -webkit-transition: color 300ms;
-            transition: color 300ms;
-            color: #3a5ba0; }
-            .old .socials .socials__links ul li a:before, .overlay .socials .socials__links ul li a:before {
-              content: "";
-              display: inline-block;
-              vertical-align: middle;
-              width: 0;
-              height: 100%; }
-            .old .socials .socials__links ul li a:hover, .overlay .socials .socials__links ul li a:hover {
-              color: #33508d; }
-      @media only screen and (max-width: 1150px) {
-        .old .socials .socials__links, .overlay .socials .socials__links {
-          float: none;
-          width: 100%;
-          margin-bottom: 10px; }
-          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
-            display: inline-block; } }
-      @media only screen and (max-width: 960px) {
-        .old .socials .socials__links, .overlay .socials .socials__links {
-          float: left;
-          overflow: hidden;
-          width: auto; }
-          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
-            display: block; } }
-      @media only screen and (max-width: 479px) {
-        .old .socials .socials__links, .overlay .socials .socials__links {
-          float: none;
-          width: 100%;
-          text-align: center; }
-          .old .socials .socials__links ul, .overlay .socials .socials__links ul {
-            display: inline-block; } }
-    .old .socials .socials__likes, .overlay .socials .socials__likes {
-      float: right; }
-      .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
-        border-radius: 3px;
-        overflow: hidden;
-        font-size: 0; }
-        .old .socials .socials__likes ul li, .overlay .socials .socials__likes ul li {
-          display: inline-block;
-          vertical-align: middle; }
-          .old .socials .socials__likes ul li a, .overlay .socials .socials__likes ul li a {
-            display: block;
-            width: 80px;
-            height: 43px;
-            background: #d9d9d9;
-            color: #717171;
-            text-align: center;
-            font-size: 0;
-            -webkit-transition: background 300ms;
-            transition: background 300ms; }
-            .old .socials .socials__likes ul li a:before, .overlay .socials .socials__likes ul li a:before {
-              content: "";
-              display: inline-block;
-              vertical-align: middle;
-              width: 0;
-              height: 100%; }
-            .old .socials .socials__likes ul li a:hover, .overlay .socials .socials__likes ul li a:hover {
-              background: #cccccc; }
-            .old .socials .socials__likes ul li a i, .overlay .socials .socials__likes ul li a i {
-              font-size: 1.6rem; }
-            .old .socials .socials__likes ul li a span, .overlay .socials .socials__likes ul li a span {
-              display: inline-block;
-              vertical-align: middle;
-              font-size: 1.2rem;
-              margin-left: 5px; }
-      @media only screen and (max-width: 1150px) {
-        .old .socials .socials__likes, .overlay .socials .socials__likes {
-          float: none;
-          width: 100%; }
-          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
-            display: inline-block; } }
-      @media only screen and (max-width: 960px) {
-        .old .socials .socials__likes, .overlay .socials .socials__likes {
-          float: right;
-          width: auto; }
-          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
-            display: block; } }
-      @media only screen and (max-width: 479px) {
-        .old .socials .socials__likes, .overlay .socials .socials__likes {
-          float: none;
-          width: 100%;
-          text-align: center; }
-          .old .socials .socials__likes ul, .overlay .socials .socials__likes ul {
-            display: inline-block; } }
   .old .benefits img, .overlay .benefits img {
     display: block;
     width: 100%; }
@@ -8750,6 +8642,140 @@ select {
       display: none; }
     .old .order:hover, .overlay .order:hover {
       background: #be0000; }
+
+.socials {
+  *zoom: 1; }
+  .socials:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  .socials.socials_wide .socials__links {
+    width: 100%; }
+    .socials.socials_wide .socials__links ul li {
+      display: inline-block;
+      margin-left: 30px; }
+      .socials.socials_wide .socials__links ul li:first-child {
+        margin-left: 0; }
+      .socials.socials_wide .socials__links ul li a {
+        width: 100%; }
+    @media only screen and (max-width: 1150px) {
+      .socials.socials_wide .socials__links ul {
+        display: block; } }
+  .socials.socials_wide .socials__likes {
+    width: 100%; }
+    .socials.socials_wide .socials__likes ul li {
+      width: 47.5%;
+      margin-left: 5%; }
+      .socials.socials_wide .socials__likes ul li:first-child {
+        margin-left: 0; }
+      .socials.socials_wide .socials__likes ul li a {
+        width: 100%;
+        border-radius: 3px; }
+    @media only screen and (max-width: 1150px) {
+      .socials.socials_wide .socials__likes ul {
+        display: block; } }
+  .socials .socials__links {
+    float: left;
+    text-align: center; }
+    .socials .socials__links ul {
+      border-radius: 3px;
+      overflow: hidden;
+      font-size: 0; }
+      .socials .socials__links ul li {
+        display: inline-block;
+        vertical-align: middle; }
+        .socials .socials__links ul li a {
+          display: block;
+          width: 58px;
+          height: 43px;
+          text-align: center;
+          font-size: 0;
+          font-size: 2.4rem;
+          -webkit-transition: color 300ms;
+          transition: color 300ms;
+          color: #3a5ba0; }
+          .socials .socials__links ul li a:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 0;
+            height: 100%; }
+          .socials .socials__links ul li a:hover {
+            color: #33508d; }
+    @media only screen and (max-width: 1150px) {
+      .socials .socials__links {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px; }
+        .socials .socials__links ul {
+          display: inline-block; } }
+    @media only screen and (max-width: 960px) {
+      .socials .socials__links {
+        float: left;
+        overflow: hidden;
+        width: auto; }
+        .socials .socials__links ul {
+          display: block; } }
+    @media only screen and (max-width: 479px) {
+      .socials .socials__links {
+        float: none;
+        width: 100%;
+        text-align: center; }
+        .socials .socials__links ul {
+          display: inline-block; } }
+  .socials .socials__likes {
+    float: right; }
+    .socials .socials__likes ul {
+      border-radius: 3px;
+      overflow: hidden;
+      font-size: 0; }
+      .socials .socials__likes ul li {
+        display: inline-block;
+        vertical-align: middle; }
+        .socials .socials__likes ul li a {
+          display: block;
+          width: 80px;
+          height: 43px;
+          background: #d9d9d9;
+          color: #717171;
+          text-align: center;
+          font-size: 0;
+          -webkit-transition: background 300ms;
+          transition: background 300ms; }
+          .socials .socials__likes ul li a:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 0;
+            height: 100%; }
+          .socials .socials__likes ul li a:hover {
+            background: #cccccc; }
+          .socials .socials__likes ul li a i {
+            font-size: 1.6rem; }
+          .socials .socials__likes ul li a span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 1.2rem;
+            margin-left: 5px; }
+    @media only screen and (max-width: 1150px) {
+      .socials .socials__likes {
+        float: none;
+        width: 100%; }
+        .socials .socials__likes ul {
+          display: inline-block; } }
+    @media only screen and (max-width: 960px) {
+      .socials .socials__likes {
+        float: right;
+        width: auto; }
+        .socials .socials__likes ul {
+          display: block; } }
+    @media only screen and (max-width: 479px) {
+      .socials .socials__likes {
+        float: none;
+        width: 100%;
+        text-align: center; }
+        .socials .socials__likes ul {
+          display: inline-block; } }
 
 .overlay {
   position: fixed;
