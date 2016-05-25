@@ -9076,6 +9076,16 @@ select {
       border: 2px solid #fff;
       z-index: 2; }
 
+article.content td {
+  vertical-align: top !important; }
+
+article.content p {
+  padding: 5px !important; }
+
+article.content img {
+  width: auto !important;
+  margin: 0 !important; }
+
 .jq-ry-container {
   position: relative;
   padding: 0 5px;

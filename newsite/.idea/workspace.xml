@@ -24,8 +24,8 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="2038" column="20" selection-start-line="2038" selection-start-column="20" selection-end-line="2038" selection-end-column="20" />
+            <state relative-caret-position="508">
+              <caret line="2919" column="27" selection-start-line="2919" selection-start-column="27" selection-end-line="2919" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -61,12 +61,61 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="logos.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/logos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#1205#1239#0#HTML" expanded="true" />
+                <element signature="e#1385#1416#0#HTML" expanded="true" />
+                <element signature="e#1600#1631#0#HTML" expanded="true" />
+                <element signature="e#1783#1814#0#HTML" expanded="true" />
+                <element signature="e#2008#2039#0#HTML" expanded="true" />
+                <element signature="e#2192#2223#0#HTML" expanded="true" />
+                <element signature="e#2412#2443#0#HTML" expanded="true" />
+                <element signature="e#2595#2626#0#HTML" expanded="true" />
+                <element signature="e#2820#2851#0#HTML" expanded="true" />
+                <element signature="e#3004#3035#0#HTML" expanded="true" />
+                <element signature="e#3224#3255#0#HTML" expanded="true" />
+                <element signature="e#3406#3437#0#HTML" expanded="true" />
+                <element signature="e#3629#3660#0#HTML" expanded="true" />
+                <element signature="e#3812#3843#0#HTML" expanded="true" />
+                <element signature="e#4030#4061#0#HTML" expanded="true" />
+                <element signature="e#4223#4254#0#HTML" expanded="true" />
+                <element signature="e#4455#4486#0#HTML" expanded="true" />
+                <element signature="e#4650#4681#0#HTML" expanded="true" />
+                <element signature="e#4896#4927#0#HTML" expanded="true" />
+                <element signature="e#5088#5119#0#HTML" expanded="true" />
+                <element signature="e#5345#5376#0#HTML" expanded="true" />
+                <element signature="e#5541#5572#0#HTML" expanded="true" />
+                <element signature="e#5783#5814#0#HTML" expanded="true" />
+                <element signature="e#5979#6010#0#HTML" expanded="true" />
+                <element signature="e#6219#6250#0#HTML" expanded="true" />
+                <element signature="e#6414#6445#0#HTML" expanded="true" />
+                <element signature="e#6652#6683#0#HTML" expanded="true" />
+                <element signature="e#6868#6899#0#HTML" expanded="true" />
+                <element signature="e#7106#7137#0#HTML" expanded="true" />
+                <element signature="e#7323#7354#0#HTML" expanded="true" />
+                <element signature="e#7563#7594#0#HTML" expanded="true" />
+                <element signature="e#7821#7852#0#HTML" expanded="true" />
+                <element signature="e#8064#8091#0#HTML" expanded="true" />
+                <element signature="e#9091#9610#0#HTML" expanded="false" />
+                <marker date="1464168757000" expanded="false" signature="8589:9044" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="movie.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/movie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="141" column="90" selection-start-line="141" selection-start-column="90" selection-end-line="141" selection-end-column="90" />
-              <folding />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#2430#11344#0#HTML" expanded="false" />
+                <element signature="e#11402#14073#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,24 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="536" column="37" selection-start-line="536" selection-start-column="37" selection-end-line="536" selection-end-column="37" />
-              <folding>
-                <element signature="e#31118#31166#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sass/_awards.sass" />
         <option value="$PROJECT_DIR$/src/sass/_roles.sass" />
         <option value="$PROJECT_DIR$/src/templates/roles.html" />
         <option value="$PROJECT_DIR$/src/sass/_movie.sass" />
@@ -149,11 +185,12 @@
         <option value="$PROJECT_DIR$/src/templates/layouts/_layout.html" />
         <option value="$PROJECT_DIR$/src/templates/blog_post.html" />
         <option value="$PROJECT_DIR$/src/templates/movie.html" />
-        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
+        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
+        <option value="$PROJECT_DIR$/src/templates/logos.html" />
       </list>
     </option>
   </component>
@@ -246,42 +283,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newsite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,12 +400,12 @@
       <workItem from="1463729325739" duration="12420000" />
       <workItem from="1463987608932" duration="17903000" />
       <workItem from="1464074912603" duration="14322000" />
-      <workItem from="1464160068810" duration="4324000" />
+      <workItem from="1464160068810" duration="5676000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305417000" />
+    <option name="totallyTimeSpent" value="306769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,14 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/_svgfont.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/_header.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1500">
@@ -792,28 +785,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="141" column="90" selection-start-line="141" selection-start-column="90" selection-end-line="141" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="2038" column="20" selection-start-line="2038" selection-start-column="20" selection-end-line="2038" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="536" column="37" selection-start-line="536" selection-start-column="37" selection-end-line="536" selection-end-column="37" />
           <folding>
-            <element signature="e#31118#31166#0#HTML" expanded="true" />
+            <element signature="e#31118#31166#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,6 +821,69 @@
         <state relative-caret-position="270">
           <caret line="330" column="0" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="2919" column="27" selection-start-line="2919" selection-start-column="27" selection-end-line="2919" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#2430#11344#0#HTML" expanded="false" />
+            <element signature="e#11402#14073#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/logos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#1205#1239#0#HTML" expanded="true" />
+            <element signature="e#1385#1416#0#HTML" expanded="true" />
+            <element signature="e#1600#1631#0#HTML" expanded="true" />
+            <element signature="e#1783#1814#0#HTML" expanded="true" />
+            <element signature="e#2008#2039#0#HTML" expanded="true" />
+            <element signature="e#2192#2223#0#HTML" expanded="true" />
+            <element signature="e#2412#2443#0#HTML" expanded="true" />
+            <element signature="e#2595#2626#0#HTML" expanded="true" />
+            <element signature="e#2820#2851#0#HTML" expanded="true" />
+            <element signature="e#3004#3035#0#HTML" expanded="true" />
+            <element signature="e#3224#3255#0#HTML" expanded="true" />
+            <element signature="e#3406#3437#0#HTML" expanded="true" />
+            <element signature="e#3629#3660#0#HTML" expanded="true" />
+            <element signature="e#3812#3843#0#HTML" expanded="true" />
+            <element signature="e#4030#4061#0#HTML" expanded="true" />
+            <element signature="e#4223#4254#0#HTML" expanded="true" />
+            <element signature="e#4455#4486#0#HTML" expanded="true" />
+            <element signature="e#4650#4681#0#HTML" expanded="true" />
+            <element signature="e#4896#4927#0#HTML" expanded="true" />
+            <element signature="e#5088#5119#0#HTML" expanded="true" />
+            <element signature="e#5345#5376#0#HTML" expanded="true" />
+            <element signature="e#5541#5572#0#HTML" expanded="true" />
+            <element signature="e#5783#5814#0#HTML" expanded="true" />
+            <element signature="e#5979#6010#0#HTML" expanded="true" />
+            <element signature="e#6219#6250#0#HTML" expanded="true" />
+            <element signature="e#6414#6445#0#HTML" expanded="true" />
+            <element signature="e#6652#6683#0#HTML" expanded="true" />
+            <element signature="e#6868#6899#0#HTML" expanded="true" />
+            <element signature="e#7106#7137#0#HTML" expanded="true" />
+            <element signature="e#7323#7354#0#HTML" expanded="true" />
+            <element signature="e#7563#7594#0#HTML" expanded="true" />
+            <element signature="e#7821#7852#0#HTML" expanded="true" />
+            <element signature="e#8064#8091#0#HTML" expanded="true" />
+            <element signature="e#9091#9610#0#HTML" expanded="false" />
+            <marker date="1464168757000" expanded="false" signature="8589:9044" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
