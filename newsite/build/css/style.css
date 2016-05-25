@@ -1234,7 +1234,9 @@ select {
         margin-bottom: 20px;
         text-align: center; }
         .selfpromo__logo img {
-          max-width: 180px; } }
+          max-width: 180px; }
+        .selfpromo__logo p {
+          right: 18px; } }
   .selfpromo__channels {
     overflow: hidden;
     padding: 11px 5% 0;
