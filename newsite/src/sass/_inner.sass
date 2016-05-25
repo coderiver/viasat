@@ -2279,12 +2279,16 @@
 			z-index: 2
 			li
 				height: 90px
-				line-height: 90px
 				border-bottom: 1px solid #d5d5d5
 				padding-left: 31px
-				font-size: 0
+				+vertical
 				&:first-child
 					border-top: none
+				p
+					display: inline-block
+					vertical-align: middle
+					img
+						margin: 5px 0
 				img
 					display: inline-block
 					vertical-align: middle

@@ -8373,12 +8373,23 @@ select {
       z-index: 2; }
       .old .guide .guide__channels li, .overlay .guide .guide__channels li {
         height: 90px;
-        line-height: 90px;
         border-bottom: 1px solid #d5d5d5;
         padding-left: 31px;
+        text-align: center;
         font-size: 0; }
+        .old .guide .guide__channels li:before, .overlay .guide .guide__channels li:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 0;
+          height: 100%; }
         .old .guide .guide__channels li:first-child, .overlay .guide .guide__channels li:first-child {
           border-top: none; }
+        .old .guide .guide__channels li p, .overlay .guide .guide__channels li p {
+          display: inline-block;
+          vertical-align: middle; }
+          .old .guide .guide__channels li p img, .overlay .guide .guide__channels li p img {
+            margin: 5px 0; }
         .old .guide .guide__channels li img, .overlay .guide .guide__channels li img {
           display: inline-block;
           vertical-align: middle;
