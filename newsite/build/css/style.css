@@ -1182,21 +1182,86 @@ select {
   background-size: cover;
   background-position: 50% 50%; }
   .selfpromo__center {
+    max-width: 1366px;
+    margin: 0 auto;
     height: 120px;
     text-align: center;
-    font-size: 0; }
+    font-size: 0;
+    padding: 0 15px; }
     .selfpromo__center:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
       width: 0;
       height: 100%; }
-  .selfpromo__title {
+    @media only screen and (max-width: 480px) {
+      .selfpromo__center {
+        height: auto;
+        padding: 15px; } }
+  .selfpromo__content {
     display: inline-block;
     font-size: 36px;
-    font-weight: 100;
     vertical-align: middle;
-    color: #FFF; }
+    color: #FFF;
+    *zoom: 1; }
+    .selfpromo__content:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .selfpromo__logo {
+    position: relative;
+    float: left;
+    top: -10px;
+    width: 230px; }
+    .selfpromo__logo img {
+      display: block;
+      width: 100%; }
+    .selfpromo__logo p {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      font-size: 16px; }
+    @media only screen and (max-width: 1280px) {
+      .selfpromo__logo {
+        width: 180px; }
+        .selfpromo__logo p {
+          font-size: 14px; } }
+    @media only screen and (max-width: 480px) {
+      .selfpromo__logo {
+        float: none;
+        width: 100%;
+        top: 0;
+        margin-bottom: 20px;
+        text-align: center; }
+        .selfpromo__logo img {
+          max-width: 180px; } }
+  .selfpromo__channels {
+    overflow: hidden;
+    padding: 11px 5% 0;
+    font-size: 0; }
+    .selfpromo__channels li {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20%;
+      padding-left: 3%; }
+      .selfpromo__channels li:first-child {
+        padding-left: 0; }
+      .selfpromo__channels li img {
+        display: block;
+        width: 100%; }
+    @media only screen and (max-width: 1023px) {
+      .selfpromo__channels {
+        display: none; } }
+  .selfpromo__btn {
+    float: right;
+    width: 200px; }
+    @media only screen and (max-width: 1023px) {
+      .selfpromo__btn {
+        margin-left: 50px; } }
+    @media only screen and (max-width: 480px) {
+      .selfpromo__btn {
+        float: none;
+        margin: 0 auto; } }
 
 .banner {
   display: block;
