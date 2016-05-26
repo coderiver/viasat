@@ -9211,13 +9211,15 @@ article.content img {
   .contact__form .btn {
     background: darkgray; }
   .contact__form .form-group {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 0; }
     .contact__form .form-group.required .control-label:after {
       content: "*";
       color: red; }
   .contact__form .control-label {
     display: inline-block;
     width: 20%;
+    font-size: 1.4rem;
     vertical-align: top; }
   .contact__form input {
     border: 1px solid #d6d7d8; }
