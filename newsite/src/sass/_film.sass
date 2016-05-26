@@ -32,7 +32,7 @@
 		font-size: 20px
 	.film-main__about
 		font-size: 0
-		margin: 0 -10px 30px
+		margin: 0 0 30px -10px
 		+r(480)
 			margin: 0 0 20px
 			padding-right: 20px
@@ -54,6 +54,10 @@
 			margin-left: 10px
 			&:before
 				display: none
+		+r(480)
+			margin-left: 20px
+			&:first-child
+				margin-left: 10px
 		ul
 			display: inline
 			&.film-main__genre

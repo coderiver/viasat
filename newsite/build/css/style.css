@@ -3484,7 +3484,7 @@ select {
     font-size: 20px; }
   .film-main .film-main__about {
     font-size: 0;
-    margin: 0 -10px 30px; }
+    margin: 0 0 30px -10px; }
     @media only screen and (max-width: 480px) {
       .film-main .film-main__about {
         margin: 0 0 20px;
@@ -3507,6 +3507,11 @@ select {
       margin-left: 10px; }
       .film-main .film-main__item:first-child:before {
         display: none; }
+    @media only screen and (max-width: 480px) {
+      .film-main .film-main__item {
+        margin-left: 20px; }
+        .film-main .film-main__item:first-child {
+          margin-left: 10px; } }
     .film-main .film-main__item ul {
       display: inline; }
       .film-main .film-main__item ul.film-main__genre {
