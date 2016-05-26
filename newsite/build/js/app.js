@@ -552,9 +552,11 @@ $(document).ready(function() {
 
     $('.overlay > span').on('click', function() {
         $(this).parent().fadeOut();
+        $('body').removeClass('no-scroll');
     });
     $('.js-popup-close').on('click', function() {
         $(this).parents('.overlay').fadeOut();
+        $('body').removeClass('no-scroll');
     });
 
     // gallery
