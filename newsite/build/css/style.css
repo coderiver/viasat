@@ -9208,6 +9208,10 @@ select {
       border: 2px solid #fff;
       z-index: 2; }
 
+article.content table {
+  table-layout: fixed;
+  width: 100%; }
+
 article.content td {
   vertical-align: top !important; }
 
