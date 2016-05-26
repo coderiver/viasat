@@ -4042,6 +4042,7 @@ select {
   z-index: 2; }
   .n-watch .n-watch__btn {
     height: 86px;
+    padding: 0 10px;
     text-align: center;
     font-size: 0;
     background: #f8b636; }
@@ -4070,6 +4071,16 @@ select {
         border-color: #222121 transparent transparent transparent;
         -webkit-transition: -webkit-transform 200ms;
         transition: transform 200ms; }
+    .n-watch .n-watch__btn p {
+      display: inline-block;
+      vertical-align: middle;
+      color: #222121;
+      font-size: 14px; }
+      .n-watch .n-watch__btn p a {
+        color: #222121;
+        text-decoration: underline; }
+        .n-watch .n-watch__btn p a:hover {
+          text-decoration: none; }
     .n-watch .n-watch__btn.open span:after {
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
