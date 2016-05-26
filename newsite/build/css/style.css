@@ -3813,6 +3813,16 @@ select {
       font-size: 30px;
       display: block;
       text-align: center; } }
+  .rating.rating_rotten .rating__stars .star {
+    color: red; }
+    .rating.rating_rotten .rating__stars .star.active {
+      color: green; }
+    .rating.rating_rotten .rating__stars .star:nth-child(8), .rating.rating_rotten .rating__stars .star:nth-child(9), .rating.rating_rotten .rating__stars .star:nth-child(10) {
+      color: red; }
+      .rating.rating_rotten .rating__stars .star:nth-child(8):after, .rating.rating_rotten .rating__stars .star:nth-child(9):after, .rating.rating_rotten .rating__stars .star:nth-child(10):after {
+        display: none; }
+      .rating.rating_rotten .rating__stars .star:nth-child(8).active, .rating.rating_rotten .rating__stars .star:nth-child(9).active, .rating.rating_rotten .rating__stars .star:nth-child(10).active {
+        color: green; }
 
 .star {
   display: inline-block;

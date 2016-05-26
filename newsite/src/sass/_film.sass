@@ -351,6 +351,18 @@
 				font-size: 30px
 				display: block
 				text-align: center
+	&.rating_rotten
+		.rating__stars
+			.star
+				color: red
+				&.active
+					color: green
+				&:nth-child(8), &:nth-child(9), &:nth-child(10)
+					color: red
+					&:after
+						display: none
+					&.active
+						color: green
 
 .star
 	display: inline-block
