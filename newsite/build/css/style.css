@@ -7027,7 +7027,8 @@ select {
             height: 20px; } }
       .old .article pre.pre-right, .overlay .article pre.pre-right {
         padding-right: 60px;
-        padding-left: 30%; }
+        padding-left: 30%;
+        text-align: right; }
         .old .article pre.pre-right:before, .overlay .article pre.pre-right:before {
           left: auto;
           right: 0; }
