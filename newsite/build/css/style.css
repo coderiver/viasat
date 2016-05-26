@@ -3481,6 +3481,9 @@ select {
   .film-main .film-main__about {
     font-size: 0;
     margin: 0 -10px 30px; }
+    @media only screen and (max-width: 480px) {
+      .film-main .film-main__about {
+        margin: 0 0 20px; } }
   .film-main .film-main__item {
     position: relative;
     display: inline;
@@ -3562,6 +3565,9 @@ select {
       .film .film__col .socials .socials__likes {
         width: 100%;
         float: none; }
+        @media only screen and (max-width: 1150px) {
+          .film .film__col .socials .socials__likes ul {
+            display: block; } }
         .film .film__col .socials .socials__likes li {
           width: 50%; }
           .film .film__col .socials .socials__likes li a {
@@ -3582,6 +3588,10 @@ select {
               content: "\e609"; }
             .film .film__col .socials .socials__likes li a .icon-dislike:before {
               content: "\e604"; }
+          @media only screen and (max-width: 480px) {
+            .film .film__col .socials .socials__likes li {
+              width: 100%;
+              margin-bottom: 10px; } }
     .film .film__col .film__rating, .film .film__col .n-awards {
       display: none; }
     @media only screen and (max-width: 900px) {
