@@ -6,4 +6,5 @@ bower_components
 */idea/
 */.idea/
 .idea/
-newsite/.idea
+newsite/.idea/workspace.xml
+newsite/.idea/
