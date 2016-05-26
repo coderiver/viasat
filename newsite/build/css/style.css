@@ -3483,7 +3483,8 @@ select {
     margin: 0 -10px 30px; }
     @media only screen and (max-width: 480px) {
       .film-main .film-main__about {
-        margin: 0 0 20px; } }
+        margin: 0 0 20px;
+        padding-right: 20px; } }
   .film-main .film-main__item {
     position: relative;
     display: inline;
