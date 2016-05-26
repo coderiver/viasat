@@ -24,8 +24,18 @@
       <file leaf-file-name="_inner.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34320">
-              <caret line="2288" column="42" selection-start-line="2288" selection-start-column="42" selection-end-line="2288" selection-end-column="42" />
+            <state relative-caret-position="299">
+              <caret line="938" column="31" selection-start-line="938" selection-start-column="31" selection-end-line="938" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog_post.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/blog_post.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="106" column="287" selection-start-line="106" selection-start-column="287" selection-end-line="106" selection-end-column="287" />
               <folding />
             </state>
           </provider>
@@ -64,24 +74,14 @@
       <file leaf-file-name="_main.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="1179" column="22" selection-start-line="1179" selection-start-column="22" selection-end-line="1179" selection-end-column="22" />
+            <state relative-caret-position="179">
+              <caret line="1066" column="7" selection-start-line="1066" selection-start-column="7" selection-end-line="1066" selection-end-column="7" />
               <folding>
                 <element signature="e#6143#9573#0" expanded="false" />
                 <element signature="e#10688#11342#0" expanded="false" />
                 <element signature="e#11352#11726#0" expanded="false" />
                 <element signature="e#11739#12576#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="film.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/templates/film.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="466" column="60" selection-start-line="466" selection-start-column="47" selection-end-line="466" selection-end-column="60" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -96,12 +96,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="film-premiere.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="film-premiere.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/film-premiere.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="271" column="90" selection-start-line="271" selection-start-column="90" selection-end-line="271" selection-end-column="90" />
-              <folding />
+            <state relative-caret-position="179">
+              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+              <folding>
+                <element signature="e#2155#2199#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="film.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/film.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="97" column="84" selection-start-line="97" selection-start-column="84" selection-end-line="97" selection-end-column="84" />
+              <folding>
+                <element signature="e#2229#2273#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/templates/blocks/_footer.html" />
         <option value="$PROJECT_DIR$/src/templates/blocks/_footer-promo.html" />
         <option value="$PROJECT_DIR$/src/templates/layouts/_layout.html" />
-        <option value="$PROJECT_DIR$/src/templates/blog_post.html" />
         <option value="$PROJECT_DIR$/src/templates/movie.html" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
@@ -156,12 +169,13 @@
         <option value="$PROJECT_DIR$/src/templates/logos.html" />
         <option value="$PROJECT_DIR$/src/templates/download.html" />
         <option value="$PROJECT_DIR$/src/templates/tvguide.html" />
-        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
         <option value="$PROJECT_DIR$/src/templates/search-results.html" />
+        <option value="$PROJECT_DIR$/src/sass/_film.sass" />
         <option value="$PROJECT_DIR$/src/sass/_main.sass" />
         <option value="$PROJECT_DIR$/src/templates/film.html" />
-        <option value="$PROJECT_DIR$/src/sass/_film.sass" />
         <option value="$PROJECT_DIR$/src/templates/film-premiere.html" />
+        <option value="$PROJECT_DIR$/src/sass/_inner.sass" />
+        <option value="$PROJECT_DIR$/src/templates/blog_post.html" />
       </list>
     </option>
   </component>
@@ -390,12 +404,12 @@
       <workItem from="1463987608932" duration="17903000" />
       <workItem from="1464074912603" duration="14322000" />
       <workItem from="1464160068810" duration="16399000" />
-      <workItem from="1464247819389" duration="639000" />
+      <workItem from="1464247819389" duration="1605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318131000" />
+    <option name="totallyTimeSpent" value="319097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/blog_post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="104" column="282" selection-start-line="104" selection-start-column="282" selection-end-line="104" selection-end-column="282" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -782,32 +789,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34320">
-          <caret line="2288" column="42" selection-start-line="2288" selection-start-column="42" selection-end-line="2288" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/search-results.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1455">
           <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="1179" column="22" selection-start-line="1179" selection-start-column="22" selection-end-line="1179" selection-end-column="22" />
-          <folding>
-            <element signature="e#6143#9573#0" expanded="false" />
-            <element signature="e#10688#11342#0" expanded="false" />
-            <element signature="e#11352#11726#0" expanded="false" />
-            <element signature="e#11739#12576#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -819,18 +805,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="1066" column="7" selection-start-line="1066" selection-start-column="7" selection-end-line="1066" selection-end-column="7" />
+          <folding>
+            <element signature="e#6143#9573#0" expanded="false" />
+            <element signature="e#10688#11342#0" expanded="false" />
+            <element signature="e#11352#11726#0" expanded="false" />
+            <element signature="e#11739#12576#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/film.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="466" column="60" selection-start-line="466" selection-start-column="47" selection-end-line="466" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="209">
+          <caret line="97" column="84" selection-start-line="97" selection-start-column="84" selection-end-line="97" selection-end-column="84" />
+          <folding>
+            <element signature="e#2229#2273#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/film-premiere.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding>
+            <element signature="e#2155#2199#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/_inner.sass">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="271" column="90" selection-start-line="271" selection-start-column="90" selection-end-line="271" selection-end-column="90" />
+          <caret line="938" column="31" selection-start-line="938" selection-start-column="31" selection-end-line="938" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/blog_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="106" column="287" selection-start-line="106" selection-start-column="287" selection-end-line="106" selection-end-column="287" />
           <folding />
         </state>
       </provider>

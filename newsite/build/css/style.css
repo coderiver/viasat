@@ -1618,13 +1618,28 @@ select {
   .out.out_film {
     padding-bottom: 0; }
 
-.topper {
-  padding: 50px 0 0;
+.blurred {
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  z-index: 1; }
+
+.topper {
+  position: relative;
+  padding: 50px 0 0;
+  overflow: hidden; }
   .topper.topper_big {
     min-height: 300px; }
+  .topper .topper__in {
+    position: relative;
+    z-index: 2; }
   .topper .topper__head {
     *zoom: 1; }
     .topper .topper__head:after {
@@ -1755,7 +1770,8 @@ select {
         display: none; }
 
 .main {
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .nav {
   position: relative;
@@ -6927,12 +6943,12 @@ select {
       counter-reset: list; }
       .old .article ol li, .overlay .article ol li {
         position: relative;
-        padding-left: 10px;
+        padding-left: 5px;
         margin-bottom: 10px; }
         .old .article ol li:before, .overlay .article ol li:before {
           position: absolute;
           top: -7px;
-          left: -10px;
+          right: 100%;
           font-size: 20px;
           counter-increment: list 1;
           content: counter(list) "."; }

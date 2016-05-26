@@ -940,11 +940,24 @@
 	padding-bottom: 30px
 	&.out_film
 		padding-bottom: 0
-.topper
-	padding: 50px 0 0
+.blurred
+	position: absolute
+	top: -5px
+	bottom: -5px
+	left: -5px
+	right: -5px
 	+cover
+	filter: blur(5px)
+	z-index: 1
+.topper
+	position: relative
+	padding: 50px 0 0
+	overflow: hidden
 	&.topper_big
 		min-height: 300px
+	.topper__in
+		position: relative
+		z-index: 2
 	.topper__head
 		+clr
 	.topper__left
@@ -1054,6 +1067,7 @@
 // main
 .main
 	position: relative
+	z-index: 2
 .nav
 	position: relative
 	padding: 0 60px
