@@ -6742,7 +6742,6 @@ select {
             display: table;
             clear: both; }
           .old .post .post__info .socials, .overlay .post .post__info .socials {
-            font-size: 0;
             text-align: left; }
             .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .old .post .post__info .socials .od-counter, .old .post .post__info .socials .vk-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .od-counter, .overlay .post .post__info .socials .vk-counter {
               display: inline-block;
