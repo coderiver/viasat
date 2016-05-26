@@ -7014,16 +7014,16 @@ select {
           .old .article pre:before, .overlay .article pre:before {
             width: 30px;
             height: 20px; } }
-    .old .article pre[align="pre-right"], .overlay .article pre[align="pre-right"] {
-      padding-right: 60px;
-      padding-left: 30%; }
-      .old .article pre[align="pre-right"]:before, .overlay .article pre[align="pre-right"]:before {
-        left: auto;
-        right: 0; }
-      @media only screen and (max-width: 568px) {
-        .old .article pre[align="pre-right"], .overlay .article pre[align="pre-right"] {
-          padding-left: 0;
-          padding-right: 40px; } }
+      .old .article pre.pre-right, .overlay .article pre.pre-right {
+        padding-right: 60px;
+        padding-left: 30%; }
+        .old .article pre.pre-right:before, .overlay .article pre.pre-right:before {
+          left: auto;
+          right: 0; }
+        @media only screen and (max-width: 568px) {
+          .old .article pre.pre-right, .overlay .article pre.pre-right {
+            padding-left: 0;
+            padding-right: 40px; } }
   .old .select, .overlay .select {
     position: relative;
     display: inline-block;
