@@ -68,11 +68,11 @@ movies:
 
 {% block content %}
     <div class="container old">
-        <div class="movie movie_premium">
+        <div class="movie">
             <div class="movie__topper">
                 <div class="center">
                     <!-- breadcrumbs -->
-                    <nav class="breadcrumbs breadcrumbs_white">
+                    <nav class="breadcrumbs">
                         <ul>
                             <li>
                                 <a href="#">Главная</a>
@@ -82,7 +82,7 @@ movies:
                             </li>
                         </ul>
                     </nav>
-                    <h1 class="h1 h1_white">Смотрите на <span>TV1000 Premium HD</span></h1>
+                    <h1 class="h1">Спортивная передача</h1>
                 </div>
             </div>
             <div class="container">
@@ -104,16 +104,6 @@ movies:
                             <div class="item__content">
                                 <div class="item__info">
                                     <div class="item__tools">
-                                        <div class="item__watch">
-                                            <div class="item__time">
-                                                <span>23:00</span>
-                                                <p>17 сентября</p>
-                                            </div>
-                                            <div class="remind">
-                                                <button class="remind__btn">{{ mixins.icon('bell') }}</button>
-                                                <div class="remind__hint"><span>Напомнить о просмотре</span></div>
-                                            </div>
-                                        </div>
                                         <!-- socials -->
                                         <div class="socials socials_wide">
                                             <div class="socials__likes">
@@ -225,18 +215,9 @@ movies:
                     </div>
                     <!-- sidebar -->
                     <aside class="sidebar">
-                        <div class="info info_premium">
-                            <img src="img/channel1.png" width="125" alt="">
-                            <a href="#" class="info__add">Подключить канал</a>
-                            <div class="n-watch js-watch">
-                                <div class="n-watch__btn js-watch-btn"><span>СМОТРЕТЬ НА</span></div>
-                                <ul class="n-watch__list js-watch-list">
-                                    <li><a href="http://megogo.net/ru/tv/channels" class="n-watch__link">MEGOGO</a></li>
-                                    <li><a href="http://oll.tv/iptv/tv1000" class="n-watch__link">OLL.TV</a></li>
-                                    <li><a href="http://divan.tv/tv/" class="n-watch__link">Divan.TV</a></li>
-                                    <li><a href="http://viasat.ua/ua/" class="n-watch__link">VIASAT</a></li>
-                                    <li><a href="http://xtratv.com.ua/ru/" class="n-watch__link">Xtra TV</a></li>
-                                </ul>
+                        <div class="info">
+                            <div class="n-watch">
+                                <div class="n-watch__btn"><p>Сожалеем, этого фильма нет в программе. Актуальные анонсы смотрите в <a href="#">"Фильмотеке"</a>.</p></div>
                             </div>
                         </div>
                         <div class="divide"></div>

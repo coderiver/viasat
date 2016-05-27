@@ -7599,33 +7599,8 @@ select {
           padding: 15px 15px 146px; } }
   .old .info, .overlay .info {
     position: relative;
-    padding: 18px 32px 146px;
     background: #fff;
     z-index: 3; }
-    .old .info.info_premium .info__more a, .overlay .info.info_premium .info__more a {
-      color: #352361; }
-    .old .info.info_premium .info__add, .overlay .info.info_premium .info__add {
-      background: #352361; }
-      .old .info.info_premium .info__add:hover, .overlay .info.info_premium .info__add:hover {
-        background: #2b1c4e; }
-    .old .info.info_nature .info__more a, .overlay .info.info_nature .info__more a {
-      color: #618005; }
-    .old .info.info_nature .info__add, .overlay .info.info_nature .info__add {
-      background: #a6b525; }
-      .old .info.info_nature .info__add:hover, .overlay .info.info_nature .info__add:hover {
-        background: #93a021; }
-    .old .info.info_megahit .info__more a, .overlay .info.info_megahit .info__more a {
-      color: #004681; }
-    .old .info.info_megahit .info__add, .overlay .info.info_megahit .info__add {
-      background: #004681; }
-      .old .info.info_megahit .info__add:hover, .overlay .info.info_megahit .info__add:hover {
-        background: #003868; }
-    .old .info.info_comedy .info__more a, .overlay .info.info_comedy .info__more a {
-      color: #e66d20; }
-    .old .info.info_comedy .info__add, .overlay .info.info_comedy .info__add {
-      background: #e66d20; }
-      .old .info.info_comedy .info__add:hover, .overlay .info.info_comedy .info__add:hover {
-        background: #d56118; }
     .old .info img, .overlay .info img {
       margin-bottom: 7px; }
     .old .info p, .overlay .info p {
@@ -7666,10 +7641,7 @@ select {
         background: #fff;
         color: #353535; }
     .old .info .n-watch, .overlay .info .n-watch {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      position: relative;
       height: 73px; }
       .old .info .n-watch .n-watch__btn, .overlay .info .n-watch .n-watch__btn {
         height: 73px; }
@@ -7835,22 +7807,8 @@ select {
   .old .benefits img, .overlay .benefits img {
     display: block;
     width: 100%; }
-  .old .movie .breadcrumbs_white ul li:before, .overlay .movie .breadcrumbs_white ul li:before {
-    opacity: 0.5; }
-  .old .movie .breadcrumbs_white ul li a, .overlay .movie .breadcrumbs_white ul li a {
-    color: rgba(255, 255, 255, 0.5); }
   .old .movie .main, .old .movie .sidebar, .overlay .movie .main, .overlay .movie .sidebar {
     padding-top: 0; }
-  .old .movie.movie_premium .movie__topper, .overlay .movie.movie_premium .movie__topper {
-    background: #352361; }
-  .old .movie.movie_action .movie__topper, .overlay .movie.movie_action .movie__topper {
-    background: #ab0621; }
-  .old .movie.movie_comedy .movie__topper, .overlay .movie.movie_comedy .movie__topper {
-    background: #e66d20; }
-  .old .movie.movie_megahit .movie__topper, .overlay .movie.movie_megahit .movie__topper {
-    background: #004681; }
-  .old .movie.movie_nature .movie__topper, .overlay .movie.movie_nature .movie__topper {
-    background: #618005; }
   .old .movie .movie__topper, .overlay .movie .movie__topper {
     padding-top: 15px; }
   .old .item, .overlay .item {
