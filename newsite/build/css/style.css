@@ -6742,14 +6742,17 @@ select {
             display: table;
             clear: both; }
           .old .post .post__info .socials, .overlay .post .post__info .socials {
+            font-size: 0;
+            margin-left: -3%;
             text-align: left; }
+            .old .post .post__info .socials > div, .overlay .post .post__info .socials > div {
+              font-size: 1.1rem; }
             .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .gp-counter, .old .post .post__info .socials .tw-counter, .old .post .post__info .socials .od-counter, .old .post .post__info .socials .vk-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .gp-counter, .overlay .post .post__info .socials .tw-counter, .overlay .post .post__info .socials .od-counter, .overlay .post .post__info .socials .vk-counter {
               display: inline-block;
               vertical-align: middle;
               width: 30%;
-              margin-left: 5%; }
-            .old .post .post__info .socials .fb-counter, .old .post .post__info .socials .od-counter, .overlay .post .post__info .socials .fb-counter, .overlay .post .post__info .socials .od-counter {
-              margin-left: 0; } }
+              margin-left: 3%;
+              font-size: 1.1rem; } }
     .old .post .post__date, .overlay .post .post__date {
       font-size: 1.4rem;
       padding-bottom: 5px;
