@@ -1469,11 +1469,10 @@
 			background: rgba(#000, 0.5)
 			z-index: 999
 			+r(960)
-				bottom: auto
+				bottom: 0
 				right: 0
-				top: 295px
+				top: auto
 			+r(568)
-				top: 195px
 				padding: 10px
 		.preview__right
 			float: right
@@ -1506,7 +1505,7 @@
 			position: absolute
 			top: 32px
 			right: 32px
-			bottom: 32px
+			//bottom: 32px
 			width: 333px
 			+r(960)
 				position: relative
@@ -1515,11 +1514,15 @@
 				bottom: auto
 				width: 100%
 			+r(568)
-				padding: 15px 15px 146px
+				padding: 15px
 	.info
 		position: relative
 		background: #fff
 		z-index: 3
+		.info__in
+			padding: 18px 32px
+			+r(568)
+				padding: 15px 0
 		img
 			margin-bottom: 7px
 		p
@@ -1535,10 +1538,11 @@
 			+r(960)
 				margin-bottom: 20px
 		.info__add, .info__view
-			position: absolute
-			bottom: 73px
-			left: 0
-			right: 0
+			//position: absolute
+			//bottom: 73px
+			//left: 0
+			//right: 0
+			display: block
 			height: 73px
 			line-height: 73px
 			text-align: center

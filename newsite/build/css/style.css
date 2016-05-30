@@ -7546,12 +7546,11 @@ select {
         clear: both; }
       @media only screen and (max-width: 960px) {
         .old .preview .preview__bottom, .overlay .preview .preview__bottom {
-          bottom: auto;
+          bottom: 0;
           right: 0;
-          top: 295px; } }
+          top: auto; } }
       @media only screen and (max-width: 568px) {
         .old .preview .preview__bottom, .overlay .preview .preview__bottom {
-          top: 195px;
           padding: 10px; } }
     .old .preview .preview__right, .overlay .preview .preview__right {
       float: right;
@@ -7585,7 +7584,6 @@ select {
       position: absolute;
       top: 32px;
       right: 32px;
-      bottom: 32px;
       width: 333px; }
       @media only screen and (max-width: 960px) {
         .old .preview .info, .overlay .preview .info {
@@ -7596,11 +7594,16 @@ select {
           width: 100%; } }
       @media only screen and (max-width: 568px) {
         .old .preview .info, .overlay .preview .info {
-          padding: 15px 15px 146px; } }
+          padding: 15px; } }
   .old .info, .overlay .info {
     position: relative;
     background: #fff;
     z-index: 3; }
+    .old .info .info__in, .overlay .info .info__in {
+      padding: 18px 32px; }
+      @media only screen and (max-width: 568px) {
+        .old .info .info__in, .overlay .info .info__in {
+          padding: 15px 0; } }
     .old .info img, .overlay .info img {
       margin-bottom: 7px; }
     .old .info p, .overlay .info p {
@@ -7617,10 +7620,7 @@ select {
         .old .info .info__more, .overlay .info .info__more {
           margin-bottom: 20px; } }
     .old .info .info__add, .old .info .info__view, .overlay .info .info__add, .overlay .info .info__view {
-      position: absolute;
-      bottom: 73px;
-      left: 0;
-      right: 0;
+      display: block;
       height: 73px;
       line-height: 73px;
       text-align: center;
