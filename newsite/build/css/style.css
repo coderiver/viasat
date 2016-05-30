@@ -1895,9 +1895,7 @@ select {
     overflow: hidden;
     padding-right: 10px; }
   .filters .filter__item {
-    margin-top: 10px; }
-    .filters .filter__item:first-child {
-      margin-top: 0; }
+    margin-bottom: 10px; }
   @media only screen and (max-width: 900px) {
     .filters {
       position: relative;
@@ -3820,9 +3818,6 @@ select {
       .rating .rating__stars .star {
         display: none;
         font-size: 13px; }
-        .rating .rating__stars .star:first-child {
-          display: inline-block;
-          vertical-align: middle; }
     .rating .rating__value {
       font-size: 14px; } }
   .rating.rating_small .star {
