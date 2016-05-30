@@ -1638,7 +1638,10 @@ select {
 .topper {
   position: relative;
   padding: 50px 0 0;
-  overflow: hidden; }
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
   .topper.topper_big {
     min-height: 300px; }
   .topper .topper__in {
@@ -1874,6 +1877,8 @@ select {
   width: 360px;
   padding: 25px 0 25px 25px;
   background: #f8b636; }
+  .filters .filters__title {
+    margin-bottom: 20px; }
   .filters .filters__row {
     margin-top: 15px;
     *zoom: 1; }
