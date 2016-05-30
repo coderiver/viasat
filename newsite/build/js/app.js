@@ -966,6 +966,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             initialSlide: 1,
             infinite: false,
+            touchThreshold: 100,
             centerMode: true,
             responsive: [
                 {
@@ -1000,7 +1001,6 @@ $(document).ready(function() {
                 centerSlide.prev().prev().addClass('prev-slide');
                 centerSlide.next().removeClass('next-slide');
             }
-
         });
     }
 
