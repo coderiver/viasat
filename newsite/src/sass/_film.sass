@@ -1100,6 +1100,9 @@
 					opacity: 0
 				&:after
 					opacity: 1
+		+r(768)
+			.slick-list
+				background: #6d57a5
 	.quotes__slide
 		+clr
 	.quotes__cell
@@ -1115,9 +1118,13 @@
 			display: block
 			width: 100%
 			height: auto
+			+r(320)
+				height: 190px
 		+r(768)
 			display: block
 			width: 100%
+			img
+				max-height: 490px
 	.quotes__content
 		position: relative
 		display: table-cell
@@ -1139,6 +1146,7 @@
 		+r(768)
 			display: block
 			width: 100%
+			min-height: 190px
 			padding: 40px 10px
 		+r(568)
 			padding: 20px 10px
@@ -1168,11 +1176,14 @@
 	.n-poster__img
 		margin-bottom: 15px
 		height: 265px
+		max-width: 184px
 		overflow: hidden
 		img
 			display: inline-block
-			width: auto
+			width: 100%
 			height: 100%
+		+r(375)
+			height: 200px
 	.n-poster__size
 		margin-bottom: 8px
 		font-size: 14px

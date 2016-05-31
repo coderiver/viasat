@@ -4661,6 +4661,9 @@ select {
         opacity: 0; }
       .quotes .quotes__slider .slick-next:hover:after {
         opacity: 1; }
+  @media only screen and (max-width: 768px) {
+    .quotes .quotes__slider .slick-list {
+      background: #6d57a5; } }
   .quotes .quotes__slide {
     *zoom: 1; }
     .quotes .quotes__slide:after {
@@ -4680,10 +4683,15 @@ select {
       display: block;
       width: 100%;
       height: auto; }
+      @media only screen and (max-width: 320px) {
+        .quotes .quotes__img img {
+          height: 190px; } }
     @media only screen and (max-width: 768px) {
       .quotes .quotes__img {
         display: block;
-        width: 100%; } }
+        width: 100%; }
+        .quotes .quotes__img img {
+          max-height: 490px; } }
   .quotes .quotes__content {
     position: relative;
     display: table-cell;
@@ -4707,6 +4715,7 @@ select {
       .quotes .quotes__content {
         display: block;
         width: 100%;
+        min-height: 190px;
         padding: 40px 10px; } }
     @media only screen and (max-width: 568px) {
       .quotes .quotes__content {
@@ -4744,11 +4753,15 @@ select {
   .n-poster .n-poster__img {
     margin-bottom: 15px;
     height: 265px;
+    max-width: 184px;
     overflow: hidden; }
     .n-poster .n-poster__img img {
       display: inline-block;
-      width: auto;
+      width: 100%;
       height: 100%; }
+    @media only screen and (max-width: 375px) {
+      .n-poster .n-poster__img {
+        height: 200px; } }
   .n-poster .n-poster__size {
     margin-bottom: 8px;
     font-size: 14px;
