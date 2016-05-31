@@ -392,9 +392,14 @@
 		margin: 44px 0 30px
 		+r(768)
 			display: block
+		// +r(425)
+		// margin: 20px 0px
 	.team__wrap
 		+r(768)
 			display: none
+		// +r(425)
+		// 	padding-top: 25px 
+		// 	border-top: 1px solid #e7e5e5
 	.team__block
 		margin-top: 25px
 		&:first-child
@@ -415,6 +420,17 @@
 		float: right
 		width: 50%
 		color: #000
+		// +r(425)
+		// 	&.is-bold
+		// 		font-weight: 500
+		// 		text-align: center
+		// 	&.is-main
+		// 		float: none
+		// 		width: 100%
+		// 		text-align: center
+		// 		font-weight: 500
+		// 		font-size: 18px
+
 .quote
 	position: relative
 	padding: 40px 25px
@@ -445,6 +461,11 @@
 		font-weight: 400
 		line-height: 1
 	+r(768)
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 95%
+		transform: translate(-50%, -50%)
 		padding: 35px 25px
 		&:before, &:after
 			font-size: 60px
@@ -1004,7 +1025,14 @@
 			background: url("../img/top.svg")
 			+cover
 			transform: rotate(180deg)
-
+	// +r(425)
+	// 	padding: 20px 0px 0px
+	// 	border-top: 1px solid #e7e5e5
+	// 	&:after
+	// 		top: 29px
+	// 		right: 25px
+	// 	&:before
+	// 		top: 20px
 
 .n-trailer
 	position: relative
@@ -1146,7 +1174,7 @@
 		+r(768)
 			display: block
 			width: 100%
-			min-height: 190px
+			height: 250px
 			padding: 40px 10px
 		+r(568)
 			padding: 20px 10px
@@ -1324,8 +1352,8 @@
 		+r(480)
 			max-width: 100%
 	.reward__img
-		min-height: 115px
-		margin-bottom: 20px
+		height: 140px
+		// margin-bottom: 20px
 		text-align: center
 		img
 			max-width: 100%

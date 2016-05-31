@@ -3913,6 +3913,13 @@ select {
     line-height: 1; }
   @media only screen and (max-width: 768px) {
     .quote {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 95%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       padding: 35px 25px; }
       .quote:before, .quote:after {
         font-size: 60px; } }
@@ -4715,7 +4722,7 @@ select {
       .quotes .quotes__content {
         display: block;
         width: 100%;
-        min-height: 190px;
+        height: 250px;
         padding: 40px 10px; } }
     @media only screen and (max-width: 568px) {
       .quotes .quotes__content {
@@ -4919,8 +4926,7 @@ select {
       .reward .reward__in {
         max-width: 100%; } }
   .reward .reward__img {
-    min-height: 115px;
-    margin-bottom: 20px;
+    height: 140px;
     text-align: center; }
     .reward .reward__img img {
       max-width: 100%; }

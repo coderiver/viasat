@@ -337,6 +337,21 @@ movies:
                                 </div>
                             </div>
                         </div>
+                        <!-- <div class="team js-wrap">
+                            <div class="headline js-wrap-btn">Бюджет</div>
+                            <div class="team__wrap js-wrap-cont">
+                                <div class="team__block">
+                                    <div class="team__row">
+                                        <div class="team__right is-main">$3 300 000</div>
+                                    </div>
+                                    <div class="team__row">
+                                        <div class="team__left">Сборы в мире:</div>
+                                        <div class="team__right is-bold">$48 982 041</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div> -->  
                         <div class="quote">
                             <p>Дорога к величию может привести вас к краю...</p>
                         </div>
@@ -593,7 +608,7 @@ movies:
                             {% for poster in posters %}
                                 <div class="n-poster">
                                     <div class="n-poster__img">
-                                        <img src="{{ poster.img }}" alt="">
+                                        <img src="{{ poster.img }}" width="184" height="265" alt="">
                                     </div>
                                     <div class="n-poster__size">{{ poster.dimensions }} px</div>
                                     <a href="#" class="n-poster__download">{{ mixins.icon('download') }} {{ poster.size }}</a>
