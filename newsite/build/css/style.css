@@ -3609,6 +3609,7 @@ select {
     margin-top: -87px;
     margin-bottom: -87px;
     width: 364px;
+    min-height: 500px;
     border-left: 1px solid #e7e5e5; }
     @media only screen and (max-width: 1280px) {
       .film .film__right {
@@ -3878,6 +3879,9 @@ select {
     @media only screen and (max-width: 900px) {
       .team .team__row {
         font-size: 14px; } }
+    @media only screen and (max-width: 768px) {
+      .team .team__row {
+        padding: 0px 15px; } }
     @media only screen and (max-width: 480px) {
       .team .team__row {
         font-size: 12px; } }
@@ -3894,8 +3898,7 @@ select {
     color: #000; }
     @media only screen and (max-width: 768px) {
       .team .team__right.is-bold {
-        font-weight: 500;
-        text-align: right; }
+        font-weight: 500; }
       .team .team__right.is-main {
         float: none;
         width: 100%;
