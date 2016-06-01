@@ -1025,6 +1025,11 @@
 			background: url("../img/top.svg")
 			+cover
 			transform: rotate(180deg)
+			+tr(transform .3s)
+		&.is-active
+			&:after
+				transform: rotate(360deg)
+
 	// +r(425)
 	// 	padding: 20px 0px 0px
 	// 	border-top: 1px solid #e7e5e5

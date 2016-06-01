@@ -4567,7 +4567,13 @@ select {
         background-position: 50% 50%;
         -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
-        transform: rotate(180deg); } }
+        transform: rotate(180deg);
+        transition: -webkit-transform 0.3s;
+        transition: transform 0.3s; }
+      .headline.is-active:after {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg); } }
 
 .n-trailer {
   position: relative; }

@@ -326,7 +326,7 @@ $(document).ready(function() {
     // hide content on mobile
 
     $('.js-wrap-btn').on('click', function () {
-        var content = $(this).closest('.js-wrap').find('.js-wrap-cont');
+        var content = $(this).toggleClass('is-active').closest('.js-wrap').find('.js-wrap-cont');
         content.slideToggle();
     });
 
