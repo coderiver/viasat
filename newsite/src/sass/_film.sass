@@ -144,6 +144,8 @@
 					+r(480)
 						width: 100%
 						margin-bottom: 10px
+						&:last-child
+							margin-left: 0px
 		.film__rating, .n-awards
 			display: none
 		+r(900)
@@ -395,14 +397,13 @@
 		margin: 44px 0 30px
 		+r(768)
 			display: block
-		// +r(425)
-		// margin: 20px 0px
+			margin: 20px 0px
 	.team__wrap
 		+r(768)
 			display: none
-		// +r(425)
-		// 	padding-top: 25px 
-		// 	border-top: 1px solid #e7e5e5
+		+r(768)
+			padding-top: 25px 
+			border-top: 1px solid #e7e5e5
 	.team__block
 		margin-top: 25px
 		&:first-child
@@ -419,20 +420,23 @@
 		float: left
 		width: 50%
 		color: #919191
+		+r(768)
+			&.is-hide
+				display: none
 	.team__right
 		float: right
 		width: 50%
 		color: #000
-		// +r(425)
-		// 	&.is-bold
-		// 		font-weight: 500
-		// 		text-align: center
-		// 	&.is-main
-		// 		float: none
-		// 		width: 100%
-		// 		text-align: center
-		// 		font-weight: 500
-		// 		font-size: 18px
+		+r(768)
+			&.is-bold
+				font-weight: 500
+				text-align: right
+			&.is-main
+				float: none
+				width: 100%
+				text-align: center
+				font-weight: 500
+				font-size: 18px
 
 .quote
 	position: relative
@@ -1021,29 +1025,24 @@
 	+r(768)
 		margin: 0 20px 20px
 		cursor: pointer
+		padding: 20px 0px 0px
+		border-top: 1px solid #e7e5e5
 		&:after
 			content: ""
 			position: absolute
-			top: 9px
-			right: 0
+			top: 29px
+			right: 25px
 			width: 16px
 			height: 10px
 			background: url("../img/top.svg")
 			+cover
 			transform: rotate(180deg)
 			+tr(transform .3s)
+		&:before
+			top: 20px
 		&.is-active
 			&:after
 				transform: rotate(360deg)
-
-	// +r(425)
-	// 	padding: 20px 0px 0px
-	// 	border-top: 1px solid #e7e5e5
-	// 	&:after
-	// 		top: 29px
-	// 		right: 25px
-	// 	&:before
-	// 		top: 20px
 
 .n-trailer
 	position: relative

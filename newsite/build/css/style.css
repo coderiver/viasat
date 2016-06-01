@@ -3582,7 +3582,9 @@ select {
           @media only screen and (max-width: 480px) {
             .film .film__col .socials .socials__likes li {
               width: 100%;
-              margin-bottom: 10px; } }
+              margin-bottom: 10px; }
+              .film .film__col .socials .socials__likes li:last-child {
+                margin-left: 0px; } }
     .film .film__col .film__rating, .film .film__col .n-awards {
       display: none; }
     @media only screen and (max-width: 900px) {
@@ -3852,10 +3854,15 @@ select {
     margin: 44px 0 30px; }
     @media only screen and (max-width: 768px) {
       .team .headline {
-        display: block; } }
+        display: block;
+        margin: 20px 0px; } }
   @media only screen and (max-width: 768px) {
     .team .team__wrap {
       display: none; } }
+  @media only screen and (max-width: 768px) {
+    .team .team__wrap {
+      padding-top: 25px;
+      border-top: 1px solid #e7e5e5; } }
   .team .team__block {
     margin-top: 25px; }
     .team .team__block:first-child {
@@ -3878,10 +3885,23 @@ select {
     float: left;
     width: 50%;
     color: #919191; }
+    @media only screen and (max-width: 768px) {
+      .team .team__left.is-hide {
+        display: none; } }
   .team .team__right {
     float: right;
     width: 50%;
     color: #000; }
+    @media only screen and (max-width: 768px) {
+      .team .team__right.is-bold {
+        font-weight: 500;
+        text-align: right; }
+      .team .team__right.is-main {
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px; } }
 
 .quote {
   position: relative;
@@ -4559,12 +4579,14 @@ select {
   @media only screen and (max-width: 768px) {
     .headline {
       margin: 0 20px 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      padding: 20px 0px 0px;
+      border-top: 1px solid #e7e5e5; }
       .headline:after {
         content: "";
         position: absolute;
-        top: 9px;
-        right: 0;
+        top: 29px;
+        right: 25px;
         width: 16px;
         height: 10px;
         background: url("../img/top.svg");
@@ -4576,6 +4598,8 @@ select {
         transform: rotate(180deg);
         transition: -webkit-transform 0.3s;
         transition: transform 0.3s; }
+      .headline:before {
+        top: 20px; }
       .headline.is-active:after {
         -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
