@@ -3557,9 +3557,12 @@ select {
           .film .film__col .socials .socials__likes ul {
             display: block; } }
         .film .film__col .socials .socials__likes li {
-          width: 50%; }
+          width: 47.5%; }
+          .film .film__col .socials .socials__likes li:last-child {
+            margin-left: 5%; }
           .film .film__col .socials .socials__likes li a {
-            width: 100%; }
+            width: 100%;
+            border-radius: 3px; }
             .film .film__col .socials .socials__likes li a .icon-like, .film .film__col .socials .socials__likes li a .icon-dislike {
               font-family: 'icomoon';
               speak: none;
