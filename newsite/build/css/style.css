@@ -7916,6 +7916,8 @@ select {
     .old .item .item__col, .overlay .item .item__col {
       display: table-cell;
       padding-bottom: 5px; }
+      .old .item .item__col:first-child, .overlay .item .item__col:first-child {
+        width: 80px; }
     .old .item .item__descr, .overlay .item .item__descr {
       margin-bottom: 30px; }
       .old .item .item__descr p, .overlay .item .item__descr p {
