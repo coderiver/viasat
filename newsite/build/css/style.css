@@ -4782,6 +4782,16 @@ select {
       content: " ";
       display: table;
       clear: both; }
+  .n-posters .slick-track {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
   @media only screen and (max-width: 1024px) {
     .n-posters {
       padding-right: 20px; }
