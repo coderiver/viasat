@@ -2699,6 +2699,7 @@ select {
     font-size: 14px;
     line-height: 1; }
   .card .card__about {
+    padding-left: 1px;
     padding-top: 5px;
     color: #7f7f7f;
     font-size: 12px;
@@ -5304,6 +5305,7 @@ select {
     font-size: 16px;
     font-weight: 500; }
   .movie .movie__genre {
+    padding-left: 1px;
     font-style: italic;
     font-size: 14px; }
   .movie .movie__right {
@@ -7782,6 +7784,8 @@ select {
     .old .schedule .schedule__left .h3, .overlay .schedule .schedule__left .h3 {
       font-weight: 500;
       line-height: 1; }
+    .old .schedule .schedule__left p, .overlay .schedule .schedule__left p {
+      padding-left: 1px; }
     @media only screen and (max-width: 480px) {
       .old .schedule .schedule__left, .overlay .schedule .schedule__left {
         width: 65%; } }
