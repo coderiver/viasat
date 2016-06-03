@@ -1840,8 +1840,6 @@ select {
       vertical-align: top;
       width: 25%;
       margin: 0 0 50px; }
-      .catalog .catalog__in .card.card_backface {
-        margin-bottom: 0px; }
       @media only screen and (max-width: 768px) {
         .catalog .catalog__in .card {
           width: 50%; } }
@@ -2711,10 +2709,7 @@ select {
     .card.card_white .card__flag {
       display: none; }
   .card.card_backface {
-    box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(234, 239, 241, 0.8), 0px -56px 0px -37px #f4f6f7;
-    margin-bottom: 0px; }
-    .card.card_backface .card__title {
-      margin-bottom: 30px; }
+    box-shadow: 0px -28px 0px -21px rgba(201, 214, 219, 0.8), 0px -42px 0px -28px rgba(234, 239, 241, 0.8), 0px -56px 0px -37px #f4f6f7; }
   .card.card_time .card__poster {
     padding: 0; }
   .card.card_time .card__title {
