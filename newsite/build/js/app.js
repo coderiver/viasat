@@ -743,6 +743,15 @@ function textEllip() {
         }
 
     });
+    var ellipCont=$('.js-ellip-cont'),
+        ellipDesc=$('.js-ellip-desc'),
+        ellipTop=$('.js-ellip-top');
+    var lines=Math.round((ellipCont.height()-ellipTop.height())/18);
+        ellipDesc.data('lines', lines);
+        ellipDesc.ellipsis({
+            lines: lines,
+            responsive: true
+        });
 }
 
 $(document).ready(function() {

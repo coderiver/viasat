@@ -2658,7 +2658,7 @@ select {
       position: absolute;
       top: 0;
       right: 0;
-      height: 100px;
+      height: 55px;
       width: 1px;
       background: rgba(230, 230, 230, 0.5); }
     @media only screen and (max-width: 1024px) {
@@ -2689,6 +2689,8 @@ select {
     font-size: 16px;
     font-weight: bold; }
   .card .card__genre {
+    padding-right: 1px;
+    padding-left: 1px;
     margin-bottom: 10px;
     font-size: 14px;
     font-style: italic; }
@@ -2698,6 +2700,7 @@ select {
   .card .card__date {
     font-size: 12px; }
   .card .card__about {
+    padding-right: 1px;
     padding-left: 1px;
     padding-top: 5px;
     color: #7f7f7f;
@@ -5307,6 +5310,7 @@ select {
     font-size: 16px;
     font-weight: 500; }
   .movie .movie__genre {
+    padding-right: 1px;
     padding-left: 1px;
     font-style: italic;
     font-size: 14px; }
@@ -7758,7 +7762,8 @@ select {
     width: 59%;
     height: 150px;
     padding: 25px 30px;
-    background: #FFF; }
+    background: #FFF;
+    overflow: hidden; }
     @media only screen and (max-width: 767px) {
       .old .schedule .schedule__content, .overlay .schedule .schedule__content {
         float: none;
@@ -7771,7 +7776,6 @@ select {
         padding: 15px; } }
   .old .schedule .schedule__descr, .overlay .schedule .schedule__descr {
     line-height: 1.3;
-    height: 144px;
     overflow: hidden; }
   .old .schedule .schedule__topper, .overlay .schedule .schedule__topper {
     *zoom: 1;
@@ -7787,6 +7791,7 @@ select {
       font-weight: 500;
       line-height: 1; }
     .old .schedule .schedule__left p, .overlay .schedule .schedule__left p {
+      padding-right: 1px;
       padding-left: 1px; }
     @media only screen and (max-width: 480px) {
       .old .schedule .schedule__left, .overlay .schedule .schedule__left {
