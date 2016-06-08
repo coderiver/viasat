@@ -223,8 +223,8 @@ programs:
                                 </div>
                                 <div class="card__row">
                                     <div class="card__left">
-                                        <div class="card__title">{{ card.title }}</div>
-                                        <div class="card__genre">Боевик</div>
+                                        <div class="card__title js-ellip">{{ card.title }}</div>
+                                        <div class="card__genre js-ellip">Боевик</div>
                                     </div>
                                     <div class="card__right">
                                         <div class="card__time">{{ card.time }}</div>
@@ -253,10 +253,10 @@ programs:
                                 <div class="card__channel">
                                     <span class="n-channel channel_{{ card.color }}">{{ mixins.icon('star') }}</span> {{ card.channel }}
                                 </div>
-                                <div class="card__title">{{ card.title }}</div>
+                                <div class="card__title js-ellip">{{ card.title }}</div>
                                 <div class="card__about">
-                                    <p>{{ card.genre }}</p>
-                                    <p>{{ card.country }}</p>
+                                    <p class="js-ellip">{{ card.genre }}</p>
+                                    <p class="js-ellip">{{ card.country }}</p>
                                 </div>
                             </div>
                         </a>
