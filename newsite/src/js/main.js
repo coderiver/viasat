@@ -100,7 +100,7 @@ $(document).ready(function() {
     });
     $('.js-slider').slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1025,

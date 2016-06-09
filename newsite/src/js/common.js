@@ -70,7 +70,7 @@ $(document).ready(function() {
             breakpoint: 1024,
             settings: {
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 dots: true
             }
         },{
@@ -87,12 +87,12 @@ $(document).ready(function() {
     // default slider
     slider.initSlider('.js-slider2', {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         responsive: [{
             breakpoint: 1025,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         },{
             breakpoint: 767,
