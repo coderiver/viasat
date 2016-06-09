@@ -1842,8 +1842,6 @@ select {
       vertical-align: top;
       width: 25%;
       margin: 0 0 50px; }
-      .catalog .catalog__in .card_backface {
-        margin-bottom: 80px; }
       @media only screen and (max-width: 768px) {
         .catalog .catalog__in .card {
           width: 50%; } }
@@ -1857,7 +1855,7 @@ select {
         width: 50%; } }
   @media only screen and (max-width: 480px) {
     .catalog {
-      padding: 20px 10px; }
+      padding: 50px 10px 20px; }
       .catalog .catalog__in .card {
         width: 50%; } }
   @media only screen and (max-width: 414px) {
