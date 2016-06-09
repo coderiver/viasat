@@ -24,7 +24,7 @@
     'use strict';
 
     var namespace = 'ellipsis',
-        span = '<span style="white-space: nowrap;">',
+        span = '<span style="white-space: normal;">',
         defaults = {
             lines: 'auto',
             ellipClass: 'ellip',

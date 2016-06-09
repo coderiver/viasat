@@ -56,7 +56,7 @@ c(a.element).is("option")?(a.element.selected=!1,void this.$element.trigger("cha
     'use strict';
 
     var namespace = 'ellipsis',
-        span = '<span style="white-space: nowrap;">',
+        span = '<span style="white-space: normal;">',
         defaults = {
             lines: 'auto',
             ellipClass: 'ellip',
@@ -405,8 +405,7 @@ $(document).ready(function() {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    arrows: false
+                    slidesToScroll: 1
                 }
             }
         ]
