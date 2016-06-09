@@ -508,12 +508,26 @@
 		vertical-align: middle
 		font-size: 14px
 		color: rgba(#222121, 0.7)
+		+r(1024)
+			margin-bottom: 15px
+		+r(900)
+			margin-bottom: 0px
 	.premiere__repeat
 		padding: 13px 0
 		.date
 			display: inline-block
 			vertical-align: middle
 			margin: 0 10px 0 10px
+			&-wrap
+				display: inline-block
+			+r(1280)
+				margin-left: 0px
+				&:last-child
+					margin-right: 0px
+			+r(900)
+				margin-left: 10px
+				&:last-child
+					margin-right: 10px
 		+r(480)
 			.premiere__title
 				display: block
@@ -711,6 +725,8 @@
 				opacity: 0
 			+r(900)
 				right: 5px
+			+r(425)
+				right: -10px
 			&:before
 				position: absolute
 				top: 0
@@ -796,7 +812,7 @@
 			margin-bottom: 0px	
 		.n-awards
 			float: right
-			+r(1280)
+			+r(1080)
 				float: none
 				width: 100%
 			+r(900)

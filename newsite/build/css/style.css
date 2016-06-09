@@ -3983,12 +3983,30 @@ select {
     vertical-align: middle;
     font-size: 14px;
     color: rgba(34, 33, 33, 0.7); }
+    @media only screen and (max-width: 1024px) {
+      .premiere .premiere__title {
+        margin-bottom: 15px; } }
+    @media only screen and (max-width: 900px) {
+      .premiere .premiere__title {
+        margin-bottom: 0px; } }
   .premiere .premiere__repeat {
     padding: 13px 0; }
     .premiere .premiere__repeat .date {
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px 0 10px; }
+      .premiere .premiere__repeat .date-wrap {
+        display: inline-block; }
+      @media only screen and (max-width: 1280px) {
+        .premiere .premiere__repeat .date {
+          margin-left: 0px; }
+          .premiere .premiere__repeat .date:last-child {
+            margin-right: 0px; } }
+      @media only screen and (max-width: 900px) {
+        .premiere .premiere__repeat .date {
+          margin-left: 10px; }
+          .premiere .premiere__repeat .date:last-child {
+            margin-right: 10px; } }
     @media only screen and (max-width: 480px) {
       .premiere .premiere__repeat .premiere__title {
         display: block;
@@ -4222,6 +4240,9 @@ select {
       @media only screen and (max-width: 900px) {
         .actors .actors__list .slick-next {
           right: 5px; } }
+      @media only screen and (max-width: 425px) {
+        .actors .actors__list .slick-next {
+          right: -10px; } }
       .actors .actors__list .slick-next:before {
         position: absolute;
         top: 0;
@@ -4322,7 +4343,7 @@ select {
       margin-bottom: 0px; }
     .story .story__topper .n-awards {
       float: right; }
-      @media only screen and (max-width: 1280px) {
+      @media only screen and (max-width: 1080px) {
         .story .story__topper .n-awards {
           float: none;
           width: 100%; } }
