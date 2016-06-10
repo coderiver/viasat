@@ -4235,13 +4235,11 @@ select {
           opacity: 1; }
     .actors .actors__list .slick-next {
       right: 5px;
-      transition: opacity 200ms; }
+      transition: opacity 200ms;
+      right: -25px; }
       .actors .actors__list .slick-next.slick-disabled {
         opacity: 0; }
       @media only screen and (max-width: 900px) {
-        .actors .actors__list .slick-next {
-          right: 5px; } }
-      @media only screen and (max-width: 425px) {
         .actors .actors__list .slick-next {
           right: -10px; } }
       .actors .actors__list .slick-next:before {
