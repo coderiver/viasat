@@ -279,6 +279,7 @@ $(document).ready(function() {
         var slideNumber = $(this).data('slide');
 
         $('.gallery-overlay').fadeIn();
+        $('body').addClass('no-scroll');
 
         if ($('.gallery').hasClass('is-inited')) {
             $('.js-gallery-view').slick('slickGoTo', slideNumber);
@@ -318,6 +319,7 @@ $(document).ready(function() {
 
     $('.js-gallery-close').on('click', function() {
         $(this).parent().fadeOut();
+        $('body').removeClass('no-scroll');
     });
 
     // lists
