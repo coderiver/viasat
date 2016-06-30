@@ -7634,8 +7634,7 @@ select {
           padding: 15px; } }
   .old .info, .overlay .info {
     position: relative;
-    background: #fff;
-    z-index: 3; }
+    background: #fff; }
     .old .info .info__in, .overlay .info .info__in {
       padding: 18px 32px; }
       @media only screen and (max-width: 568px) {
