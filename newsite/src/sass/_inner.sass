@@ -347,6 +347,8 @@
 		+r(360)
 			margin-bottom: 10px
 	.main
+		position: relative
+		z-index: 2
 		float: left
 		width: 65.7%
 		padding-top: 20px
@@ -355,6 +357,8 @@
 			width: 100%
 			padding-bottom: 20px
 	.sidebar
+		position: relative
+		z-index: 1
 		float: right
 		width: 31.7%
 		padding-top: 40px
@@ -1518,7 +1522,7 @@
 	.info
 		position: relative
 		background: #fff
-		// z-index: 3
+		z-index: 3
 		.info__in
 			padding: 18px 32px
 			+r(568)

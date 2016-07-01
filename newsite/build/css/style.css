@@ -6368,6 +6368,8 @@ select {
       .old .col4, .overlay .col4 {
         margin-bottom: 10px; } }
   .old .main, .overlay .main {
+    position: relative;
+    z-index: 2;
     float: left;
     width: 65.7%;
     padding-top: 20px;
@@ -6377,6 +6379,8 @@ select {
         width: 100%;
         padding-bottom: 20px; } }
   .old .sidebar, .overlay .sidebar {
+    position: relative;
+    z-index: 1;
     float: right;
     width: 31.7%;
     padding-top: 40px; }
@@ -7634,7 +7638,8 @@ select {
           padding: 15px; } }
   .old .info, .overlay .info {
     position: relative;
-    background: #fff; }
+    background: #fff;
+    z-index: 3; }
     .old .info .info__in, .overlay .info .info__in {
       padding: 18px 32px; }
       @media only screen and (max-width: 568px) {
