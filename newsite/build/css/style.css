@@ -235,6 +235,8 @@ body {
     overflow: hidden; }
     body.no-scroll .header {
       z-index: 1; }
+    body.no-scroll .sidebar {
+      z-index: 4; }
 
 button,
 input,
