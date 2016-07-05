@@ -280,6 +280,7 @@ $(document).ready(function() {
 
         $('.gallery-overlay').fadeIn();
         $('body').addClass('no-scroll');
+        $('.main').css('z-index', '5');
 
         if ($('.gallery').hasClass('is-inited')) {
             $('.js-gallery-view').slick('slickGoTo', slideNumber);
@@ -320,6 +321,7 @@ $(document).ready(function() {
     $('.js-gallery-close').on('click', function() {
         $(this).parent().fadeOut();
         $('body').removeClass('no-scroll');
+        $('.main').css('z-index', '2');
     });
 
     // lists
