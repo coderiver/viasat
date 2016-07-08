@@ -313,6 +313,8 @@ a {
   width: 75%; }
 
 .icon {
+  -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
   fill: currentColor; }
 
 .n-channel {
@@ -428,7 +430,8 @@ select {
 .n-h1 {
   color: #fff;
   font-size: 36px;
-  font-weight: 900; }
+  font-weight: 900;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6); }
   .n-h1.n-h1_white {
     color: #fff; }
   @media only screen and (max-width: 768px) {
@@ -3469,7 +3472,8 @@ select {
     position: relative;
     display: inline;
     vertical-align: middle;
-    margin-left: 10px; }
+    margin-left: 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5); }
     .film-main .film-main__item:before {
       content: "";
       position: absolute;
@@ -3639,8 +3643,7 @@ select {
       .film .film__rating {
         display: none; } }
   .film.film_premiere .film__right {
-    margin-top: -230px;
-    margin-bottom: -230px; }
+    margin-top: -230px; }
     @media only screen and (max-width: 1280px) {
       .film.film_premiere .film__right {
         margin-top: 0;
@@ -4370,6 +4373,8 @@ select {
     @media only screen and (max-width: 768px) {
       .story .story__article {
         display: none; } }
+    .story .story__article a {
+      color: #6d57a5; }
 
 .n-awards {
   font-size: 0; }
@@ -5456,7 +5461,8 @@ select {
 .subtitle {
   font-size: 24px;
   font-weight: 300;
-  color: #fff; }
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6); }
 
 @media only screen and (max-width: 568px) {
   .n-carousel {
@@ -6824,6 +6830,8 @@ select {
           padding: 15px; }
           .old .post .post__in > .h3, .overlay .post .post__in > .h3 {
             font-size: 2rem; } }
+      .old .post .post__in .article a, .overlay .post .post__in .article a {
+        color: #6d57a5; }
     .old .post .post__content, .overlay .post .post__content {
       overflow: hidden;
       background: #FFF; }
