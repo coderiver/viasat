@@ -313,8 +313,6 @@ a {
   width: 75%; }
 
 .icon {
-  -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
   fill: currentColor; }
 
 .n-channel {
@@ -1695,6 +1693,9 @@ select {
         color: #d46b28; }
       .n-socials li a .icon-vk {
         font-size: 28px; }
+  .n-socials .icon {
+    -webkit-filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.5)); }
   @media only screen and (max-width: 768px) {
     .n-socials li {
       margin-left: 25px; }
@@ -6310,7 +6311,7 @@ select {
         position: relative;
         display: inline-block;
         vertical-align: middle;
-        margin-left: 13px; }
+        margin-left: 6px; }
         .old .breadcrumbs ul li:before, .overlay .breadcrumbs ul li:before {
           content: "/";
           position: absolute;
