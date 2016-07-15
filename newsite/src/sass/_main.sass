@@ -216,6 +216,10 @@
 			margin: 0 -5px
 	&__group
 		padding: 0 15px
+		+r(1024)
+			padding: 0 12px
+		+r(1000)
+			padding: 0 15px
 	&__head
 		margin-bottom: 10px
 		font-size: 0
@@ -478,7 +482,10 @@
 			width: 100%
 		&:first-child
 			+r(1024)
+				display: none
 				width: 100%
+			+r(768)
+				display: block
 		&:nth-child(4)
 			+r(1024)
 				clear: both

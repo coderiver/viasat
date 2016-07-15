@@ -289,12 +289,12 @@
 				position: relative
 				display: inline-block
 				vertical-align: middle
-				margin-left: 6px
+				margin-left: 12px
 				&:before
 					content: "/"
 					position: absolute
 					top: 0px
-					left: -8px
+					left: -11px
 					color: #979797
 					font-size: 1.3rem
 				&:first-child
@@ -2544,17 +2544,23 @@
 					&:hover
 						color: darken(#3a5ba0, 5%)
 		+r(1150)
-			float: none
-			width: 100%
+			// float: none
+			// width: 100%
 			margin-bottom: 10px
 			ul
 				display: inline-block
+				li
+					a
+						width: 50px
 		+r(960)
 			float: left
 			overflow: hidden
 			width: auto
 			ul
 				display: block
+				li
+					a
+						width: 58px
 		+r(479)
 			float: none
 			width: 100%
@@ -2588,15 +2594,21 @@
 						font-size: 1.2rem
 						margin-left: 5px
 		+r(1150)
-			float: none
-			width: 100%
+			// float: none
+			// width: 100%
 			ul
 				display: inline-block
+				li
+					a
+						width: 70px
 		+r(960)
 			float: right
 			width: auto
 			ul
 				display: block
+				li
+					a
+						width: 80px
 		+r(479)
 			float: none
 			width: 100%
