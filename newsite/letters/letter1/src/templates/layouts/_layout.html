@@ -1,0 +1,29 @@
+{% import "../partials/_mixins.html" as mixins %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" media="all" href="css/{{css}}">
+  <meta charset="utf-8" />
+</head>
+<body bgcolor="{{bg}}">
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+<tr>
+<td style="background-color: {{bg}};">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="{{width}}" >
+
+        {% include "partials/_logo.html" %}
+
+        {% include "partials/_header.html" %}
+
+        {% block content %}{% endblock %}
+        {% block secondPart %}{% endblock %}
+
+        {% include "partials/_footer.html" %}
+
+  </table>
+</td>
+</tr>
+</table>
+</body>
+</html>

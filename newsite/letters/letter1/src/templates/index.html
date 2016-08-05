@@ -1,0 +1,196 @@
+---
+title: Напоминание о трансляции
+snippet: Learn more about the latest Chris's discoveries
+link: https://mackeeper.com/blog
+css: main.css
+
+bg: '#e8e9f1'
+headerBgColor: '#a92650'
+headerBg: '../img/headerBg.png'
+footerbg: '#e8e9f1'
+when: '20:00'
+action: 'фильм'
+nameAction: 'Безумный Макс. Дорога Ярости'
+linkAction: 'http://www.viasat-channels.tv/program/bezumnyj-maks-doroga-arosti
+'
+buttonLink: 'http://www.viasat-channels.tv/tv-guide'
+width: 600px
+
+
+premieres : [
+{
+	Link: '#',
+	Img: '../img/img-film1.png',
+	Star: '../img/img-star1.png',
+	Film: 'Затура: Космическое приключение',
+	Type: 'комедия, драма, семейный',
+	Country: 'Великобритания, 2011',
+	Time: '22:45',
+	Date: '28 июля',
+	chanel: 'TV1000 Premium HD'
+},
+{
+	Link: '#',
+	Img: '../img/img-film2.png',
+	Star: '../img/img-star2.png',
+	chanel: 'TV1000 Comedy HD ',
+	Film: 'Тэмми',
+	Type: 'комедия',
+	Country: 'США, 2014',
+	Time: '20:00',
+	Date: '29 июля'
+},
+{
+	Link: '#',
+	Img: '../img/img-film3.png',
+	Star: '../img/img-star3.png',
+	chanel: 'TV1000 Action HD ',
+	Film: 'Парни из Джерси',
+	Type: 'драма, биография, музыка',
+	Country: 'США, 2014',
+	Time: '21:15',
+	Date: '30 июля'
+}
+]
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	<tr  class="content">
+		<td  height="270" align="center" id="content">
+			<table width="{{width}}" style="background: url('../img/banner.png')">
+				{{mixins.space(39)}}
+				<tr>
+					<td align="center" height="35"><div class="title">Приветствуем!</div></td>
+				</tr>
+				{{mixins.space(2)}}
+				<tr>
+					<td align="center" height="15"><div class="sub-title">Напоминаем, что сегодня в</div></td>
+				</tr>
+				{{mixins.space(102)}}
+				<tr>
+					<td align="center"><div class="time">{{when}}</div></td>
+				</tr>
+				{{mixins.space(36)}}
+			</table>
+		</td>
+	</tr>
+	{{mixins.space(32)}}
+	<tr>
+		<td align="center">
+			<div class="sub-title">начнется {{action}}</div>
+		</td>
+	</tr>
+	{{mixins.space(8)}}
+	
+	<tr>
+		<td align="center">
+			<a href="{{linkAction}}" class="main">"{{nameAction}}"</a>
+		</td>
+	</tr>
+	{{mixins.space(31)}}
+	<tr>
+		<td align="center">
+			<div class="sub-title">Не пропустите!</div>
+		</td>
+	</tr>
+	{{mixins.space(30)}}
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<td width="184"><table height="55" width="184" style="background: url(../img/btn-before.png)"></table></td>
+					<td><a href="{{buttonLink}}" class="button">Вся телепрограмма</a></td>
+					<td width="186"><table height="55" width="186" style="background: url(../img/btn-after.png)"></table></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	{{mixins.space(46)}}
+	<tr>
+		<td height="1" align="center">
+			<table>
+				<tr>
+					<td width="35"></td>
+					<td><table height="1" width="530" style="background: url(../img/separator.png)"></table></td>
+					<td width="35"></td>
+				</tr>
+			</table>
+
+		</td>
+	</tr>
+	{{mixins.space(40)}}
+	<!-- end TOP AREA -->
+{% endblock %}
+
+<!-- block  premiere -->
+
+{% block secondPart %}
+	<tr>
+		<td align="center"><div class="title title_small">Премьеры этой недели</div></td>
+	</tr>
+	{{mixins.space(40)}}
+	<tr>
+		<td>
+			<table>
+				<tr>
+					{% for premiere in premieres %}
+					<td width="200">
+
+							<table>
+								<tr>
+									<td width="200" height="126" style="">
+										<a class="premiere-link"href="{{premiere.Link}}"><img src="{{premiere.Img}}" alt="{{premiere.Film}}"></a>
+									</td>
+								</tr>
+								{{mixins.space(12)}}
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td width="10"></td>
+
+												<td width="13" height="12" style="vertical-align: top">
+													<a class="premiere-link"href="{{premiere.Link}}"><img src="{{premiere.Star}}" alt="star"></a>
+												</td>
+												<td width="17"></td>
+												<td width="160" height="12"><a class="premiere-link"href="{{premiere.Link}}"><div class="chanel">{{premiere.chanel}} </div></a></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								{{mixins.space(15)}}
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td width="10"></td>
+												<td width="130" valign="top" align="left">
+													<a class="premiere-link"href="{{premiere.Link}}"><div class="film">{{premiere.Film}}</div></a>
+													<a class="premiere-link"href="{{premiere.Link}}"><div class="type">{{premiere.Type}} <br><span>{{premiere.Country}}</span></div></a>
+												</td>
+												<td width="50" align="right">
+													<a class="premiere-link"href="{{premiere.Link}}"><div class="time-of-action">{{premiere.Time}}</div></a>
+													<a class="premiere-link"href="{{premiere.Link}}"><div class="date-of-action">{{premiere.Date}}</div></a>
+												 </td>
+												<td width="10"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+
+					</td>
+				{% endfor %}
+
+				</tr>
+			</table>
+		</td>
+
+
+
+	</tr>
+{{mixins.space(33)}}
+
+{% endblock %}
