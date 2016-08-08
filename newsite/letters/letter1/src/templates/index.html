@@ -6,7 +6,7 @@ css: main.css
 
 bg: '#e8e9f1'
 headerBgColor: '#a92650'
-headerBg: '../img/headerBg.png'
+headerBg: 'img/headerBg.png'
 footerbg: '#e8e9f1'
 when: '20:00'
 action: 'фильм'
@@ -20,8 +20,8 @@ width: 600px
 premieres : [
 {
 	Link: '#',
-	Img: '../img/img-film1.png',
-	Star: '../img/img-star1.png',
+	Img: 'img/img-film1.png',
+	Star: 'img/img-star1.png',
 	Film: 'Затура: Космическое приключение',
 	Type: 'комедия, драма, семейный',
 	Country: 'Великобритания, 2011',
@@ -31,8 +31,8 @@ premieres : [
 },
 {
 	Link: '#',
-	Img: '../img/img-film2.png',
-	Star: '../img/img-star2.png',
+	Img: 'img/img-film2.png',
+	Star: 'img/img-star2.png',
 	chanel: 'TV1000 Comedy HD ',
 	Film: 'Тэмми',
 	Type: 'комедия',
@@ -42,8 +42,8 @@ premieres : [
 },
 {
 	Link: '#',
-	Img: '../img/img-film3.png',
-	Star: '../img/img-star3.png',
+	Img: 'img/img-film3.png',
+	Star: 'img/img-star3.png',
 	chanel: 'TV1000 Action HD ',
 	Film: 'Парни из Джерси',
 	Type: 'драма, биография, музыка',
@@ -59,7 +59,7 @@ premieres : [
 {% block content %}
 	<tr  class="content">
 		<td  height="270" align="center" id="content">
-			<table width="{{width}}" style="background: url('../img/banner.png')">
+			<table width="{{width}}" style="background: url('img/banner.png')">
 				{{mixins.space(39)}}
 				<tr>
 					<td align="center" height="35"><div class="title">Приветствуем!</div></td>
@@ -83,7 +83,7 @@ premieres : [
 		</td>
 	</tr>
 	{{mixins.space(8)}}
-	
+
 	<tr>
 		<td align="center">
 			<a href="{{linkAction}}" class="main">"{{nameAction}}"</a>
@@ -100,9 +100,9 @@ premieres : [
 		<td>
 			<table>
 				<tr>
-					<td width="184"><table height="55" width="184" style="background: url(../img/btn-before.png)"></table></td>
+					<td width="184"><table height="55" width="184" style="background: url(img/btn-before.png)"></table></td>
 					<td><a href="{{buttonLink}}" class="button">Вся телепрограмма</a></td>
-					<td width="186"><table height="55" width="186" style="background: url(../img/btn-after.png)"></table></td>
+					<td width="186"><table height="55" width="186" style="background: url(img/btn-after.png)"></table></td>
 				</tr>
 			</table>
 		</td>
@@ -113,7 +113,7 @@ premieres : [
 			<table>
 				<tr>
 					<td width="35"></td>
-					<td><table height="1" width="530" style="background: url(../img/separator.png)"></table></td>
+					<td><table height="1" width="530" style="background: url(img/separator.png)"></table></td>
 					<td width="35"></td>
 				</tr>
 			</table>
