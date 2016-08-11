@@ -13,8 +13,13 @@
 <td style="background-color: {{bg}};">
   <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="{{width}}" >
 
+        <!-- start logo -->
         {% include "partials/_logo.html" %}
+        <!-- end logo -->
+        <!-- start header -->
         {% include "partials/_header.html" %}
+        <!-- end header -->
+        
         {% block content %}{% endblock %}
         {% block secondPart %}{% endblock %}
 
