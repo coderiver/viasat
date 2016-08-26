@@ -766,6 +766,9 @@
 			margin: 0 5px
 		+r(768)
 			margin: 0 -5px
+			padding: 0px 15px
+		+r(768)
+			padding: 0px 20px
 	&__link
 		display: block
 		height: 40px
@@ -792,7 +795,9 @@
 		+r(1280)
 			left: -20px
 		+r(768)
-			left: 0
+			left: -15px
+		+r(568)
+			left: -10px
 		&:before
 			position: absolute
 			top: 0
@@ -824,7 +829,9 @@
 		+r(1280)
 			right: -20px
 		+r(768)
-			right: 0
+			right: -15px
+		+r(568)
+			right: -10px
 		&:before
 			position: absolute
 			top: 0
@@ -940,6 +947,10 @@
 	background: #f2f2f3
 	+r(1280)
 		padding: 40px 30px 20px
+	+r(768)
+		padding: 40px 20px 20px
+	+r(567)
+		padding: 40px 15px 20px
 
 // content
 .out
@@ -1188,6 +1199,7 @@
 	.filter__item
 		margin-bottom: 10px
 	+r(900)
+		+clr
 		position: relative
 		width: 100%
 		padding: 25px 0 25px 10px

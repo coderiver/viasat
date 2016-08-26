@@ -315,6 +315,7 @@
 	.row
 		+clr
 		margin-left: -2%
+		font-size: 0px
 		& > div, & > a
 			margin-left: 2%
 		+r(479)
@@ -332,7 +333,8 @@
 			margin-bottom: 10px
 
 	.col4
-		float: left
+		// float: left
+		display: inline-block
 		width: 23%
 		+r(767)
 			width: 48%
@@ -2416,6 +2418,8 @@
 			padding: 20px 20px 20px 184px
 			background: #fff
 			text-align: left
+			+r(768)
+				padding-right: 35px
 			+r(480)
 				display: table-cell
 				vertical-align: top
