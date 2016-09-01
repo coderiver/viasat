@@ -296,7 +296,12 @@ a {
     clear: both; }
   .row [class*="col-"] {
     float: left;
-    padding: 0 15px; }
+    padding: 0 15px;
+    vertical-align: top; }
+  .row [class*="col"] {
+    vertical-align: top; }
+  .row div, .row a, .row p {
+    font-size: 1.4rem; }
 
 .col-20 {
   width: 20%; }
