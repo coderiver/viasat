@@ -6826,7 +6826,7 @@ select {
       .old .post .post__info .socials.fixed, .overlay .post .post__info .socials.fixed {
         position: fixed;
         top: 20px;
-        width: 78px; }
+        width: 92px; }
       .old .post .post__info .socials.is-bottom, .overlay .post .post__info .socials.is-bottom {
         position: absolute;
         top: auto;
