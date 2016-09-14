@@ -235,8 +235,6 @@ body {
     overflow: hidden; }
     body.no-scroll .header {
       z-index: 1; }
-    body.no-scroll .sidebar {
-      z-index: 4; }
 
 button,
 input,
@@ -7864,7 +7862,7 @@ select {
       clear: both; }
   .old .schedule .schedule__left, .overlay .schedule .schedule__left {
     float: left;
-    width: 75%; }
+    width: 70%; }
     .old .schedule .schedule__left .h3, .overlay .schedule .schedule__left .h3 {
       font-weight: 500;
       line-height: 1; }
@@ -7873,8 +7871,10 @@ select {
         width: 65%; } }
   .old .schedule .schedule__right, .overlay .schedule .schedule__right {
     float: right;
-    width: 25%;
+    width: 30%;
     text-align: center; }
+    .old .schedule .schedule__right span, .overlay .schedule .schedule__right span {
+      white-space: nowrap; }
     @media only screen and (max-width: 480px) {
       .old .schedule .schedule__right, .overlay .schedule .schedule__right {
         width: 35%; } }
@@ -7891,7 +7891,8 @@ select {
       color: #b2b2b2; }
   .old .schedule .schedule__time, .overlay .schedule .schedule__time {
     font-size: 2.4rem;
-    font-weight: 900; }
+    font-weight: 900;
+    white-space: nowrap; }
   @media only screen and (max-width: 960px) {
     .old .schedule .schedule__more, .overlay .schedule .schedule__more {
       text-align: center; } }
