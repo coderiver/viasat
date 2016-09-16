@@ -48,7 +48,7 @@ premieres : [
 	Type: 'драма, биография, музыка',
 	Country: 'США, 2014',
 	Time: '21:15',
-	Date: '30 июля'
+	Date: '30 сентября'
 }
 ]
 
@@ -57,7 +57,7 @@ premieres : [
 {% block content %}
 	<tr  class="content">
 		<td  height="270" align="center" id="content">
-			<table width="{{width}}" style="background: url('http://www.viasat-channels.tv/img/mail/banner.png')">
+			<table width="100%" style="background: url('http://www.viasat-channels.tv/img/mail/banner.png')">
 				{{mixins.space(39)}}
 				<tr>
 
@@ -164,16 +164,16 @@ premieres : [
 									<td>
 										<table>
 											<tr>
-												<td width="10"></td>
+												<td width="8"></td>
 												<td width="130" valign="top" align="left">
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="film">{{premiere.Film}}</div></a>
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="type">{{premiere.Type}} <br><span>{{premiere.Country}}</span></div></a>
 												</td>
-												<td width="50" align="right">
+												<td width="54" align="right">
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="time-of-action">{{premiere.Time}}</div></a>
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="date-of-action">{{premiere.Date}}</div></a>
 												 </td>
-												<td width="10"></td>
+												<td width="8"></td>
 											</tr>
 										</table>
 									</td>
