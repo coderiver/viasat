@@ -25,7 +25,7 @@ premieres : [
 	Type: 'комедия, драма, семейный',
 	Country: 'Великобритания, 2011',
 	Time: '22:45',
-	Date: '28 июля',
+	Date: '28 сентября',
 	chanel: 'TV1000 Premium HD'
 },
 {
@@ -37,7 +37,7 @@ premieres : [
 	Type: 'комедия',
 	Country: 'США, 2014',
 	Time: '20:00',
-	Date: '29 июля'
+	Date: '29 сентября'
 },
 {
 	Link: '#',
@@ -57,7 +57,7 @@ premieres : [
 {% block content %}
 	<tr  class="content">
 		<td  height="270" align="center" id="content">
-			<table width="100%" style="background: url('http://www.viasat-channels.tv/img/mail/banner.png'); background-size: cover; background-repeat: no-repeat;">
+			<table width="100%" style="background-image: url('http://www.viasat-channels.tv/img/mail/banner.png');">
 				{{mixins.space(39)}}
 				<tr>
 					<td align="center" height="35"><div class="title">Приветствуем!</div></td>
@@ -92,6 +92,7 @@ premieres : [
 			<div class="sub-title">Не пропустите!</div>
 		</td>
 	</tr>
+
 	{{mixins.space(30)}}
 	<tr>
 		<td>
@@ -138,7 +139,7 @@ premieres : [
 							<table>
 								<tr>
 									<td width="200" height="126" style="">
-										<a class="premiere-link"href="{{premiere.Link}}"><img src="{{premiere.Img}}" alt="{{premiere.Film}}"></a>
+										<a class="premiere-link"href="{{premiere.Link}}"><img style="width:100%; height:100%;" src="{{premiere.Img}}" alt="{{premiere.Film}}"></a>
 									</td>
 								</tr>
 								{{mixins.space(12)}}
@@ -162,16 +163,16 @@ premieres : [
 									<td>
 										<table>
 											<tr>
-												<td width="8"></td>
+												<td width="6"></td>
 												<td width="130" valign="top" align="left">
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="film">{{premiere.Film}}</div></a>
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="type">{{premiere.Type}} <br><span>{{premiere.Country}}</span></div></a>
 												</td>
-												<td width="54" align="right">
+												<td width="58" align="right">
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="time-of-action">{{premiere.Time}}</div></a>
 													<a class="premiere-link"href="{{premiere.Link}}"><div class="date-of-action">{{premiere.Date}}</div></a>
 												 </td>
-												<td width="8"></td>
+												<td width="6"></td>
 											</tr>
 										</table>
 									</td>
