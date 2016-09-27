@@ -9,8 +9,6 @@ headerBg: 'img/headerBg.png'
 footerbg: '#e8e9f1'
 buttonLink: '#'
 width: 600px
-logoLink: 'homsters.kz'
-
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -75,19 +73,19 @@ logoLink: 'homsters.kz'
 	{{mixins.space(2)}}
 	<tr>
 		<td>
-			<table style="width:100%;">
+			<table style="width:100%; border-collapse: collapse;">
 				<tr>
 					<td width="50%" height="177" align="center" style="background: #734fa1"><div class="text-block"><span>Cообщать о лучших <br>фильмах и передачах <br> на наших телеканалах</span></div></td>
-					<td width="50%" height="177"><img src="img/mam.png" alt=""></td>
+					<td width="50%" height="177"><img style="width="100%" height="100%"" src="img/mam.png" alt=""></td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<table style="width:100%;">
+			<table style="width:100%; border-collapse: collapse;" >
 				<tr>
-					<td width="50%" height="177"><img src="img/di.png" alt=""></td>
+					<td width="50%" height="177"><img style="width="100%" height="100%"" src="img/di.png" alt=""></td>
 					<td width="50%" height="177" style="background: #f9b636" align="center"><div class="text-block"><span>Делиться последними <br> новостями из мира кино <br> и жизни известных актеров	</span></div></td>
 				</tr>
 			</table>
@@ -95,7 +93,7 @@ logoLink: 'homsters.kz'
 	</tr>
 
 	<tr>
-		<td height="39"><img src="img/img-line.png" alt=""></td>
+		<td height="39"><img  src="img/img-line.png" alt=""></td>
 	</tr>
 	<tr>
 		<td align="center">
@@ -106,6 +104,7 @@ logoLink: 'homsters.kz'
 		</td>
 	</tr>
 	{{mixins.space(28)}}
+
 
 {% endblock %}
 
