@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+table {
+  background-repeat: no-repeat !important;
+}
+
 #bodyTable {
   margin: 0 auto;
   display: none;
