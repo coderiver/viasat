@@ -45,6 +45,7 @@ a {
 
 table {
   background-repeat: no-repeat !important;
+  background-position: center center;
 }
 
 #bodyTable {
@@ -166,6 +167,13 @@ td {
 
 .footer-link {
   display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+
+  table {
+    background-size: cover !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
