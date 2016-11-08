@@ -235,6 +235,8 @@ body {
     overflow: hidden; }
     body.no-scroll .header {
       z-index: 1; }
+    body.no-scroll .sidebar {
+      z-index: 1000; }
 
 button,
 input,
@@ -481,7 +483,6 @@ select {
     color: #fff; }
 
 .scrolltop {
-  display: none;
   position: fixed;
   top: 20px;
   left: 50%;
@@ -510,9 +511,6 @@ select {
     top: 18px;
     left: 18px;
     font-size: 8px; }
-  @media only screen and (max-width: 768px) {
-    .scrolltop {
-      display: block; } }
 
 .feedback {
   font-size: 0; }
@@ -2413,6 +2411,7 @@ select {
   @media only screen and (max-width: 1024px) {
     .menu__drop {
       position: relative;
+      top: auto;
       left: auto;
       right: auto;
       margin: 20px -10px 0;

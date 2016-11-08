@@ -78,8 +78,8 @@ body
 		overflow: hidden
 		.header
 			z-index: 1
-		// .sidebar
-		// 	z-index: 4
+		.sidebar
+			z-index: 1000
 button,
 input,
 textarea
@@ -282,7 +282,7 @@ select
 		color: #fff
 
 .scrolltop
-	display: none
+	// display: none
 	position: fixed
 	top: 20px
 	left: 50%
@@ -306,8 +306,8 @@ select
 		top: 18px
 		left: 18px
 		font-size: 8px
-	+r(768)
-		display: block
+	// +r(768)
+	// 	display: block
 .feedback
 	font-size: 0
 	.feedback-link
