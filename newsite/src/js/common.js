@@ -27,6 +27,7 @@ function textEllip() {
 
 $(document).ready(function() {
 
+    var tabletWidth = window.matchMedia('(max-width: 1024px)').matches;
     // menu
 
     $('.js-menu-btn').on('click', function () {
@@ -278,31 +279,32 @@ $(document).ready(function() {
     }
 
     // scrolltop btn
+    if(tabletWidth){
+        function scrollTopBtn() {
+            var btn = $('.js-scrolltop');
+            var viewportHeight = $(window).outerHeight();
 
-    function scrollTopBtn() {
-        var btn = $('.js-scrolltop');
-        var viewportHeight = $(window).outerHeight();
+            initPoint = $(document).height() - viewportHeight - 100;
 
-        initPoint = $(document).height() - viewportHeight - 100;
-
-        if($(window).scrollTop() >= initPoint){
-            btn.addClass('visible');
+            if($(window).scrollTop() >= initPoint){
+                btn.addClass('visible');
+            }
+            else {
+                btn.removeClass('visible');
+            }
         }
-        else {
-            btn.removeClass('visible');
-        }
+        // scrollTopBtn();
+
+        $(document).on('scroll', function () {
+            scrollTopBtn();
+        });
+
+        $('.js-scrolltop').on('click', function () {
+           $('html, body').animate({
+               scrollTop: 0
+           })
+        });
     }
-    scrollTopBtn();
-
-    $(document).on('scroll', function () {
-        scrollTopBtn();
-    });
-
-    $('.js-scrolltop').on('click', function () {
-       $('html, body').animate({
-           scrollTop: 0
-       })
-    });
     
     // custom select with js-scrollpane
 
