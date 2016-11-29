@@ -1071,7 +1071,7 @@ select {
           height: auto;
           min-height: 1px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col {
     width: 100%; } }
 
@@ -1080,7 +1080,7 @@ select {
     display: none;
     width: 100%; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:first-child {
     display: block; } }
 
@@ -1088,30 +1088,30 @@ select {
   .premieres__grid-col:nth-child(4) {
     clear: both; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:first-child .premieres__link {
     padding-bottom: 10px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__link {
     padding: 10px 0;
     border-top: 1px solid #E1E1E1; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__preview {
     float: left;
     width: 60px;
     padding-right: 10px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__label {
     display: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__pic {
     display: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__when {
     position: relative;
     padding: 0;
@@ -1119,7 +1119,7 @@ select {
     text-align: left;
     text-shadow: none; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__time {
     font-size: 16px; } }
 
@@ -1128,19 +1128,19 @@ select {
   -ms-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 480px) {
     .premieres__grid-col:not(:first-child) .premieres__date {
       font-size: 12px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__content {
     display: table; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__title {
     font-size: 14px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid-col:not(:first-child) .premieres__text {
     font-size: 12px; } }
 
@@ -1151,7 +1151,7 @@ select {
   font-size: 16px;
   font-weight: 700;
   text-align: center; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 480px) {
     .premieres__grid-more {
       display: block; } }
 
@@ -1159,7 +1159,7 @@ select {
   .premieres__grid .premieres__link {
     margin-bottom: 35px; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .premieres__grid .premieres__link {
     margin: 0; } }
 
@@ -4799,7 +4799,7 @@ select {
       @media only screen and (max-width: 320px) {
         .quotes .quotes__img img {
           height: 190px; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 568px) {
       .quotes .quotes__img {
         display: block;
         width: 100%; }
@@ -4824,7 +4824,7 @@ select {
     @media only screen and (max-width: 900px) {
       .quotes .quotes__content {
         padding: 0 60px 0 20px; } }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 568px) {
       .quotes .quotes__content {
         display: block;
         width: 100%;
@@ -5370,6 +5370,12 @@ select {
     padding: 10px 12px;
     font-size: 16px;
     font-weight: 500; }
+    @media only screen and (max-width: 768px) {
+      .movie .movie__left {
+        width: 65%; } }
+    @media only screen and (max-width: 480px) {
+      .movie .movie__left {
+        width: 70%; } }
   .movie .movie__genre {
     font-style: italic;
     font-size: 14px; }
@@ -5378,11 +5384,18 @@ select {
     width: 30%;
     padding: 10px 10px 10px 0;
     text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .movie .movie__right {
+        width: 35%; } }
+    @media only screen and (max-width: 480px) {
+      .movie .movie__right {
+        width: 30%; } }
   .movie .movie__time {
     font-size: 18px;
     font-weight: 500; }
   .movie .movie__date {
-    font-size: 12px; }
+    font-size: 12px;
+    white-space: nowrap; }
   .movie.movie_explore .movie__in {
     background: #ab0621;
     color: #fff; }

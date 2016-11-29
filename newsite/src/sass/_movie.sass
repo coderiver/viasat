@@ -48,6 +48,10 @@
 		padding: 10px 12px
 		font-size: 16px
 		font-weight: 500
+		+r(768)
+			width: 65%
+		+r(480)
+			width: 70%
 	.movie__genre
 		font-style: italic
 		font-size: 14px
@@ -56,11 +60,16 @@
 		width: 30%
 		padding: 10px 10px 10px 0
 		text-align: center
+		+r(768)
+			width: 35%
+		+r(480)
+			width: 30%
 	.movie__time
 		font-size: 18px
 		font-weight: 500
 	.movie__date
 		font-size: 12px
+		white-space: nowrap
 	@for $i from 1 through length($channels)
 		&.movie_#{nth($channels, $i)}
 			.movie__in
