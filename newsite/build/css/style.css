@@ -1337,7 +1337,7 @@ select {
   margin-bottom: 30px; }
   .banners__list-col:nth-child(1) {
     margin-bottom: 30px; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       .banners__list-col:nth-child(1) {
         margin-bottom: 20px; } }
   @media only screen and (max-width: 1024px) {
@@ -1352,7 +1352,7 @@ select {
     .banners__col:first-child, .banners__col:nth-child(3) {
       width: 50%;
       margin-bottom: 30px; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 600px) {
     .banners__col:first-child, .banners__col:nth-child(3) {
       width: 100%;
       margin-bottom: 20px; } }
