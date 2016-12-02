@@ -7048,7 +7048,7 @@ select {
       @media only screen and (max-width: 960px) {
         .old .article p, .overlay .article p {
           margin-bottom: 20px; } }
-    .old .article blockquote, .overlay .article blockquote {
+    .old .article .classic-quote, .overlay .article .classic-quote {
       display: block;
       margin-bottom: 30px;
       margin-left: 75px;
@@ -7059,13 +7059,13 @@ select {
       font-weight: 300;
       font-style: italic; }
       @media only screen and (max-width: 1024px) {
-        .old .article blockquote, .overlay .article blockquote {
+        .old .article .classic-quote, .overlay .article .classic-quote {
           margin-left: 40px; } }
       @media only screen and (max-width: 960px) {
-        .old .article blockquote, .overlay .article blockquote {
+        .old .article .classic-quote, .overlay .article .classic-quote {
           margin-bottom: 20px; } }
       @media only screen and (max-width: 480px) {
-        .old .article blockquote, .overlay .article blockquote {
+        .old .article .classic-quote, .overlay .article .classic-quote {
           margin-left: 10px;
           padding-left: 10px;
           font-size: 1.8rem; } }
@@ -8330,7 +8330,7 @@ select {
       display: block;
       margin-bottom: 30px;
       width: 100%; }
-    .old .content blockquote, .overlay .content blockquote {
+    .old .content .classic-quote, .overlay .content .classic-quote {
       position: relative;
       display: block;
       max-width: 520px;
@@ -8342,9 +8342,9 @@ select {
       font-size: 2.2rem;
       font-weight: 300;
       font-style: italic; }
-      .old .content blockquote p, .overlay .content blockquote p {
+      .old .content .classic-quote p, .overlay .content .classic-quote p {
         margin-bottom: 0; }
-      .old .content blockquote:before, .overlay .content blockquote:before {
+      .old .content .classic-quote:before, .overlay .content .classic-quote:before {
         content: "";
         position: absolute;
         top: -11px;
@@ -8354,7 +8354,7 @@ select {
         height: 22px;
         background: #fff;
         z-index: 1; }
-      .old .content blockquote:after, .overlay .content blockquote:after {
+      .old .content .classic-quote:after, .overlay .content .classic-quote:after {
         content: "";
         position: absolute;
         top: -11px;
