@@ -7048,7 +7048,7 @@ select {
       @media only screen and (max-width: 960px) {
         .old .article p, .overlay .article p {
           margin-bottom: 20px; } }
-    .old .article .classic-quote, .overlay .article .classic-quote {
+    .old .article blockquote, .overlay .article blockquote {
       display: block;
       margin-bottom: 30px;
       margin-left: 75px;
@@ -7059,16 +7059,37 @@ select {
       font-weight: 300;
       font-style: italic; }
       @media only screen and (max-width: 1024px) {
-        .old .article .classic-quote, .overlay .article .classic-quote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-left: 40px; } }
       @media only screen and (max-width: 960px) {
-        .old .article .classic-quote, .overlay .article .classic-quote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-bottom: 20px; } }
       @media only screen and (max-width: 480px) {
-        .old .article .classic-quote, .overlay .article .classic-quote {
+        .old .article blockquote, .overlay .article blockquote {
           margin-left: 10px;
           padding-left: 10px;
           font-size: 1.8rem; } }
+    .old .article blockquote.twitter-tweet, .overlay .article blockquote.twitter-tweet {
+      display: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      border-left: auto;
+      padding-left: auto;
+      font-size: auto;
+      line-height: auto;
+      font-weight: auto;
+      font-style: auto; }
+      @media only screen and (max-width: 1024px) {
+        .old .article blockquote.twitter-tweet, .overlay .article blockquote.twitter-tweet {
+          margin-left: auto; } }
+      @media only screen and (max-width: 960px) {
+        .old .article blockquote.twitter-tweet, .overlay .article blockquote.twitter-tweet {
+          margin-bottom: auto; } }
+      @media only screen and (max-width: 480px) {
+        .old .article blockquote.twitter-tweet, .overlay .article blockquote.twitter-tweet {
+          margin-left: auto;
+          padding-left: auto;
+          font-size: auto; } }
     .old .article img, .overlay .article img {
       display: block;
       width: 112%;
@@ -8330,7 +8351,7 @@ select {
       display: block;
       margin-bottom: 30px;
       width: 100%; }
-    .old .content .classic-quote, .overlay .content .classic-quote {
+    .old .content blockquote, .overlay .content blockquote {
       position: relative;
       display: block;
       max-width: 520px;
@@ -8342,9 +8363,9 @@ select {
       font-size: 2.2rem;
       font-weight: 300;
       font-style: italic; }
-      .old .content .classic-quote p, .overlay .content .classic-quote p {
+      .old .content blockquote p, .overlay .content blockquote p {
         margin-bottom: 0; }
-      .old .content .classic-quote:before, .overlay .content .classic-quote:before {
+      .old .content blockquote:before, .overlay .content blockquote:before {
         content: "";
         position: absolute;
         top: -11px;
@@ -8354,7 +8375,7 @@ select {
         height: 22px;
         background: #fff;
         z-index: 1; }
-      .old .content .classic-quote:after, .overlay .content .classic-quote:after {
+      .old .content blockquote:after, .overlay .content blockquote:after {
         content: "";
         position: absolute;
         top: -11px;
