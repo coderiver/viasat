@@ -56,8 +56,6 @@ table {
 
 #bodyTable {
   margin: 0 auto;
-  display: none;
-  display: block;
   font-family: Roboto, Arial, sans-serif;
   line-height: 1em;
 }
@@ -66,10 +64,6 @@ tr, td, table {
   margin: 0;
   padding: 0;
   border-spacing: 0;
-}
-
-tbody {
-  display: block;
 }
 
 table {

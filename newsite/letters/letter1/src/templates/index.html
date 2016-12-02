@@ -9,10 +9,10 @@ footerbg: '#e8e9f1'
 when: '20:00'
 action: 'фильм'
 nameAction: 'Безумный Макс. Дорога Ярости'
-linkAction: 'http://www.viasat-channels.tv/program/bezumnyj-maks-doroga-arosti
-'
+linkAction: 'http://www.viasat-channels.tv/program/bezumnyj-maks-doroga-arosti'
 buttonLink: 'http://www.viasat-channels.tv/tv-guide'
-width: 600px
+logoLink: 'http://www.viasat-channels.tv'
+
 
 premieres : [
 {
@@ -55,31 +55,31 @@ premieres : [
 {% block content %}
 	<tr  class="content">
 		<td  height=""  align="center" id="content">
-			<table width="100%" >
+			<table width="100%">
 				<tr>
-					<td style="background: url('http://www.imageup.ru/img104/2606611/banner-bg.jpg') center top; background-size: 100% 208px;">
-						<table>
+					<td background="http://www.imageup.ru/img66/2616752/banner-bg.jpg" width="100%">
+						<table width="100%">
 							<tr>
-								<td>
-									<table>
+								<td width="100%">
+									<table width="100%">
 										{{mixins.space(35)}}
 										<tr>
-											<td width="600" align="center" height="28"><div class="title">Приветствуем!</div></td>
+											<td width="100%" align="center" height="28" class="title">Приветствуем!</td>
 										</tr>
 										{{mixins.space(15)}}
 										<tr>
-											<td width="600" align="center" height="16"><div class="sub-title">Напоминаем, что сегодня в</div></td>
+											<td width="100%" align="center" height="16" class="sub-title sub-title_black">Напоминаем, что сегодня в</td>
 										</tr>
 										{{mixins.space(40)}}
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<td>
-									<table>
+								<td width="100%">
+									<table width="100%">
 										<tr>
 											<td width="155"></td>
-											<td width="290" height="145" style="background: transparent url('https://s11.postimg.org/4evnpa16b/timer.png') center / 100%;" class="time" align="center">
+											<td width="290" height="145" class="time" align="center" background="https://s11.postimg.org/4evnpa16b/timer.png">
 												{{when}}
 											</td>
 											<td width="155"></td>
@@ -116,9 +116,9 @@ premieres : [
 		<td>
 			<table>
 				<tr>
-					<td height="55" width="184" style="background: url(https://s18.postimg.org/sm1pkihbd/btn_before.png)"></td>
+					<td height="55" width="184" background="https://s18.postimg.org/sm1pkihbd/btn_before.png"></td>
 					<td><a href="{{buttonLink}}" class="button">Вся телепрограмма</a></td>
-					<td height="55" width="186" style="background: url(https://s21.postimg.org/kl3sd12on/btn_after.png)"></td>
+					<td height="55" width="186" background="https://s21.postimg.org/kl3sd12on/btn_after.png"></td>
 				</tr>
 			</table>
 		</td>
@@ -129,7 +129,7 @@ premieres : [
 			<table>
 				<tr>
 					<td width="35"></td>
-					<td height="1" width="530" style="background: url(http://www.imageup.ru/img32/2607211/separator.png)"></td>
+					<td height="1" width="530" background="http://www.imageup.ru/img32/2607211/separator.png"></td>
 					<td width="35"></td>
 				</tr>
 			</table>
@@ -152,7 +152,7 @@ premieres : [
 			<table>
 				<tr>
 					{% for img in premieres %}
-					<td width="200" height="125"><a class="premiere-link"href="{{img.Link}}"><img style="width:100%; height:125px;" src="{{img.Img}}" alt="{{img.Film}}"></a></td>
+					<td width="200" height="125"><a class="premiere-link"href="{{img.Link}}"><img style="width:200px; height:125px;" src="{{img.Img}}" alt="{{img.Film}}"></a></td>
 					{% endfor %}
 				</tr>
 				<tr>
