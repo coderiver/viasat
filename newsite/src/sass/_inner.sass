@@ -382,6 +382,34 @@
 			width: 45%
 		+r(480)
 			width: 100%
+	.fb-widget
+		margin-bottom: 20px
+		& > img
+			display: block
+			width: 100%
+		+r(960)
+			width: 45%
+			float: left
+		+r(480)
+			width: 100%
+			
+	.soc-widget
+		width: 100%
+		iframe
+			max-width: 100%
+			width: 100%
+		+r(960)
+			float: right
+			width: 45%
+		+r(480)
+			width: 100%
+	.soc-widget:first-child
+		margin-bottom: 20px
+		+r(960)
+			float: left
+		
+			
+
 	.channels
 		.channels__item
 			position: relative
@@ -595,16 +623,6 @@
 	.feedback
 		background: #fff url(../img/feedback.png) 90% 100% no-repeat
 
-	.fb-widget
-		margin-bottom: 20px
-		& > img
-			display: block
-			width: 100%
-		+r(960)
-			width: 45%
-			float: left
-		+r(480)
-			width: 100%
 	// 404 error
 	.error
 		padding: 125px 10px 185px

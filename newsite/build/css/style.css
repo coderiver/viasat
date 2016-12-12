@@ -535,6 +535,9 @@ select {
   display: block;
   max-width: 100%; }
 
+.container {
+  overflow: hidden; }
+
 .promo {
   overflow: hidden; }
   .promo__list {
@@ -6473,6 +6476,35 @@ select {
   @media only screen and (max-width: 480px) {
     .old .banner, .overlay .banner {
       width: 100%; } }
+  .old .fb-widget, .overlay .fb-widget {
+    margin-bottom: 20px; }
+    .old .fb-widget > img, .overlay .fb-widget > img {
+      display: block;
+      width: 100%; }
+    @media only screen and (max-width: 960px) {
+      .old .fb-widget, .overlay .fb-widget {
+        width: 45%;
+        float: left; } }
+    @media only screen and (max-width: 480px) {
+      .old .fb-widget, .overlay .fb-widget {
+        width: 100%; } }
+  .old .soc-widget, .overlay .soc-widget {
+    width: 100%; }
+    .old .soc-widget iframe, .overlay .soc-widget iframe {
+      max-width: 100%;
+      width: 100%; }
+    @media only screen and (max-width: 960px) {
+      .old .soc-widget, .overlay .soc-widget {
+        float: right;
+        width: 45%; } }
+    @media only screen and (max-width: 480px) {
+      .old .soc-widget, .overlay .soc-widget {
+        width: 100%; } }
+  .old .soc-widget:first-child, .overlay .soc-widget:first-child {
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 960px) {
+      .old .soc-widget:first-child, .overlay .soc-widget:first-child {
+        float: left; } }
   .old .channels .channels__item, .overlay .channels .channels__item {
     position: relative;
     margin-top: 30px;
@@ -6708,18 +6740,6 @@ select {
     font-weight: bold; }
   .old .feedback, .overlay .feedback {
     background: #fff url(../img/feedback.png) 90% 100% no-repeat; }
-  .old .fb-widget, .overlay .fb-widget {
-    margin-bottom: 20px; }
-    .old .fb-widget > img, .overlay .fb-widget > img {
-      display: block;
-      width: 100%; }
-    @media only screen and (max-width: 960px) {
-      .old .fb-widget, .overlay .fb-widget {
-        width: 45%;
-        float: left; } }
-    @media only screen and (max-width: 480px) {
-      .old .fb-widget, .overlay .fb-widget {
-        width: 100%; } }
   .old .error, .overlay .error {
     padding: 125px 10px 185px;
     text-align: center; }
