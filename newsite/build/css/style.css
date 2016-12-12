@@ -4679,7 +4679,8 @@ select {
         transform: rotate(360deg); } }
 
 .n-trailer {
-  position: relative; }
+  position: relative;
+  clear: both; }
   @media only screen and (max-width: 768px) {
     .n-trailer {
       margin-bottom: 30px; } }
