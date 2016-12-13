@@ -7873,6 +7873,9 @@ select {
       min-height: 100%;
       max-width: 100%;
       object-fit: cover; }
+    @media only screen and (max-width: 1024px) {
+      .old .schedule .schedule__link, .overlay .schedule .schedule__link {
+        width: 35%; } }
     @media only screen and (max-width: 767px) {
       .old .schedule .schedule__link, .overlay .schedule .schedule__link {
         float: none;
@@ -7907,6 +7910,9 @@ select {
     padding: 25px 30px;
     background: #FFF;
     overflow: hidden; }
+    @media only screen and (max-width: 1024px) {
+      .old .schedule .schedule__content, .overlay .schedule .schedule__content {
+        width: 65%; } }
     @media only screen and (max-width: 767px) {
       .old .schedule .schedule__content, .overlay .schedule .schedule__content {
         float: none;
