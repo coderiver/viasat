@@ -7869,7 +7869,10 @@ select {
       opacity: 1; }
     .old .schedule .schedule__link img, .overlay .schedule .schedule__link img {
       display: block;
-      width: 100%; }
+      width: 100%;
+      min-height: 100%;
+      max-width: 100%;
+      object-fit: cover; }
     @media only screen and (max-width: 767px) {
       .old .schedule .schedule__link, .overlay .schedule .schedule__link {
         float: none;
