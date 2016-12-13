@@ -261,19 +261,16 @@ $(document).ready(function() {
 
         $('[data-popup='+link+']').fadeIn();
         $('body').addClass('no-scroll');
-        $('.main').css('z-index', '5');
         return false;
     });
 
     $('.overlay > span').on('click', function() {
         $(this).parent().fadeOut();
         $('body').removeClass('no-scroll');
-        $('.main').css('z-index', '2');
     });
     $('.js-popup-close').on('click', function() {
         $(this).parents('.overlay').fadeOut();
         $('body').removeClass('no-scroll');
-        $('.main').css('z-index', '2');
     });
 
     // gallery
@@ -282,8 +279,7 @@ $(document).ready(function() {
         var slideNumber = $(this).data('slide');
 
         $('.gallery-overlay').fadeIn();
-        $('body').addClass('no-scroll');
-        $('.main').css('z-index', '5');
+        $('body').addClass('no-scroll show-gallery');
 
         if ($('.gallery').hasClass('is-inited')) {
             $('.js-gallery-view').slick('slickGoTo', slideNumber);
@@ -323,8 +319,7 @@ $(document).ready(function() {
 
     $('.js-gallery-close').on('click', function() {
         $(this).parent().fadeOut();
-        $('body').removeClass('no-scroll');
-        $('.main').css('z-index', '2');
+        $('body').removeClass('no-scroll show-gallery');
     });
 
     // lists

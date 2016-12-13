@@ -236,7 +236,11 @@ body {
     body.no-scroll .header {
       z-index: 1; }
     body.no-scroll .sidebar {
-      z-index: 1000; }
+      z-index: 666; }
+    body.no-scroll .main {
+      z-index: 5; }
+  body.no-scroll.show-gallery .sidebar {
+    z-index: 4; }
 
 button,
 input,
