@@ -462,7 +462,7 @@
 	&:after
 		content: '“'
 		position: absolute
-		bottom: 10px
+		bottom: 0px
 		right: 0
 		color: #e9e9e9
 		font-family: Georgia
@@ -470,15 +470,17 @@
 		transform: rotate(180deg)
 		font-weight: 400
 		line-height: 1
+		+r(768)
+			bottom: 5px
 	+r(768)
-		position: absolute
-		top: 50%
-		left: 50%
-		width: 95%
-		transform: translate(-50%, -50%)
 		padding: 35px 25px
 		&:before, &:after
 			font-size: 60px
+	+r(568)
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
 
 .premiere
 	position: relative
@@ -1161,9 +1163,9 @@
 					opacity: 0
 				&:after
 					opacity: 1
-		+r(768)
-			.slick-list
-				background: #6d57a5
+		// +r(768)
+		// 	.slick-list
+		// 		background: #6d57a5
 	.quotes__slide
 		+clr
 	.quotes__cell
@@ -1203,12 +1205,13 @@
 			text-align: left
 			z-index: 2
 		+r(900)
-			padding: 0 60px 0 20px
+			padding: 0 50px 0 20px
 		+r(568)
 			display: block
 			width: 100%
 			height: 250px
 			padding: 40px 10px
+			text-align: center
 		+r(568)
 			padding: 20px 10px
 .n-posters
