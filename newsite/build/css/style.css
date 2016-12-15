@@ -6502,22 +6502,24 @@ select {
       .old .fb-widget, .overlay .fb-widget {
         width: 100%; } }
   .old .soc-widget, .overlay .soc-widget {
-    width: 100%; }
+    *zoom: 1; }
+    .old .soc-widget:after, .overlay .soc-widget:after {
+      content: " ";
+      display: table;
+      clear: both; }
+  .old .soc-widget, .overlay .soc-widget {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px; }
     .old .soc-widget iframe, .overlay .soc-widget iframe {
       max-width: 100%;
       width: 100%; }
     @media only screen and (max-width: 960px) {
       .old .soc-widget, .overlay .soc-widget {
-        float: right;
         width: 45%; } }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 767px) {
       .old .soc-widget, .overlay .soc-widget {
         width: 100%; } }
-  .old .soc-widget:first-child, .overlay .soc-widget:first-child {
-    margin-bottom: 20px; }
-    @media only screen and (max-width: 960px) {
-      .old .soc-widget:first-child, .overlay .soc-widget:first-child {
-        float: left; } }
   .old .channels .channels__item, .overlay .channels .channels__item {
     position: relative;
     margin-top: 30px;
