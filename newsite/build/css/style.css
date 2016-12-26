@@ -1694,12 +1694,6 @@ select {
     width: 50%; }
     .topper .topper__left .h1 {
       text-shadow: 0 1px 1px rgba(72, 54, 110, 0.75); }
-    @media only screen and (max-width: 1024px) {
-      .topper .topper__left {
-        min-height: 160px; } }
-    @media only screen and (max-width: 900px) {
-      .topper .topper__left {
-        min-height: auto; } }
     @media only screen and (max-width: 600px) {
       .topper .topper__left {
         float: none;
